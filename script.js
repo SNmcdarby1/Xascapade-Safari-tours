@@ -17,6 +17,7 @@ $(document).ready(function() {
         $(this).hide();
     });
 });
+$('.collapse').collapse()
 
 function openForm() {
     document.getElementById("myForm").style.display = "block";
