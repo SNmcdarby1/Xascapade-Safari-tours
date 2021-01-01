@@ -79,7 +79,7 @@ There were different tuturial that i watched in youtube. Below are a few that re
 
 
 7 Deployment.
-I deployed the page in Github page under settings. 
+I deployed the page in Github page under settings. Scroll down to the Github pages. Select the main-branch under the source. Once selected clickthe save button. A link will be enabled,once you receive the link you select it copy the link on your search engine. This will lead you to your public page. Ad that is how you deploy your repository to a public site. 
 
 8 Testing
 
