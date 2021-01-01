@@ -33,7 +33,7 @@
                 <!-- snippet navbar selected by gitpod snippet tags ctrl=space keys -->
 
                 <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top topnav">
-                    <a class="navbar-brand" href="#">Xascapade</a>
+                    <a class="navbar-brand" href="#">Xascapade Travel</a>
                     <button class="navbar-toggler hidden-lg-up show-sm-dowm" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation"></button>
                     <div class="collapse navbar-collapse topnav" data-toggle="collapse" id="collapsibleNavId">
                         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
@@ -70,147 +70,142 @@
                         <section class="d-inline-block text-truncate" style="max-width: 100%;">
                             <div class="section-column header   d-inline-block text-truncate" style="max-width: 100%;">
 
-                                <h1>
-                                    <i class="fas fa-h1"></i>
-                                    <span class="uppercase">XASCAPADE</span>
-                                    <h1><span>Travel
-                                        </span></h1>
-                            </div>
 
 
                     </header>
-                    <section class="button">
+                    <main class="container-fluid card">
+                        <section class="btnbtn button">
 
-                        <!-- was inspired by the 3wschool example  -->
-                        <div class="dropdown text-center">
-                            <button class="dropbtn">More Info</button>
-                            <div class="dropdown-content">
-                                <a href="safari.html">Safari Packages</a>
-                                <a href="accommodation.html">Accommodations</a>
-                                <a href="reservation.html">Reservation</a>
+                            <!-- was inspired by the 3wschool example  -->
+                            <div class="dropdown  text-center">
+                                <button class="dropbtn">More Info</button>
+                                <div class="dropdown-content">
+                                    <a href="safari.html">Safari Packages</a>
+                                    <a href="accommodation.html">Accommodations</a>
+                                    <a href="reservation.html">Reservation</a>
+                                </div>
                             </div>
-                        </div>
-                    </section>
+                        </section>
 
-                    <!-- customer Reservation details-->
+                        <!-- customer Reservation details-->
 
 
-                    <form form action="/action_page.php" class="row-padding" style="margin:10 -16pxass=">
-                        <div class="panel padding-16 white opacity card hover-opacity-off" class="searchForm" style="height:375px" ng-app="firstApp" ng-controller="formController">
-                            <h4 style="text-align: center">Safari package Search</h4>
+                        <form form action="/action_page.php" class="row-padding" style="margin:10 -16pxass=">
+                            <div class="panel padding-16 white opacity card hover-opacity-off" class="searchForm" style="height:375px" ng-app="firstApp" ng-controller="formController">
+                                <h4 style="text-align: center">Safari package Search</h4>
 
-                            <form action="" role="form" id="form" class="form-horizontal" style="margin-left: 86px" method="get" ng-submit="processForm()">
+                                <form action="" role="form" id="form" class="form-horizontal" style="margin-left: 86px" method="get" ng-submit="processForm()">
 
-                                <div class="form-group text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.">
-                                    <label for="keyword" class="col-sm-2 control-lable">keyword*</label>
-                                    <div class="col-sm-10">
-                                        <input type="text" class="form-control" id="keyword" ng-model="formData.keyword" name="keyword" data-bv-message="Please enter a keyword" required data-bv-notempty-message="" style="width: 386px; margin-left: 21px;">
+                                    <div class="form-group text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.">
+                                        <label for="keyword" class="col-sm-2 control-lable">keyword*</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" class="form-control" id="keyword" ng-model="formData.keyword" name="keyword" data-bv-message="Please enter a keyword" required data-bv-notempty-message="" style="width: 386px; margin-left: 21px;">
+                                        </div>
                                     </div>
-                                </div>
 
 
-                                <div class="form-group">
-                                    <label for="Category" class="col-sm-2 control-lable">Category</label>
-                                    <div class="col-sm-10">
-                                        <select name="category" class="form-control" id="Category" ng-model="formData.category" style="margin-left: 23px; width: 270px;">
-                                            <option value="Default">Default</option>
-                                            <option value="Airport">A day safari</option>
-                                            <option value="Amusement_Park">A sunrise safari</option>
-                                            <option value="Aquarium">A Sunset safari</option>
-                                            <option value="Art_Gallery">Nairobi national park game drive</option>
-                                            <option value="Bakery">A day safari package"</option>
-                                            <option value="Bar">A city tour</option>
-                                            <option value="Beauty_Salon">A tour to the Masai market</option>
-                                            <option value="Bowling_Alley">A 5 day safari package</option>
-                                            <option value="Bus_Station">3 Day safari</option>
-                                            <option value="Cafe">2 Week safari package</option>
-                                            <option value="Campground">An East african safari package</option>
-                                            <option value="Car_Rental">Camping</option>
-                                            <option value="Casino">Connfress booking with safari inclusion</option>
-                                            <option value="Lodging">Lodging</option>
-                                            <option value="Movie_Theater">Snorkelling</option>
-                                            <option value="Museum">Coastal tour</option>
-                                            <option value="Night_Club">Night Club</option>
-                                            <option value="Park">Park</option>
-                                            <option value="Parking">Museum</option>
-                                            <option value="Restaurant">Restaurant</option>
-                                            <option value="Shopping_Mall">Shopping Mall</option>
-                                            <option value="Stadium">Stadium</option>
-                                            <option value="Train_Station">Watersport Games</option>
-                                            <option value="Transit_Station">Country tours</option>
-                                            <option value="Travel_Agency">Village walks</option>
-                                            <option value="Zoo">Zoo</option>
-                                        </select>
+                                    <div class="form-group">
+                                        <label for="Category" class="col-sm-2 control-lable">Category</label>
+                                        <div class="col-sm-10">
+                                            <select name="category" class="form-control" id="Category" ng-model="formData.category" style="margin-left: 23px; width: 270px;">
+                                                <option value="Default">Default</option>
+                                                <option value="Airport">A day safari</option>
+                                                <option value="Amusement_Park">A sunrise safari</option>
+                                                <option value="Aquarium">A Sunset safari</option>
+                                                <option value="Art_Gallery">Nairobi national park game drive</option>
+                                                <option value="Bakery">A day safari package"</option>
+                                                <option value="Bar">A city tour</option>
+                                                <option value="Beauty_Salon">A tour to the Masai market</option>
+                                                <option value="Bowling_Alley">A 5 day safari package</option>
+                                                <option value="Bus_Station">3 Day safari</option>
+                                                <option value="Cafe">2 Week safari package</option>
+                                                <option value="Campground">An East african safari package</option>
+                                                <option value="Car_Rental">Camping</option>
+                                                <option value="Casino">Connfress booking with safari inclusion</option>
+                                                <option value="Lodging">Lodging</option>
+                                                <option value="Movie_Theater">Snorkelling</option>
+                                                <option value="Museum">Coastal tour</option>
+                                                <option value="Night_Club">Night Club</option>
+                                                <option value="Park">Park</option>
+                                                <option value="Parking">Museum</option>
+                                                <option value="Restaurant">Restaurant</option>
+                                                <option value="Shopping_Mall">Shopping Mall</option>
+                                                <option value="Stadium">Stadium</option>
+                                                <option value="Train_Station">Watersport Games</option>
+                                                <option value="Transit_Station">Country tours</option>
+                                                <option value="Travel_Agency">Village walks</option>
+                                                <option value="Zoo">Zoo</option>
+                                            </select>
+                                        </div>
                                     </div>
-                                </div>
-                            </form>
-
-                            <!-- End page content -->
-                        </div>
-                    </form>
-                    <card class="form container-fluid inline-block">
-                        <div class="background-image" id="bgimg1">
-                            <hr class="my-4 inline-block col-sm-4" id="bgimg1">
-                            <div class="container">
-                                <h4>Get the best offers first!</h4>
-
-                                <p>Join our newsletter.</p>
-                                <label>E-mail</label>
-                                <input class="input border" type="text" placeholder="Your Email address">
-                                <button type="button" class="button red margin-top">Subscribe</button>
-                            </div>
-                        </div>
-                        <!-- w3school snippet -->
-                        <div class="container">
-                            <form action="/action_page.php">
-
-                                <h4>Register Form</h4>
-                                <div class="input-container">
-                                    <i class="fa fa-user icon"></i>
-                                    <input class="input-field" type="text" placeholder="Username" name="usrnm">
-                                </div>
-
-                                <div class="input-container">
-                                    <i class="fa fa-envelope icon"></i>
-                                    <input class="input-field" type="text" placeholder="Email" name="email">
-                                </div>
-
-                                <div class="input-container">
-                                    <i class="fa fa-key icon"></i>
-                                    <input class="input-field" type="password" placeholder="Password" name="psw">
-                                </div>
-                                <form action="/action_page.php">
-                                    <input type="file" id="myFile" name="filename">
-                                    <input type="submit">
                                 </form>
 
-
-                            </form>
-
-                        </div>
-                        <!-- pop upform 3wschool snippet  -->
-
-
-                        </div>
-                        <div class="form-popup" id="myForm">
-                            <form action="/action_page.php" class="form-container">
-                                <div class="bottom-container">
-                                    <div class="row">
-                                        <div class="col-4">
-                                            <a href="#" style="color:teal" class="btn">Sign up</a>
-                                        </div>
-
-                                        <div class="col-4">
-                                            <a href="#" style="color:teal" class="btn">Forgot password?</a>
-                                        </div>
-                                        <button type="submit" class="btn">Register</button>
-                                    </div>
-                                </div>
-                        </div>
+                                <!-- End page content -->
+                            </div>
                         </form>
-                        <!-- End page content -->
-                        </div>
-                        </main>
+                        <card class="form container-fluid inline-block">
+                            <div class="background-image" id="bgimg1">
+                                <hr class="my-4 inline-block col-sm-4" id="bgimg1">
+                                <div class="container">
+                                    <h4>Get the best offers first!</h4>
+
+                                    <p>Join our newsletter.</p>
+                                    <label>E-mail</label>
+                                    <input class="input border" type="text" placeholder="Your Email address">
+                                    <button type="button" class="button red margin-top">Subscribe</button>
+                                </div>
+                            </div>
+                            <!-- w3school snippet -->
+                            <div class="container">
+                                <form action="/action_page.php">
+
+                                    <h4>Register Form</h4>
+                                    <div class="input-container">
+                                        <i class="fa fa-user icon"></i>
+                                        <input class="input-field" type="text" placeholder="Username" name="usrnm">
+                                    </div>
+
+                                    <div class="input-container">
+                                        <i class="fa fa-envelope icon"></i>
+                                        <input class="input-field" type="text" placeholder="Email" name="email">
+                                    </div>
+
+                                    <div class="input-container">
+                                        <i class="fa fa-key icon"></i>
+                                        <input class="input-field" type="password" placeholder="Password" name="psw">
+                                    </div>
+                                    <form action="/action_page.php">
+                                        <input type="file" id="myFile" name="filename">
+                                        <input type="submit">
+                                    </form>
+
+
+                                </form>
+
+                            </div>
+                            <!-- pop upform 3wschool snippet  -->
+
+
+                            </div>
+                            <div class="form-popup" id="myForm">
+                                <form action="/action_page.php" class="form-container">
+                                    <div class="bottom-container">
+                                        <div class="row">
+                                            <div class="col-4">
+                                                <a href="#" style="color:teal" class="btn">Sign up</a>
+                                            </div>
+
+                                            <div class="col-4">
+                                                <a href="#" style="color:teal" class="btn">Forgot password?</a>
+                                            </div>
+                                            <button type="submit" class="btn">Register</button>
+                                        </div>
+                                    </div>
+                            </div>
+                            </form>
+                            <!-- End page content -->
+                            </div>
+                    </main>
 
 
             </section>

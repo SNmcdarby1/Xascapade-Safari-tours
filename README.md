@@ -48,6 +48,8 @@ It is a holiday booking platform-MS2 project
  *  Decide to change the li element to lo because the ux appearance was not suitable to the and user friendly 6 Testing
 
  * While i was updating the git status i entered a git commit that change the changes that i had made . Resulted into doing a git reset command to using the SHA number f68f166.
+ * The navigation bar is glitching the dropdown links are not visible in the mobile devise. I decided to change and delete the dropdown in the navigation bar and decided to add a button that has etra pages. 
+ * 
 
 
 7 Deployment
