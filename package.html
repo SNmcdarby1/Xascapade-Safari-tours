@@ -91,165 +91,174 @@
                             </div>
                         </div>
                     </section>
+                    <div class="row card">
+                        <div class="side">
+                            <h2 class="uppercase">About Me</h2>
+                            <h5 class="uppercase">Photo of me:</h5>
 
-                    <!-- customer Reservation details-->
-
-
-                    <form form action="/action_page.php" class="row-padding" style="margin:10 -16pxass=">
-                        <div class="panel padding-16 white opacity card hover-opacity-off" class="searchForm" style="height:375px" ng-app="firstApp" ng-controller="formController">
-                            <h4 style="text-align: center">Safari package Search</h4>
-
-                            <form action="" role="form" id="form" class="form-horizontal" style="margin-left: 86px" method="get" ng-submit="processForm()">
-
-                                <div class="form-group text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.">
-                                    <label for="keyword" class="col-sm-2 control-lable">keyword*</label>
-                                    <div class="col-sm-10">
-                                        <input type="text" class="form-control" id="keyword" ng-model="formData.keyword" name="keyword" data-bv-message="Please enter a keyword" required data-bv-notempty-message="" style="width: 386px; margin-left: 21px;">
-                                    </div>
-                                </div>
-
-
-                                <div class="form-group">
-                                    <label for="Category" class="col-sm-2 control-lable">Category</label>
-                                    <div class="col-sm-10">
-                                        <select name="category" class="form-control" id="Category" ng-model="formData.category" style="margin-left: 23px; width: 270px;">
-                                            <option value="Default">Default</option>
-                                            <option value="Airport">A day safari</option>
-                                            <option value="Amusement_Park">A sunrise safari</option>
-                                            <option value="Aquarium">A Sunset safari</option>
-                                            <option value="Art_Gallery">Nairobi national park game drive</option>
-                                            <option value="Bakery">A day safari package"</option>
-                                            <option value="Bar">A city tour</option>
-                                            <option value="Beauty_Salon">A tour to the Masai market</option>
-                                            <option value="Bowling_Alley">A 5 day safari package</option>
-                                            <option value="Bus_Station">3 Day safari</option>
-                                            <option value="Cafe">2 Week safari package</option>
-                                            <option value="Campground">An East african safari package</option>
-                                            <option value="Car_Rental">Camping</option>
-                                            <option value="Casino">Connfress booking with safari inclusion</option>
-                                            <option value="Lodging">Lodging</option>
-                                            <option value="Movie_Theater">Snorkelling</option>
-                                            <option value="Museum">Coastal tour</option>
-                                            <option value="Night_Club">Night Club</option>
-                                            <option value="Park">Park</option>
-                                            <option value="Parking">Museum</option>
-                                            <option value="Restaurant">Restaurant</option>
-                                            <option value="Shopping_Mall">Shopping Mall</option>
-                                            <option value="Stadium">Stadium</option>
-                                            <option value="Train_Station">Watersport Games</option>
-                                            <option value="Transit_Station">Country tours</option>
-                                            <option value="Travel_Agency">Village walks</option>
-                                            <option value="Zoo">Zoo</option>
-                                        </select>
-                                    </div>
-                                </div>
-                            </form>
-
-                            <!-- End page content -->
                         </div>
-                    </form>
-                    <card class="form container-fluid inline-block">
-                        <div class="background-image" id="bgimg1">
-                            <hr class="my-4 inline-block col-sm-4" id="bgimg1">
-                            <div class="container">
-                                <h4>Get the best offers first!</h4>
+                        </span>
 
-                                <p>Join our newsletter.</p>
-                                <label>E-mail</label>
-                                <input class="input border" type="text" placeholder="Your Email address">
-                                <button type="button" class="button red margin-top">Subscribe</button>
+                        <input type="text" class="form-control" name="name" id="name" placeholder="" aria-label="">
+                        <section class="container">
+                            <div class="gallery">
+
+                                <a target="_blank" href="#">
+                                    <picture class="d-inline-block text-truncate" style="max-width: 800px;">
+                                        <source srcset="assets/images/cheetah.jpg" type="image/svg+xml">
+                                        <img src="assets/images/cheetah.jpg" class="img-fluid img-thumbnail" alt="cheetah">
+                                </a>
+                                </picture>
+                                <div class="desc">Book a saafari package to Masai Mara. Above is a picture taken of
+                                    cheetahs out looking for prey. Masai Mara animals include lions, cheetahs,
+                                    elephants, zebras and hippos. Wildebeest traverse its plains during their annual
+                                    migration. The landscape has grassy plains and rolling hills, and is crossed by
+                                    the Mara and Talek rivers</div>
                             </div>
-                        </div>
-                        <!-- w3school snippet -->
-                        <div class="container">
-                            <form action="/action_page.php">
 
-                                <h4>Register Form</h4>
-                                <div class="input-container">
-                                    <i class="fa fa-user icon"></i>
-                                    <input class="input-field" type="text" placeholder="Username" name="usrnm">
-                                </div>
+                            <div class="gallery">
+                                <a target="_blank" href="#">
+                                    <picture class="d-inline-block text-truncate" style="max-width: 800px;">
+                                        <source srcset="assets/images/uriel.jpg" type="image/svg+xml">
+                                        <img src="assets/images/uriel.jpg" class="img-fluid img-thumbnail" alt="Flamingos">
+                                    </picture>
+                                </a>
+                                <div class="desc">Lake Nakuru a soda lake abundance of algae used to attract a vast
+                                    quantity of flamingos that famously lined the shore</div>
+                            </div>
 
-                                <div class="input-container">
-                                    <i class="fa fa-envelope icon"></i>
-                                    <input class="input-field" type="text" placeholder="Email" name="email">
-                                </div>
+                            <div class="gallery">
+                                <a target="_blank" href="#">
+                                    <picture class="d-inline-block text-truncate" style="max-width: 800px;">
+                                        <source srcset="assets/images/red.jpg" type="image/svg+xml">
+                                        <img src="assets/images/red.jpg" class="img-fluid img-thumbnail" alt="Elephants">
+                                </a>
+                                </picture>
+                                <div class="desc">Tsavo National park.The park forms the largest protected area in
+                                    Kenya and is home to most of the larger mammals, vast herds of dust –red
+                                    elephant, Rhino, buffalo, lion, leopards and many more.</div>
+                            </div>
+                            <div class="gallery">
+                                <a target="_blank" href="#">
+                                    <picture class="d-inline-block text-truncate" style="max-width: 800px;">
+                                        <source srcset="assets/images/ron.jpg" type="image/svg+xml">
+                                        <img src="assets/images/ron.jpg" class="img-fluid img-thumbnail" alt="cheetah">
 
-                                <div class="input-container">
-                                    <i class="fa fa-key icon"></i>
-                                    <input class="input-field" type="password" placeholder="Password" name="psw">
-                                </div>
-                                <form action="/action_page.php">
-                                    <input type="file" id="myFile" name="filename">
-                                    <input type="submit">
-                                </form>
+                                </a>
+                                </picture>
+                                <picture class="d-inline-block text-truncate" style="max-width: 800px;"></picture>
+                                <source srcset="assets/images/giraffes.jpg" type="image/svg+xml">
+                                <img src="assets/images/giraffes-.jpg" class="img-fluid img-thumbnail" alt="cheetah">
+                                </a>
+                                </picture>
+                                <div class="desc">Nairobi National Park is a national park in Kenya that was
+                                    established in 1946 about 7 km south of Nairobi. It is fenced on three sides,
+                                    whereas the open southern boundary allows migrating wildlife to move between the
+                                    park and the adjacent Kitengela plains. Herbivores gather in the park during the
+                                    dry season.</div>
+                            </div>
+                        </section>
+                        <section class="container">
+                            <div id="demo" class="carousel slide" data-ride="carousel">
 
+                                <!-- Indicators -->
+                                <ul class="carousel-indicators">
+                                    <li data-target="#demo" data-slide-to="0" class="active"></li>
+                                    <li data-target="#demo" data-slide-to="1"></li>
+                                    <li data-target="#demo" data-slide-to="2"></li>
+                                    <li data-target="#demo" data-slide-to="3"></li>
+                                    <li data-target="#demo" data-slide-to="4"></li>
+                                    <li data-target="#demo" data-slide-to="5"></li>
+                                    <li data-target="#demo" data-slide-to="6"></li>
+                                </ul>
 
-                            </form>
+                                <!-- The slideshow -->
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="assets/images/flaming.jpg" style="width:100%">
 
-                        </div>
-                        <!-- pop upform 3wschool snippet  -->
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="assets/images/jean.jpg" style="width:100%">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="assets/images/leopard.jpg" style="width:100%">
+                                    </div>
 
-
-                        </div>
-                        <div class="form-popup" id="myForm">
-                            <form action="/action_page.php" class="form-container">
-                                <div class="bottom-container">
-                                    <div class="row">
-                                        <div class="col-4">
-                                            <a href="#" style="color:teal" class="btn">Sign up</a>
-                                        </div>
-
-                                        <div class="col-4">
-                                            <a href="#" style="color:teal" class="btn">Forgot password?</a>
-                                        </div>
-                                        <button type="submit" class="btn">Register</button>
+                                    <div class="carousel-item">
+                                        <img src="assets/images/lion.jpg" style="width:100%">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="assets/images/safari.jpg" style="width:100%">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="assets/images/the.jpg" style="width:100%">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="assets/images/lions.jpg" style="width:100%">
                                     </div>
                                 </div>
-                        </div>
-                        </form>
-                        <!-- End page content -->
-                        </div>
-                        </main>
 
+                                <!-- Left and right controls -->
+                                <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                                    <span class="carousel-control-prev-icon"></span>
+                                </a>
+                                <a class="carousel-control-next" href="#demo" data-slide="next">
+                                    <span class="carousel-control-next-icon"></span>
+                                </a>
 
-            </section>
-            </section>
-            <section class="container">
-                <!-- footer section -->
-                <card class="container-fluid card">
+                            </div>
 
-
-                    <!-- footer section -->
-
-                    <div class="card container-fluid">
-                        <label for="uname"><b>Username</b></label>
-                        <input type="text" placeholder="Enter Username" name="uname" required>
-
-                        <label for="psw"><b>Password</b></label>
-                        <input type="password" placeholder="Enter Password" name="psw" required>
-
-                        <button type="submit">Login</button>
-                        <label>
-                            <input type="checkbox" checked="checked" name="remember"> Remember
-                            me
-                        </label>
+                        </section>
                     </div>
-
-                    <div class="container" style="background-color:#fcfbfa">
-                        <button type="button" class="cancelbtn">Cancel</button>
-                        <span class="pswbtn">Forgot <a href="#">password?</a></span>
-                        <input class="input padding-16 border" type="text" placeholder="Message" required name="Message">
-                    </div>
-                    </form>
-                    </div>
-                    <!-- Footer -->
-                    <!-- Footer -->
-
             </section>
-            <!-- footer section -->
-            <footer class=container-fluid>
+    </header>
+    <!-- main section-->
+    <Main class="container">
 
+        <section>
+
+        </section>
+    </Main>
+
+    <!-- footer section -->
+    <footer class="container-fluid card">
+
+
+        <!-- footer section -->
+
+        <div class="card container-fluid">
+            <label for="uname"><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" name="uname" required>
+
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+
+            <button type="submit">Login</button>
+            <label>
+                <input type="checkbox" checked="checked" name="remember"> Remember
+                me
+            </label>
+        </div>
+
+        <div class="container" style="background-color:#fcfbfa">
+            <button type="button" class="cancelbtn">Cancel</button>
+            <span class="pswbtn">Forgot <a href="#">password?</a></span>
+            <input class="input padding-16 border" type="text" placeholder="Message" required name="Message">
+        </div>
+        </form>
+        </div>
+        <!-- Footer -->
+        <!-- Footer -->
+
+        </section>
+        <!-- footer section -->
+        <footer class=container-fluid>
+
+
+
+            <!-- Footer -->
+            <footer class="table mr-12 tr-3 container-fluid">
 
 
                 <section class=" form col-sm s12 progress-section social">
@@ -312,7 +321,7 @@
                 <form class="autocomplete-items s12 opacity margin-bottom   container-fluid">
 
                     <!-- pop upform 3wschool snippet  -->
-                    <card action="/action_page.php">
+                    <form action="/action_page.php">
                         <div class="row">
 
                             <div class="container">
@@ -333,9 +342,9 @@
                                     Xascapade</a>
                             </p>
                         </div>
-                </form>
+                    </form>
 
-                </section>
+                    </section>
 
             </footer>
             </section>
@@ -366,7 +375,7 @@
             <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
             </script>
 
-        </body>
+</body>
 
 </html>
 </script>

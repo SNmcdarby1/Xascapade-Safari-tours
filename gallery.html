@@ -17,7 +17,7 @@
     <title>XASCAPADE</title>
 
 
-<body class="container-fluid">
+<body class="container-fluid card ">
     <header>
 
 
@@ -29,7 +29,7 @@
         <!-- body -->
 
         <body>
-            <section class="container-fluid">
+            <section class="card container-fluid">
                 <!-- snippet navbar selected by gitpod snippet tags ctrl=space keys -->
 
                 <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top topnav">
@@ -63,284 +63,170 @@
                     </div>
                 </nav>
                 </div>
+                <div class="dropdown-menu" aria-labelledby="dropdownId">
+                    <a class="dropdown-item" href="packages.html"><i class="fa fa-files" aria-hidden="true"></i>Packages</a>
+                    <a class="dropdown-item" href="reservation.html"><i class="fas fa-car" aria-hidden="true"></i>Reservations</a>
+
+                </div>
 
                 <head>
 
-                    <header class="container-fluid">
-                        <section class="d-inline-block text-truncate" style="max-width: 100%;">
-                            <div class="section-column header   d-inline-block text-truncate" style="max-width: 100%;">
+                    <header class="card container-fluid">
+                        <section class="container-fluid">
+                            <div class="section-column header d-inline-block text-truncate" style="max-width: 100%;">
 
                                 <h1>
                                     <i class="fas fa-h1"></i>
-                                    <span class="uppercase">XASCAPADE</span>
-                                    <h1><span>Travel
-                                        </span></h1>
+                                    <h1> <i class=" fas fa-h1"></i> <span class="uppercase">XASCAPADE</span>
+                                        <h1><span>Travel
+                                            </span></h1>
                             </div>
 
 
                     </header>
                     <main class="container-fluid card">
-                        <div class="navbar">
-                            <a href="packages.html">Safari packages</a>
-                            <a href="reservation.html">Accommodation type</a>
-                            <a href="book.html">Game Reserve</a>
-                            <a href="#" class="#">Inclusion</a>
+                        <section class="button">
+
+                            <!-- was inspired by the 3wschool example  -->
+                            <div class="dropdown text-center">
+                                <button class="dropbtn">More Info</button>
+                                <div class="dropdown-content">
+                                    <a href="safari.html">Safari Packages</a>
+                                    <a href="accommodation.html">Accommodations</a>
+                                    <a href="reservation.html">Reservation</a>
+                                </div>
+                            </div>
+                        </section>
+                        <div class="header">
+                            <h1>Responsive Image Grid</h1>
+                            <p>Resize the browser window to see the responsive effect.</p>
                         </div>
 
-                        <div class="row card">
-                            <div class="side">
-                                <h2 class="uppercase">About Me</h2>
-                                <h5 class="uppercase">Photo of me:</h5>
+                        <!-- Photo Grid -->
+                        <div>
 
-                            </div>
-                            </span>
+                            <img src="assets/images/cheetah.jpg" style="width:100%">
 
-                            <input type="text" class="form-control" name="name" id="name" placeholder="" aria-label="">
-                            <section class="container">
-                                <div class="gallery">
+                            <img src="assets/images/flaming.jpg style=" width:100%">
+                            <img src="assets/images/jean.jpg" style="width:100%">
+                            <img src="assets/images/leopard.jpg" style="width:100%">
+                            <img src="assets/images/lion.jpg" style="width:100%">
+                            <img src="assets/images/safari.jpg" style="width:100%">
 
-                                    <a target="_blank" href="#">
-                                        <picture class="d-inline-block text-truncate" style="max-width: 800px;">
-                                            <source srcset="assets/images/cheetah.jpg" type="image/svg+xml">
-                                            <img src="assets/images/cheetah.jpg" class="img-fluid img-thumbnail" alt="cheetah">
-                                    </a>
-                                    </picture>
-                                    <div class="desc">Book a saafari package to Masai Mara. Above is a picture taken of
-                                        cheetahs out looking for prey. Masai Mara animals include lions, cheetahs,
-                                        elephants, zebras and hippos. Wildebeest traverse its plains during their annual
-                                        migration. The landscape has grassy plains and rolling hills, and is crossed by
-                                        the Mara and Talek rivers</div>
+                            <img src="assets/images/the.jpg" style="width:100%">
+                            <img src="assets/images/urie.jpg" style="width:100%">
+                            <img src="assets/images/lions.jpg" style="width:100%">
+                            <img src="assets/images/giraffes-.jpg" style="width:100%">
+                            <img src="assets/images/flamingos.jpg" style="width:100%">
+
+
+                            <img src="assets/images/pop.jpg" style="width:100%">
+
+                            <img src="assets/images/leopard.jpg" style="width:100%">
+                            <img src="assets/images/red.jpg" style="width:100%">
+                            <img src="assets/images/qld.jpg" style="width:100%">
+                            <img src="assets/images/off.jpg" style="width:100%">
+
+
+                            <img src="assets/images/emma.jpg" style="width:100%">
+                            <img src="assets/images/bulgaria-sunny-beach.jpg" style="width:100%">
+                            <img src="assets/images/yuriy.jpg" style="width:100%">
+                            <img src="assets/images/urie.jpg" style="width:100%">
+
+                            <img src="assets/images/ron.jpg" style="width:100%">
+                        </div>
+                        </div>
+                        <!-- footer section -->
+
+
+                        <!-- Footer -->
+                        <footer class="card-body" class="table mr-12 tr-3 container-fluid">
+
+
+                            <section class=" form col-sm s12 progress-section social">
+                                <div class="card-body">
+                                    <form action="/action_page.php">
+                                        <div class="row">
+                                            <h5 style="text-align">Login with Social Media</h5>
+                                            <div class="vl">
+                                                <span class="vl-innertext">or</span>
+                                            </div>
+
+                                            <div class="col-sm">
+                                                <a href="#" class="fb btn">
+                                                    <i class="fa fa-facebook fa-fw"></i>
+                                                    Facebook
+                                                </a>
+                                                <a href="#" class="twitter btn">
+                                                    <i class="fa fa-twitter fa-fw"></i>
+                                                    Twitter
+                                                </a>
+                                                <a href="#" class="google btn">
+                                                    <i class="fa fa-google fa-fw"></i>
+                                                    Google+
+                                                </a>
+                                            </div>
+
+                                            <div class="col-sm">
+                                                <div class="hide-md-lg">
+                                                    <p>Or sign in manually:</p>
+                                                </div>
+
+                                                <input type="text" name="username" placeholder="Username" required>
+                                                <input type="password" name="password" placeholder="Password" required>
+                                                <input type="submit" value="Login">
+                                            </div>
+
+                                        </div>
+                                    </form>
                                 </div>
 
-                                <div class="gallery">
-                                    <a target="_blank" href="#">
-                                        <picture class="d-inline-block text-truncate" style="max-width: 800px;">
-                                            <source srcset="assets/images/uriel.jpg" type="image/svg+xml">
-                                            <img src="assets/images/uriel.jpg" class="img-fluid img-thumbnail" alt="Flamingos">
-                                        </picture>
-                                    </a>
-                                    <div class="desc">Lake Nakuru a soda lake abundance of algae used to attract a vast
-                                        quantity of flamingos that famously lined the shore</div>
-                                </div>
-
-                                <div class="gallery">
-                                    <a target="_blank" href="#">
-                                        <picture class="d-inline-block text-truncate" style="max-width: 800px;">
-                                            <source srcset="assets/images/red.jpg" type="image/svg+xml">
-                                            <img src="assets/images/red.jpg" class="img-fluid img-thumbnail" alt="Elephants">
-                                    </a>
-                                    </picture>
-                                    <div class="desc">Tsavo National park.The park forms the largest protected area in
-                                        Kenya and is home to most of the larger mammals, vast herds of dust –red
-                                        elephant, Rhino, buffalo, lion, leopards and many more.</div>
-                                </div>
-                                <div class="gallery">
-                                    <a target="_blank" href="#">
-                                        <picture class="d-inline-block text-truncate" style="max-width: 800px;">
-                                            <source srcset="assets/images/ron.jpg" type="image/svg+xml">
-                                            <img src="assets/images/ron.jpg" class="img-fluid img-thumbnail" alt="cheetah">
-
-                                    </a>
-                                    </picture>
-                                    <picture class="d-inline-block text-truncate" style="max-width: 800px;"></picture>
-                                    <source srcset="assets/images/giraffes.jpg" type="image/svg+xml">
-                                    <img src="assets/images/giraffes-.jpg" class="img-fluid img-thumbnail" alt="cheetah">
-                                    </a>
-                                    </picture>
-                                    <div class="desc">Nairobi National Park is a national park in Kenya that was
-                                        established in 1946 about 7 km south of Nairobi. It is fenced on three sides,
-                                        whereas the open southern boundary allows migrating wildlife to move between the
-                                        park and the adjacent Kitengela plains. Herbivores gather in the park during the
-                                        dry season.</div>
-                                </div>
-                            </section>
-                            <section class="container">
-                                <div id="demo" class="carousel slide" data-ride="carousel">
-
-                                    <!-- Indicators -->
-                                    <ul class="carousel-indicators">
-                                        <li data-target="#demo" data-slide-to="0" class="active"></li>
-                                        <li data-target="#demo" data-slide-to="1"></li>
-                                        <li data-target="#demo" data-slide-to="2"></li>
-                                        <li data-target="#demo" data-slide-to="3"></li>
-                                        <li data-target="#demo" data-slide-to="4"></li>
-                                        <li data-target="#demo" data-slide-to="5"></li>
-                                        <li data-target="#demo" data-slide-to="6"></li>
-                                    </ul>
-
-                                    <!-- The slideshow -->
-                                    <div class="carousel-inner">
-                                        <div class="carousel-item active">
-                                            <img src="assets/images/flaming.jpg" style="width:100%">
-
+                                <div class="bottom-container">
+                                    <div class="row">
+                                        <div class="col-sm">
+                                            <a href="#" style="color:white" class="btn">
+                                                <p>Sign up</p>
+                                            </a>
                                         </div>
-                                        <div class="carousel-item">
-                                            <img src="assets/images/jean.jpg" style="width:100%">
-                                        </div>
-                                        <div class="carousel-item">
-                                            <img src="assets/images/leopard.jpg" style="width:100%">
-                                        </div>
-
-                                        <div class="carousel-item">
-                                            <img src="assets/images/lion.jpg" style="width:100%">
-                                        </div>
-                                        <div class="carousel-item">
-                                            <img src="assets/images/safari.jpg" style="width:100%">
-                                        </div>
-                                        <div class="carousel-item">
-                                            <img src="assets/images/the.jpg" style="width:100%">
-                                        </div>
-                                        <div class="carousel-item">
-                                            <img src="assets/images/lions.jpg" style="width:100%">
+                                        <div class="col-sm">
+                                            <a href="#" style="color:white" class="btn">Forgot password?</a>
                                         </div>
                                     </div>
-
-                                    <!-- Left and right controls -->
-                                    <a class="carousel-control-prev" href="#demo" data-slide="prev">
-                                        <span class="carousel-control-prev-icon"></span>
-                                    </a>
-                                    <a class="carousel-control-next" href="#demo" data-slide="next">
-                                        <span class="carousel-control-next-icon"></span>
-                                    </a>
-
                                 </div>
-
                             </section>
-                        </div>
-            </section>
-    </header>
-    <!-- main section-->
-    <Main class="container">
-
-        <section>
-
-        </section>
-    </Main>
-
-    <!-- footer section -->
-    <footer class="container-fluid card">
-
-
-        <!-- footer section -->
-
-        <div class="card container-fluid">
-            <label for="uname"><b>Username</b></label>
-            <input type="text" placeholder="Enter Username" name="uname" required>
-
-            <label for="psw"><b>Password</b></label>
-            <input type="password" placeholder="Enter Password" name="psw" required>
-
-            <button type="submit">Login</button>
-            <label>
-                <input type="checkbox" checked="checked" name="remember"> Remember
-                me
-            </label>
-        </div>
-
-        <div class="container" style="background-color:#fcfbfa">
-            <button type="button" class="cancelbtn">Cancel</button>
-            <span class="pswbtn">Forgot <a href="#">password?</a></span>
-            <input class="input padding-16 border" type="text" placeholder="Message" required name="Message">
-        </div>
-        </form>
-        </div>
-        <!-- Footer -->
-        <!-- Footer -->
-
-        </section>
-        <!-- footer section -->
-        <footer class=container-fluid>
-
-
-
-            <!-- Footer -->
-            <footer class="table mr-12 tr-3 container-fluid">
-
-
-                <section class=" form col-sm s12 progress-section social">
-                    <div class="container">
-                        <form action="/action_page.php">
-                            <div class="row">
-                                <h5 style="text-align:center">Login with Social Media</h5>
-                                <div class="vl">
-                                    <span class="vl-innertext">or</span>
-                                </div>
-
-                                <div class="col-sm">
-                                    <a href="#" class="fb btn">
-                                        <i class="fa fa-facebook fa-fw"></i>
-                                        Facebook
-                                    </a>
-                                    <a href="#" class="twitter btn">
-                                        <i class="fa fa-twitter fa-fw"></i>
-                                        Twitter
-                                    </a>
-                                    <a href="#" class="google btn">
-                                        <i class="fa fa-google fa-fw"></i>
-                                        Google+
-                                    </a>
-                                </div>
-
-                                <div class="col-sm">
-                                    <div class="hide-md-lg">
-                                        <p>Or sign in manually:</p>
-                                    </div>
-
-                                    <input type="text" name="username" placeholder="Username" required>
-                                    <input type="password" name="password" placeholder="Password" required>
-                                    <input type="submit" value="Login">
-                                </div>
-
-                            </div>
-                        </form>
-                    </div>
-
-                    <div class="bottom-container">
-                        <div class="row">
-                            <div class="col-sm">
-                                <a href="#" style="color:white" class="btn">
-                                    <p>Sign up</p>
-                                </a>
-                            </div>
-                            <div class="col-sm">
-                                <a href="#" style="color:white" class="btn">Forgot password?</a>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <!-- w3school snippet -->
-                <!-- Footer -->
+                            <!-- w3school snippet -->
+                            <!-- Footer -->
 
 
 
 
-                <form class="autocomplete-items s12 opacity margin-bottom   container-fluid">
+                            <form class=" card autocomplete-items s12 opacity margin-bottom   container-fluid">
 
-                    <!-- pop upform 3wschool snippet  -->
-                    <form action="/action_page.php">
-                        <div class="row">
-
-                            <div class="container">
+                                <!-- pop upform 3wschool snippet  -->
                                 <form action="/action_page.php">
-                                    <h5>Find Us On</h5>
-                                    <div class="xlarge padding-16">
-                                        <i class="fa fa-facebook-official hover-opacity"></i>
-                                        <i class="fa fa-instagram hover-opacity"></i>
-                                        <i class="fa fa-snapchat hover-opacity"></i>
-                                        <i class="fa fa-pinterest-p hover-opacity"></i>
-                                        <i class="fa fa-twitter hover-opacity"></i>
-                                        <i class="fa fa-linkedin hover-opacity"></i>
+                                    <div class="row">
+
+                                        <div class="container">
+                                            <form action="/action_page.php">
+                                                <h5>Find Us On</h5>
+                                                <div class="xlarge padding-16">
+                                                    <i class="fa fa-facebook-official hover-opacity"></i>
+                                                    <i class="fa fa-instagram hover-opacity"></i>
+                                                    <i class="fa fa-snapchat hover-opacity"></i>
+                                                    <i class="fa fa-pinterest-p hover-opacity"></i>
+                                                    <i class="fa fa-twitter hover-opacity"></i>
+                                                    <i class="fa fa-linkedin hover-opacity"></i>
+                                                </div>
+                                            </form>
+                                        </div>
+
+                                        <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="hover-text-green" class="container" style="background-color:#e0ddd3">
+                                                Xascapade</a>
+                                        </p>
                                     </div>
                                 </form>
-                            </div>
 
-                            <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="hover-text-green" class="container" style="background-color:#e0ddd3">
-                                    Xascapade</a>
-                            </p>
-                        </div>
-                    </form>
-
-                    </section>
+            </section>
 
             </footer>
             </section>
@@ -371,7 +257,7 @@
             <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
             </script>
 
-</body>
+        </body>
 
 </html>
 </script>
