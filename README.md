@@ -66,8 +66,20 @@ It is a holiday booking platform-MS2 project
  * 
  * 
  * 
- * 
- * 
+ - Pixabay
+ * Image by Christine Sponchia from Pixabay 
+* Image by Kirsi Kataniemi from Pixabay
+* Image by PatternPictures from Pixabay 
+* Image by Herbert Aust from Pixabay 
+* Image by Michael Siebert from Pixabay
+* Image by ArtTower from Pixabay 
+* Image by Jakub Petrymusz from Pixabay
+* Image by Christo Ras from Pixabay 
+* Image by Sofie Zbořilová from Pixabay 
+* Image by bottlein from Pixabay
+* Image by Tati Halabi from Pixabay 
+* Image by Angie Göttling from Pixabay 
+
  * 
  * 
  
