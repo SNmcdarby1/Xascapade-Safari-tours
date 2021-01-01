@@ -1,24 +1,35 @@
-# Trav-Exppo
-A leisure travel platform for safaris
-
-# xascapadetravel
+# Xascapade Travel
+A leisure travel platform for safaris bookings in Kenya
 
 It is a holiday booking platform-MS2 project
 
 ### Table of Content
 
 1. Who are we
+ - We are a privately owned travel gaency company that does personalised safari travel packages in Kenya.
 
-- Project Strategy and Intent
-- Guiding Principles
-- Functionality and Subjectibility
+- Project Strategy and Intent is to personalise the tours according to the clients desires.
+- Guiding Principles is the brand to connect with the communities back in Kenya in both historical and cultural values.
+- Functionality and Subjectibility is to bring the feeling for clarity of the safaris in Kenya that will satisfy the need of the customer. 
 
 2 Approach
 
-- Research
+- Properties
+ * Linear properties
+ * The ease in and ease out of the pages to be visible and easy to navigate through the pages and to have a smoth transition in and ou of the pages.
 - Objectives
-- Purpose
+ * An experienced mapping .  * Collabotration packed with data
+                             * Time intense
+                             * Reliable data
+                             * 
+- Approaches
+ * Researching the travel platfrms
+ * Updating the products
+ * Share and innovation 
 - Value
+* current designs
+* Typography
+* 
 
 3 UX
 
@@ -29,14 +40,22 @@ It is a holiday booking platform-MS2 project
 - Wireframes
 
 4 Features
+* Images 
+* Contents
+* Social pages
+* Social links
+* Mapping 
+* Emailing process
+* Booking forms
+
 
 - Features used
 
 5 Technology
  - While doing my reasearch i came across materializes platform.This site inspired me by the endlook and feel of the website, It resonates with a suitable ux friendly look and feel that embodies a lot of the features.
-- Used w3school for snippets
+- Used w3school for snippets. I am inspire withthe look and feel of the navigation bar, and inputs examples in the w3school page.
 - Youtube tutorial
-
+There were different tuturial that i watched in youtube. Below are a few that reall inspired byhthe style and design of the page. 
 * During my reasearch i came across a youtube tutorial that was talking about Materialize platform (Materialise)[https://materializecss.com/media.html]for creating websites and snippets by (Traversy Media)[https://www.youtube.com/watch?v=MaP3vO-vEsg]. I used the tutorial to create the index page .
 
 - I also added Adam live server to checking live open source for the pages while coding
@@ -48,11 +67,12 @@ It is a holiday booking platform-MS2 project
  *  Decide to change the li element to lo because the ux appearance was not suitable to the and user friendly 6 Testing
 
  * While i was updating the git status i entered a git commit that change the changes that i had made . Resulted into doing a git reset command to using the SHA number f68f166.
- * The navigation bar is glitching the dropdown links are not visible in the mobile devise. I decided to change and delete the dropdown in the navigation bar and decided to add a button that has etra pages. 
- * 
+ * The navigation bar is glitching the dropdown links are not visible in the mobile devise. I decided to change and delete the dropdown in the navigation bar and decided to add    a button that has etra pages. 
+ * I encountered problems with the sidenav. Some of the content were not visible so i decided to change the design and use the navigation button that is displayed in w3school site.
 
 
-7 Deployment
+7 Deployment.
+I deployed the page in Github page under settings. 
 
 8 Testing
 
