@@ -84,192 +84,154 @@
 
 
                     </header>
-                    <div class="row card">
-                        <div class="side">
-                            <h2 class="uppercase">About Me</h2>
-                            <h5 class="uppercase>Photo of me:</h5>
-                            <div class=" img" style="height:200px;">Image
+                    <main class="container-fluid card">
+                        <div class="navbar">
+                            <a href="packages.html">Safari packages</a>
+                            <a href="reservation.html">Accommodation type</a>
+                            <a href="book.html">Game Reserve</a>
+                            <a href="#" class="#">Inclusion</a>
                         </div>
-                        <section class="container">
-                            <Section class="container-fluid inline-block">
-                                <div class="background-image" id="bgimg1">
-                                    <hr class="my-4 inline-block col-sm-4" id="bgimg1">
-                                    <div class="container">
+
+                        <div class="row card">
+                            <div class="side">
+                                <h2 class="uppercase">About Me</h2>
+                                <h5 class="uppercase>Photo of me:</h5>
+                            <div class=" img" style="height:200px;">Image
+                            </div>
+                            <section class="container">
+                                <Section class="container-fluid inline-block">
+                                    <div class="background-image" id="bgimg1">
+                                        <hr class="my-4 inline-block col-sm-4" id="bgimg1">
                                         <div class="container">
-                                            <form action="/action_page.php">
-
-                                                <h4>Reservation details</h4>
-                                                <div class="input-container">
-                                                    <i class="fa fa-user icon"></i>
-                                                    <input class="input-field" type="text" placeholder="Username" name="usrnm">
-                                                </div>
-
-                                                <div class="input-container">
-                                                    <i class="fa fa-envelope icon"></i>
-                                                    <input class="input-field" type="text" placeholder="Email" name="email">
-                                                </div>
-
-                                                <div class="input-container">
-                                                    <i class="fa fa-key icon"></i>
-                                                    <input class="input-field" type="password" placeholder="Password" name="psw">
-                                                </div>
+                                            <div class="container">
                                                 <form action="/action_page.php">
-                                                    <input type="file" id="myFile" name="filename">
-                                                    <input type="submit">
+
+                                                    <h4>Reservation details</h4>
+                                                    <div class="input-container">
+                                                        <i class="fa fa-user icon"></i>
+                                                        <input class="input-field" type="text" placeholder="Username" name="usrnm">
+                                                    </div>
+
+                                                    <div class="input-container">
+                                                        <i class="fa fa-envelope icon"></i>
+                                                        <input class="input-field" type="text" placeholder="Email" name="email">
+                                                    </div>
+
+                                                    <div class="input-container">
+                                                        <i class="fa fa-key icon"></i>
+                                                        <input class="input-field" type="password" placeholder="Password" name="psw">
+                                                    </div>
+                                                    <form action="/action_page.php">
+                                                        <input type="file" id="myFile" name="filename">
+                                                        <input type="submit">
+                                                    </form>
+
+
                                                 </form>
 
+                                                <div class="panel padding-16 white opacity card hover-opacity-off">
+                                                    <h2>Get the best offers first!</h2>
 
-                                            </form>
+                                                    <p>Join our newsletter.</p>
+                                                    <label>E-mail</label>
+                                                    <input class="input border" type="text" placeholder="Your Email address">
+                                                    <button type="button" class="button red margin-top">Subscribe</button>
+                                                </div>
 
-                                            <div class="panel padding-16 white opacity card hover-opacity-off">
-                                                <h2>Get the best offers first!</h2>
-
-                                                <p>Join our newsletter.</p>
-                                                <label>E-mail</label>
-                                                <input class="input border" type="text" placeholder="Your Email address">
-                                                <button type="button" class="button red margin-top">Subscribe</button>
                                             </div>
+                                            <!-- customer Reservation details-->
 
+
+                                            <form form action="/action_page.php" class="row-padding" style="margin:10 -16pxass=">
+                                                <div class="panel padding-16 white opacity card hover-opacity-off" class="searchForm" style="height:375px" ng-app="firstApp" ng-controller="formController">
+                                                    <h4 style="text-align: center">Safari package Search</h4>
+
+                                                    <form action="" role="form" id="form" class="form-horizontal" style="margin-left: 86px" method="get" ng-submit="processForm()">
+
+                                                        <div class="form-group text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.">
+                                                            <label for="keyword" class="col-sm-2 control-lable">keyword*</label>
+                                                            <div class="col-sm-10">
+                                                                <input type="text" class="form-control" id="keyword" ng-model="formData.keyword" name="keyword" data-bv-message="Please enter a keyword" required data-bv-notempty-message="" style="width: 386px; margin-left: 21px;">
+                                                            </div>
+                                                        </div>
+
+
+                                                        <div class="form-group">
+                                                            <label for="Category" class="col-sm-2 control-lable">Category</label>
+                                                            <div class="col-sm-10">
+                                                                <select name="category" class="form-control" id="Category" ng-model="formData.category" style="margin-left: 23px; width: 270px;">
+                                                                    <option value="Default">Default</option>
+                                                                    <option value="Airport">Airport</option>
+                                                                    <option value="Amusement_Park">Amusement Park</option>
+                                                                    <option value="Aquarium">Aquarium</option>
+                                                                    <option value="Art_Gallery">Art Gallery</option>
+                                                                    <option value="Bakery">Bakery</option>
+                                                                    <option value="Bar">Bar</option>
+                                                                    <option value="Beauty_Salon">Beauty Salon</option>
+                                                                    <option value="Bowling_Alley">Bowling Alley</option>
+                                                                    <option value="Bus_Station">Bus Station</option>
+                                                                    <option value="Cafe">Cafe</option>
+                                                                    <option value="Campground">Campground</option>
+                                                                    <option value="Car_Rental">Car Rental</option>
+                                                                    <option value="Casino">Casino</option>
+                                                                    <option value="Lodging">Lodging</option>
+                                                                    <option value="Movie_Theater">Movie Theater</option>
+                                                                    <option value="Museum">Museum</option>
+                                                                    <option value="Night_Club">Night Club</option>
+                                                                    <option value="Park">Park</option>
+                                                                    <option value="Parking">Parking</option>
+                                                                    <option value="Restaurant">Restaurant</option>
+                                                                    <option value="Shopping_Mall">Shopping Mall</option>
+                                                                    <option value="Stadium">Stadium</option>
+                                                                    <option value="Subway_Station">Subway Station</option>
+                                                                    <option value="Taxi_Stand">Taxi Stand</option>
+                                                                    <option value="Train_Station">Train Station</option>
+                                                                    <option value="Transit_Station">Transit Station</option>
+                                                                    <option value="Travel_Agency">Travel Agency</option>
+                                                                    <option value="Zoo">Zoo</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </form>
+
+                                                    <!-- End page content -->
+                                                </div>
+                                            </form>
+                                            <!-- w3school snippet -->
+                                            <footer class="container-fluid card">
+
+
+                                                <!-- footer section -->
+
+                                                <div class="card container-fluid">
+                                                    <label for="uname"><b>Username</b></label>
+                                                    <input type="text" placeholder="Enter Username" name="uname" required>
+
+                                                    <label for="psw"><b>Password</b></label>
+                                                    <input type="password" placeholder="Enter Password" name="psw" required>
+
+                                                    <button type="submit">Login</button>
+                                                    <label>
+                                                        <input type="checkbox" checked="checked" name="remember"> Remember
+                                                        me
+                                                    </label>
+                                                </div>
+
+                                                <div class="container" style="background-color:#fcfbfa">
+                                                    <button type="button" class="cancelbtn">Cancel</button>
+                                                    <span class="pswbtn">Forgot <a href="#">password?</a></span>
+                                                    <input class="input padding-16 border" type="text" placeholder="Message" required name="Message">
+                                                </div>
+                                                </form>
                                         </div>
-                                        <!-- customer Reservation details-->
+                                        <!-- Footer -->
+                                        <!-- Footer -->
 
-
-                                        <form form action="/action_page.php" class="row-padding" style="margin:10 -16pxass=">
-                                            <div class="panel padding-16 white opacity card hover-opacity-off" class="searchForm" style="height:375px" ng-app="firstApp" ng-controller="formController">
-                                                <h4 style="text-align: center">Travel and Entertainment Search</h4>
-
-                                                <form action="" role="form" id="form" class="form-horizontal" style="margin-left: 86px" method="get" ng-submit="processForm()">
-
-                                                    <div class="form-group text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.">
-                                                        <label for="keyword" class="col-sm-2 control-lable">keyword*</label>
-                                                        <div class="col-sm-10">
-                                                            <input type="text" class="form-control" id="keyword" ng-model="formData.keyword" name="keyword" data-bv-message="Please enter a keyword" required data-bv-notempty-message="" style="width: 386px; margin-left: 21px;">
-                                                        </div>
-                                                    </div>
-
-
-                                                    <div class="form-group">
-                                                        <label for="Category" class="col-sm-2 control-lable">Category</label>
-                                                        <div class="col-sm-10">
-                                                            <select name="category" class="form-control" id="Category" ng-model="formData.category" style="margin-left: 23px; width: 270px;">
-                                                                <option value="Default">Default</option>
-                                                                <option value="Airport">Airport</option>
-                                                                <option value="Amusement_Park">Amusement Park</option>
-                                                                <option value="Aquarium">Aquarium</option>
-                                                                <option value="Art_Gallery">Art Gallery</option>
-                                                                <option value="Bakery">Bakery</option>
-                                                                <option value="Bar">Bar</option>
-                                                                <option value="Beauty_Salon">Beauty Salon</option>
-                                                                <option value="Bowling_Alley">Bowling Alley</option>
-                                                                <option value="Bus_Station">Bus Station</option>
-                                                                <option value="Cafe">Cafe</option>
-                                                                <option value="Campground">Campground</option>
-                                                                <option value="Car_Rental">Car Rental</option>
-                                                                <option value="Casino">Casino</option>
-                                                                <option value="Lodging">Lodging</option>
-                                                                <option value="Movie_Theater">Movie Theater</option>
-                                                                <option value="Museum">Museum</option>
-                                                                <option value="Night_Club">Night Club</option>
-                                                                <option value="Park">Park</option>
-                                                                <option value="Parking">Parking</option>
-                                                                <option value="Restaurant">Restaurant</option>
-                                                                <option value="Shopping_Mall">Shopping Mall</option>
-                                                                <option value="Stadium">Stadium</option>
-                                                                <option value="Subway_Station">Subway Station</option>
-                                                                <option value="Taxi_Stand">Taxi Stand</option>
-                                                                <option value="Train_Station">Train Station</option>
-                                                                <option value="Transit_Station">Transit Station</option>
-                                                                <option value="Travel_Agency">Travel Agency</option>
-                                                                <option value="Zoo">Zoo</option>
-                                                            </select>
-                                                        </div>
-                                                    </div>
-                                                </form>
-
-                                                <!-- End page content -->
-                                            </div>
-                                        </form>
-                                        <!-- w3school snippet -->
-                                        <footer class="container-fluid card">
-
-
-                                            <!-- footer section -->
-
-                                            <div class="card container-fluid">
-                                                <label for="uname"><b>Username</b></label>
-                                                <input type="text" placeholder="Enter Username" name="uname" required>
-
-                                                <label for="psw"><b>Password</b></label>
-                                                <input type="password" placeholder="Enter Password" name="psw" required>
-
-                                                <button type="submit">Login</button>
-                                                <label>
-                                                    <input type="checkbox" checked="checked" name="remember"> Remember
-                                                    me
-                                                </label>
-                                            </div>
-
-                                            <div class="container" style="background-color:#fcfbfa">
-                                                <button type="button" class="cancelbtn">Cancel</button>
-                                                <span class="pswbtn">Forgot <a href="#">password?</a></span>
-                                                <input class="input padding-16 border" type="text" placeholder="Message" required name="Message">
-                                            </div>
-                                            </form>
-                                    </div>
-                                    <!-- Footer -->
-                                    <!-- Footer -->
-
-                            </section>
-                            <!-- footer section -->
-                            <footer class=container-fluid>
-
+                                </section>
+                                <!-- footer section -->
+                                <section class=container-fluid>
+                                </section>
                                 <!-- Footer -->
-                                <div class="display-cover" style="width:65%">
-                                    <div class="bar mr-12 tr-3 container-fluid">
-                                        <button class="bar-item button tablink" onclick="openLink(event, 'Flight');"><i class="fa fa-plane w3-margin-right"></i>Flight</button>
-                                        <button class="bar-item button tablink" onclick="openLink(event, 'Hotel');"><i class="fa fa-bed margin-right"></i>Hotel</button>
-                                        <button class="bar-item button tablink" onclick="openLink(event, 'Car');"><i class="fa fa-car margin-right"></i>Rental</button>
-                                    </div>
-
-                                    <!-- Tabs -->
-                                    <div id="Flight" class="container white padding-16 myLink">
-                                        <h3>Book holiday packages with us</h3>
-                                        <div class="row-padding" style="margin:0 -16px;">
-                                            <div class="half">
-                                                <label>From</label>
-                                                <input class="input border" type="text" placeholder="Departing from">
-                                            </div>
-                                            <div class="half">
-                                                <label>To</label>
-                                                <input class="input border" type="text" placeholder="Arriving at">
-                                            </div>
-                                        </div>
-                                        <p><button class="button dark-grey">Search and find dates</button></p>
-                                    </div>
-                                    <form autocomplete="off" action="/action_page.php">
-                                        <div class="autocomplete" style="width:300px;">
-                                            <input id="myInput" type="text" name="myCountry" placeholder="Country">
-                                        </div>
-                                        <input type="submit">
-                                    </form>
-
-                                    <div id="Hotel" class="container white padding-16 myLink">
-                                        <h3>Find the best hotels</h3>
-                                        <p>Book a hotel with us and get the best fares and promotions.</p>
-                                        <p>We know hotels - we know comfort.</p>
-                                        <p><button class="button dark-grey">Search Hotels</button></p>
-                                    </div>
-
-                                    <div id="Car" class="container white padding-16 myLink">
-                                        <h3>Best car rental in the world!</h3>
-                                        <p><span class="tag deep-orange">DISCOUNT!</span> Special offer if you book
-                                            today: 25% off
-                                            anywhere in the world with CarServiceRentalRUs</p>
-                                        <input class="input border" type="text" placeholder="Pick-up point">
-
-                                        <p><button class="button dark-grey">Search Availability</button></p>
-                                    </div>
-                                </div>
 
                                 <!-- Footer -->
                                 <footer class="table mr-12 tr-3 container-fluid">
@@ -358,9 +320,9 @@
                                             </div>
                                         </form>
 
-                        </section>
+                            </section>
 
-                        </footer>
+                            </footer>
             </section>
 
 
