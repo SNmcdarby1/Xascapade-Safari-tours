@@ -414,7 +414,7 @@ selector:pseudo-class {
 }
 
 a:link {
-    color: #FF0000;
+    color: rgb(8, 119, 54);
 }
 
 /* visited link */
