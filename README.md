@@ -14,25 +14,25 @@ It is a holiday booking platform-MS2 project
 
 2 Approach
 
- Properties
+a) Properties
  
  * Linear properties
  * The ease in and ease out of the pages to be visible and easy to navigate through the pages and to have a smoth transition in and ou of the pages.
  
 
- Objectives
+b) Objectives
  
  * * An experienced mapping.  * Collabotration packed with data
                              * Time intense
                              * Reliable data
                              * 
- Approaches
+ c)Approaches
  
  * Researching the travel platfrms
  * Updating the products
  * Share and innovation 
  
- Value
+ d)Value
  
 * current designs
 * Typography
