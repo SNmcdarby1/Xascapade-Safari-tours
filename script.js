@@ -17,6 +17,7 @@ $(document).ready(function() {
         $(this).hide();
     });
 });
+
 $('.collapse').collapse()
 
 function openForm() {
@@ -30,68 +31,36 @@ function closeForm() {
     document.getElementById("myForm").style.display = "none";
 }
 
-// Navbar brand
-//
-// Used for brand, project, or site names.
+var coll = document.getElementsByClassName("collapsible");
+var i;
 
-.navbar - brand {
-        display: inline - block;
-        padding - top: $navbar - brand - padding - y;
-        padding - bottom: $navbar - brand - padding - y;
-        margin - right: $navbar - padding - x;
-        @include font - size($navbar - brand - font - size);
-        line - height: inherit;
-        white - space: nowrap;
-
-        @include hover - focus() {
-            text - decoration: none;
+for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+            content.style.display = "none";
+        } else {
+            content.style.display = "block";
         }
-    }
+    });
+}
 
+var coll = document.getElementsByClassName("collapsible");
+var i;
 
-    // Navbar nav
-    //
-    // Custom navbar navigation (doesn't require `.nav`, but does make use of `.nav-link`).
-
-    .navbar - nav {
-        display: flex;
-        flex - direction: column; // cannot use `inherit` to get the `.navbar`s value
-        padding - left: 0;
-        margin - bottom: 0;
-        list - style: none;
-
-        .nav - link {
-            padding - right: 0;
-            padding - left: 0;
+for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+            content.style.display = "none";
+        } else {
+            content.style.display = "block";
         }
-
-        .dropdown - menu {
-            position: static;
-            float: none;
-        }
-    }
-
-
-    // Navbar text
-    //
-    //
-
-    .navbar - text {
-        display: inline - block;
-        padding - top: $nav - link - padding - y;
-        padding - bottom: $nav - link - padding - y;
-    }
-
-
-    // Responsive navbar
-    //
-    // Custom styles for responsive collapsing and toggling of navbar contents.
-    // Powered by the collapse Bootstrap JavaScript plugin.
-
-    // When collapsed, prevent the toggleable navbar contents from appearing in
-    // the default flexbox row orientation. Requires the use of `flex-wrap: wrap`
-    // on the `.navbar` parent.
-    .navbar - collapse {
+    });
+}
+.navbar - collapse {
         flex - basis: 100 % ;
         flex - grow: 1;
         // For always expanded or extra full navbars, ensure content aligns itself
