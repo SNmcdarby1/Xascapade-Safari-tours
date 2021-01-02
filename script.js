@@ -1,7 +1,7 @@
 // Sidenav
 var e = element();
-const icons = document.querySelector('.sidenav');
-M.SideNav.init(SideNav, {
+const icons = document.querySelector('.nav');
+M.Nav.init(Nav, {
     menu
 });
 

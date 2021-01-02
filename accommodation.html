@@ -100,202 +100,290 @@
 
 
 
-    <button class="bar-item button tablink" onclick="openLink(event, 'Hotel');"><i class="fa fa-bed margin-right"></i>Hotel</button>
-
-
-
-
-    <section class=" no-gutter">
-
-        <div class="">
-            <div class="container">
-
-
-                <section id="srch_frm_hotel_single">
-                    <div class="row">
-                        <div class="col-sm">
-                            <div class="form-group">
-                                <label for="checkin">Check in date:</label>
-                                <div class="popover-icon" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="right" data-content="">
-                                    <i class="fa fa-info-circle fa-lg"> </i>
-                                </div>
-                                <div class="content-checkin-data">
-                                    <i class="fa fa-bed infield"></i>
-                                    <input type="text" name="txtDepCity1" class="txtDepCity cls_autofill form-control" value="" placeholder="Check-In" onFocus="focusObj(this);" onBlur="blurObj(this);" onChange="copyTextbox(this, document.getElementById('txtArrCity2'));" autocomplete="off" id="txtDepCity1">
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-sm">
-                            <div class="form-group">
-                                <label for="checkout">check out date:</label>
-                                <div class="popover-icon" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="right" data-content="Check-out is from 12:00">
-                                    <i class="fa fa-info-circle fa-lg">
-                                    </i> </div>
-                                <div class="content-checkin-data">
-                                    <i class="fa fa-bed infield"></i>
-                                    <input type="text" name="txtArrCity1" class="txtDepCity cls_autofill form-control" value="" defValue="Arrival" placeholder="checkout" onFocus="focusObj(this);" onBlur="blurObj(this);" onChange="copyTextbox(this, document.getElementById('txtDepCity2'));" autocomplete="off" id="txtArrCity1">
-                                </div>
-                            </div>
-                        </div>
+    <button class="bar-item button tablink" onclick="openLink(event, 'Hotel');"><i class="fa fa-bed margin-right">
+            <div class="">
+                <div class="container">
+                    <div class="form-group">
+                        <label for=""></label>
+                        <input type="text" name="" id="" class="form-control" placeholder="" aria-describedby="helpId">
+                        <small id="helpId" class="text-muted">Help text</small>
                     </div>
+                    <form action="destination.html" method="GET">
+                        <fieldset>
+                            <legend>Personal Details:</legend>
+                            <label for="name">Username</label><input type="text" name="username" id="username" type="date" name="date">
+                            <label for="name">Email</label><input type="text" name="email" id="email" type="email" name="email">
+                            <label for="name">Phone</label><input type="text" name="Phone" id="Phone" type="phone" name="phone">
+                            <select name="town" required>
+                                <option value="Nairobi"></option>
+                                <option value="Mombasa"></option>
+                                <option value="Nakuru"></option>
+                                <option value="Kisumu"></option>
 
-                    <div class="row  container-fluid">
-                        <div class="col-sm">
-                            <div class="form-group">
-                                <label for="checkin">Arrival date</label>
-                                <div class="popover-icon" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="right" data-content="Check-In is from 11:00">
-                                    <i class="fa fa-info-circle fa-lg">
-                                    </i> </div>
-                                <div class="content-checkin-data">
-                                    <i class="fa fa-calendar infield"></i>
-                                    <input name="txtDate1" type="text" id="checkin" value="" class="form-control checkin" placeholder="Check in Date" />
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-sm">
-                            <div class="form-group return_panel">
-                                <label for="checkout">Check out date </label>
-                                <div class="popover-icon" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="right" data-content="Check-out is from 12:00">
-                                    <i class="fa fa-info-circle fa-lg">
-                                    </i> </div>
-                                <div class="content-check-in-data">
-                                    <i class="fa fa-calendar infield"></i>
-                                    <input name="txtDate2" type="text" id="checkout" value="" class="form-control checkout" placeholder="Return Date" />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="container  container-fluid">
-                        <div class="col-sm">
-                            <div class="col-sm-4 adult-book">
-                                <div class="form-group">
-                                    <div class="guests-select">
-                                        <label>Adults (12+)</label>
-                                        <!-- <i class="fa fa-user infield"></i> -->
-                                        <div class="popover-icon" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="right" data-content="+12 years">
-                                            <i class="fa fa-info-circle fa-lg">
-                                            </i>
+                            </select>
+                        </fieldset>
+                        <br>
+                        <fieldset> <i class="fa fa-info-circle fa-lg"></i>
+                            <legend>Booking Details:</legend>
+                            <input type="date" name="date" min="2021-Jan-05"> <i class="fa fa-info-circle fa-lg"></i>
+                            <label for="date">Booking date:</label><input type="date" name="date" type="date" name="date">
+                            <label for="numberOfGuest">Number Of Guest</label><input id="numberOfGuest" name="numberOfGuest" :</label><input type="number" name="numberOfGuests" min='1' max='6' id="">
+                            <p>Do you require meals?</p> <i class="fa fa-info-circle fa-lg"></i>
+                            <label for="YesMeals">Yes</label><input id="yesMeals" type="radio" name="meals" value="yesMeals">v <i class="fa fa-info-circle fa-lg"></i>
+                            <label for="noMeals">No Meals</label><input id=noMeals type="radio" name="meals" value="noMeals"> <i class="fa fa-info-circle fa-lg"></i>
+                            <br>
+                            <label for="standardRoom">Standard Room</label><input type="checkbox" name="standardRoom" value="yes" checked> <i class="fa fa-info-circle fa-lg"></i>
+                            <label for="standardRoom">Standard Room</label><input type="checkbox" name="standardRoom" value="no" checked> <i class="fa fa-info-circle fa-lg"></i>
+                            <label for="doubleRoom">Double Room</label><input type="checkbox" name="doubleRoom" value="yes" checked> <i class="fa fa-info-circle fa-lg"></i>
+                            <label for="doubleRoom">Double Room</label><input type="checkbox" name="doubleRoom" value="no" checked> <i class="fa fa-info-circle fa-lg"></i>
+                            <label for="BookSafari">Book Safari</label><input type="checkbox" name="bookSafari" value="yes" checked> <i class="fa fa-info-circle fa-lg"></i>
+                            <label for="NoSafari">Standard Room</label><input type="checkbox" name="noSafari" value="no" checked> <i class="fa fa-info-circle fa-lg"></i>
+                            <input type="image" src="assets/image/room.jpg" alt="Submit" bd-placeholder-img="">
+                            <section id="srch_frm_hotel_single">
+                                <div class="row">
+                                    <div class="col-sm">
+                                        <div class="form-group">
+                                            <legend>Booking Details:</legend>
+                                            <label for="checkin">Check in date:</label>
+                                            <div class="popover-icon" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="right" data-content="">
+                                                <i class="fa fa-info-circle fa-lg"> </i>
+                                            </div>
+                                            <div class="content-checkin-data">
+                                                <i class="fa fa-bed infield"></i>
+                                                <input type="text" name="txtDepCity1" class="txtDepCity cls_autofill form-control" value="" placeholder="Check-In" onFocus="focusObj(this);" onBlur="blurObj(this);" onChange="copyTextbox(this, document.getElementById('txtArrCity2'));" autocomplete="off" id="txtDepCity1">
+                                            </div>
                                         </div>
-                                        <select name="ddlPaxADT" id="ddlPaxADT" class="form-control">
-                                            <option selected="selected" value="1">1</option>
-                                            <option value="2">2</option>
-                                            <option value="3">3</option>
-                                            <option value="4">4</option>
-                                            <option value="5">5</option>
-                                            <option value="6">6</option>
-                                        </select>
+                                    </div>
 
+                                    <p>Do you require meals?</p>
+                                    <div class="col-sm">
+                                        <div class="form-group">
+                                            <label for="checkout">check out date:<label for="numberOfGuest">Number Of
+                                                    Guest</label><input id="numberOfGuest" name="numberOfGuest" :</label><input type="number" name="numberOfGuests" min='1' max='6' id=""></label>
+                                            <div class="popover-icon" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="right" data-content="Check-out is from 12:00">
+                                                <i class="fa fa-info-circle fa-lg">
+                                                </i>
+                                                <label for="numberOfGuest">Number Of Guest</label><input id="numberOfGuest" name="numberOfGuest" :</label><input type="number" name="numberOfGuests" min='1' max='6' id=""></div>
+                                            <div class="content-checkin-data">
+                                                <i class="fa fa-bed infield"></i> <label for="date">Booking
+                                                    date:</label><input type="date" name="date" type="date" name="date">
+                                                <input type="text" name="txtArrCity1" class="txtDepCity cls_autofill form-control" value="" defValue="Arrival" placeholder="checkout" onFocus="focusObj(this);" onBlur="blurObj(this);" onChange="copyTextbox(this, document.getElementById('txtDepCity2'));" autocomplete="off" id="txtArrCity1">
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="col-sm adult-book">
-                                <div class="form-group">
-                                    <div class="guests-select">
-                                        <label>Kids (2-11)</label>
-                                        <div class="popover-icon" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="right" data-content="2 till 11 years">
-                                            <i class="fa fa-info-circle fa-lg">
-                                            </i> </div>
-                                        <select name="ddlPaxCHD" id="ddlPaxCHD" class="form-control">
-                                            <option value="0">0</option>
-                                            <option value="1">1</option>
-                                            <option value="2">2</option>
-                                            <option value="3">3</option>
-                                            <option value="4">4</option>
-                                            <option value="5">5</option>
-                                        </select>
+
+                                <div class="row  container-fluid">
+                                    <div class="col-sm">
+                                        <div class="form-group">
+                                            <label for="checkin"> <label for="date">Booking date:</label><input type="date" name="date" type="date" name="date"> Arrival
+                                                date</label>
+                                            <div class="popover-icon" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="right" data-content="Check-In is from 11:00">
+                                                <i class="fa fa-info-circle fa-lg">
+                                                </i> </div>
+                                            <div class="content-checkin-data">
+                                                <i class="fa fa-calendar infield"></i>
+                                                <input name="txtDate1" type="text" id="checkin" value="" class="form-control checkin" placeholder="Check in Date" />
+                                                <label for="date">Booking date:</label><input type="date" name="date" type="date" name="date">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm">
+                                        <div class="form-group return_panel">
+                                            <label for="checkout">Check out date </label>
+                                            <div class="popover-icon" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="right" data-content="Check-out is from 12:00">
+                                                <i class="fa fa-info-circle fa-lg"> </i> </div>
+                                            <div class="content-check-in-data">
+                                                <i class="fa fa-calendar infield"></i>
+                                                <label for="date">Check out date :</label> <input name="txtDate2" type="text" id="checkout" value="" class="form-control checkout" placeholder="Return Date" />
+
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="col sm-4 child">
-                                <div class="form-group">
-                                    <div class="guests-select">
-                                        <label>infant (0-2)</label>
-                                        <div class="popover-icon" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="right" data-content="0 till 1 years">
-                                            <i class="fa fa-info-circle fa-lg">
-                                            </i> </div>
-                                        <select name="ddlPaxINF" id="ddlPaxINF" class="form-control">
-                                            <option value="0">0</option>
-                                            <option value="1">1</option>
-                                            <option value="2">2</option>
-                                            <option value="3">3</option>
-                                        </select>
+
+                                <div class="container  container-fluid">
+                                    <div class="col-sm">
+                                        <div class="col-sm-4 adult-book">
+                                            <div class="form-group">
+                                                <div class="guests-select">
+                                                    <label>Adults (12+)</label>
+                                                    <!-- <i class="fa fa-user infield"></i> -->
+                                                    <div class="popover-icon" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="right" data-content="+12 years">
+                                                        <i class="fa fa-info-circle fa-lg">
+                                                        </i>
+                                                    </div>
+                                                    <select name="ddlPaxADT" id="ddlPaxADT" class="form-control">
+                                                        <option selected="selected" value="1">1</option>
+                                                        <option value="2">2</option>
+                                                        <option value="3">3</option>
+                                                        <option value="4">4</option>
+                                                        <option value="5">5</option>
+                                                        <option value="6">6</option>
+                                                    </select>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm adult-book">
+                                            <div class="form-group">
+                                                <div class="guests-select">
+                                                    <label>Kids (2-11)</label>
+                                                    <div class="popover-icon" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="right" data-content="2 till 11 years">
+                                                        <i class="fa fa-info-circle fa-lg">
+                                                        </i> </div>
+                                                    <select name="ddlPaxCHD" id="ddlPaxCHD" class="form-control">
+                                                        <option value="0">0</option>
+                                                        <option value="1">1</option>
+                                                        <option value="2">2</option>
+                                                        <option value="3">3</option>
+                                                        <option value="4">4</option>
+                                                        <option value="5">5</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col sm-4 child">
+                                            <div class="form-group">
+                                                <div class="guests-select">
+                                                    <label>infant (0-2)</label>
+                                                    <div class="popover-icon" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="right" data-content="0 till 1 years">
+                                                        <i class="fa fa-info-circle fa-lg">
+                                                        </i> </div>
+                                                    <select name="ddlPaxINF" id="ddlPaxINF" class="form-control">
+                                                        <option value="0">0</option>
+                                                        <option value="1">1</option>
+                                                        <option value="2">2</option>
+                                                        <option value="3">3</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
+                                    <div class="">
+                                        <div class="container">
+                                            <div class="form-group">
+                                                <label for=""></label>
+                                                <input type="text" name="" id="" class="form-control" placeholder="" aria-describedby="helpId">
+                                                <small id="helpId" class="text-muted">Help text</small>
+                                            </div>
+                                            <form action="destination.html" method="GET">
+                                                <fieldset>
+                                                    <legend>Personal Details:</legend>
+                                                    <label for="name">Username</label><input type="text" name="username" id="username" type="date" name="date">
+                                                    <label for="name">Email</label><input type="text" name="email" id="email" type="email" name="email">
+                                                    <label for="name">Phone</label><input type="text" name="Phone" id="Phone" type="phone" name="phone">
+                                                    <select name="town" required>
+                                                        <option value="Nairobi"></option>
+                                                        <option value="Mombasa"></option>
+                                                        <option value="Nakuru"></option>
+                                                        <option value="Kisumu"></option>
+
+                                                    </select>
+                                                </fieldset>
+                                                <br>
+                                                <fieldset> <i class="fa fa-info-circle fa-lg"></i>
+                                                    <legend>Booking Details:</legend>
+                                                    <input type="date" name="date" min="2021-Jan-05"> <i class="fa fa-info-circle fa-lg"></i>
+                                                    <label for="date">Booking date:</label><input type="date" name="date" type="date" name="date">
+                                                    <label for="numberOfGuest">Number Of Guest</label><input id="numberOfGuest" name="numberOfGuest" :</label><input type="number" name="numberOfGuests" min='1' max='6' id="">
+                                                    <p>Do you require meals?</p> <i class="fa fa-info-circle fa-lg"></i>
+                                                    <label for="YesMeals">Yes</label><input id="yesMeals" type="radio" name="meals" value="yesMeals">v <i class="fa fa-info-circle fa-lg"></i>
+                                                    <label for="noMeals">No Meals</label><input id=noMeals type="radio" name="meals" value="noMeals"> <i class="fa fa-info-circle fa-lg"></i>
+                                                    <br>
+                                                    <label for="standardRoom">Standard Room</label><input type="checkbox" name="standardRoom" value="yes" checked> <i class="fa fa-info-circle fa-lg"></i>
+                                                    <label for="standardRoom">Standard Room</label><input type="checkbox" name="standardRoom" value="no" checked> <i class="fa fa-info-circle fa-lg"></i>
+                                                    <label for="doubleRoom">Double Room</label><input type="checkbox" name="doubleRoom" value="yes" checked> <i class="fa fa-info-circle fa-lg"></i>
+                                                    <label for="doubleRoom">Double Room</label><input type="checkbox" name="doubleRoom" value="no" checked> <i class="fa fa-info-circle fa-lg"></i>
+                                                    <label for="BookSafari">Book Safari</label><input type="checkbox" name="bookSafari" value="yes" checked> <i class="fa fa-info-circle fa-lg"></i>
+                                                    <label for="NoSafari">Standard Room</label><input type="checkbox" name="noSafari" value="no" checked> <i class="fa fa-info-circle fa-lg"></i>
+                                                    <input type="image" src="assets/image/room.jpg" alt="Submit" bd-placeholder-img="">
+
+                                                </fieldset>
+
+                                            </form>
+
+
+                                            <div class="card-body" class="col-sm-6 no_left_padding no_right_padding">
+                                                <div class="form-group">
+                                                    <label for="srch_frm_hotel_single">Hotels</label>
+                                                    <select name="hotel" id="hotel" class="form-control">
+                                                        <option value="" selected>No Preference
+                                                        </option>
+                                                        <option value="*O">*Sarova Hotels
+                                                        </option>
+                                                        <option value="*A">*Serena hotels
+                                                        </option>
+                                                        <option value="*S">*Intercontinental Hotels
+                                                        </option>
+                                                        <option value="*C">*Camping
+                                                        </option>
+                                                        <option value="*K">*AirBnB
+                                                        </option>
+                                                        <option value="JP">Safari Park Hotel Nairobi
+                                                        </option>
+                                                        <option value="EI">Diani Hotel </option>
+                                                        <option value="JR">White Sands Holtel
+                                                        </option>
+                                                        <option value="ML">Nakuru Lodge Hotel
+                                                        </option>
+                                                        <option value="PL">Intercontinental Hotel Nairobi</option>
+                                                        <option value="SX">Stanlley Hotel Nairobi
+                                                        </option>
+                                                        <option value="SU">Red Elephant Hotel Tsavo</option>
+                                                        <option value="AR">Reef Hotel Mombasa
+                                                        </option>
+                                                        <option value="VW">Nyali Hotel Mombasa
+                                                        </option>
+                                                        <option value="AM">Voyager Hotel Mombasa</option>
+                                                        <option value="5L">African Safari Club Mombasa</option>
+                                                        <option value="DP">La Pelgola Malindi</option>
+                                                        <option value="DP">Mada Hotel Kilifi</option>
+                                                        <option value="RK">Bamburi Beach Resort Mombasa</option>
+                                                        <option value="AH">Kilifi Bay Resort Kilifi</option>
+                                                        <option value="FQ">Sun and Sand Club Mombasa</option>
+                                                        <option value="UU">Turtle Bay Watamu</option>
+                                                        <option value="7L">Windsor Hotel Nairobi</option>
+                                                        <option value="AC">FairMount Hotel and Resort Nairobi</option>
+
+                                                        </option>
+
+
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
                                 </div>
-                            </div>
-                        </div>
+                </div>
+                <div class="row">
 
-
-                        <div class="card-body" class="col-sm-6 no_left_padding no_right_padding">
-                            <div class="form-group">
-                                <label for="ddlAirline">Hotels</label>
-                                <select name="ddlAirline" id="ddlAirline" class="form-control">
-                                    <option value="" selected>No Preference
-                                    </option>
-                                    <option value="*O">*Sarova Hotels
-                                    </option>
-                                    <option value="*A">*Serena hotels
-                                    </option>
-                                    <option value="*S">*Intercontinental Hotels
-                                    </option>
-                                    <option value="*C">*Camping
-                                    </option>
-                                    <option value="*K">*AirBnB
-                                    </option>
-                                    <option value="JP">Safari Park Hotel Nairobi
-                                    </option>
-                                    <option value="EI">Diani Hotel </option>
-                                    <option value="JR">White Sands Holtel
-                                    </option>
-                                    <option value="ML">Nakuru Lodge Hotel
-                                    </option>
-                                    <option value="PL">Intercontinental Hotel Nairobi</option>
-                                    <option value="SX">Stanlley Hotel Nairobi
-                                    </option>
-                                    <option value="SU">Red Elephant Hotel Tsavo</option>
-                                    <option value="AR">Reef Hotel Mombasa
-                                    </option>
-                                    <option value="VW">Nyali Hotel Mombasa
-                                    </option>
-                                    <option value="AM">Voyager Hotel Mombasa</option>
-                                    <option value="5L">African Safari Club Mombasa</option>
-                                    <option value="DP">La Pelgola Malindi</option>
-                                    <option value="DP">Mada Hotel Kilifi</option>
-                                    <option value="RK">Bamburi Beach Resort Mombasa</option>
-                                    <option value="AH">Kilifi Bay Resort Kilifi</option>
-                                    <option value="FQ">Sun and Sand Club Mombasa</option>
-                                    <option value="UU">Turtle Bay Watamu</option>
-                                    <option value="7L">Windsor Hotel Nairobi</option>
-                                    <option value="AC">FairMount Hotel and Resort Nairobi</option>
-
-                                    </option>
-
-
-                                </select>
-                            </div>
-                        </div>
+                    <div class="col-sm-12 center-block">
+                        <button id="booking_multi_search_btn" type="submit" class="btn btn-block search_btn center-block">Get in
+                            Touch
+                        </button>
                     </div>
+                </div>
+                </section>
+                <!-- eof  srch_frm_flght_multi-->
+                </form>
             </div>
-
-
-        </div>
-        </div>
-        <div class="row">
-
-            <div class="col-sm-12 center-block">
-                <button id="booking_multi_search_btn" type="submit" class="btn btn-block search_btn center-block">Get in Touch
-                </button>
             </div>
-        </div>
-    </section>
-    <!-- eof  srch_frm_flght_multi-->
-    </form>
-    </div>
-    </div>
-    </div>
-    </section>
+            </div>
+            </section>
+            <!-- was inspired by the 3wschool example  -->
+
+            </fieldset>
+
+            </form>
+
+        </i>Hotel</button>
+
+
+
     <!-- was inspired by the 3wschool example  -->
 
 
