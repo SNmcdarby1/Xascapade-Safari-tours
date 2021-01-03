@@ -62,6 +62,7 @@ b) Objectives
  - While doing my reasearch i came across materializes platform.This site inspired me by the endlook and feel of the website, It resonates with a suitable ux friendly look and feel that embodies a lot of the features.
 - Used w3school for snippets. I am inspire withthe look and feel of the navigation bar, and inputs examples in the w3school page.
 - Youtube tutorial
+- Mapping used (Map Quest)[https://developer.mapquest.com/documentation/tools/latitude-longitude-finder/]. To find aqccurate locations.
 There were different tuturial that i watched in youtube. Below are a few that reall inspired byhthe style and design of the page. 
 * During my reasearch i came across a youtube tutorial that was talking about Materialize platform (Materialise)[https://materializecss.com/media.html]for creating websites and snippets by (Traversy Media)[https://www.youtube.com/watch?v=MaP3vO-vEsg]. I used the tutorial to create the index page .
 
