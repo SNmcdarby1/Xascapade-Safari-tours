@@ -49,7 +49,7 @@
                                 <a class="nav-link" href="about.html"><i class="fa fa-cloud" aria-hidden="true"></i>About</a>
                             </li>
                             <li class="nav-item dropdown  btn">
-                                <a class="nav-link" href="products.html"><i class="fa fa-gear" aria-hidden="true"></i>Services</a>
+                                <a class="nav-link" href="products.html"><i class="fa fa-gear" aria-hidden="true"></i>Products</a>
 
                             </li>
                             <li class="nav-item btn">
@@ -103,554 +103,219 @@
     <button class="bar-item button tablink" onclick="openLink(event, 'Hotel');"><i class="fa fa-bed margin-right">
             <div class="">
                 <div class="container">
-                    <div class="form-group">
-                        <label for=""></label>
-                        <input type="text" name="" id="" class="form-control" placeholder="" aria-describedby="helpId">
-                        <small id="helpId" class="text-muted">Help text</small>
+                    <div class="row">
+                        <div class="col bg-color-conferences section-column">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <label for=""></label>
+                                        <input type="text" name="" id="" class="form-control" placeholder="" aria-describedby="helpId">
+                                        <small id="helpId" class="text-muted">Help text</small>
+                                    </div>
+                                    <form action="destination.html" method="GET">
+                                        <fieldset>
+                                            <legend>Personal Details:</legend>
+                                            <label for="name">Username</label><input type="text" name="username" id="username" type="date" name="date">
+                                            <label for="name">Email</label><input type="text" name="email" id="email" type="email" name="email">
+                                            <label for="name">Phone</label><input type="text" name="Phone" id="Phone" type="phone" name="phone">
+                                            <select name="town" required>
+                                                <option value="Nairobi"></option>
+                                                <option value="Mombasa"></option>
+                                                <option value="Nakuru"></option>
+                                                <option value="Kisumu"></option>
+
+                                            </select>
+                                        </fieldset>
+                                        <div class="row">
+                                            <div class="col bg-color-conferences section-column">
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <br>
+                                                        <fieldset> <i class="fa fa-info-circle fa-lg"></i>
+                                                            <legend>Booking Details:</legend>
+                                                            <div class="row">
+                                                                <div class="col bg-color-conferences section-column">
+                                                                    <div class="row">
+                                                                        <div class="col-12">
+                                                                            <label for="date">Check in date:</label> <input type="date" name="date" min="2021-Jan-05"> <i class="fa fa-info-circle fa-lg"></i>
+                                                                            <label for="date">Check out date:</label><input type="date" name="date" type="date" name="date">
+                                                                            <label for="numberOfGuest">Number Of Guest</label><input id="numberOfGuest" name="numberOfGuest" :</label><input type="number" name="numberOfGuests" min='1' max='6' id="">
+                                                                            <p>Do you require meals?</p> <i class="fa fa-info-circle fa-lg"></i>
+                                                                            <label for="YesMeals">Yes</label><input id="yesMeals" type="radio" name="meals" value="yesMeals">
+                                                                            <label for="noMeals">No Meals</label><input id=noMeals type="radio" name="meals" value="noMeals">
+                                                                            <br>
+                                                                            <label for="standardRoom">Standard Room</label><input type="checkbox" name="standardRoom" value="yes" checked> <i class="fa fa-info-circle fa-lg"></i>
+                                                                            <label for="standardRoom">Standard Room</label><input type="checkbox" name="standardRoom" value="no" checked> <i class="fa fa-info-circle fa-lg"></i>
+                                                                            <label for="doubleRoom">Double Room</label><input type="checkbox" name="doubleRoom" value="yes" checked> <i class="fa fa-info-circle fa-lg"></i>
+                                                                            <label for="doubleRoom">Double Room</label><input type="checkbox" name="doubleRoom" value="no" checked> <i class="fa fa-info-circle fa-lg"></i>
+                                                                            <label for="BookSafari">Book Safari</label><input type="checkbox" name="bookSafari" value="yes" checked> <i class="fa fa-info-circle fa-lg"></i>
+                                                                            <label for="NoSafari">Standard Room</label><input type="checkbox" name="noSafari" value="no" checked> <i class="fa fa-info-circle fa-lg"></i>
+                                                        </fieldset>
+
+                                    </form>
+
+
+                                    <div class="card-body" class="col-sm-6 no_left_padding no_right_padding">
+                                        <div class="form-group">
+                                            <label for="srch_frm_hotel_single">Hotels</label>
+                                            <select name="hotel" id="hotel" class="form-control">
+                                                <option value="" selected>No Preference
+                                                </option>
+                                                <option value="*O">*Sarova Hotels
+                                                </option>
+                                                <option value="*A">*Serena hotels
+                                                </option>
+                                                <option value="*S">*Intercontinental Hotels
+                                                </option>
+                                                <option value="*C">*Camping
+                                                </option>
+                                                <option value="*K">*AirBnB
+                                                </option>
+                                                <option value="JP">Safari Park Hotel Nairobi
+                                                </option>
+                                                <option value="EI">Diani Hotel </option>
+                                                <option value="JR">White Sands Holtel
+                                                </option>
+                                                <option value="ML">Nakuru Lodge Hotel
+                                                </option>
+                                                <option value="PL">Intercontinental Hotel Nairobi</option>
+                                                <option value="SX">Stanlley Hotel Nairobi
+                                                </option>
+                                                <option value="SU">Red Elephant Hotel Tsavo</option>
+                                                <option value="AR">Reef Hotel Mombasa
+                                                </option>
+                                                <option value="VW">Nyali Hotel Mombasa
+                                                </option>
+                                                <option value="AM">Voyager Hotel Mombasa</option>
+                                                <option value="5L">African Safari Club Mombasa</option>
+                                                <option value="DP">La Pelgola Malindi</option>
+                                                <option value="DP">Mada Hotel Kilifi</option>
+                                                <option value="RK">Bamburi Beach Resort Mombasa</option>
+                                                <option value="AH">Kilifi Bay Resort Kilifi</option>
+                                                <option value="FQ">Sun and Sand Club Mombasa</option>
+                                                <option value="UU">Turtle Bay Watamu</option>
+                                                <option value="7L">Windsor Hotel Nairobi</option>
+                                                <option value="AC">FairMount Hotel and Resort Nairobi</option>
+
+                                                </option>
+
+
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <input type="submit" value="Submit">
+                        </div>
                     </div>
-                    <form action="destination.html" method="GET">
-                        <fieldset>
-                            <legend>Personal Details:</legend>
-                            <label for="name">Username</label><input type="text" name="username" id="username" type="date" name="date">
-                            <label for="name">Email</label><input type="text" name="email" id="email" type="email" name="email">
-                            <label for="name">Phone</label><input type="text" name="Phone" id="Phone" type="phone" name="phone">
-                            <select name="town" required>
-                                <option value="Nairobi"></option>
-                                <option value="Mombasa"></option>
-                                <option value="Nakuru"></option>
-                                <option value="Kisumu"></option>
-
-                            </select>
-                        </fieldset>
-                        <br>
-                        <fieldset> <i class="fa fa-info-circle fa-lg"></i>
-                            <legend>Booking Details:</legend>
-                            <input type="date" name="date" min="2021-Jan-05"> <i class="fa fa-info-circle fa-lg"></i>
-                            <label for="date">Booking date:</label><input type="date" name="date" type="date" name="date">
-                            <label for="numberOfGuest">Number Of Guest</label><input id="numberOfGuest" name="numberOfGuest" :</label><input type="number" name="numberOfGuests" min='1' max='6' id="">
-                            <p>Do you require meals?</p> <i class="fa fa-info-circle fa-lg"></i>
-                            <label for="YesMeals">Yes</label><input id="yesMeals" type="radio" name="meals" value="yesMeals">v <i class="fa fa-info-circle fa-lg"></i>
-                            <label for="noMeals">No Meals</label><input id=noMeals type="radio" name="meals" value="noMeals"> <i class="fa fa-info-circle fa-lg"></i>
-                            <br>
-                            <label for="standardRoom">Standard Room</label><input type="checkbox" name="standardRoom" value="yes" checked> <i class="fa fa-info-circle fa-lg"></i>
-                            <label for="standardRoom">Standard Room</label><input type="checkbox" name="standardRoom" value="no" checked> <i class="fa fa-info-circle fa-lg"></i>
-                            <label for="doubleRoom">Double Room</label><input type="checkbox" name="doubleRoom" value="yes" checked> <i class="fa fa-info-circle fa-lg"></i>
-                            <label for="doubleRoom">Double Room</label><input type="checkbox" name="doubleRoom" value="no" checked> <i class="fa fa-info-circle fa-lg"></i>
-                            <label for="BookSafari">Book Safari</label><input type="checkbox" name="bookSafari" value="yes" checked> <i class="fa fa-info-circle fa-lg"></i>
-                            <label for="NoSafari">Standard Room</label><input type="checkbox" name="noSafari" value="no" checked> <i class="fa fa-info-circle fa-lg"></i>
-                            <input type="image" src="assets/image/room.jpg" alt="Submit" bd-placeholder-img="">
-                            <section id="srch_frm_hotel_single">
-                                <div class="row">
-                                    <div class="col-sm">
-                                        <div class="form-group">
-                                            <legend>Booking Details:</legend>
-                                            <label for="checkin">Check in date:</label>
-                                            <div class="popover-icon" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="right" data-content="">
-                                                <i class="fa fa-info-circle fa-lg"> </i>
-                                            </div>
-                                            <div class="content-checkin-data">
-                                                <i class="fa fa-bed infield"></i>
-                                                <input type="text" name="txtDepCity1" class="txtDepCity cls_autofill form-control" value="" placeholder="Check-In" onFocus="focusObj(this);" onBlur="blurObj(this);" onChange="copyTextbox(this, document.getElementById('txtArrCity2'));" autocomplete="off" id="txtDepCity1">
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <p>Do you require meals?</p>
-                                    <div class="col-sm">
-                                        <div class="form-group">
-                                            <label for="checkout">check out date:<label for="numberOfGuest">Number Of
-                                                    Guest</label><input id="numberOfGuest" name="numberOfGuest" :</label><input type="number" name="numberOfGuests" min='1' max='6' id=""></label>
-                                            <div class="popover-icon" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="right" data-content="Check-out is from 12:00">
-                                                <i class="fa fa-info-circle fa-lg">
-                                                </i>
-                                                <label for="numberOfGuest">Number Of Guest</label><input id="numberOfGuest" name="numberOfGuest" :</label><input type="number" name="numberOfGuests" min='1' max='6' id=""></div>
-                                            <div class="content-checkin-data">
-                                                <i class="fa fa-bed infield"></i> <label for="date">Booking
-                                                    date:</label><input type="date" name="date" type="date" name="date">
-                                                <input type="text" name="txtArrCity1" class="txtDepCity cls_autofill form-control" value="" defValue="Arrival" placeholder="checkout" onFocus="focusObj(this);" onBlur="blurObj(this);" onChange="copyTextbox(this, document.getElementById('txtDepCity2'));" autocomplete="off" id="txtArrCity1">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="row  container-fluid">
-                                    <div class="col-sm">
-                                        <div class="form-group">
-                                            <label for="checkin"> <label for="date">Booking date:</label><input type="date" name="date" type="date" name="date"> Arrival
-                                                date</label>
-                                            <div class="popover-icon" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="right" data-content="Check-In is from 11:00">
-                                                <i class="fa fa-info-circle fa-lg">
-                                                </i> </div>
-                                            <div class="content-checkin-data">
-                                                <i class="fa fa-calendar infield"></i>
-                                                <input name="txtDate1" type="text" id="checkin" value="" class="form-control checkin" placeholder="Check in Date" />
-                                                <label for="date">Booking date:</label><input type="date" name="date" type="date" name="date">
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-sm">
-                                        <div class="form-group return_panel">
-                                            <label for="checkout">Check out date </label>
-                                            <div class="popover-icon" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="right" data-content="Check-out is from 12:00">
-                                                <i class="fa fa-info-circle fa-lg"> </i> </div>
-                                            <div class="content-check-in-data">
-                                                <i class="fa fa-calendar infield"></i>
-                                                <label for="date">Check out date :</label> <input name="txtDate2" type="text" id="checkout" value="" class="form-control checkout" placeholder="Return Date" />
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="container  container-fluid">
-                                    <div class="col-sm">
-                                        <div class="col-sm-4 adult-book">
-                                            <div class="form-group">
-                                                <div class="guests-select">
-                                                    <label>Adults (12+)</label>
-                                                    <!-- <i class="fa fa-user infield"></i> -->
-                                                    <div class="popover-icon" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="right" data-content="+12 years">
-                                                        <i class="fa fa-info-circle fa-lg">
-                                                        </i>
-                                                    </div>
-                                                    <select name="ddlPaxADT" id="ddlPaxADT" class="form-control">
-                                                        <option selected="selected" value="1">1</option>
-                                                        <option value="2">2</option>
-                                                        <option value="3">3</option>
-                                                        <option value="4">4</option>
-                                                        <option value="5">5</option>
-                                                        <option value="6">6</option>
-                                                    </select>
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm adult-book">
-                                            <div class="form-group">
-                                                <div class="guests-select">
-                                                    <label>Kids (2-11)</label>
-                                                    <div class="popover-icon" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="right" data-content="2 till 11 years">
-                                                        <i class="fa fa-info-circle fa-lg">
-                                                        </i> </div>
-                                                    <select name="ddlPaxCHD" id="ddlPaxCHD" class="form-control">
-                                                        <option value="0">0</option>
-                                                        <option value="1">1</option>
-                                                        <option value="2">2</option>
-                                                        <option value="3">3</option>
-                                                        <option value="4">4</option>
-                                                        <option value="5">5</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col sm-4 child">
-                                            <div class="form-group">
-                                                <div class="guests-select">
-                                                    <label>infant (0-2)</label>
-                                                    <div class="popover-icon" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="right" data-content="0 till 1 years">
-                                                        <i class="fa fa-info-circle fa-lg">
-                                                        </i> </div>
-                                                    <select name="ddlPaxINF" id="ddlPaxINF" class="form-control">
-                                                        <option value="0">0</option>
-                                                        <option value="1">1</option>
-                                                        <option value="2">2</option>
-                                                        <option value="3">3</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="">
-                                        <div class="container">
-                                            <div class="form-group">
-                                                <label for=""></label>
-                                                <input type="text" name="" id="" class="form-control" placeholder="" aria-describedby="helpId">
-                                                <small id="helpId" class="text-muted">Help text</small>
-                                            </div>
-                                            <form action="destination.html" method="GET">
-                                                <fieldset>
-                                                    <legend>Personal Details:</legend>
-                                                    <label for="name">Username</label><input type="text" name="username" id="username" type="date" name="date">
-                                                    <label for="name">Email</label><input type="text" name="email" id="email" type="email" name="email">
-                                                    <label for="name">Phone</label><input type="text" name="Phone" id="Phone" type="phone" name="phone">
-                                                    <select name="town" required>
-                                                        <option value="Nairobi"></option>
-                                                        <option value="Mombasa"></option>
-                                                        <option value="Nakuru"></option>
-                                                        <option value="Kisumu"></option>
-
-                                                    </select>
-                                                </fieldset>
-                                                <br>
-                                                <fieldset> <i class="fa fa-info-circle fa-lg"></i>
-                                                    <legend>Booking Details:</legend>
-                                                    <input type="date" name="date" min="2021-Jan-05"> <i class="fa fa-info-circle fa-lg"></i>
-                                                    <label for="date">Booking date:</label><input type="date" name="date" type="date" name="date">
-                                                    <label for="numberOfGuest">Number Of Guest</label><input id="numberOfGuest" name="numberOfGuest" :</label><input type="number" name="numberOfGuests" min='1' max='6' id="">
-                                                    <p>Do you require meals?</p> <i class="fa fa-info-circle fa-lg"></i>
-                                                    <label for="YesMeals">Yes</label><input id="yesMeals" type="radio" name="meals" value="yesMeals">v <i class="fa fa-info-circle fa-lg"></i>
-                                                    <label for="noMeals">No Meals</label><input id=noMeals type="radio" name="meals" value="noMeals"> <i class="fa fa-info-circle fa-lg"></i>
-                                                    <br>
-                                                    <label for="standardRoom">Standard Room</label><input type="checkbox" name="standardRoom" value="yes" checked> <i class="fa fa-info-circle fa-lg"></i>
-                                                    <label for="standardRoom">Standard Room</label><input type="checkbox" name="standardRoom" value="no" checked> <i class="fa fa-info-circle fa-lg"></i>
-                                                    <label for="doubleRoom">Double Room</label><input type="checkbox" name="doubleRoom" value="yes" checked> <i class="fa fa-info-circle fa-lg"></i>
-                                                    <label for="doubleRoom">Double Room</label><input type="checkbox" name="doubleRoom" value="no" checked> <i class="fa fa-info-circle fa-lg"></i>
-                                                    <label for="BookSafari">Book Safari</label><input type="checkbox" name="bookSafari" value="yes" checked> <i class="fa fa-info-circle fa-lg"></i>
-                                                    <label for="NoSafari">Standard Room</label><input type="checkbox" name="noSafari" value="no" checked> <i class="fa fa-info-circle fa-lg"></i>
-                                                    <input type="image" src="assets/image/room.jpg" alt="Submit" bd-placeholder-img="">
-
-                                                </fieldset>
-
-                                            </form>
 
 
-                                            <div class="card-body" class="col-sm-6 no_left_padding no_right_padding">
-                                                <div class="form-group">
-                                                    <label for="srch_frm_hotel_single">Hotels</label>
-                                                    <select name="hotel" id="hotel" class="form-control">
-                                                        <option value="" selected>No Preference
-                                                        </option>
-                                                        <option value="*O">*Sarova Hotels
-                                                        </option>
-                                                        <option value="*A">*Serena hotels
-                                                        </option>
-                                                        <option value="*S">*Intercontinental Hotels
-                                                        </option>
-                                                        <option value="*C">*Camping
-                                                        </option>
-                                                        <option value="*K">*AirBnB
-                                                        </option>
-                                                        <option value="JP">Safari Park Hotel Nairobi
-                                                        </option>
-                                                        <option value="EI">Diani Hotel </option>
-                                                        <option value="JR">White Sands Holtel
-                                                        </option>
-                                                        <option value="ML">Nakuru Lodge Hotel
-                                                        </option>
-                                                        <option value="PL">Intercontinental Hotel Nairobi</option>
-                                                        <option value="SX">Stanlley Hotel Nairobi
-                                                        </option>
-                                                        <option value="SU">Red Elephant Hotel Tsavo</option>
-                                                        <option value="AR">Reef Hotel Mombasa
-                                                        </option>
-                                                        <option value="VW">Nyali Hotel Mombasa
-                                                        </option>
-                                                        <option value="AM">Voyager Hotel Mombasa</option>
-                                                        <option value="5L">African Safari Club Mombasa</option>
-                                                        <option value="DP">La Pelgola Malindi</option>
-                                                        <option value="DP">Mada Hotel Kilifi</option>
-                                                        <option value="RK">Bamburi Beach Resort Mombasa</option>
-                                                        <option value="AH">Kilifi Bay Resort Kilifi</option>
-                                                        <option value="FQ">Sun and Sand Club Mombasa</option>
-                                                        <option value="UU">Turtle Bay Watamu</option>
-                                                        <option value="7L">Windsor Hotel Nairobi</option>
-                                                        <option value="AC">FairMount Hotel and Resort Nairobi</option>
-
-                                                        </option>
-
-
-                                                    </select>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-
-                                </div>
-                </div>
-                <div class="row">
 
                     <div class="col-sm-12 center-block">
                         <button id="booking_multi_search_btn" type="submit" class="btn btn-block search_btn center-block">Get in
                             Touch
                         </button>
                     </div>
-                </div>
-                </section>
-                <!-- eof  srch_frm_flght_multi-->
-                </form>
-            </div>
-            </div>
-            </div>
-            </section>
-            <!-- was inspired by the 3wschool example  -->
-
-            </fieldset>
-
-            </form>
-
-            </section>
-            <section>
-                <card class="form container-fluid inline-block">
-                    <div class="background-image" id="bgimg1">
-                        <hr class="my-4 inline-block col-sm-4" id="bgimg1">
-
-                        <div class="form-popup" id="myForm">
-                            <form action="/action_page.php" class="form-container">
-                                <div class="bottom-container">
-                                    <div class="row">
-                                        <div class="col-4">
-                                            <a href="#" style="color:teal" class="btn">Sign up</a>
-                                        </div>
-
-                                        <div class="col-4">
-                                            <a href="#" style="color:teal" class="btn">Forgot password?</a>
-                                        </div>
-                                        <button type="submit" class="btn">Register</button>
-                                    </div>
-                                </div>
-                        </div>
-                        </form>
-                        <!-- End page content -->
-                    </div>
-                    </main>
 
 
 
 
-
-
-
-                    <footer class="container">
-                        <card class="form container-fluid inline-block">
-                            <div>
-                                <hr class="my-4 inline-block col>
+                    <hr class="my-12 inline-block col>
                                     <div class=" container">
-                                <h4>Get the best offers first!</h4>
+                    <h4>Get the best offers first!</h4>
 
-                                <p>Join our newsletter.</p>
-                                <label>E-mail</label>
-                                <input class="input border" type="text" placeholder="Your Email address">
-                                <button type="button" class="button red margin-top">Subscribe</button>
-                            </div>
-                            </div>
-                            <!-- w3school snippet -->
-
-                            <!-- footer section -->
-                            <footer class=container-fluid>
-
-
-
-                                <section class="card form col-sm s12 progress-section social">
-                                    <div class="container">
-                                        <form action="/action_page.php">
-                                            <div class="col">
-                                                <p style="text-align:center">Login with Social Media</p>
-                                                <div class="vl">
-                                                    <span class="vl-innertext">or</span>
-                                                </div>
-
-                                                <div class="col-sm">
-                                                    <a href="#" class="fb btn">
-                                                        <i class="fa fa-facebook fa-fw"></i>
-                                                        Facebook
-                                                    </a>
-                                                    <a href="#" class="twitter btn">
-                                                        <i class="fa fa-twitter fa-fw"></i>
-                                                        Twitter
-                                                    </a>
-                                                    <a href="#" class="google btn">
-                                                        <i class="fa fa-google fa-fw"></i>
-                                                        Google+
-                                                    </a>
-                                                </div>
-
-                                                <div class="col-sm">
-                                                    <div class="hide-md-lg">
-                                                        <p>Or sign in manually:</p>
-                                                    </div>
-
-                                                    <div class="input-container">
-                                                        <i class="fa fa-envelope icon"></i>
-                                                        <div class="form-group">
-                                                            <label for="exampleInputEmail1">Email address</label>
-                                                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                                                        </div>
-
-                                                        <div class="input-container">
-                                                            <i class="fa fa-key icon"></i>
-                                                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-                                                        </div>
-                                                    </div>
-
-                                                </div>
-                                        </form>
-                                    </div>
-
-                                    <div class="bottom-container">
-                                        <div class="row">
-                                            <div class="col-sm">
-                                                <a href="#" style="color:rgb(13, 81, 83)" class="btn">
-                                                    <p>Sign up</p>
-                                                </a>
-                                            </div>
-                                            <div class="col-sm">
-                                                <a href="#" style="color:rgb(13, 81, 83)" class="btn">Forgot
-                                                    password?</a>
-                                            </div>
-                                        </div>
-
-                                </section>
-                                <!-- w3school snippet -->
-                                <!-- Footer -->
-
-                                <div class="chat-popup" id="myForm">
-                                    <form action="/action_page.php" class="form-container">
-
-
-                                        <label for="msg"><b>Chat</b></label>
-                                        <textarea placeholder="Type message.." name="msg" required></textarea>
-
-
-                                        <button type="submit" class="btn">Send</button>
-                                        <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
-                                    </form>
-                                </div>
-
-
-                                <form class="autocomplete-items s12 opacity margin-bottom   container-fluid">
-
-                                    <!-- pop upform 3wschool snippet  -->
-                                    <card action="/action_page.php">
-                                        <div class="row">
-
-                                            <div class="container">
-                                                <form action="/action_page.php">
-
-                                                    <div class="xlarge padding-16">
-                                                        <i class="fa fa-facebook-official hover-opacity"></i>
-                                                        <i class="fa fa-instagram hover-opacity"></i>
-                                                        <i class="fa fa-snapchat hover-opacity"></i>
-                                                        <i class="fa fa-pinterest-p hover-opacity"></i>
-                                                        <i class="fa fa-twitter hover-opacity"></i>
-                                                        <i class="fa fa-linkedin hover-opacity"></i>
-                                                    </div>
-                                                </form>
-                                            </div>
-
-                                            <a href="mail@xascapade.com">info@xascapade.com</a></p>
-                                            <p>Powered by <a href="#" target="_blank" class="hover-text-green" class="container" style="background-color:#e0ddd3">
-                                                    Xascapade</a>
-                                            </p>
-                                        </div>
-                                </form>
-
-            </section>
-
-            </footer>
-
-            <a href="#" class="cd-top text-replace js-cd-top">Top</a>
-
-            </section>
-        </i>Hotel</button>
-
-
-
-    <!-- was inspired by the 3wschool example  -->
-
-
-    </section>
-    <section>
-        <card class="form container-fluid inline-block">
-            <div class="background-image" id="bgimg1">
-                <hr class="my-4 inline-block col-sm-4" id="bgimg1">
-
-                <div class="form-popup" id="myForm">
-                    <form action="/action_page.php" class="form-container">
-                        <div class="bottom-container">
-                            <div class="row">
-                                <div class="col-4">
-                                    <a href="#" style="color:teal" class="btn">Sign up</a>
-                                </div>
-
-                                <div class="col-4">
-                                    <a href="#" style="color:teal" class="btn">Forgot password?</a>
-                                </div>
-                                <button type="submit" class="btn">Register</button>
-                            </div>
-                        </div>
+                    <p>Join our newsletter.</p>
+                    <label>E-mail</label>
+                    <input class="input border" type="text" placeholder="Your Email address">
+                    <button type="button" class="button red margin-top">Subscribe</button>
                 </div>
-                </form>
-                <!-- End page content -->
+                <div>
+
+                    <div class="col-4">
+                        <a href="#" style="color:teal" class="btn">Sign up</a>
+                    </div>
+
+                    <div class="col-4">
+                        <a href="#" style="color:teal" class="btn">Forgot password?</a>
+                    </div>
+                    <button type="submit" class="btn">Register</button>
+                </div>
+                </card>
+
             </div>
+            </div>
+            </form>
+            <!-- End page content -->
+            </div>
+            </div>
+            </div>
+            </section>
+
+            <main class="section-colunm container">
+
             </main>
 
 
-            <footer class="container">
+            <!-- Footer -->
+
+
+
+            <footer class="container-fluid">
                 <card class="form container-fluid inline-block">
                     <div>
-                        <hr class="my-4 inline-block col>
+                        <hr class="my-12 inline-block col>
                                     <div class=" container">
-                        <h4>Get the best offers first!</h4>
-
-                        <p>Join our newsletter.</p>
-                        <label>E-mail</label>
-                        <input class="input border" type="text" placeholder="Your Email address">
-                        <button type="button" class="button red margin-top">Subscribe</button>
+                        <h4>Log in with social media!</h4>
+                        <span class="vl-innertext">or</span>
                     </div>
+
+
+                    <div class="col-sm">
+                        <a href="#" class="fb btn">
+                            <i class="fa fa-facebook fa-fw"></i>
+                            Facebook
+                        </a>
+                        <a href="#" class="twitter btn">
+                            <i class="fa fa-twitter fa-fw"></i>
+                            Twitter
+                        </a>
+                        <a href="#" class="google btn">
+                            <i class="fa fa-google fa-fw"></i>
+                            Google+
+                        </a>
                     </div>
-                    <!-- w3school snippet -->
 
-                    <!-- footer section -->
-                    <footer class=container-fluid>
+                    <div class="col-sm">
+                        <div class="hide-md-lg">
+                            <p>Or sign in manually:</p>
+                        </div>
 
-
-
-                        <section class="card form col-sm s12 progress-section social">
-                            <div class="container">
-                                <form action="/action_page.php">
-                                    <div class="col">
-                                        <p style="text-align:center">Login with Social Media</p>
-                                        <div class="vl">
-                                            <span class="vl-innertext">or</span>
-                                        </div>
-
-                                        <div class="col-sm">
-                                            <a href="#" class="fb btn">
-                                                <i class="fa fa-facebook fa-fw"></i>
-                                                Facebook
-                                            </a>
-                                            <a href="#" class="twitter btn">
-                                                <i class="fa fa-twitter fa-fw"></i>
-                                                Twitter
-                                            </a>
-                                            <a href="#" class="google btn">
-                                                <i class="fa fa-google fa-fw"></i>
-                                                Google+
-                                            </a>
-                                        </div>
-
-                                        <div class="col-sm">
-                                            <div class="hide-md-lg">
-                                                <p>Or sign in manually:</p>
-                                            </div>
-
-                                            <input type="text" name="username" placeholder="Username" required>
-                                            <input type="password" name="password" placeholder="Password" required>
-                                            <input type="submit" value="Login">
-                                        </div>
-
-                                    </div>
-                                </form>
+                        <input type="text" name="username" placeholder="Username" required>
+                        <input type="password" name="password" placeholder="Password" required>
+                        <input type="submit" value="Login">
+                    </div>
+                    <div class="bottom-container">
+                        <div class="row">
+                            <div class="col-sm">
+                                <a href="#" style="color:rgb(13, 81, 83)" class="btn">
+                                    <p>Sign up</p>
+                                </a>
+                            </div>
+                            <div class="col-sm">
+                                <a href="#" style="color:rgb(13, 81, 83)" class="btn">Forgot password?</a>
                             </div>
 
-                            <div class="bottom-container">
-                                <div class="row">
-                                    <div class="col-sm">
-                                        <a href="#" style="color:rgb(13, 81, 83)" class="btn">
-                                            <p>Sign up</p>
-                                        </a>
-                                    </div>
-                                    <div class="col-sm">
-                                        <a href="#" style="color:rgb(13, 81, 83)" class="btn">Forgot password?</a>
-                                    </div>
-                                </div>
+                        </div>
 
-                        </section>
-                        <!-- w3school snippet -->
-                        <!-- Footer -->
 
+
+                    </div>
+                    </form>
+                    </div>
+
+
+                    <div class="col-12">
                         <div class="chat-popup" id="myForm">
                             <form action="/action_page.php" class="form-container">
 
@@ -663,69 +328,85 @@
                                 <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
                             </form>
                         </div>
+                    </div>
+                    </section>
+                    <!-- w3school snippet -->
+                    <!-- Footer -->
 
+                    <form class="autocomplete-items s12 opacity margin-bottom   container-fluid">
 
-                        <form class="autocomplete-items s12 opacity margin-bottom   container-fluid">
+                        <!-- pop upform 3wschool snippet  -->
+                        <section class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-4 bg-color-conferences section-column">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <h3>
+                                                <card action="/action_page.php">
+                                                    <div class="row">
 
-                            <!-- pop upform 3wschool snippet  -->
-                            <card action="/action_page.php">
-                                <div class="row">
+                                                        <div class="container">
+                                                            <form action="/action_page.php">
 
-                                    <div class="container">
-                                        <form action="/action_page.php">
+                                                                <div class="xlarge padding-16">
+                                                                    <i class="fa fa-facebook-official hover-opacity"></i>
+                                                                    <i class="fa fa-instagram hover-opacity"></i>
+                                                                    <i class="fa fa-snapchat hover-opacity"></i>
+                                                                    <i class="fa fa-pinterest-p hover-opacity"></i>
+                                                                    <i class="fa fa-twitter hover-opacity"></i>
+                                                                    <i class="fa fa-linkedin hover-opacity"></i>
+                                                                </div>
+                                                            </form>
+                                                        </div>
 
-                                            <div class="xlarge padding-16">
-                                                <i class="fa fa-facebook-official hover-opacity"></i>
-                                                <i class="fa fa-instagram hover-opacity"></i>
-                                                <i class="fa fa-snapchat hover-opacity"></i>
-                                                <i class="fa fa-pinterest-p hover-opacity"></i>
-                                                <i class="fa fa-twitter hover-opacity"></i>
-                                                <i class="fa fa-linkedin hover-opacity"></i>
-                                            </div>
-                                        </form>
+                                            </h3>
+                                        </div>
                                     </div>
-                                    <a href="mail@xascapade.com">info@xascapade.com</a></p>
-                                    <p>Powered by <a href="#" target="_blank" class="hover-text-green" class="container" style="background-color:#e0ddd3">
-                                            Xascapade</a>
-                                    </p>
                                 </div>
-                        </form>
+                            </div>
+                        </section>
+                        <a href="mail@xascapade.com">info@xascapade.com</a></p>
+                        <p>Powered by <a href="#" target="_blank" class="hover-text-green" class="container" style="background-color:#e0ddd3">
+                                Xascapade</a>
+                        </p>
+                        </div>
+                    </form>
 
-    </section>
+                    </section>
 
-    </footer>
+            </footer>
 
-    <a href="#" class="cd-top text-replace js-cd-top">Top</a>
+            <a href="index.html" class="cd-top text-replace js-cd-top">Top</a>
 
-    </section>
-
-
-
-    <script type="text/javascript" src="https://res.perfectibe.com/scripts/calendar.js">
-    </script>
-    <script type="text/javascript" src="https://res.perfectibe.com/scripts/jsDate.js"></script>
-    <script type="text/javascript" src="https://res.perfectibe.com/scripts/pibe.js"></script>
-    <script type="text/javascript" src="https://res.perfectibe.com/scripts/dropdown.js">
-    </script>
-    <script type="text/javascript"></script>
-    <!-- bootstrap scripr snippet -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
-    </script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
-    </script>
+            </section>
 
 
 
+            <script type="text/javascript" src="https://res.perfectibe.com/scripts/calendar.js">
+            </script>
+            <script type="text/javascript" src="https://res.perfectibe.com/scripts/jsDate.js"></script>
+            <script type="text/javascript" src="https://res.perfectibe.com/scripts/pibe.js"></script>
+            <script type="text/javascript" src="https://res.perfectibe.com/scripts/dropdown.js">
+            </script>
+            <script type="text/javascript"></script>
+            <!-- bootstrap scripr snippet -->
+            <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+            </script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+            </script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+            </script>
 
-    <!-- bootstrap scripr snippet -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
-    </script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
-    </script>
+
+
+
+            <!-- bootstrap scripr snippet -->
+            <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+            </script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+            </script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+            </script>
 
 </body>
 
@@ -735,3 +416,36 @@
 </body>
 
 </html>
+
+
+<!-- bootstrap scripr snippet -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+</script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+</script>
+
+</body>
+
+</html>
+</script>
+
+</body>
+
+</html>
+
+
+<section class="container-fluid">
+    <div class="row">
+        <div class="col-md-4 bg-color-conferences section-column">
+            <div class="row">
+                <div class="col-12">
+                    <h3>
+
+                    </h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
