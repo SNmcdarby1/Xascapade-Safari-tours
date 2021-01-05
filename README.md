@@ -110,6 +110,16 @@ I deployed the page in Github page under settings. Scroll down to the Github pag
 * Image by bottlein from Pixabay
 * Image by Tati Halabi from Pixabay 
 * Image by Angie Göttling from Pixabay 
+Photo by Kensuke Saito Surf Photography on Unsplash
+Photo by Yuriy MLCN on Unsplash
+Photo by Joshua Earle on Unsplash
+Photo by redcharlie on Unsplash
+Photo by Ron Ansell on Unsplash
+Photo by Pop & Zebra on Unsplash
+Photo by Uriel Soberanes on Unsplash
+Photo by jean wimmerlin on Unsplash
+Photo by Emma Louisa on Unsplash
+
 
  * 
  * 
