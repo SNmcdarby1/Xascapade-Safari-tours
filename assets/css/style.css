@@ -3,44 +3,40 @@
 * {
     box-sizing: none;
     margin: 0;
-    page-break-after: auto;
-    background-color: #f1f1f1;
-    background-repeat: no-repeat;
-    viewport-fit: 100%;
-
-    content {
-        background-color: #f1f1f1;
-        /* Fallback color */
-        background-color: rgba(0, 0, 0, 0.4);
-        /* Black w/opacity/see-through */
-        color: white;
-        font-weight: bold;
-        border: 3px solid #f1f1f1;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        z-index: 2;
-        width: 80%;
-        padding: 20px;
-        text-align: center;
-    }
 }
 
-/* Center and scale the image nicely */
-background-position: center;
-background-repeat: no-repeat;
-background-size: cover;
+#map {
+    height: 400px;
+    width: 100%;
 }
+
+.leaflet-pane,
+.leaflet-tile,
+.leaflet-marker-icon,
+.leaflet-marker-shadow,
+.leaflet-tile-container,
+.leaflet-zoom-box,
+.leaflet-image-layer,
+.leaflet-layer {
+    Position: absolute;
+    Left: 0;
+    Top: 0;
+}
+
+element.style {}
+
+.leaflet-tooltip-pane {
+    z-index: 650;
+}
+
 
 /* Style the body */
 body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
-    background-color: rgb(234, 243, 241);
+
     font-family: Verdana, sans-serif;
     font-size: 16px;
-    color: rgb(28, 114, 92);
 }
 
 h1 {
@@ -94,18 +90,6 @@ ul {
     padding: 0;
 }
 
-body {
-    background-color: linear-gradient(hsla(0, 0%, 100%, .8), hsla(0, 0%, 100%, .9) 50%, rgb(88, 83, 83));
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    fill-opacity: .1;
-    min-height: 300px;
-    transition: all .5s ease-in-out;
-    -moz-transition: all .5s ease-in-out;
-    -webkit-transition: all .5s ease-in-out;
-}
-
 .topnav {
     overflow: hidden;
     background-color: rgb(169, 242, 245);
@@ -126,6 +110,7 @@ body {
     }
 }
 
+.
 /* GLOBAL STYLES
     --------------------------------------------- */
 /* Padding below the footer and lighter body text */
@@ -179,14 +164,6 @@ a.hvr-sweep-to-bottom:before {
 }
 
 
-.main {
-    margin-left: 10px;
-    /* Same width as the sidebar + left position in px */
-    font-size: 28px;
-    /* Increased text to enable scrolling */
-    padding: 0px 10px;
-    margin-left: 5px;
-}
 
 .dropbtn {
     background-color: #4CAF50;
@@ -389,11 +366,13 @@ h4 {
 }
 
 li {
-    float: left;
+    float: right;
+    justify-content: right;
+
 }
 
 li {
-    display: inline;
+    display: inline-flex;
 }
 
 a {
@@ -427,7 +406,7 @@ main {
     top: 30%;
 }
 
-main h1 {
+.main h1 {
     font-size: 190px;
     position: overflow;
     letter-spacing: 0px;
@@ -517,7 +496,7 @@ main button {
 }
 
 /* Button used to open the chat form - fixed at the bottom of the page */
-.open-button {
+.textarea {
     background-color: #555;
     color: white;
     padding: 16px 20px;
@@ -607,9 +586,54 @@ main button {
     padding: 16px;
 }
 
+.landing {
+    display: inline-block;
+    padding: 0 25px;
+    height: 50px;
+    font-size: 16px;
+    line-height: 50px;
+    border-radius: 100px;
+    background-color: #f1f1f1;
+}
+
+.landing img {
+    float: left;
+    margin: 0 80px 0 10px;
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+}
+
+.coupon {
+    border: 5px dotted #bbb;
+    /* Dotted border */
+    width: 80%;
+    border-radius: 25px;
+    /* Rounded border */
+    margin: 0 auto;
+    /* Center the coupon */
+    max-width: 600px;
+}
+
+.container {
+    padding: 5px 20px;
+    background-color: #f1f1f1;
+}
+
+.promo {
+    background: #ccc;
+    padding: 3px;
+}
+
+.expire {
+    color: red;
+}
+
 /* w3s header */
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
@@ -841,7 +865,7 @@ pseudo.body:after:after {
         padding: 32px;
     }
 
-    .row {
+    .row div {
         display: -ms-flexbox;
         /* IE10 */
         display: flex;
@@ -876,7 +900,7 @@ pseudo.body:after:after {
     }
 
     /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 1090px) {
         .column {
             -ms-flex: 100%;
             flex: 100%;
@@ -885,7 +909,7 @@ pseudo.body:after:after {
     }
 
     a:link {
-        color: #FF0000;
+        color: rgb(9, 116, 89);
     }
 
     /* visited link */
@@ -962,7 +986,8 @@ pseudo.body:after:after {
         #navbar a {
             float: none;
             display: block;
-            text-align: left;
+            text-align: right;
+            justify-content: right;
         }
 
         #navbar-right {
@@ -1014,16 +1039,50 @@ pseudo.body:after:after {
     }
 
     /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
-    @media screen and (max-width: 700px) {
+    @media screen and (min-width: 576px) {
         .row {
             flex-direction: column;
+        }
+
+        col {
+            inline-size: auto;
         }
     }
 
     /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
-    @media screen and (max-width: 400px) {
+    @media screen and (max-width: 786px) {
         .navbar a {
             float: none;
             width: 100%;
         }
+    }
+
+    @media (min-width: 768px) .container {
+        /* width: 750px; */
+    }
+
+    .container {
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    @media (min-width: 576px) {
+        ...
+    }
+
+    // Medium devices (tablets, 768px and up)
+    @media (min-width: 768px) {
+        ...
+    }
+
+    // Large devices (desktops, 992px and up)
+    @media (min-width: 992px) {
+        ...
+    }
+
+    // Extra large devices (large desktops, 1200px and up)
+    @media (min-width: 1200px) {
+        ...
     }

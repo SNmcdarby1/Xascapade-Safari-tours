@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" integrity="sha512-csw0Ma4oXCAgd/d4nTcpoEoz4nYvvnk21a8VA2h2dzhPAvjbUIK6V3si7/g/HehwdunqqW18RwCJKpD7rL67Xg==" crossorigin="anonymous" type="text/css">
 
     <link rel="stylesheet" href="assets/css/style.css" type="text/css">
@@ -18,7 +17,21 @@
 
 
 
-<body class="container-fluid card " class="bg-image">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<body class="container-fluid card " class="bg-image" class="container white padding-16 myLink">
     <header>
 
 
@@ -92,18 +105,7 @@
                                 <li data-target="#demo" data-slide-to="1"></li>
                                 <li data-target="#demo" data-slide-to="2"></li>
                                 <li data-target="#demo" data-slide-to="3"></li>
-                                <section class="card">
 
-                                    <!-- was inspired by the 3wschool example  -->
-                                    <div class="dropdown text-center">
-                                        <button class="dropbtn">More Info</button>
-                                        <div class="dropdown-content">
-                                            <a href="safari.html">Safari Packages</a>
-                                            <a href="accommodation.html">Accommodations</a>
-                                            <a href="reservation.html">Reservation</a>
-                                        </div>
-                                    </div>
-                                </section>
                                 <li data-target="#demo" data-slide-to="4"></li>
                                 <li data-target="#demo" data-slide-to="5"></li>
                                 <li data-target="#demo" data-slide-to="6"></li>
@@ -335,13 +337,7 @@
 
 
 
-                    <!-- bootstrap scripr snippet -->
-                    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
-                    </script>
-                    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
-                    </script>
-                    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
-                    </script>
+
 
         </body>
 
@@ -376,178 +372,204 @@
             </form>
             <!-- End page content -->
         </div>
-        </main>
+</section>
 
 
-        <footer class="container">
-            <card class="form container-fluid inline-block">
-                <div>
-                    <hr class="my-4 inline-block col>
+<footer class="container">
+    <card class="form container-fluid inline-block">
+        <div>
+            <hr class="my-4 inline-block col>
                                     <div class=" container">
-                    <h4>Get the best offers first!</h4>
+            <h4>Get the best offers first!</h4>
 
-                    <p>Join our newsletter.</p>
-                    <label>E-mail</label>
-                    <input class="input border" type="text" placeholder="Your Email address">
-                    <button type="button" class="button red margin-top">Subscribe</button>
+            <p>Join our newsletter.</p>
+            <label>E-mail</label>
+            <input class="input border" type="text" placeholder="Your Email address">
+            <button type="button" class="button red margin-top">Subscribe</button>
+        </div>
+        </div>
+        <!-- w3school snippet -->
+
+        <!-- footer section -->
+        <footer class=container-fluid>
+
+
+
+            <section class="card form col-sm s12 progress-section social">
+                <div class="container">
+                    <form action="/action_page.php">
+                        <div class="col">
+                            <p style="text-align:center">Login with Social Media</p>
+                            <div class="vl">
+                                <span class="vl-innertext">or</span>
+                            </div>
+
+                            <div class="col-sm">
+                                <a href="#" class="fb btn">
+                                    <i class="fa fa-facebook fa-fw"></i>
+                                    Facebook
+                                </a>
+                                <a href="#" class="twitter btn">
+                                    <i class="fa fa-twitter fa-fw"></i>
+                                    Twitter
+                                </a>
+                                <a href="#" class="google btn">
+                                    <i class="fa fa-google fa-fw"></i>
+                                    Google+
+                                </a>
+                            </div>
+
+                            <div class="col-sm">
+                                <div class="hide-md-lg">
+                                    <p>Or sign in manually:</p>
+                                </div>
+
+                                <input type="text" name="username" placeholder="Username" required>
+                                <input type="password" name="password" placeholder="Password" required>
+                                <input type="submit" value="Login">
+                            </div>
+
+                        </div>
+                    </form>
                 </div>
+
+                <div class="bottom-container">
+                    <div class="row">
+                        <div class="col-sm">
+                            <a href="#" style="color:white" class="btn">
+                                <p>Sign up</p>
+                            </a>
+                        </div>
+                        <div class="col-sm">
+                            <a href="#" style="color:white" class="btn">Forgot password?</a>
+                        </div>
+                    </div>
                 </div>
-                <!-- w3school snippet -->
+            </section>
+            <!-- w3school snippet -->
+            <!-- Footer -->
 
-                <!-- footer section -->
-                <footer class=container-fluid>
+            <div class="chat-popup" id="myForm">
+                <form action="/action_page.php" class="form-container">
 
 
+                    <label for="msg"><b>Chat</b></label>
+                    <textarea placeholder="Type message.." name="msg" required></textarea>
 
-                    <section class="card form col-sm s12 progress-section social">
+
+                    <button type="submit" class="btn">Send</button>
+                    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                </form>
+            </div>
+
+
+            <form class="autocomplete-items s12 opacity margin-bottom   container-fluid">
+
+                <!-- pop upform 3wschool snippet  -->
+                <card action="/action_page.php">
+                    <div class="row">
+
                         <div class="container">
                             <form action="/action_page.php">
-                                <div class="col">
-                                    <p style="text-align:center">Login with Social Media</p>
-                                    <div class="vl">
-                                        <span class="vl-innertext">or</span>
-                                    </div>
 
-                                    <div class="col-sm">
-                                        <a href="#" class="fb btn">
-                                            <i class="fa fa-facebook fa-fw"></i>
-                                            Facebook
-                                        </a>
-                                        <a href="#" class="twitter btn">
-                                            <i class="fa fa-twitter fa-fw"></i>
-                                            Twitter
-                                        </a>
-                                        <a href="#" class="google btn">
-                                            <i class="fa fa-google fa-fw"></i>
-                                            Google+
-                                        </a>
-                                    </div>
-
-                                    <div class="col-sm">
-                                        <div class="hide-md-lg">
-                                            <p>Or sign in manually:</p>
-                                        </div>
-
-                                        <input type="text" name="username" placeholder="Username" required>
-                                        <input type="password" name="password" placeholder="Password" required>
-                                        <input type="submit" value="Login">
-                                    </div>
-
+                                <div class="xlarge padding-16">
+                                    <i class="fa fa-facebook-official hover-opacity"></i>
+                                    <i class="fa fa-instagram hover-opacity"></i>
+                                    <i class="fa fa-snapchat hover-opacity"></i>
+                                    <i class="fa fa-pinterest-p hover-opacity"></i>
+                                    <i class="fa fa-twitter hover-opacity"></i>
+                                    <i class="fa fa-linkedin hover-opacity"></i>
                                 </div>
                             </form>
                         </div>
-
-                        <div class="bottom-container">
-                            <div class="row">
-                                <div class="col-sm">
-                                    <a href="#" style="color:white" class="btn">
-                                        <p>Sign up</p>
-                                    </a>
-                                </div>
-                                <div class="col-sm">
-                                    <a href="#" style="color:white" class="btn">Forgot password?</a>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                    <!-- w3school snippet -->
-                    <!-- Footer -->
-
-                    <div class="chat-popup" id="myForm">
-                        <form action="/action_page.php" class="form-container">
-
-
-                            <label for="msg"><b>Chat</b></label>
-                            <textarea placeholder="Type message.." name="msg" required></textarea>
-
-
-                            <button type="submit" class="btn">Send</button>
-                            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
-                        </form>
+                        <a href="mail@xascapade.com">info@xascapade.com</a></p>
+                        <p>Powered by <a href="#" target="_blank" class="hover-text-green" class="container" style="background-color:#e0ddd3">
+                                Xascapade</a>
+                        </p>
                     </div>
+            </form>
 
+            </section>
 
-                    <form class="autocomplete-items s12 opacity margin-bottom   container-fluid">
+        </footer>
 
-                        <!-- pop upform 3wschool snippet  -->
-                        <card action="/action_page.php">
-                            <div class="row">
+        <a href="#" class="cd-top text-replace js-cd-top">Top</a>
 
-                                <div class="container">
-                                    <form action="/action_page.php">
-
-                                        <div class="xlarge padding-16">
-                                            <i class="fa fa-facebook-official hover-opacity"></i>
-                                            <i class="fa fa-instagram hover-opacity"></i>
-                                            <i class="fa fa-snapchat hover-opacity"></i>
-                                            <i class="fa fa-pinterest-p hover-opacity"></i>
-                                            <i class="fa fa-twitter hover-opacity"></i>
-                                            <i class="fa fa-linkedin hover-opacity"></i>
-                                        </div>
-                                    </form>
-                                </div>
-                                <a href="mail@xascapade.com">info@xascapade.com</a></p>
-                                <p>Powered by <a href="#" target="_blank" class="hover-text-green" class="container" style="background-color:#e0ddd3">
-                                        Xascapade</a>
-                                </p>
-                            </div>
-                    </form>
-
-</section>
-
-</footer>
-
-<a href="#" class="cd-top text-replace js-cd-top">Top</a>
-
-</section>
+        </section>
 
 
 
-<script type="text/javascript" src="https://res.perfectibe.com/scripts/calendar.js">
-</script>
-<script type="text/javascript" src="https://res.perfectibe.com/scripts/jsDate.js"></script>
-<script type="text/javascript" src="https://res.perfectibe.com/scripts/pibe.js"></script>
-<script type="text/javascript" src="https://res.perfectibe.com/scripts/dropdown.js">
-</script>
-<script type="text/javascript"></script>
-<!-- bootstrap scripr snippet -->
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
-</script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
-</script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
-</script>
+        <script type="text/javascript" src="https://res.perfectibe.com/scripts/calendar.js">
+        </script>
+        <script type="text/javascript" src="https://res.perfectibe.com/scripts/jsDate.js"></script>
+        <script type="text/javascript" src="https://res.perfectibe.com/scripts/pibe.js"></script>
+        <script type="text/javascript" src="https://res.perfectibe.com/scripts/dropdown.js">
+        </script>
+        <script type="text/javascript"></script>
+        <!-- bootstrap scripr snippet -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+        </script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+        </script>
 
 
 
 
-<!-- bootstrap scripr snippet -->
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
-</script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
-</script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
-</script>
+        <!-- bootstrap scripr snippet -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+        </script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+        </script>
 
-</body>
+        </body>
 
-</html>
-</script>
+        </html>
+        </script>
 
-</body>
+        </body>
 
-</html>
+        </html>
 
-<section class="container-fluid">
-    <div class="row">
-        <div class="col-md-4 bg-color-conferences section-column">
+        <section class="container-fluid">
             <div class="row">
-                <div class="col-12">
-                    <h3>
+                <div class="col-md-4 bg-color-conferences section-column">
+                    <div class="row">
+                        <div class="col-12">
+                            <h3>
 
-                    </h3>
+                            </h3>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
-</section>
+        </section>
+        <style>
+            #map {
+                height: 400px;
+                width: 100%;
+            }
+        </style>
+
+        </head>
+
+        <body>
+            <h1>My Google Map</h1>
+            <div id="map"></div>
+            <script>
+                function initmap() {
+                    var options = {
+                        zoom: 8,
+                        center: {
+                            lat: 1.7563,
+                            Lng: 37.636902
+                        }
+                    }
+                    var map = new google.maps.Map(document.getElementById('map'), options);
+                }
+            </script>
+            <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBWLqLkyKdVVXKBoQ2n9EVX3Epp7gLOSs0&callback=initMap">
+            </script>

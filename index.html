@@ -1,400 +1,502 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 
 <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Xascapade Travel</title>
 
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" type="text/css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        type="text/css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        type="text/css" />
+    <link rel="stylesheet" href="https://stackpath.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css"
+        type="text/css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
 
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+</head>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" integrity="sha512-csw0Ma4oXCAgd/d4nTcpoEoz4nYvvnk21a8VA2h2dzhPAvjbUIK6V3si7/g/HehwdunqqW18RwCJKpD7rL67Xg==" crossorigin="anonymous" type="text/css">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" integrity="sha512-csw0Ma4oXCAgd/d4nTcpoEoz4nYvvnk21a8VA2h2dzhPAvjbUIK6V3si7/g/HehwdunqqW18RwCJKpD7rL67Xg==" crossorigin="anonymous" type="text/css">
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js" integrity="sha512-/DXTXr6nQodMUiq+IUJYCt2PPOUjrHJ9wFrqpJ3XkgPNOZVfMok7cRw6CSxyCQxXn6ozlESsSh1/sMCTF1rL/g==" crossorigin="anonymous"></script>
-
-
-
-    <link rel="stylesheet" href="assets/css/style.css" type="text/css">
-    <title>XASCAPADE</title>
-
-
-
-<body class="container-fluid no-gutter ">
-    <header>
+<body class="container-fluid no-gutter " class="container white padding-16 myLink">
 
 
 
-        <!-- Footer -->
+    <h1><span>XAS</span>CAPADE</h1>
+    <span>
+        Explore the World
+    </span>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top topnav">
+        <div class="bar white border-bottom xlarge">
+            <a href="index.html" class="bar-item button text-red hover-red"><b><i
+                        class="fa fa-map-marker margin-right"></i>
+                    <did id="map"><span>XASCAPADE</span>
+                </b></a>
+            <a href="index.html" class="bar-item w3-button right hover-red text-grey"><i class="fa fa-search"></i></a>
+        </div>
+        <button class="navbar-toggler hidden-lg-up btn-btn show-sm-dowm" type="button" data-toggle="collapse"
+            data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="true"
+            aria-label="togglenavigation"></button>
+        <div class="collapse navbar-collapse " data-toggle="collapse" id="collapsibleNavId">
+            <ul class="navbar">
+                <li class="nav-item active  btn">
+                    <a class="nav-link" href="index.html"><i class="fa fa-home" aria-hidden="true"></i>Home
+                        <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item  btn">
+                    <a class="nav-link" href="about.html"><i class="fa fa-cloud" aria-hidden="true"></i>About</a>
+                </li>
+                <li class="nav-item dropdown  btn">
+                    <a class="nav-link" href="products.html"><i class="fa fa-gear" aria-hidden="true"></i>Products</a>
 
+                </li>
+                <li class="nav-item btn">
+                    <a class="nav-link" href="gallery.html"><i class="fa fa-camera" aria-hidden="true"></i>Gallery</a>
+                </li>
 
+                <li class="nav-item btn">
+                    <a class="nav-link" href="contact.html"><i class="fa fa-user-circle"
+                            aria-hidden="true"></i>Contact</a>
+                </li>
 
-        <!-- body -->
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
 
-        <body>
+    </nav>
+    <header class=" container-fluid ">
+        <section class=" d-inline-block text-truncate" style="max-width: 100%;">
+            <div class="section-column header   d-inline-block text-truncate" style="max-width: 100%;">
+                <div class="container">
 
-            <section class="container-fluid">
-                <!-- snippet navbar selected by gitpod snippet tags ctrl=space keys -->
-
-                <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top topnav">
-                    <a class="navbar-brand" href="index.html">Xascapade Travel
-
-                    </a>
-                    <button class="navbar-toggler hidden-lg-up btn-btn show-sm-dowm" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="true" aria-label="togglenavigation"></button>
-                    <div class="collapse navbar-collapse " data-toggle="collapse" id="collapsibleNavId">
-                        <ul class="navbar">
-                            <li class="nav-item active  btn">
-                                <a class="nav-link" href="index.html"><i class="fa fa-home" aria-hidden="true"></i>Home
-                                    <span class="sr-only">(current)</span></a>
-                            </li>
-                            <li class="nav-item  btn">
-                                <a class="nav-link" href="about.html"><i class="fa fa-cloud" aria-hidden="true"></i>About</a>
-                            </li>
-                            <li class="nav-item dropdown  btn">
-                                <a class="nav-link" href="products.html"><i class="fa fa-gear" aria-hidden="true"></i>Products</a>
-
-                            </li>
-                            <li class="nav-item btn">
-                                <a class="nav-link" href="gallery.html"><i class="fa fa-camera" aria-hidden="true"></i>Gallery</a>
-                            </li>
-
-                            <li class="nav-item btn">
-                                <a class="nav-link" href="contact.html"><i class="fa fa-user-circle" aria-hidden="true"></i>Contact</a>
-                            </li>
-
-                        </ul>
-                        <form class="form-inline my-2 my-lg-0">
-                            <input class="form-control mr-sm-2" type="text" placeholder="Search">
-                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                        </form>
-                    </div>
-
-                </nav>
-
-
-                <head>
-
-
-                    <main class="container-fluid">
-                        <div class="row">
-                            <div class="col-md-4 bg-color-conferences section-column">
-                                <div class="row">
-                                    <div class="col-12">
-                                        <picture class="d-inline-block text-truncate">
-                                            <img src="assets/images/lions.jpg" style="width:100%" vh="50%">
-
-                                        </picture>
-                                    </div>
-                                    <div class="col-12">
-                                        <h4> Xascapade Travel</h4>
-                                        Is a private owned company that operates tailor made safari packages to Kenya according
-                                        to the customers desire. Our goal is to satisfy both tangible and untangible products
-                                        and services in both the look a feel of the products.
-                                        Kenya Safari is one of the greatest life changing wildlife experience beyond the
-                                        positive subconscious feeling generated by the community,there is also a fact the her
-                                        diversity landscape is simply extraordinary be it the rich of wildlife and the beautiful
-                                        scenery of
-                                        Africa
-                                    </div>
-
-                                </div>
-                            </div>
+                    <body class="light-grey">
+                        <!-- Navigation Bar -->
+                        <div class="bar white border-bottom xlarge">
+                            <a href="Index.html" class="bar-item button text-red hover-red"><b><i
+                                        class="fa fa-map-marker margin-right"></i>
+                                    <did><span>Xascapade Travel </span>
+                                </b></a>
+                            <a href="index.html" class="bar-item w3-button right hover-red text-grey"><i
+                                    class="fa fa-search"></i></a>
                         </div>
 
-                        <section class="container-fluid">
 
-                            <div class="textarea">
-                                <div class="row">
-                                    <div class="col-md-4 bg-color-conferences section-column">
-                                        <div class="row">
-                                            <div class="col-12">
-                                                <div id="Hotel" class="container white padding-16 myLink  ">
-                                                    <h3>Find the best safari package</h3>
-                                                    <p>Book a Safari with us and get the best safari rates and promotions.</p>
-                                                    <p>We know hotels - we know comfort.</p>
-                                                    <p class="button dark-grey">
-                                                        <!-- was inspired by the 3wschool example  -->
-                                                        <div class="dropdown text-center">
-                                                            <button class="dropbtn">Safari</button>
-                                                            <div class="dropdown-content">
-                                                                <a href="safari.html">Safari Packages</a>
-
-                                                            </div>
-                                                        </div>
-                                                    </p>
+                        <body>
+                            <picture class="d-inline-block text-truncate" style="max-width: cover;">
+                                <div id="mySidebar" class="sidebar">
+                                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;
 
 
-                                                </div>
-                                                </h3>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4 bg-color-conferences section-column">
-                                        <div class="row">
-                                            <div class="col-12">
-                                                <div id="Hotel" class="container white padding-16 myLink  ">
-                                                    <h3>Find the best Accommodation package</h3>
-                                                    <p>Book a hotel with us and get the best rates and promotions.</p>
-                                                    <p>We know hotels - we know comfort.</p>
-                                                    <p class="button dark-grey">
-                                                        <!-- was inspired by the 3wschool example  -->
-                                                        <div class="dropdown text-center">
-                                                            <button class="dropbtn">Accommodation</button>
-                                                            <div class="dropdown-content">
-
-                                                                <a href="accommodation.html">Accommodations</a>
-
-                                                            </div>
-                                                        </div>
-                                                    </p>
-
-
-                                                </div>
-                                                </h3>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4 bg-color-conferences section-column">
-                                        <div class="row">
-                                            <div class="col-12">
-                                                <div id="Hotel" class="container white padding-16 myLink  ">
-                                                    <h3>Reservations</h3>
-                                                    <p>Get in touch for bookings.</p>
-                                                    <p>We know hotels - we know comfort.</p>
-                                                    <p class="button dark-grey">
-                                                        <!-- was inspired by the 3wschool example  -->
-                                                        <div class="dropdown text-center">
-                                                            <button class="dropbtn">Reservation</button>
-                                                            <div class="dropdown-content">
-
-                                                                <a href="reservation.html">Reservation</a>
-                                                            </div>
-                                                        </div>
-                                                    </p>
-
-
-                                                </div>
-                                                </h3>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <card class="form container-fluid inline-block">
-                                        <div>
-                                            <hr class="my-12 inline-block col>
-                                    <div class=" container">
-                                            <h4>Get the best offers first!</h4>
-
-                                            <p>Join our newsletter.</p>
-                                            <label>E-mail</label>
-                                            <input class="input border" type="text" placeholder="Your Email address">
-                                            <button type="button" class="button red margin-top">Subscribe</button>
-                                        </div>
-                                        <div>
-
-                                            <div class="col-4">
-                                                <a href="#" style="color:teal" class="btn">Sign up</a>
-                                            </div>
-
-                                            <div class="col-4">
-                                                <a href="#" style="color:teal" class="btn">Forgot password?</a>
-                                            </div>
-                                            <button type="submit" class="btn">Register</button>
-                                        </div>
-                                    </card>
-
-                                </div>
-                            </div>
-                            </form>
-                            <!-- End page content -->
-                            </div>
-                            </div>
-                            </div>
-                        </section>
-
-                        <main class="section-colunm container">
-
-                        </main>
-
-
-                        <!-- Footer -->
-
-
-
-                        <footer class="container-fluid">
-                            <card class="form container-fluid inline-block">
-                                <div>
-                                    <hr class="my-12 inline-block col>
-                                    <div class=" container">
-                                    <h4>Log in with social media!</h4>
-                                    <span class="vl-innertext">or</span>
-                                </div>
-
-
-                                <div class="col-sm">
-                                    <a href="#" class="fb btn">
-                                        <i class="fa fa-facebook fa-fw"></i>
-                                        Facebook
-                                    </a>
-                                    <a href="#" class="twitter btn">
-                                        <i class="fa fa-twitter fa-fw"></i>
-                                        Twitter
-                                    </a>
-                                    <a href="#" class="google btn">
-                                        <i class="fa fa-google fa-fw"></i>
-                                        Google+
                                     </a>
                                 </div>
+                </div>
+            </div>
+            </div>
 
-                                <div class="col-sm">
-                                    <div class="hide-md-lg">
-                                        <p>Or sign in manually:</p>
-                                    </div>
+    </header>
+    <section class="container-fluid no-gutter " class="container white padding-16 myLink">
 
-                                    <input type="text" name="username" placeholder="Username" required>
-                                    <input type="password" name="password" placeholder="Password" required>
-                                    <input type="submit" value="Login">
+        <a href=""><img src="#" title="Coveralls" alt="Coveralls" /></a>
+
+        <source srcset="assets/images/lions.jpg" type="image/svg+xml">
+        <img src="assets/images/lions.jpg" class="img-fluid img-thumbnail" alt="cheetah">
+
+        </picture>
+        <div class="container-fluid">
+            <div class="inline-block">
+                <picture class="d-inline-block text-truncate" style="max-width: 600px;">
+                    <source srcset="assets/images/beach.jpg" type="image/svg+xml">
+                    <img src="assets/images/beach.jpg" class="img-fluid img-thumbnail" alt="Rooms">
+                </picture>
+                <picture class="d-inline-block text-truncate" style="max-width: 600px;">
+                    <source srcset="assets/images/norway.jpg" type="image/svg+xml">
+                    <img src="assets/images/norway.jpg" class="img-fluid img-thumbnail" alt="Rooms">
+                </picture>
+                <picture class="d-inline-block text-truncate" style="max-width: 600px;">
+                    <source srcset="assets/images/jade-m.jpg" type="image/svg+xml">
+                    <img src="assets/images/jade-m.jpg" class="img-fluid img-thumbnail" alt="Rooms">
+                </picture>
+
+            </div>
+            <section class="container-fluid ">
+                <div class="row">
+
+                    <div class="col">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="col" class="container white padding-16 myLink ">
+                                    <h4> Xascapade Travel</h4>
+                                    Is a private owned company that operates
+                                    tailor made safari packages to
+                                    Kenya
+                                    according
+                                    to the customers desire. Our goal is to
+                                    satisfy both tangible and untangible
+                                    products
+                                    and services in both the look a feel of the
+                                    products.
+                                    Kenya Safari is one of the greatest life
+                                    changing wildlife experience beyond
+                                    the
+                                    positive subconscious feeling generated by
+                                    the community,there is also a
+                                    fact
+                                    the her
+                                    diversity landscape is simply extraordinary
+                                    be it the rich of wildlife and
+                                    the
+                                    beautiful
+                                    scenery of
+                                    Africa
                                 </div>
-                                <div class="bottom-container">
-                                    <div class="row">
-                                        <div class="col-sm">
-                                            <a href="#" style="color:rgb(13, 81, 83)" class="btn">
-                                                <p>Sign up</p>
-                                            </a>
-                                        </div>
-                                        <div class="col-sm">
-                                            <a href="#" style="color:rgb(13, 81, 83)" class="btn">Forgot password?</a>
-                                        </div>
 
-                                    </div>
+                            </div>
+                        </div>
+                    </div>
 
-
-
-                                </div>
-                                </form>
-                                </div>
-
-
-                                <div class="col-12">
-                                    <div class="chat-popup" id="myForm">
-                                        <form action="/action_page.php" class="form-container">
-
-
-                                            <label for="msg"><b>Chat</b></label>
-                                            <textarea placeholder="Type message.." name="msg" required></textarea>
-
-
-                                            <button type="submit" class="btn">Send</button>
-                                            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
-                                        </form>
-                                    </div>
-                                </div>
-            </section>
-            <!-- w3school snippet -->
-            <!-- Footer -->
-
-            <form class="autocomplete-items s12 opacity margin-bottom   container-fluid">
-
-                <!-- pop upform 3wschool snippet  -->
-                <section class="container-fluid">
-                    <div class="row">
+                    <section class="container">
                         <div class="col-md-4 bg-color-conferences section-column">
                             <div class="row">
                                 <div class="col-12">
-                                    <h3>
-                                        <card action="/action_page.php">
-                                            <div class="row">
+                                    <div id="Hotel" class="container white padding-16 myLink  ">
+                                        <h3>Game Drives only </h3>
+                                        <p>Book a Safari best rates and
+                                            promotions.</p>
+                                        <p>We know hotels - we know comfort.</p>
+                                        <p class="button dark-grey">
+                                            <!-- was inspired by the 3wschool example  -->
+                                            <div class="dropdown text-center">
+                                                <button class="dropbtn">Safari</button>
+                                                <div class="dropdown-content">
+                                                    <a href="safari.html">Safari
+                                                        Packages</a>
 
-                                                <div class="container">
-                                                    <form action="/action_page.php">
-
-                                                        <div class="xlarge padding-16">
-                                                            <i class="fa fa-facebook-official hover-opacity"></i>
-                                                            <i class="fa fa-instagram hover-opacity"></i>
-                                                            <i class="fa fa-snapchat hover-opacity"></i>
-                                                            <i class="fa fa-pinterest-p hover-opacity"></i>
-                                                            <i class="fa fa-twitter hover-opacity"></i>
-                                                            <i class="fa fa-linkedin hover-opacity"></i>
-                                                        </div>
-                                                    </form>
                                                 </div>
+                                            </div>
+                                        </p>
 
+
+                                    </div>
                                     </h3>
                                 </div>
                             </div>
                         </div>
+                        <div class="col-md-4 bg-color-conferences section-column">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div id="Hotel" class="container white padding-16 myLink  ">
+                                        <h3>Book safari tours plus accommodation
+                                        </h3>
+                                        <p>Best rates and promotions.</p>
+                                        <p>We know hotels - we know comfort.</p>
+                                        <p class="button dark-grey">
+                                            <!-- was inspired by the 3wschool example  -->
+                                            <div class="dropdown text-center">
+                                                <button class="dropbtn">Accommodation</button>
+                                                <div class="dropdown-content">
+
+                                                    <a href="accommodation.html">Accommodations</a>
+
+                                                </div>
+                                            </div>
+                                        </p>
+
+
+                                    </div>
+                                    </h3>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+
+                    <!-- Page content -->
+                    <div class="w3-content" style="max-width:1100px;">
+
+                        <!-- Good offers -->
+                        <div class="w3-container w3-margin-top">
+                            <h3>Good Offers Right Now</h3>
+                            <h6>Up to <strong>50%</strong> discount.</h6>
+                        </div>
+                        <div class="w3-row-padding w3-text-white w3-large">
+                            <div class="w3-half w3-margin-bottom">
+                                <picture class="d-inline-block text-truncate" style="max-width: 600px;">
+                                    <source srcset="assets/images/the.jpg" type="image/svg+xml">
+                                    <img src="assets/images/the.jpg" class="img-fluid img-thumbnail" alt="Rooms">
+                                </picture>
+                                <span class="w3-display-bottomleft w3-padding">Accommodation</span>
+                            </div>
+
+                        </div>
+                        <div class="w3-half">
+                            <div class="w3-row-padding" style="margin:0 -16px">
+                                <div class="w3-half w3-margin-bottom">
+                                    <div class="w3-display-container">
+
+                                        <picture class="d-inline-block text-truncate" style="max-width: 600px;">
+                                            <source srcset="assets/images/red.jpg" type="image/svg+xml">
+                                            <img src="assets/images/red.jpg" class="img-fluid img-thumbnail"
+                                                alt="Rooms">
+                                        </picture>
+                                        <span class="w3-display-bottomleft w3-padding">Amboseli
+                                            National park</span>
+                                    </div>
+                                </div>
+                                <div class="w3-half w3-margin-bottom">
+                                    <div class="w3-display-container">
+                                        <picture class="d-inline-block text-truncate" style="max-width: 600px;">
+                                            <source srcset="assets/images/cheetah-in-maasai-mara_1.jpg"
+                                                type="image/svg+xml">
+                                            <img src="assets/images/cheetah-in-maasai-mara_1.jpg"
+                                                class="img-fluid img-thumbnail" alt="Rooms">
+                                        </picture>
+                                        <span class="w3-display-bottomleft w3-padding">Masaai Mara
+                                            National Park</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w3-row-padding" style="margin:0 -16px">
+                                <div class="w3-half w3-margin-bottom">
+                                    <div class="w3-display-container">
+                                        <picture class="d-inline-block text-truncate" style="max-width: 600px;">
+                                            <source srcset="assets/images/Mombasa-Town.jpg" type="image/svg+xml">
+                                            <img src="assets/images/Mombasa-Town.jpg" class="img-fluid img-thumbnail"
+                                                alt="Rooms">
+                                        </picture>
+                                        <span class="w3-display-bottomleft w3-padding">Mombasa</span>
+                                    </div>
+                                </div>
+                                <div class="w3-half w3-margin-bottom">
+                                    <div class="w3-display-container">
+                                        <picture class="d-inline-block text-truncate" style="max-width: 600px;">
+                                            <source srcset="assets/images/Kenya-maasai.jpg" type="image/svg+xml">
+                                            <img src="assets/images/Kenya-maasai.jpg" class="img-fluid img-thumbnail"
+                                                alt="Rooms">
+                                        </picture>
+                                        <span class="w3-display-bottomleft w3-padding">Masaai</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </section>
-                <a href="mail@xascapade.com">info@xascapade.com</a></p>
-                <p>Powered by <a href="#" target="_blank" class="hover-text-green" class="container" style="background-color:#e0ddd3">
-                        Xascapade</a>
-                </p>
+
+                    <!-- Explore Nature w3 snippet-->
+                    <div class="w3-container">
+                        <h3>Explore Nature</h3>
+                        <p>Travel with us and see nature at its finest.</p>
+                    </div>
+                    <div class="w3-row-padding">
+                        <div class="w3-half w3-margin-bottom">
+                            <img src="assets/images/Mombasa-Town.jpg" alt="Mombasa" style="width:100%">
+                            <div class="w3-container w3-white">
+                                <h3>Coast Kenya, Mombasa Town</h3>
+                                <p class="w3-opacity">Roundtrip from $79</p>
+                                <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                                <button class="w3-button w3-margin-bottom">Buy Tickets</button>
+                            </div>
+                        </div>
+                        <div class="w3-half w3-margin-bottom">
+                            <img src="assets/images/lodge.jpg" alt="Southern Palm" style="width:100%">
+                            <div class="w3-container w3-white">
+                                <h3>Safari lodge</h3>
+                                <p class="w3-opacity">One-way from $39</p>
+                                <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                                <button class="w3-button w3-margin-bottom">Buy Tickets</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Newsletter -->
+                    <div class=" form  w3-container">
+                        <div class="w3-panel w3-padding-16 w3-black w3-opacity w3-card w3-hover-opacity-off">
+                            <h2>Get the best offers first!</h2>
+                            <p>Join our newsletter.</p>
+                            <label>E-mail</label>
+                            <input class="w3-input w3-border" type="text" placeholder="Your Email address">
+                            <button type="button" class="w3-button w3-red w3-margin-top">Subscribe</button>
+                        </div>
+                    </div>
+
+                    <!-- Contact -->
+
                 </div>
-            </form>
 
-            </section>
+                <!-- Contact -->
 
-            </footer>
+                <Section class="container-fluid inline-block">
 
-            <a href="#" class="cd-top text-replace js-cd-top">Top</a>
-
-            </section>
-
-
-
-            <script type="text/javascript" src="https://res.perfectibe.com/scripts/calendar.js">
-            </script>
-            <script type="text/javascript" src="https://res.perfectibe.com/scripts/jsDate.js"></script>
-            <script type="text/javascript" src="https://res.perfectibe.com/scripts/pibe.js"></script>
-            <script type="text/javascript" src="https://res.perfectibe.com/scripts/dropdown.js">
-            </script>
-            <script type="text/javascript"></script>
-            <!-- bootstrap scripr snippet -->
-            <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
-            </script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
-            </script>
-            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
-            </script>
+                    <!-- End page content -->
+        </div>
+        <!-- w3school snippet -->
+        <!-- Footer -->
+        <footer class="active container-fluid  opacity margin-bottom">
+            <h5>Find Us On</h5>
+            <div class="xlarge padding-16">
+                <i class="fa fa-facebook-official hover-opacity"></i>
+                <i class="fa fa-instagram hover-opacity"></i>
+                <i class="fa fa-snapchat hover-opacity"></i>
+                <i class="fa fa-pinterest-p hover-opacity"></i>
+                <i class="fa fa-twitter hover-opacity"></i>
+                <i class="fa fa-linkedin hover-opacity"></i>
+            </div>
 
 
+            <p>Powered by <a href="#" target="_blank" class="hover-text-green">Xascapade</a></p>
 
+        </footer>
 
-            <!-- bootstrap scripr snippet -->
-            <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
-            </script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
-            </script>
-            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
-            </script>
+        <script>
+            // Tabs
+            function openLink(evt, linkName) {
+                var i, x, tablinks;
+                x = document.getElementsByClassName("myLink");
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                tablinks = document.getElementsByClassName("tablink");
+                for (i = 0; i < x.length; i++) {
+                    tablinks[i].className = tablinks[i].className.replace(" teal", "");
+                }
+                document.getElementById(linkName).style.display = "block";
+                evt.currentTarget.className += " teal";
+            }
+            // autocomplete w3schhol snippet
+            function autocomplete(inp, arr) {
+                /*the autocomplete function takes two arguments,
+                the text field element and an array of possible autocompleted values:*/
+                var currentFocus;
+                /*execute a function when someone writes in the text field:*/
+                inp.addEventListener("input", function (e) {
+                    var a, b, i, val = this.value;
+                    /*close any already open lists of autocompleted values*/
+                    closeAllLists();
+                    if (!val) {
+                        return false;
+                    }
+                    currentFocus = -1;
+                    /*create a DIV element that will contain the items (values):*/
+                    a = document.createElement("DIV");
+                    a.setAttribute("id", this.id + "autocomplete-list");
+                    a.setAttribute("class", "autocomplete-items");
+                    /*append the DIV element as a child of the autocomplete container:*/
+                    this.parentNode.appendChild(a);
+                    /*for each item in the array...*/
+                    for (i = 0; i < arr.length; i++) {
+                        /*check if the item starts with the same letters as the text field value:*/
+                        if (arr[i].substr(0, val.length).toUpperCase() == val
+                            .toUpperCase()) {
+                            /*create a DIV element for each matching element:*/
+                            b = document.createElement("DIV");
+                            /*make the matching letters bold:*/
+                            b.innerHTML = "<strong>" + arr[i].substr(0, val.length) +
+                                "</strong>";
+                            b.innerHTML += arr[i].substr(val.length);
+                            /*insert a input field that will hold the current array item's value:*/
+                            b.innerHTML += "<input type='hidden' value='" + arr[i] +
+                                "'>";
+                            /*execute a function when someone clicks on the item value (DIV element):*/
+                            b.addEventListener("click", function (e) {
+                                /*insert the value for the autocomplete text field:*/
+                                inp.value = this.getElementsByTagName("input")[
+                                    0].value;
+                                /*close the list of autocompleted values,
+                                (or any other open lists of autocompleted values:*/
+                                closeAllLists();
+                            });
+                            a.appendChild(b);
+                        }
+                    }
+                });
+                // Get the video
+                var video = document.getElementById("myVideo");
 
-        </body>
+                // Get the button
+                var btn = document.getElementById("myBtn");
 
-</html>
-</script>
+                // Pause and play the video, and change the button text
+                function myFunction() {
+                    if (video.paused) {
+                        video.play();
+                        btn.innerHTML = "Pause";
+                    } else {
+                        video.pause();
+                        btn.innerHTML = "Play";
+                    }
+                }
+                /*execute a function presses a key on the keyboard:*/
+                inp.addEventListener("keydown", function (e) {
+                    var x = document.getElementById(this.id + "autocomplete-list");
+                    if (x) x = x.getElementsByTagName("div");
+                    if (e.keyCode == 40) {
+                        /*If the arrow DOWN key is pressed,
+                        increase the currentFocus variable:*/
+                        currentFocus++;
+                        /*and and make the current item more visible:*/
+                        addActive(x);
+                    } else if (e.keyCode == 38) { //up
+                        /*If the arrow UP key is pressed,
+                        decrease the currentFocus variable:*/
+                        currentFocus--;
+                        /*and and make the current item more visible:*/
+                        addActive(x);
+                    } else if (e.keyCode == 13) {
+                        /*If the ENTER key is pressed, prevent the form from being submitted,*/
+                        e.preventDefault();
+                        if (currentFocus > -1) {
+                            /*and simulate a click on the "active" item:*/
+                            if (x) x[currentFocus].click();
+                        }
+                    }
+                });
+
+                function addActive(x) {
+                    /*a function to classify an item as "active":*/
+                    if (!x) return false;
+                    /*start by removing the "active" class on all items:*/
+                    removeActive(x);
+                    if (currentFocus >= x.length) currentFocus = 0;
+                    if (currentFocus < 0) currentFocus = (x.length - 1);
+                    /*add class "autocomplete-active":*/
+                    x[currentFocus].classList.add("autocomplete-active");
+                }
+
+                function removeActive(x) {
+                    /*a function to remove the "active" class from all autocomplete items:*/
+                    for (var i = 0; i < x.length; i++) {
+                        x[i].classList.remove("autocomplete-active");
+                    }
+                }
+
+                function closeAllLists(elmnt) {
+                    /*close all autocomplete lists in the document,
+                    except the one passed as an argument:*/
+                    var x = document.getElementsByClassName("autocomplete-items");
+                    for (var i = 0; i < x.length; i++) {
+                        if (elmnt != x[i] && elmnt != inp) {
+                            x[i].parentNode.removeChild(x[i]);
+                        }
+                    }
+                }
+                /*execute a function when someone clicks in the document:*/
+                document.addEventListener("click", function (e) {
+                    closeAllLists(e.target);
+                });
+            }
+        </script>
 
 </body>
 
 </html>
 
+</main>
 
-<!-- bootstrap scripr snippet -->
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
-</script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
-</script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
-</script>
 
-</body>
 
-</html>
-</script>
-
-</body>
-
-</html>
+<!-- Footer -->

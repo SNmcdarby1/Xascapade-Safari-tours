@@ -65,6 +65,7 @@ b) Objectives
 - Mapping used (Map Quest)[https://developer.mapquest.com/documentation/tools/latitude-longitude-finder/]. To find aqccurate locations.
 There were different tuturial that i watched in youtube. Below are a few that reall inspired byhthe style and design of the page. 
 * During my reasearch i came across a youtube tutorial that was talking about Materialize platform (Materialise)[https://materializecss.com/media.html]for creating websites and snippets by (Traversy Media)[https://www.youtube.com/watch?v=MaP3vO-vEsg]. I used the tutorial to create the index page .
+[https://www.youtube.com/watch?v=Zxf1mnP5zcw]
 
 - I also added Adam live server to checking live open source for the pages while coding
 - Using console to rectify the 404 Error

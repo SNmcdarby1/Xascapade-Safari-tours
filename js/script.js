@@ -1,11 +1,11 @@
-// Sidenav
+// SideNav
 var e = element();
-const icons = document.querySelector('.nav');
+const icons = document.querySelector('sidenav');
 M.Nav.init(Nav, {
     menu
 });
 
-const icons = document.querySelector('.nav-item');
+const icons = document.querySelector('.sidenav');
 M.Nav - item.init(Nav - item, {
     menu
 });
@@ -50,31 +50,29 @@ $('#myTab a').on('click', function() {
     $('#myTab li:nth-child(3) a').tab('show') // Select third tab
 });
 
-
 const ac = document.querySelector('.autocomplete');
 M.Autocomplete.init(ac, {
     data: {
-        "Abi Dhabi": null,
-        "Rio": null,
-        "Spain": null,
-        "Aruba": null,
-        "Kenya": null,
-        "London": null,
-        "Dublin": null,
-        "Cancun Mexico": null,
-        "Hawai": null,
-        "Florida": null,
-        "New York": null,
-        "Jamaica": null,
-        "France": null,
-        "Australia": null,
-        "China": null,
-        "Netherlands": null,
-        "China": null,
-        "Malaysia": null,
-        "Newzealand": null,
-        "Ontrio": null,
-        "Auckland": null,
+        “
+        Mombasa ": null, "
+        Nakuru ": null, "
+        Kisumu ": null, "
+        Kilifi ": null, "
+        Thika ": null, "
+        Kakamega ": null, "
+        Nakuru”: null“ Kericho ": null, "
+        Wasini ": null, "
+        Diani ": null, "
+        Masari Mara National Park ": null, "
+        Tsavo West National Park ": null, "
+        Nairobi National Park ": null, "
+        Amboseli National Park ": null, "
+        Tsavo East National Park ": null, "
+        Nakuru National Park ": null, "
+        Turkana ": null, "
+        Uasin Gishu ": null,
+
+
 
     }
 });
@@ -89,27 +87,25 @@ M.ScrollSpy.init(ss, {});
 const ac = document.querySelector('.a.mobie-nav');
 M.Autocomplete.init(ac, {
     data: {
-        "Abi Dhabi": null,
-        "Rio": null,
-        "Spain": null,
-        "Aruba": null,
-        "Kenya": null,
-        "London": null,
-        "Dublin": null,
-        "Cancun Mexico": null,
-        "Hawai": null,
-        "Florida": null,
-        "New York": null,
-        "Jamaica": null,
-        "France": null,
-        "Australia": null,
-        "China": null,
-        "Netherlands": null,
-        "China": null,
-        "Malaysia": null,
-        "Newzealand": null,
-        "Ontrio": null,
-        "Auckland": null,
+        “
+        Mombasa ": null, "
+        Nakuru ": null, "
+        Kisumu ": null, "
+        Kilifi ": null, "
+        Thika ": null, "
+        Kakamega ": null, "
+        Nakuru”: null“ Kericho ": null, "
+        Wasini ": null, "
+        Diani ": null, "
+        Masari Mara National Park ": null, "
+        Tsavo West National Park ": null, "
+        Nairobi National Park ": null, "
+        Amboseli National Park ": null, "
+        Tsavo East National Park ": null, "
+        Nakuru National Park ": null, "
+        Turkana ": null, "
+        Uasin Gishu ": null,
+
 
     }
 });
@@ -119,8 +115,7 @@ $("button").click(function() {
 });
 $(newFunction('')).css("background-color", "yellow");
 
-
-var countries = ["Afghanistan", "Albania", "Algeria", "Andorra", "Angola", "Anguilla", "Antigua &amp; Barbuda", "Argentina", "Armenia", "Aruba", "Australia", "Austria", "Azerbaijan", "Bahamas", "Bahrain", "Bangladesh", "Barbados", "Belarus", "Belgium", "Belize", "Benin", "Bermuda", "Bhutan", "Bolivia", "Bosnia &amp; Herzegovina", "Botswana", "Brazil", "British Virgin Islands", "Brunei", newFunction_1()];
+var location = ["Mombasa", "Nakuru", "Kisumu", "Kilifi", "Thika", "Kakamega", "Nakuru; “Kericho", "Wasini", "Diani", "Masari Mara National Park", "Tsavo West National Park", "Nairobi National Park", "Amboseli National Park", "Tsavo East National Park", "Nakuru National Park", "Turkana", "Uasin Gishu", newFunction_1()];
 
 $('#myCarousel').on('slid.bs.carousel', function(_) {
     $('#myCarousel').carousel('2') // Will slide to the slide 2 as soon as the transition to slide 1 is finished
@@ -258,7 +253,6 @@ script
 src = "https://maps.googleapis.com/maps/api/js?key=AIzaSyDoAhH36BoUXnvwwe4WS38Zx_tShnv-p8c&libraries=places&callback=initAutocomplete"
 async defer > < /script>
 
-
     <
     script >
     var firstApp = angular.module('firstApp', []);
@@ -322,7 +316,6 @@ function formController($scope, $http) {
         $container - max - width in $container - max - widths {
 
         };
-
 
 
 
@@ -394,7 +387,6 @@ function formController($scope, $http) {
         /script> <
         script src = "https://maps.googleapis.com/maps/api/js?key=AIzaSyDoAhH36BoUXnvwwe4WS38Zx_tShnv-p8c&libraries=places&callback=initAutocomplete"
         async defer > < /script>
-
 
 
         var firstApp = angular.module('firstApp', []);
@@ -953,7 +945,6 @@ script src = "https://maps.googleapis.com/maps/api/js?key=AIzaSyDoAhH36BoUXnvwwe
 async defer > < /script>
 
 
-
 var firstApp = angular.module('firstApp', []);
 
 function formController($scope, $http) {
@@ -1021,7 +1012,6 @@ for (i = 0; i < coll.length; i++) {
     // properly vertically. Can be easily overridden with flex utilities.
     align - items: center;
 }
-
 
 // 3wschool media query
 function myFunction(x) {
@@ -1232,3 +1222,13 @@ function myFunction(imgs) {
 // submit form
 
 document.getElementById("myForm").submit();
+
+
+function myMap() {
+    var mapProp = {
+        center: new google.maps.LatLng(51.508742, -0.120850),
+        zoom: 5,
+    };
+    var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+} <
+/script>
