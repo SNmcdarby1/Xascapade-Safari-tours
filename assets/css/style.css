@@ -12,6 +12,9 @@
     width: 100%;
 }
 
+/* ----------------------border w3 */
+
+
 /*------------------------------------------------------gallery*/
 
 
@@ -26,7 +29,7 @@ nav h1 {
     padding-left: 55px;
     font-weight: 200;
     float: right;
-    font-size: 30px;
+    font-size: 80px;
     color: #0f979b;
 }
 
@@ -94,7 +97,7 @@ a.hvr-sweep-to-bottom:before {
     #navbar a {
         float: left;
         display: block;
-        color: white;
+        color: rgb(48, 109, 8);
         text-align: center;
         padding: 15px;
         text-decoration: none;
@@ -166,6 +169,7 @@ a.hvr-sweep-to-bottom:before {
 
         .header {
             overflow: hidden;
+            color: #555;
             background-color: #f1f1f1;
             padding: 20px 10px;
         }
