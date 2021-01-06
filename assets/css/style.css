@@ -12,8 +12,22 @@
     width: 100%;
 }
 
-/* ----------------------border w3 */
+/* ---------------------- w3 */
+.menu {
+    width: 25%;
+    float: left;
+}
 
+.main {
+    width: 75%;
+    float: left;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
 
 /*------------------------------------------------------gallery*/
 
@@ -58,7 +72,7 @@ ul li ul li {
 }
 
 ul li :hover ul li {
-    color: rgb(238, 230, 223);
+    color: rgb(223, 114, 18);
 }
 
 a.hvr-sweep-to-bottom:before {
@@ -104,7 +118,7 @@ a.hvr-sweep-to-bottom:before {
     }
 
     #navbar a:hover {
-        background-color: #ddd;
+        background-color: rgb(228, 13, 13);
         color: black;
     }
 
@@ -132,13 +146,13 @@ a.hvr-sweep-to-bottom:before {
         a {
             display: block;
             padding: 8px;
-            background-color: #f1f1f1;
+            background-color: #a16a6a;
         }
 
         li a {
             display: block;
             padding: 8px;
-            background-color: #f1f1f1;
+            background-color: #124b38;
             border-left: 1rem;
         }
 
@@ -170,7 +184,7 @@ a.hvr-sweep-to-bottom:before {
         .header {
             overflow: hidden;
             color: #555;
-            background-color: #f1f1f1;
+            background-color: #0b815e;
             padding: 20px 10px;
         }
 
@@ -202,7 +216,7 @@ a.hvr-sweep-to-bottom:before {
 
         /* Change color on hover */
         .navbar a:hover {
-            background-color: #ddd;
+            background-color: rgb(10, 153, 146);
             color: rgb(240, 80, 80);
         }
 
@@ -225,7 +239,7 @@ a.hvr-sweep-to-bottom:before {
             right: 0;
             left: 0;
             content: "";
-            background: linear-gradient(hsla(0, 0%, 100%, .8), hsla(0, 0%, 100%, .9) 50%, #fff);
+            background: linear-gradient(rgba(212, 97, 97, 0.8), rgba(119, 5, 5, 0.9) 50%, rgb(253, 4, 4));
 
             /* Create two unequal columns that sits next to each other */
             /* Sidebar/left column */
@@ -306,7 +320,7 @@ a.hvr-sweep-to-bottom:before {
 
             #navbar {
                 overflow: hidden;
-                background-color: #f1f1f1;
+                background-color: #804917;
                 padding: 90px 10px;
                 transition: 0.4s;
                 position: fixed;
@@ -333,13 +347,13 @@ a.hvr-sweep-to-bottom:before {
             }
 
             #navbar a:hover {
-                background-color: #ddd;
+                background-color: rgb(199, 188, 32);
                 color: black;
             }
 
             #navbar a.active {
-                background-color: dodgerblue;
-                color: white;
+                background-color: rgb(74, 243, 220);
+                color: rgb(11, 195, 228);
             }
 
             #navbar-right {
@@ -380,7 +394,7 @@ a.hvr-sweep-to-bottom:before {
                 /* Remove outline */
                 background-color: rgb(12, 83, 65);
                 /* Set a background color */
-                color: white;
+                color: rgb(163, 13, 13);
                 /* Text color */
                 cursor: pointer;
                 /* Add a mouse pointer on hover */
@@ -403,7 +417,7 @@ a.hvr-sweep-to-bottom:before {
             .footer {
                 padding: 20px;
                 text-align: center;
-                background: #ddd;
+                background: rgb(199, 84, 8);
             }
 
             /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
