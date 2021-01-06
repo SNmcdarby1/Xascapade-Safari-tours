@@ -9,6 +9,22 @@ const icons = document.querySelector('.sidenav');
 M.Nav - item.init(Nav - item, {
     menu
 });
+M.AutoInit();
+
+// search button
+function SearchSentence() {
+
+    global $name, $clienttype, $product;
+
+    $name = "Search";
+    $clienttype = "Xascapade Travel";
+    $name = "e";
+
+    echo "<p>Hello $name, which problem can we help you with today? </p>";
+    echo "<p>I am a: $clienttype </p>";
+    echo "<p>looking for: $product </p>";
+}
+SearchSentence()
 // video snippet 3wschool
 var elem = document.getElementById("myvideo");
 
@@ -34,6 +50,24 @@ document.addEventListener('DOMContentLoaded', function() {
     var instances = M.Carousel.init(elems, options);
 });
 
+document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.autocomplete');
+    var instances = M.Autocomplete.init(elems, options);
+});
+
+
+// Or with jQuery
+
+$(document).ready(function() {
+    $('input.autocomplete').autocomplete({
+        data: {
+            "Safari": null,
+            "Accommodation": null,
+            "Safari plus Accommodation": 'https://placehold.it/250x250'
+        },
+    });
+});
+
 // Or with jQuery
 
 $(document).ready(function() {
@@ -53,28 +87,38 @@ $('#myTab a').on('click', function() {
 const ac = document.querySelector('.autocomplete');
 M.Autocomplete.init(ac, {
     data: {
-        “
-        Mombasa ": null, "
-        Nakuru ": null, "
-        Kisumu ": null, "
-        Kilifi ": null, "
-        Thika ": null, "
-        Kakamega ": null, "
-        Nakuru”: null“ Kericho ": null, "
-        Wasini ": null, "
-        Diani ": null, "
-        Masari Mara National Park ": null, "
-        Tsavo West National Park ": null, "
-        Nairobi National Park ": null, "
-        Amboseli National Park ": null, "
-        Tsavo East National Park ": null, "
-        Nakuru National Park ": null, "
-        Turkana ": null, "
-        Uasin Gishu ": null,
+
+        "Mombasa ": null,
+        "Nakuru ": null,
+        "Kisumu ": null,
+        "Kilifi ": null,
+        "Thika ": null,
+        "Kakamega": null,
+        "Nakuru”: null“ Kericho ": null,
+        "Wasini ": null,
+        "Diani ": null,
+        "Masari Mara National Park ": null,
+        "Tsavo West National Park ": null,
+        "Nairobi National Park ": null,
+        "Amboseli National Park": null,
+        "Tsavo East National Park ": null,
+        "Nakuru National Park ": null,
+        "Turkana ": null,
+        "Uasin Gishu ": null,
 
 
 
     }
+});
+document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('select');
+    var instances = M.FormSelect.init(elems, options);
+});
+
+// Or with jQuery
+
+$(document).ready(function() {
+    $('select').formSelect();
 });
 // Material Boxed
 const mb = document.querySelectorAll('.materialboxed');
@@ -109,6 +153,11 @@ M.Autocomplete.init(ac, {
 
     }
 });
+$(document).ready(function() {
+    M.updateTextFields();
+});
+$('#textarea1').val('New Text');
+M.textareaAutoResize($('#textarea1'));
 // Material Boxed
 $("button").click(function() {
     $("button").toggleClass(".tab");

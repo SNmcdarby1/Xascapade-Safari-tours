@@ -109,7 +109,8 @@ I deployed the page in Github page under settings. Scroll down to the Github pag
 * Image by Sofie Zbořilová from Pixabay 
 * Image by bottlein from Pixabay
 * Image by Tati Halabi from Pixabay 
-* Image by Angie Göttling from Pixabay 
+* Image by Angie Göttling from Pixabay
+ 
 Photo by Kensuke Saito Surf Photography on Unsplash
 Photo by Yuriy MLCN on Unsplash
 Photo by Joshua Earle on Unsplash
@@ -119,6 +120,10 @@ Photo by Pop & Zebra on Unsplash
 Photo by Uriel Soberanes on Unsplash
 Photo by jean wimmerlin on Unsplash
 Photo by Emma Louisa on Unsplash
+<span>Photo by <a href="https://unsplash.com/@filios_sazeides?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Filios Sazeides</a> on <a href="https://unsplash.com/s/photos/airbnb?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+<span>Photo by <a href="https://unsplash.com/@riolec?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Rio Lecatompessy</a> on <a href="https://unsplash.com/s/photos/kenyan-hotel-room?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+<span>Photo by <a href="https://unsplash.com/@mattpunsplash?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Matthieu Pétiard</a> on <a href="https://unsplash.com/s/photos/camping-safari-in-kenya?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+<span>Photo by <a href="https://unsplash.com/@davidclode?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">David Clode</a> on <a href="https://unsplash.com/s/photos/lodgei-in-kenya?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
 
 
  * 
