@@ -12,6 +12,61 @@
     width: 100%;
 }
 
+xas .background-container {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+xas {
+    position: relative;
+    background-position: 50%;
+    background-size: cover;
+    background-color: #555;
+    margin: 0 0 20px;
+    text-align: center;
+    transition: .8s;
+}
+
+xas h1,
+#xas h2 {
+    margin: auto;
+    max-width: 400px;
+    color: #fff;
+    text-shadow: 0 0 1px rgba(0, 0, 0, .6);
+    line-height: 1.5 !important;
+}
+
+.clearfix:after,
+.clearfix:before {
+    display: table;
+    content: "";
+}
+
+#content {
+    padding-bottom: 50px;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+* {
+    margin: 0;
+}
+
+div {
+    display: block;
+}
+
+.wrapper {
+    min-height: 100%;
+    margin: 0 auto -86px;
+}
+
 /* ---------------------- w3 */
 .menu {
     width: 25%;
@@ -58,7 +113,7 @@ nav-item ul {
 
 }
 
-ul li a:hover {
+a:hover {
     background-color: turquoise;
     width: auto;
     height: auto;
@@ -67,17 +122,37 @@ ul li a:hover {
     mix-blend-mode: darken;
 }
 
-ul li ul li {
-    display: none;
+nav a {
+    display: block;
 }
 
-ul li :hover ul li {
+a :hover ul li {
     color: rgb(223, 114, 18);
 }
 
 a.hvr-sweep-to-bottom:before {
     background: rgb(250, 224, 76);
     height: 60px;
+    position: fixed;
+}
+
+a {
+    color: rgb(9, 82, 69);
+}
+
+a:link,
+a:visited {
+    background-color: #adbe0c;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+a:hover,
+a:active {
+    background-color: rgb(11, 126, 91);
 }
 
 /*------------------------------------------------------footer*/
@@ -95,7 +170,7 @@ a.hvr-sweep-to-bottom:before {
 
     /*-------------------------------------------------------------Hover.css*/
     #navbar {
-        background-color: #333;
+        background-color: rgb(238, 165, 165);
         /* Black background color */
         position: fixed;
         /* Make it stick/fixed */
@@ -111,14 +186,16 @@ a.hvr-sweep-to-bottom:before {
     #navbar a {
         float: left;
         display: block;
-        color: rgb(48, 109, 8);
-        text-align: center;
-        padding: 15px;
+        font-size: 20px;
+        text-overflow: hidden;
+        color: rgb(180, 164, 20);
+        text-align: right;
+        padding: 25px;
         text-decoration: none;
     }
 
-    #navbar a:hover {
-        background-color: rgb(228, 13, 13);
+    #nav a:hover {
+        background-color: rgb(78, 199, 169);
         color: black;
     }
 
@@ -133,20 +210,21 @@ a.hvr-sweep-to-bottom:before {
 
         /*--------------------------------------------------------*/
 
-        li {
+        a {
             float: right;
             justify-content: right;
 
         }
 
-        li {
-            display: inline-flex;
+        a {
+            display: inline-block;
         }
 
         a {
             display: block;
             padding: 8px;
-            background-color: #a16a6a;
+            background-color: #918b8b;
+            color: #0f979b;
         }
 
         li a {
@@ -183,7 +261,7 @@ a.hvr-sweep-to-bottom:before {
 
         .header {
             overflow: hidden;
-            color: #555;
+            color: rgb(114, 5, 5);
             background-color: #0b815e;
             padding: 20px 10px;
         }
@@ -199,40 +277,6 @@ a.hvr-sweep-to-bottom:before {
             .header-right {
                 float: none;
             }
-        }
-
-        h1,
-        h2,
-        h3,
-        h4 {
-            margin: 0;
-            color: #142221;
-        }
-
-        /* Right-aligned link */
-        .navbar a.right {
-            float: right;
-        }
-
-        /* Change color on hover */
-        .navbar a:hover {
-            background-color: rgb(10, 153, 146);
-            color: rgb(240, 80, 80);
-        }
-
-        /* Column container */
-        .row {
-            display: -ms-flexbox;
-            /* IE10 */
-            display: flex;
-            -ms-flex-wrap: wrap;
-            /* IE10 */
-            flex-wrap: wrap;
-        }
-
-        pseudo.body:after:after {
-            position: absolute;
-            height: 100%;
         }
 
         .body:after:after {
@@ -292,6 +336,13 @@ a.hvr-sweep-to-bottom:before {
 
             a:link {
                 color: rgb(9, 116, 89);
+                padding: 25px;
+                margin-top: 15px;
+                margin-bottom: 10px;
+                justify-content: end;
+                padding-right: 5px;
+                position: relative;
+
             }
 
             /* visited link */
@@ -359,6 +410,33 @@ a.hvr-sweep-to-bottom:before {
             #navbar-right {
                 float: right;
             }
+
+            /* Right-aligned link */
+            .navbar a.right {
+                float: right;
+            }
+
+            /* Change color on hover */
+            .navbar a:hover {
+                background-color: rgb(198, 230, 228);
+                color: rgb(241, 228, 228);
+            }
+
+            /* Column container */
+            .row {
+                display: -ms-flexbox;
+                /* IE10 */
+                display: flex;
+                -ms-flex-wrap: wrap;
+                /* IE10 */
+                flex-wrap: wrap;
+            }
+
+            pseudo.body:after:after {
+                position: absolute;
+                height: 100%;
+            }
+
 
             @media screen and (max-width: 580px) {
                 #navbar {

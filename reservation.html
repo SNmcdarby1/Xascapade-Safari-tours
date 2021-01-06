@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
     <link rel="stylesheet" href="https://stackpath.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
     </script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
@@ -19,587 +20,521 @@
 
 <body class="container-fluid no-gutter " class="container white padding-16 myLink">
 
-
-
-    <h1><span>XAS</span>CAPADE</h1>
-    <span>
-        Explore the World
-    </span>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top topnav">
-        <div class="bar white border-bottom xlarge">
-            <a href="index.html" class="bar-item button text-red hover-red"><b><i class="fa fa-map-marker margin-right"></i>
-                    <did id="map"><span>XASCAPADE</span>
-                </b></a>
-            <a href="index.html" class="bar-item w3-button right hover-red text-grey"><i class="fa fa-search"></i></a>
-        </div>
-        <button class="navbar-toggler hidden-lg-up btn-btn show-sm-dowm" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="true" aria-label="togglenavigation">Home</button>
-        <div class="collapse navbar-collapse " data-toggle="collapse" id="collapsibleNavId">
-            <ul class="navbar">
-                <li class="nav-item btn">
-                    <a class="nav-link" href="contact.html"><i class="fa fa-user-circle" aria-hidden="true"></i>Contact</a>
-                </li>
-                <li class="nav-item btn">
-                    <a class="nav-link" href="gallery.html"><i class="fa fa-camera" aria-hidden="true"></i>Gallery</a>
-                </li>
-
-                <li class="dropdown">
-                    <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Services
-                    </a>
-
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                        <a class="dropdown-item" href="safari.html">Safari</a>
-                        <a class="dropdown-item" href="reservation.html">Reserve</a>
-                        <a class="dropdown-item" href="products.html"></a>
-
-                    </div>
-                </li>
-                <li class="nav-item  btn">
-                    <a class="nav-link" href="about.html"><i class="fa fa-cloud" aria-hidden="true"></i>About</a>
-                </li>
-                <li class="nav-item active  btn">
-                    <a class="nav-link" href="index.html"><i class="fa fa-home" aria-hidden="true"></i>Home
-                        <span class="sr-only">(current)</span></a>
-                </li>
-            </ul>
-            <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="text" placeholder="Search">
-
-            </form>
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    <button class="navbar-toggler hidden-lg-up btn-btn show-sm-dowm" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="true" aria-label="togglenavigation">Home</button>
+    <nav class="nav class=" navbar navbar-expand-lg navbar-light bg-light fixed-top topnav"">
+        <a class="nav-link " href="contact.html">CONTACT</a>
+        <a class="nav-link" href="safari.html">SAFARIS</a>
+        <a class="nav-link" href="reservation.html">BOOKINGS</a>
+        <a class="nav-link" href="gallery.html">GALLERY</a>
+        <a class="nav-link" href="products.html">PRODUCTS</a>
+        <a class="nav-link" href="about.html">ABOUT</a>
+        <a class="nav-link active" href="index.html">HOME</a>
     </nav>
 
-    <section class="container-fluid">
-        <div class="container-fluid">
 
-            <a href="about.html" class="btn uppercase">
-                <h5 class="uppercase general-sub">About Us</h5>
-            </a>
+    <section class="container">
+        <div class="content">
+            <h1>Heading</h1>
+            <p>Best offers</p>
+            <!-- Use a button to pause/play the video with JavaScript -->
+            <button id="myBtn" onclick="myFunction()">Pause</button>
+        </div>
+        <!--w3school Page content -->
+        <div class="w3-content" style="max-width:1100px;">
+
+            <!-- Good offers -->
+            <div class="w3-container w3-margin-top">
+                <h3>Good Offers Right Now</h3>
+                <h6>Up to <strong>50%</strong> discount.</h6>
+            </div>
+            <div class="w3-row-padding w3-text-white w3-large">
+                <div class="w3-half w3-margin-bottom">
+                    <picture class="d-inline-block text-truncate" style="max-width: 600px;">
+                        <source srcset="assets/images/lodge.jpg" type="image/svg+xml">
+                        <img src="assets/images/lodge.jpg" class="img-fluid img-thumbnail" alt="Rooms">
+                    </picture>
+                    <span class="w3-display-bottomleft w3-padding">Book a night at a resort</span>
+                </div>
+
+            </div>
+            <div class="w3-half">
+                <div class="w3-row-padding" style="margin:0 -16px">
+                    <div class="w3-half w3-margin-bottom">
+                        <div class="w3-display-container">
+
+                            <picture class="d-inline-block text-truncate" style="max-width: 600px;">
+                                <source srcset="assets/images/room.jpg" type="image/svg+xml">
+                                <img src="assets/images/room.jpg" class="img-fluid img-thumbnail" alt="Rooms">
+                            </picture>
+                            <span class="w3-display-bottomleft w3-padding">Book an accommodation
+                                either at a Hotel or AirBnB at
+                                desired your location</span>
+                        </div>
+                    </div>
+                    <div class="w3-half w3-margin-bottom">
+                        <div class="w3-display-container">
+                            <picture class="d-inline-block text-truncate" style="max-width: 600px;">
+                                <source srcset="assets/images/cheetah.jpg" type="image/svg+xml">
+                                <img src="assets/images/cheetah.jpg" class="img-fluid img-thumbnail" alt="Rooms">
+                            </picture>
+                            <span class="w3-display-bottomleft w3-padding">Cheetahs</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="w3-row-padding" style="margin:0 -16px">
+                    <div class="w3-half w3-margin-bottom">
+                        <div class="w3-display-container">
+                            <picture class="d-inline-block text-truncate" style="max-width: 600px;">
+                                <source srcset="assets/images/flaming.jpg" type="image/svg+xml">
+                                <img src="assets/images/flaming.jpg" class="img-fluid img-thumbnail" alt="Rooms">
+                            </picture>
+                            <span class="w3-display-bottomleft w3-padding">Flamingos at Lake Nakuru
+                                national park</span>
+                        </div>
+                    </div>
+                    <div class="w3-half w3-margin-bottom">
+                        <div class="w3-display-container">
+                            <picture class="d-inline-block text-truncate" style="max-width: 600px;">
+                                <source srcset="assets/images/red.jpg" type="image/svg+xml">
+                                <img src="assets/images/red.jpg" class="img-fluid img-thumbnail" alt="Rooms">
+                            </picture>
+                            <span class="w3-display-bottomleft w3-padding">Amboseli National
+                                park</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
-        <head>
-            <header class="container-fluid">
-                <section class="d-inline-block text-truncate" style="max-width: 100%;">
-                    <div class="section-column header   d-inline-block text-truncate" style="max-width: 100%;">
+        <!-- Explore Nature -->
+        <div class="w3-container">
+            <h3>Explore Nature</h3>
+            <p>Travel with us and see nature at its finest.</p>
+        </div>
+        <div class="w3-row-padding">
+            <div class="w3-half w3-margin-bottom">
+                <img src="assets/images/giraffes-.jpg" alt="Nairobi national park" style="width:100%">
+                <div class="w3-container w3-white">
+                    <h3>Nairobi game reserve</h3>
+                    <p> 1 Day safari from sunset to dawn.</p>
+                    <p class="w3-opacity">$279</p>
 
-
-
-            </header>
-            <main class="container-fluid">
-                <section class="btnbtn button">
-
-                    <!-- was inspired by the 3wschool example  -->
-                    <div class="dropdown text-center">
-                        <button class="dropbtn">Booking Information</button>
-                        <div class="dropdown-content">
-                            <a href="safari.html">Safari Packages</a>
-                            <a href="accommodation.html">Accommodations</a>
-                            <a href="reservation.html">Reservation</a>
-                        </div>
-                    </div>
-                </section>
-                <section class="container">
-                    <div class="content">
-                        <h1>Heading</h1>
-                        <p>Best offers</p>
-                        <!-- Use a button to pause/play the video with JavaScript -->
-                        <button id="myBtn" onclick="myFunction()">Pause</button>
-                    </div>
-                    <!--w3school Page content -->
-                    <div class="w3-content" style="max-width:1100px;">
-
-                        <!-- Good offers -->
-                        <div class="w3-container w3-margin-top">
-                            <h3>Good Offers Right Now</h3>
-                            <h6>Up to <strong>50%</strong> discount.</h6>
-                        </div>
-                        <div class="w3-row-padding w3-text-white w3-large">
-                            <div class="w3-half w3-margin-bottom">
-                                <picture class="d-inline-block text-truncate" style="max-width: 600px;">
-                                    <source srcset="assets/images/lodge.jpg" type="image/svg+xml">
-                                    <img src="assets/images/lodge.jpg" class="img-fluid img-thumbnail" alt="Rooms">
-                                </picture>
-                                <span class="w3-display-bottomleft w3-padding">Book a night at a resort</span>
-                            </div>
-
-                        </div>
-                        <div class="w3-half">
-                            <div class="w3-row-padding" style="margin:0 -16px">
-                                <div class="w3-half w3-margin-bottom">
-                                    <div class="w3-display-container">
-
-                                        <picture class="d-inline-block text-truncate" style="max-width: 600px;">
-                                            <source srcset="assets/images/room.jpg" type="image/svg+xml">
-                                            <img src="assets/images/room.jpg" class="img-fluid img-thumbnail" alt="Rooms">
-                                        </picture>
-                                        <span class="w3-display-bottomleft w3-padding">Book an accommodation
-                                            either at a Hotel or AirBnB at
-                                            desired your location</span>
-                                    </div>
-                                </div>
-                                <div class="w3-half w3-margin-bottom">
-                                    <div class="w3-display-container">
-                                        <picture class="d-inline-block text-truncate" style="max-width: 600px;">
-                                            <source srcset="assets/images/cheetah.jpg" type="image/svg+xml">
-                                            <img src="assets/images/cheetah.jpg" class="img-fluid img-thumbnail" alt="Rooms">
-                                        </picture>
-                                        <span class="w3-display-bottomleft w3-padding">Cheetahs</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="w3-row-padding" style="margin:0 -16px">
-                                <div class="w3-half w3-margin-bottom">
-                                    <div class="w3-display-container">
-                                        <picture class="d-inline-block text-truncate" style="max-width: 600px;">
-                                            <source srcset="assets/images/flaming.jpg" type="image/svg+xml">
-                                            <img src="assets/images/flaming.jpg" class="img-fluid img-thumbnail" alt="Rooms">
-                                        </picture>
-                                        <span class="w3-display-bottomleft w3-padding">Flamingos at Lake Nakuru
-                                            national park</span>
-                                    </div>
-                                </div>
-                                <div class="w3-half w3-margin-bottom">
-                                    <div class="w3-display-container">
-                                        <picture class="d-inline-block text-truncate" style="max-width: 600px;">
-                                            <source srcset="assets/images/red.jpg" type="image/svg+xml">
-                                            <img src="assets/images/red.jpg" class="img-fluid img-thumbnail" alt="Rooms">
-                                        </picture>
-                                        <span class="w3-display-bottomleft w3-padding">Amboseli National
-                                            park</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Explore Nature -->
-                    <div class="w3-container">
-                        <h3>Explore Nature</h3>
-                        <p>Travel with us and see nature at its finest.</p>
-                    </div>
-                    <div class="w3-row-padding">
-                        <div class="w3-half w3-margin-bottom">
-                            <img src="assets/images/giraffes-.jpg" alt="Nairobi national park" style="width:100%">
-                            <div class="w3-container w3-white">
-                                <h3>Nairobi game reserve</h3>
-                                <p> 1 Day safari from sunset to dawn.</p>
-                                <p class="w3-opacity">$279</p>
-
-                                <button class="w3-button w3-margin-bottom">Buy Tickets</button>
-                            </div>
-                        </div>
-                        <div class="w3-half w3-margin-bottom">
-                            <img src="assets/images/lions.jpg" alt="Masaai mara" style="width:100%">
-                            <div class="w3-container w3-white">
-                                <h3>Masaai Mara</h3>
-                                <p>A 5 day safari package.</p>
-                                <p class="opacity">$3159 plus Accommodation</p>
-
-                                <button class="w3-button w3-margin-bottom">Buy Tickets</button>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-
-                <div class="container left">
-                    <div class="content">
-                        <h2>2017</h2>
-                        <p>Air BnB.</p>
-                        <picture class="d-inline-block text-truncate" style="max-width: 600px;">
-                            <source srcset="assets/images/the.jpg" type="image/svg+xml">
-                            <img src="assets/images/the.jpg" class="img-fluid img-thumbnail" alt="Rooms">
-                        </picture>
-                    </div>
+                    <button class="w3-button w3-margin-bottom">Buy Tickets</button>
                 </div>
-                <div class="container right">
-                    <div class="content">
-                        <h2>2016</h2>
-                        <p>A Resort..</p>
-                        <picture class="card d-inline-block text-truncate" style="max-width: 600px;">
+            </div>
+            <div class="w3-half w3-margin-bottom">
+                <img src="assets/images/lions.jpg" alt="Masaai mara" style="width:100%">
+                <div class="w3-container w3-white">
+                    <h3>Masaai Mara</h3>
+                    <p>A 5 day safari package.</p>
+                    <p class="opacity">$3159 plus Accommodation</p>
 
-                            <source srcset="assets/images/lodge.jpg" type="image/svg+xml">
-                            <img src="assets/images/lodge.jpg" class="img-fluid img-thumbnail" alt="Rooms">
-                        </picture>
-                    </div>
+                    <button class="w3-button w3-margin-bottom">Buy Tickets</button>
                 </div>
-                <div class="container left">
-                    <div class="content">
-                        <h2>2017</h2>
-                        <p>A restaurant at the Lodge..</p>
-                        <picture class="d-inline-block text-truncate" style="max-width: 600px;">
-                            <source srcset="assets/images/safari.jpg" type="image/svg+xml">
-                            <img src="assets/images/safari.jpg" class="img-fluid img-thumbnail" alt="Rooms">
-                        </picture>
-                    </div>
-                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="container left">
+        <div class="content">
+            <h2>2017</h2>
+            <p>Air BnB.</p>
+            <picture class="d-inline-block text-truncate" style="max-width: 600px;">
+                <source srcset="assets/images/the.jpg" type="image/svg+xml">
+                <img src="assets/images/the.jpg" class="img-fluid img-thumbnail" alt="Rooms">
+            </picture>
+        </div>
+    </div>
+    <div class="container right">
+        <div class="content">
+            <h2>2016</h2>
+            <p>A Resort..</p>
+            <picture class="card d-inline-block text-truncate" style="max-width: 600px;">
+
+                <source srcset="assets/images/lodge.jpg" type="image/svg+xml">
+                <img src="assets/images/lodge.jpg" class="img-fluid img-thumbnail" alt="Rooms">
+            </picture>
+        </div>
+    </div>
+    <div class="container left">
+        <div class="content">
+            <h2>2017</h2>
+            <p>A restaurant at the Lodge..</p>
+            <picture class="d-inline-block text-truncate" style="max-width: 600px;">
+                <source srcset="assets/images/safari.jpg" type="image/svg+xml">
+                <img src="assets/images/safari.jpg" class="img-fluid img-thumbnail" alt="Rooms">
+            </picture>
+        </div>
+    </div>
 
 
 
-                <form class="section colnm container bar-item button tablink" onclick="openLink(event, 'Hotel');"><i class="fa fa-bed margin-right">
-                        <div class="">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col bg-color-conferences section-column">
-                                        <div class="row">
-                                            <div class="col-12">
-                                                <div class="form-group">
-                                                    <label for=""></label>
-                                                    <input type="text" name="" id="" class="form-control" placeholder="" aria-describedby="helpId">
-                                                    <small id="helpId" class="text-muted">Help text</small>
-                                                </div>
-                                                <form action="destination.html" method="GET">
-                                                    <fieldset>
-                                                        <legend>Personal Details:</legend>
-                                                        <label for="name">Username</label><input type="text" name="username" id="username" type="date" name="date">
-                                                        <label for="name">Email</label><input type="text" name="email" id="email" type="email" name="email">
-                                                        <label for="name">Phone</label><input type="text" name="Phone" id="Phone" type="phone" name="phone">
-                                                        <select name="town" required>
-                                                            <option value="Nairobi"></option>
-                                                            <option value="Mombasa"></option>
-                                                            <option value="Nakuru"></option>
-                                                            <option value="Kisumu"></option>
+    <form class="section colnm container bar-item button tablink" onclick="openLink(event, 'Hotel');"><i class="fa fa-bed margin-right">
+            <div class="">
+                <div class="container">
+                    <div class="row">
+                        <div class="col bg-color-conferences section-column">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <label for=""></label>
+                                        <input type="text" name="" id="" class="form-control" placeholder="" aria-describedby="helpId">
+                                        <small id="helpId" class="text-muted">Help text</small>
+                                    </div>
+                                    <form action="destination.html" method="GET">
+                                        <fieldset>
+                                            <legend>Personal Details:</legend>
+                                            <label for="name">Username</label><input type="text" name="username" id="username" type="date" name="date">
+                                            <label for="name">Email</label><input type="text" name="email" id="email" type="email" name="email">
+                                            <label for="name">Phone</label><input type="text" name="Phone" id="Phone" type="phone" name="phone">
+                                            <select name="town" required>
+                                                <option value="Nairobi"></option>
+                                                <option value="Mombasa"></option>
+                                                <option value="Nakuru"></option>
+                                                <option value="Kisumu"></option>
 
-                                                        </select>
-                                                    </fieldset>
-                                                    <div class="section form container">
-                                                        <div class="col bg-color-conferences section-column">
+                                            </select>
+                                        </fieldset>
+                                        <div class="section form container">
+                                            <div class="col bg-color-conferences section-column">
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <br>
+                                                        <fieldset>
+                                                            <legend>Booking Details:</legend>
+                                                            <i class="fa fa-info-circle fa-lg"></i>
                                                             <div class="row">
-                                                                <div class="col-12">
-                                                                    <br>
-                                                                    <fieldset>
-                                                                        <legend>Booking Details:</legend>
-                                                                        <i class="fa fa-info-circle fa-lg"></i>
-                                                                        <div class="row">
-                                                                            <div class="col bg-color-conferences section-column">
-                                                                                <div class="row">
-                                                                                    <div class="col-12">
-                                                                                        <label for="date">Check in
-                                                                                            date:</label> <input type="date" name="date" min="2021-Jan-05">
-                                                                                        <label for="date">Check out
-                                                                                            date:</label><input type="date" name="date" type="date" name="date">
-                                                                                        <label for="numberOfGuest">Number
-                                                                                            Of Guest</label><input id="numberOfGuest" name="numberOfGuest" :</label><input type="number" name="numberOfGuests" min='1' max='6' id="">
-                                                                                        <p>Do you require meals?</p>
+                                                                <div class="col bg-color-conferences section-column">
+                                                                    <div class="row">
+                                                                        <div class="col-12">
+                                                                            <label for="date">Check in
+                                                                                date:</label> <input type="date" name="date" min="2021-Jan-05">
+                                                                            <label for="date">Check out
+                                                                                date:</label><input type="date" name="date" type="date" name="date">
+                                                                            <label for="numberOfGuest">Number
+                                                                                Of Guest</label><input id="numberOfGuest" name="numberOfGuest" :</label><input type="number" name="numberOfGuests" min='1' max='6' id="">
+                                                                            <p>Do you require meals?</p>
 
-                                                                                        <label for="YesMeals">Yes</label><input id="yesMeals" type="radio" name="meals" value="yesMeals">
-                                                                                        <label for="noMeals">No
-                                                                                            Meals</label><input id=noMeals type="radio" name="meals" value="noMeals">
-                                                                                        <br>
-                                                                                        <label for="standardRoom">Standard
-                                                                                            Room</label><input type="checkbox" name="standardRoom" value="yes" checked>
-                                                                                        <label for="standardRoom">Standard
-                                                                                            Room</label><input type="checkbox" name="standardRoom" value="no" checked>
-                                                                                        <label for="doubleRoom">Double
-                                                                                            Room</label><input type="checkbox" name="doubleRoom" value="yes" checked>
-                                                                                        <label for="doubleRoom">Double
-                                                                                            Room</label><input type="checkbox" name="doubleRoom" value="no" checked>
-                                                                                        <label for="BookSafari">Book
-                                                                                            Safari</label><input type="checkbox" name="bookSafari" value="yes" checked>
-                                                                                        <label for="NoSafari">Standard
-                                                                                            Room</label><input type="checkbox" name="noSafari" value="no" checked>
-                                                                    </fieldset>
+                                                                            <label for="YesMeals">Yes</label><input id="yesMeals" type="radio" name="meals" value="yesMeals">
+                                                                            <label for="noMeals">No
+                                                                                Meals</label><input id=noMeals type="radio" name="meals" value="noMeals">
+                                                                            <br>
+                                                                            <label for="standardRoom">Standard
+                                                                                Room</label><input type="checkbox" name="standardRoom" value="yes" checked>
+                                                                            <label for="standardRoom">Standard
+                                                                                Room</label><input type="checkbox" name="standardRoom" value="no" checked>
+                                                                            <label for="doubleRoom">Double
+                                                                                Room</label><input type="checkbox" name="doubleRoom" value="yes" checked>
+                                                                            <label for="doubleRoom">Double
+                                                                                Room</label><input type="checkbox" name="doubleRoom" value="no" checked>
+                                                                            <label for="BookSafari">Book
+                                                                                Safari</label><input type="checkbox" name="bookSafari" value="yes" checked>
+                                                                            <label for="NoSafari">Standard
+                                                                                Room</label><input type="checkbox" name="noSafari" value="no" checked>
+                                                        </fieldset>
 
-                                                </form>
-
-
-                                                <div class="card-body" class="col-sm-6 no_left_padding no_right_padding">
-                                                    <div class="form-group">
-                                                        <label for="srch_frm_hotel_single">Hotels</label>
-                                                        <select name="hotel" id="hotel" class="form-control">
-                                                            <option value="" selected>No Preference
-                                                            </option>
-                                                            <option value="*O">*Sarova Hotels
-                                                            </option>
-                                                            <option value="*A">*Serena hotels
-                                                            </option>
-                                                            <option value="*S">*Intercontinental Hotels
-                                                            </option>
-                                                            <option value="*C">*Camping
-                                                            </option>
-                                                            <option value="*K">*AirBnB
-                                                            </option>
-                                                            <option value="JP">Safari Park Hotel Nairobi
-                                                            </option>
-                                                            <option value="EI">Diani Hotel </option>
-                                                            <option value="JR">White Sands Holtel
-                                                            </option>
-                                                            <option value="ML">Nakuru Lodge Hotel
-                                                            </option>
-                                                            <option value="PL">Intercontinental Hotel Nairobi
-                                                            </option>
-                                                            <option value="SX">Stanlley Hotel Nairobi
-                                                            </option>
-                                                            <option value="SU">Red Elephant Hotel Tsavo</option>
-                                                            <option value="AR">Reef Hotel Mombasa
-                                                            </option>
-                                                            <option value="VW">Nyali Hotel Mombasa
-                                                            </option>
-                                                            <option value="AM">Voyager Hotel Mombasa</option>
-                                                            <option value="5L">African Safari Club Mombasa</option>
-                                                            <option value="DP">La Pelgola Malindi</option>
-                                                            <option value="DP">Mada Hotel Kilifi</option>
-                                                            <option value="RK">Bamburi Beach Resort Mombasa</option>
-                                                            <option value="AH">Kilifi Bay Resort Kilifi</option>
-                                                            <option value="FQ">Sun and Sand Club Mombasa</option>
-                                                            <option value="UU">Turtle Bay Watamu</option>
-                                                            <option value="7L">Windsor Hotel Nairobi</option>
-                                                            <option value="AC">FairMount Hotel and Resort Nairobi
-                                                            </option>
-
-                                                            </option>
-
-
-                                                        </select>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <input type="submit" value="Submit">
-                                    </div>
-                                </div>
-
-                                <!-- customer Reservation details-->
-                                <form class="card" action="/action_page.php">
-
-                                    <h4>To make reservations fill in your details below and we will get in
-                                        touch.</h4>
-                                    <div class="input-container">
-                                        <i class="fa fa-user icon"></i>
-                                        <input class="input-field" type="text" placeholder="Username" name="usrnm">
-                                    </div>
-
-                                    <div class="input-container">
-                                        <i class="fa fa-envelope icon"></i>
-                                        <input class="input-field" type="text" placeholder="Email" name="email">
-                                    </div>
-
-                                    <div class="input-container">
-                                        <i class="fa fa-key icon"></i>
-                                        <input class="input-field" type="password" placeholder="Password" name="psw">
-                                    </div>
-                                    <textarea name="msg" id="your inquiry" cols="30" rows="10"></textarea>
-                                    <form action="/action_page.php">
-                                        <input type="file" id="myFile" name="filename">
-                                        <input type="submit">
                                     </form>
 
 
-                                </form>
+                                    <div class="card-body" class="col-sm-6 no_left_padding no_right_padding">
+                                        <div class="form-group">
+                                            <label for="srch_frm_hotel_single">Hotels</label>
+                                            <select name="hotel" id="hotel" class="form-control">
+                                                <option value="" selected>No Preference
+                                                </option>
+                                                <option value="*O">*Sarova Hotels
+                                                </option>
+                                                <option value="*A">*Serena hotels
+                                                </option>
+                                                <option value="*S">*Intercontinental Hotels
+                                                </option>
+                                                <option value="*C">*Camping
+                                                </option>
+                                                <option value="*K">*AirBnB
+                                                </option>
+                                                <option value="JP">Safari Park Hotel Nairobi
+                                                </option>
+                                                <option value="EI">Diani Hotel </option>
+                                                <option value="JR">White Sands Holtel
+                                                </option>
+                                                <option value="ML">Nakuru Lodge Hotel
+                                                </option>
+                                                <option value="PL">Intercontinental Hotel Nairobi
+                                                </option>
+                                                <option value="SX">Stanlley Hotel Nairobi
+                                                </option>
+                                                <option value="SU">Red Elephant Hotel Tsavo</option>
+                                                <option value="AR">Reef Hotel Mombasa
+                                                </option>
+                                                <option value="VW">Nyali Hotel Mombasa
+                                                </option>
+                                                <option value="AM">Voyager Hotel Mombasa</option>
+                                                <option value="5L">African Safari Club Mombasa</option>
+                                                <option value="DP">La Pelgola Malindi</option>
+                                                <option value="DP">Mada Hotel Kilifi</option>
+                                                <option value="RK">Bamburi Beach Resort Mombasa</option>
+                                                <option value="AH">Kilifi Bay Resort Kilifi</option>
+                                                <option value="FQ">Sun and Sand Club Mombasa</option>
+                                                <option value="UU">Turtle Bay Watamu</option>
+                                                <option value="7L">Windsor Hotel Nairobi</option>
+                                                <option value="AC">FairMount Hotel and Resort Nairobi
+                                                </option>
+
+                                                </option>
+
+
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
 
-
-
-
-                            <hr class="my-12 inline-block col>
-                                    <div class=" container">
-                            <h4>Get the best offers first!</h4>
-
-                            <p>Join our newsletter.</p>
-                            <label>E-mail</label>
-                            <input class="input border" type="text" placeholder="Your Email address">
-                            <button type="button" class="button red margin-top">Subscribe</button>
+                            <input type="submit" value="Submit">
                         </div>
-                        <div>
-                            <footer class="col container-fluid ">
-                                <ul class="list-inline social-links">
-                                    <h3 class="uppercase general-sub">Social</h3>
-                                    <li class="list-inline-item">
-                                        <a target="_blank" href="ttps://www.facebook.com/simbapawtrail/">
-                                            <i class="fa fa-facebook" aria-hidden="true"></i>
-                                            <span class="sr-only">Facebook</span>
-                                        </a>
-                                    </li>
-                                    <li class="list-inline-item">
-                                        <a target="_blank" href="https://twitter.com/Safari78047357">
-                                            <i class="fa fa-twitter" aria-hidden="true"></i>
-                                            <span class="sr-only">twitter</span>
-                                        </a>
-                                    </li>
-                                    <li class="list-inline-item">
-                                        <a target="_blank" href="https://www.linkedin.com/company/37523851/admin/">
-                                            <i class="fa fa-linkedin" aria-hidden="true"></i>
-                                            <span class="sr-only">linkedin</span>
-                                        </a>
-                                    </li>
+                    </div>
 
-                                    <li class="list-inline-item">
-                                        <a target="_blank" href="https://www.instagram.com/trysafari.ke/?hl=en>">
-                                            <i class="fa fa-instagram" aria-hidden="true"></i>
-                                            <span class="sr-only">Instagram</span>
-                                        </a>
-                                    </li>
-                                    <li class="list-inline-item">
-                                        <a target="_blank" href="https://www.youtube.com/embed/wSCGJD_H-n8">
-                                            <i class="fa fa-youtube" aria-hidden="true"></i>
-                                            <span class="sr-only">YouTube</span>
-                                        </a>
-                                    </li>
+                    <!-- customer Reservation details-->
+                    <form class="card" action="/action_page.php">
+
+                        <h4>To make reservations fill in your details below and we will get in
+                            touch.</h4>
+                        <div class="input-container">
+                            <i class="fa fa-user icon"></i>
+                            <input class="input-field" type="text" placeholder="Username" name="usrnm">
+                        </div>
+
+                        <div class="input-container">
+                            <i class="fa fa-envelope icon"></i>
+                            <input class="input-field" type="text" placeholder="Email" name="email">
+                        </div>
+
+                        <div class="input-container">
+                            <i class="fa fa-key icon"></i>
+                            <input class="input-field" type="password" placeholder="Password" name="psw">
+                        </div>
+                        <textarea name="msg" id="your inquiry" cols="30" rows="10"></textarea>
+                        <form action="/action_page.php">
+                            <input type="file" id="myFile" name="filename">
+                            <input type="submit">
+                        </form>
+
+
+                    </form>
+                </div>
 
 
 
-                                    <button>Powered by <a href="#" target="_blank" class="hover-text-green">Xascapade</a></button>
-                                </ul>
+
+                <hr class="my-12 inline-block col>
+                                    <div class=" container">
+                <h4>Get the best offers first!</h4>
+
+                <p>Join our newsletter.</p>
+                <label>E-mail</label>
+                <input class="input border" type="text" placeholder="Your Email address">
+                <button type="button" class="button red margin-top">Subscribe</button>
+            </div>
+            <div>
+                <footer class="col container-fluid ">
+                    <ul class="list-inline social-links">
+                        <h3 class="uppercase general-sub">Social</h3>
+                        <li class="list-inline-item">
+                            <a target="_blank" href="ttps://www.facebook.com/simbapawtrail/">
+                                <i class="fa fa-facebook" aria-hidden="true"></i>
+                                <span class="sr-only">Facebook</span>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a target="_blank" href="https://twitter.com/Safari78047357">
+                                <i class="fa fa-twitter" aria-hidden="true"></i>
+                                <span class="sr-only">twitter</span>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a target="_blank" href="https://www.linkedin.com/company/37523851/admin/">
+                                <i class="fa fa-linkedin" aria-hidden="true"></i>
+                                <span class="sr-only">linkedin</span>
+                            </a>
+                        </li>
+
+                        <li class="list-inline-item">
+                            <a target="_blank" href="https://www.instagram.com/trysafari.ke/?hl=en>">
+                                <i class="fa fa-instagram" aria-hidden="true"></i>
+                                <span class="sr-only">Instagram</span>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a target="_blank" href="https://www.youtube.com/embed/wSCGJD_H-n8">
+                                <i class="fa fa-youtube" aria-hidden="true"></i>
+                                <span class="sr-only">YouTube</span>
+                            </a>
+                        </li>
 
 
-                                <!-- Optional JavaScript -->
-                                <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-                                <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-                                </script>
-                                <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
-                                </script>
-                                <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
-                                </script>
-                            </footer>
-                            <script>
-                                // Tabs function openLink(evt, linkName) {
-                                var i, x, tablinks;
-                                x = document.getElementsByClassName("myLink");
-                                for (i = 0; i < x.length; i++) {
-                                    x[i].style.display = "none";
-                                }
-                                tablinks = document.getElementsByClassName("tablink");
-                                for (i = 0; i < x.length; i++) {
-                                    tablinks[i].className = tablinks[i].className.replace(" teal", "");
-                                }
-                                document.getElementById(linkName).style.display = "block";
-                                evt.currentTarget.className += " teal";
-                                }
-                                // autocomplete w3schhol snippet
-                                function autocomplete(inp, arr) {
-                                    /*the autocomplete function takes two arguments,
-                                    the text field element and an array of possible autocompleted values:*/
-                                    var currentFocus;
-                                    /*execute a function when someone writes in the text field:*/
-                                    inp.addEventListener("input", function(e) {
-                                        var a, b, i, val = this.value;
-                                        /*close any already open lists of autocompleted values*/
+
+                        <button>Powered by <a href="#" target="_blank" class="hover-text-green">Xascapade</a></button>
+                    </ul>
+
+
+                    <!-- Optional JavaScript -->
+                    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+                    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+                    </script>
+                    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+                    </script>
+                    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+                    </script>
+                </footer>
+                <script>
+                    // Tabs function openLink(evt, linkName) {
+                    var i, x, tablinks;
+                    x = document.getElementsByClassName("myLink");
+                    for (i = 0; i < x.length; i++) {
+                        x[i].style.display = "none";
+                    }
+                    tablinks = document.getElementsByClassName("tablink");
+                    for (i = 0; i < x.length; i++) {
+                        tablinks[i].className = tablinks[i].className.replace(" teal", "");
+                    }
+                    document.getElementById(linkName).style.display = "block";
+                    evt.currentTarget.className += " teal";
+                    }
+                    // autocomplete w3schhol snippet
+                    function autocomplete(inp, arr) {
+                        /*the autocomplete function takes two arguments,
+                        the text field element and an array of possible autocompleted values:*/
+                        var currentFocus;
+                        /*execute a function when someone writes in the text field:*/
+                        inp.addEventListener("input", function(e) {
+                            var a, b, i, val = this.value;
+                            /*close any already open lists of autocompleted values*/
+                            closeAllLists();
+                            if (!val) {
+                                return false;
+                            }
+                            currentFocus = -1;
+                            /*create a DIV element that will contain the items (values):*/
+                            a = document.createElement("DIV");
+                            a.setAttribute("id", this.id + "autocomplete-list");
+                            a.setAttribute("class", "autocomplete-items");
+                            /*append the DIV element as a child of the autocomplete container:*/
+                            this.parentNode.appendChild(a);
+                            /*for each item in the array...*/
+                            for (i = 0; i < arr.length; i++) {
+                                /*check if the item starts with the same letters as the text field value:*/
+                                if (arr[i].substr(0, val.length).toUpperCase() == val
+                                    .toUpperCase()) {
+                                    /*create a DIV element for each matching element:*/
+                                    b = document.createElement("DIV");
+                                    /*make the matching letters bold:*/
+                                    b.innerHTML = "<strong>" + arr[i].substr(0, val
+                                            .length) +
+                                        "</strong>";
+                                    b.innerHTML += arr[i].substr(val.length);
+                                    /*insert a input field that will hold the current array item's value:*/
+                                    b.innerHTML += "<input type='hidden' value='" + arr[i] +
+                                        "'>";
+                                    /*execute a function when someone clicks on the item value (DIV element):*/
+                                    b.addEventListener("click", function(e) {
+                                        /*insert the value for the autocomplete text field:*/
+                                        inp.value = this.getElementsByTagName(
+                                            "input")[
+                                            0].value;
+                                        /*close the list of autocompleted values,
+                                        (or any other open lists of autocompleted values:*/
                                         closeAllLists();
-                                        if (!val) {
-                                            return false;
-                                        }
-                                        currentFocus = -1;
-                                        /*create a DIV element that will contain the items (values):*/
-                                        a = document.createElement("DIV");
-                                        a.setAttribute("id", this.id + "autocomplete-list");
-                                        a.setAttribute("class", "autocomplete-items");
-                                        /*append the DIV element as a child of the autocomplete container:*/
-                                        this.parentNode.appendChild(a);
-                                        /*for each item in the array...*/
-                                        for (i = 0; i < arr.length; i++) {
-                                            /*check if the item starts with the same letters as the text field value:*/
-                                            if (arr[i].substr(0, val.length).toUpperCase() == val
-                                                .toUpperCase()) {
-                                                /*create a DIV element for each matching element:*/
-                                                b = document.createElement("DIV");
-                                                /*make the matching letters bold:*/
-                                                b.innerHTML = "<strong>" + arr[i].substr(0, val
-                                                        .length) +
-                                                    "</strong>";
-                                                b.innerHTML += arr[i].substr(val.length);
-                                                /*insert a input field that will hold the current array item's value:*/
-                                                b.innerHTML += "<input type='hidden' value='" + arr[i] +
-                                                    "'>";
-                                                /*execute a function when someone clicks on the item value (DIV element):*/
-                                                b.addEventListener("click", function(e) {
-                                                    /*insert the value for the autocomplete text field:*/
-                                                    inp.value = this.getElementsByTagName(
-                                                        "input")[
-                                                        0].value;
-                                                    /*close the list of autocompleted values,
-                                                    (or any other open lists of autocompleted values:*/
-                                                    closeAllLists();
-                                                });
-                                                a.appendChild(b);
-                                            }
-                                        }
                                     });
-                                    // Get the video
-                                    var video = document.getElementById("myVideo");
-
-                                    // Get the button
-                                    var btn = document.getElementById("myBtn");
-
-                                    // Pause and play the video, and change the button text
-                                    function myFunction() {
-                                        if (video.paused) {
-                                            video.play();
-                                            btn.innerHTML = "Pause";
-                                        } else {
-                                            video.pause();
-                                            btn.innerHTML = "Play";
-                                        }
-                                    }
-                                    /*execute a function presses a key on the keyboard:*/
-                                    inp.addEventListener("keydown", function(e) {
-                                        var x = document.getElementById(this.id + "autocomplete-list");
-                                        if (x) x = x.getElementsByTagName("div");
-                                        if (e.keyCode == 40) {
-                                            /*If the arrow DOWN key is pressed,
-                                            increase the currentFocus variable:*/
-                                            currentFocus++;
-                                            /*and and make the current item more visible:*/
-                                            addActive(x);
-                                        } else if (e.keyCode == 38) { //up
-                                            /*If the arrow UP key is pressed,
-                                            decrease the currentFocus variable:*/
-                                            currentFocus--;
-                                            /*and and make the current item more visible:*/
-                                            addActive(x);
-                                        } else if (e.keyCode == 13) {
-                                            /*If the ENTER key is pressed, prevent the form from being submitted,*/
-                                            e.preventDefault();
-                                            if (currentFocus > -1) {
-                                                /*and simulate a click on the "active" item:*/
-                                                if (x) x[currentFocus].click();
-                                            }
-                                        }
-                                    });
-
-                                    function addActive(x) {
-                                        /*a function to classify an item as "active":*/
-                                        if (!x) return false;
-                                        /*start by removing the "active" class on all items:*/
-                                        removeActive(x);
-                                        if (currentFocus >= x.length) currentFocus = 0;
-                                        if (currentFocus < 0) currentFocus = (x.length - 1);
-                                        /*add class "autocomplete-active":*/
-                                        x[currentFocus].classList.add("autocomplete-active");
-                                    }
-
-                                    function removeActive(x) {
-                                        /*a function to remove the "active" class from all autocomplete items:*/
-                                        for (var i = 0; i < x.length; i++) {
-                                            x[i].classList.remove("autocomplete-active");
-                                        }
-                                    }
-
-                                    function closeAllLists(elmnt) {
-                                        /*close all autocomplete lists in the document,
-                                        except the one passed as an argument:*/
-                                        var x = document.getElementsByClassName("autocomplete-items");
-                                        for (var i = 0; i < x.length; i++) {
-                                            if (elmnt != x[i] && elmnt != inp) {
-                                                x[i].parentNode.removeChild(x[i]);
-                                            }
-                                        }
-                                    }
-                                    /*execute a function when someone clicks in the document:*/
-                                    document.addEventListener("click", function(e) {
-                                        closeAllLists(e.target);
-                                    });
+                                    a.appendChild(b);
                                 }
+                            }
+                        });
+                        // Get the video
+                        var video = document.getElementById("myVideo");
+
+                        // Get the button
+                        var btn = document.getElementById("myBtn");
+
+                        // Pause and play the video, and change the button text
+                        function myFunction() {
+                            if (video.paused) {
+                                video.play();
+                                btn.innerHTML = "Pause";
+                            } else {
+                                video.pause();
+                                btn.innerHTML = "Play";
+                            }
+                        }
+                        /*execute a function presses a key on the keyboard:*/
+                        inp.addEventListener("keydown", function(e) {
+                            var x = document.getElementById(this.id + "autocomplete-list");
+                            if (x) x = x.getElementsByTagName("div");
+                            if (e.keyCode == 40) {
+                                /*If the arrow DOWN key is pressed,
+                                increase the currentFocus variable:*/
+                                currentFocus++;
+                                /*and and make the current item more visible:*/
+                                addActive(x);
+                            } else if (e.keyCode == 38) { //up
+                                /*If the arrow UP key is pressed,
+                                decrease the currentFocus variable:*/
+                                currentFocus--;
+                                /*and and make the current item more visible:*/
+                                addActive(x);
+                            } else if (e.keyCode == 13) {
+                                /*If the ENTER key is pressed, prevent the form from being submitted,*/
+                                e.preventDefault();
+                                if (currentFocus > -1) {
+                                    /*and simulate a click on the "active" item:*/
+                                    if (x) x[currentFocus].click();
+                                }
+                            }
+                        });
+
+                        function addActive(x) {
+                            /*a function to classify an item as "active":*/
+                            if (!x) return false;
+                            /*start by removing the "active" class on all items:*/
+                            removeActive(x);
+                            if (currentFocus >= x.length) currentFocus = 0;
+                            if (currentFocus < 0) currentFocus = (x.length - 1);
+                            /*add class "autocomplete-active":*/
+                            x[currentFocus].classList.add("autocomplete-active");
+                        }
+
+                        function removeActive(x) {
+                            /*a function to remove the "active" class from all autocomplete items:*/
+                            for (var i = 0; i < x.length; i++) {
+                                x[i].classList.remove("autocomplete-active");
+                            }
+                        }
+
+                        function closeAllLists(elmnt) {
+                            /*close all autocomplete lists in the document,
+                            except the one passed as an argument:*/
+                            var x = document.getElementsByClassName("autocomplete-items");
+                            for (var i = 0; i < x.length; i++) {
+                                if (elmnt != x[i] && elmnt != inp) {
+                                    x[i].parentNode.removeChild(x[i]);
+                                }
+                            }
+                        }
+                        /*execute a function when someone clicks in the document:*/
+                        document.addEventListener("click", function(e) {
+                            closeAllLists(e.target);
+                        });
+                    }
 
 
-                                function initAutocomplete() {
+                    function initAutocomplete() {
 
-                                    autocomplete = new google.maps.places.Autocomplete(
+                        autocomplete = new google.maps.places.Autocomplete(
 
-                                        (document.getElementById('autocomplete')), {
-                                            types: ['Map']
-                                        });
-                                }); <
-                                /footer>
-                                body > <
-                                    /html>
+                            (document.getElementById('autocomplete')), {
+                                types: ['Map']
+                            });
+                    }); <
+                    /footer>
+                    body > <
+                        /html>
