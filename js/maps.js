@@ -41,51 +41,34 @@ function initMap() {
         }
     });
 
-
     var labels = "ABCDEFGHIJKLMONPQRSTUVWXYZ";
     let locations = [{
-
             lat: -4.05428,
             lng: 39.6043
-
         },
         {
-
             lat: -0.28066,
             lng: 36.07942
-
         },
         {
-
             lat: -1.27381,
             lng: 36.83175
-
         },
         {
-
             lat: -4.05208,
             lng: 39.70079
-
         },
         {
-
             lat: -1.28634,
             lng: 36.76013
-
         },
-
         {
-
             lat: -1.27381,
-            lng::36.83175
-
+            lng: 36.83175
         },
-
         {
-
             lat: 0.01607,
             lng: 37.07795
-
         }
     ];
 
@@ -101,7 +84,10 @@ function initMap() {
 
     var markerCluster = new MarkerClusterer(map, markers, {
         imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'
-    });
-} < /script>  <
-script src = "https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js" > < /script>  <
-script async defer src = "https://maps.googleapis.com/maps/api/js?key=AIzaSyDu9EMPEt4GX-YMhTjYoHL0ATPN-odHDa0&callback=initMap" > < /script>
+    }); <
+    /script> <
+    script src = "https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js" > < /script>    <
+    script async defer src = "https://maps.googleapis.com/maps/api/js?key=AIzaSyDu9EMPEt4GX-YMhTjYoHL0ATPN-odHDa0&callback=initMap" > < /script></script >
+        <
+        /footer>
+    body
