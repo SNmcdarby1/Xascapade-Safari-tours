@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="en-US">
 
-<head>
+<head class="container-fluid">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Xascapade Travel</title>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
     <link rel="stylesheet" href="https://stackpath.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css" type="text/css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
     </script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
@@ -27,324 +28,306 @@
     </span>
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top topnav">
         <div class="bar white border-bottom xlarge">
-            <a href="index.html" class="bar-item button text-red hover-red"><b><i class="fa fa-map-marker margin-right"></i>
-                    <did id="map"><span>XASCAPADE</span>
-                </b></a>
-            <a href="index.html" class="bar-item w3-button right hover-red text-grey"><i class="fa fa-search"></i></a>
+
+            <button class="navbar-toggler hidden-lg-up btn-btn show-sm-dowm" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="true" aria-label="togglenavigation">Home</button>
+            <div class="collapse navbar-collapse " data-toggle="collapse" id="collapsibleNavId">
+                <ul class="navbar">
+                    <ul>
+                        <li><a href="#">Tourism Guide</a></li>
+                        <li><a href="#">Travel Agent</a></li>
+                        <li><a href="#">Accomodations</a></li>
+                        <li><a href="#">On Budget</a></li>
+                        <b>WHAT'S HAPPEN</b>
+                        <ul>
+                            <li><a href="#">safari</a></li>
+                            <li><a href="#">Tours</a></li>
+                            <li><a href="#">Parks</a></li>
+                        </ul>
+                    </ul>
+            </div>
+            <div class="col-right">
+
+            </div>
         </div>
-        <button class="navbar-toggler hidden-lg-up btn-btn show-sm-dowm" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="true" aria-label="togglenavigation">Home</button>
-        <div class="collapse navbar-collapse " data-toggle="collapse" id="collapsibleNavId">
-            <ul class="navbar">
-                <li class="nav-item btn">
-                    <a class="nav-link" href="contact.html"><i class="fa fa-user-circle" aria-hidden="true"></i>Contact</a>
-                </li>
-                <li class="nav-item btn">
-                    <a class="nav-link" href="gallery.html"><i class="fa fa-camera" aria-hidden="true"></i>Gallery</a>
-                </li>
+        </ul>
 
-                <li class="dropdown">
-                    <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Services
-                    </a>
 
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                        <a class="dropdown-item" href="safari.html">Safari</a>
-                        <a class="dropdown-item" href="reservation.html">Reserve</a>
-                        <a class="dropdown-item" href="products.html"></a>
-
-                    </div>
-                </li>
-                <li class="nav-item  btn">
-                    <a class="nav-link" href="about.html"><i class="fa fa-cloud" aria-hidden="true"></i>About</a>
-                </li>
-                <li class="nav-item active  btn">
-                    <a class="nav-link" href="index.html"><i class="fa fa-home" aria-hidden="true"></i>Home
-                        <span class="sr-only">(current)</span></a>
-                </li>
-            </ul>
-            <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="text" placeholder="Search">
-
-            </form>
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
     </nav>
-
-    <section class="container-fluid">
-        <div class="container-fluid">
-
-            <a href="about.html" class="btn uppercase">
-                <h5 class="uppercase general-sub">About Us</h5>
-            </a>
-        </div>
-
-        <head>
-            <header class="container-fluid">
-                <section class="d-inline-block text-truncate" style="max-width: 100%;">
-                    <div class="section-column header   d-inline-block text-truncate" style="max-width: 100%;">
+    <div class="section form container">
+        <div class="col bg-color-conferences section-column">
+            <div class="row">
+                <div class="col-12">
+                    <br>
 
 
+                    <form action="destination.html" method="GET">
+                        <fieldset>
+                            <legend>Personal Details:</legend>
+                            <label for="name">Username</label><input type="text" name="username" id="username" type="date" name="date">
+                            <label for="name">Email</label><input type="text" name="email" id="email" type="email" name="email">
+                            <label for="name">Phone</label><input type="text" name="Phone" id="Phone" type="phone" name="phone">
+                            <select name="town" required>
+                                <option value="Nairobi"></option>
+                                <option value="Mombasa"></option>
+                                <option value="Nakuru"></option>
+                                <option value="Kisumu"></option>
 
-            </header>
-            <main class="container-fluid">
-                <section class="btnbtn button">
-
-                    <!-- was inspired by the 3wschool example  -->
-                    <div class="dropdown text-center">
-                        <button class="dropbtn">Booking Information</button>
-                        <div class="dropdown-content">
-                            <a href="safari.html">Safari Packages</a>
-                            <a href="accommodation.html">Accommodations</a>
-                            <a href="reservation.html">Reservation</a>
-                        </div>
-                    </div>
-                </section>
-                <section class="container">
-                    <div class="content">
-                        <h1>Heading</h1>
-                        <p>Best offers</p>
-                        <!-- Use a button to pause/play the video with JavaScript -->
-                        <button id="myBtn" onclick="myFunction()">Pause</button>
-                    </div>
-                    <!--w3school Page content -->
-                    <div class="w3-content" style="max-width:1100px;">
-
-                        <!-- Good offers -->
-                        <div class="w3-container w3-margin-top">
-                            <h3>Good Offers Right Now</h3>
-                            <h6>Up to <strong>50%</strong> discount.</h6>
-                        </div>
-                        <div class="w3-row-padding w3-text-white w3-large">
-                            <div class="w3-half w3-margin-bottom">
-                                <picture class="d-inline-block text-truncate" style="max-width: 600px;">
-                                    <source srcset="assets/images/lodge.jpg" type="image/svg+xml">
-                                    <img src="assets/images/lodge.jpg" class="img-fluid img-thumbnail" alt="Rooms">
-                                </picture>
-                                <span class="w3-display-bottomleft w3-padding">Book a night at a resort</span>
-                            </div>
-
-                        </div>
-                        <div class="w3-half">
-                            <div class="w3-row-padding" style="margin:0 -16px">
-                                <div class="w3-half w3-margin-bottom">
-                                    <div class="w3-display-container">
-
-                                        <picture class="d-inline-block text-truncate" style="max-width: 600px;">
-                                            <source srcset="assets/images/room.jpg" type="image/svg+xml">
-                                            <img src="assets/images/room.jpg" class="img-fluid img-thumbnail" alt="Rooms">
-                                        </picture>
-                                        <span class="w3-display-bottomleft w3-padding">Book an accommodation
-                                            either at a Hotel or AirBnB at
-                                            desired your location</span>
-                                    </div>
-                                </div>
-                                <div class="w3-half w3-margin-bottom">
-                                    <div class="w3-display-container">
-                                        <picture class="d-inline-block text-truncate" style="max-width: 600px;">
-                                            <source srcset="assets/images/cheetah.jpg" type="image/svg+xml">
-                                            <img src="assets/images/cheetah.jpg" class="img-fluid img-thumbnail" alt="Rooms">
-                                        </picture>
-                                        <span class="w3-display-bottomleft w3-padding">Cheetahs</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="w3-row-padding" style="margin:0 -16px">
-                                <div class="w3-half w3-margin-bottom">
-                                    <div class="w3-display-container">
-                                        <picture class="d-inline-block text-truncate" style="max-width: 600px;">
-                                            <source srcset="assets/images/flaming.jpg" type="image/svg+xml">
-                                            <img src="assets/images/flaming.jpg" class="img-fluid img-thumbnail" alt="Rooms">
-                                        </picture>
-                                        <span class="w3-display-bottomleft w3-padding">Flamingos at Lake Nakuru
-                                            national park</span>
-                                    </div>
-                                </div>
-                                <div class="w3-half w3-margin-bottom">
-                                    <div class="w3-display-container">
-                                        <picture class="d-inline-block text-truncate" style="max-width: 600px;">
-                                            <source srcset="assets/images/red.jpg" type="image/svg+xml">
-                                            <img src="assets/images/red.jpg" class="img-fluid img-thumbnail" alt="Rooms">
-                                        </picture>
-                                        <span class="w3-display-bottomleft w3-padding">Amboseli National
-                                            park</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Explore Nature -->
-                    <div class="w3-container">
-                        <h3>Explore Nature</h3>
-                        <p>Travel with us and see nature at its finest.</p>
-                    </div>
-                    <div class="w3-row-padding">
-                        <div class="w3-half w3-margin-bottom">
-                            <img src="assets/images/giraffes-.jpg" alt="Nairobi national park" style="width:100%">
-                            <div class="w3-container w3-white">
-                                <h3>Nairobi game reserve</h3>
-                                <p> 1 Day safari from sunset to dawn.</p>
-                                <p class="w3-opacity">$279</p>
-
-                                <button class="w3-button w3-margin-bottom">Buy Tickets</button>
-                            </div>
-                        </div>
-                        <div class="w3-half w3-margin-bottom">
-                            <img src="assets/images/lions.jpg" alt="Masaai mara" style="width:100%">
-                            <div class="w3-container w3-white">
-                                <h3>Masaai Mara</h3>
-                                <p>A 5 day safari package.</p>
-                                <p class="opacity">$3159 plus Accommodation</p>
-
-                                <button class="w3-button w3-margin-bottom">Buy Tickets</button>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-
-                <div class="container left">
-                    <div class="content">
-                        <h2>2017</h2>
-                        <p>Air BnB.</p>
-                        <picture class="d-inline-block text-truncate" style="max-width: 600px;">
-                            <source srcset="assets/images/the.jpg" type="image/svg+xml">
-                            <img src="assets/images/the.jpg" class="img-fluid img-thumbnail" alt="Rooms">
-                        </picture>
-                    </div>
-                </div>
-                <div class="container right">
-                    <div class="content">
-                        <h2>2016</h2>
-                        <p>A Resort..</p>
-                        <picture class="card d-inline-block text-truncate" style="max-width: 600px;">
-
-                            <source srcset="assets/images/lodge.jpg" type="image/svg+xml">
-                            <img src="assets/images/lodge.jpg" class="img-fluid img-thumbnail" alt="Rooms">
-                        </picture>
-                    </div>
-                </div>
-                <div class="container left">
-                    <div class="content">
-                        <h2>2017</h2>
-                        <p>A restaurant at the Lodge..</p>
-                        <picture class="d-inline-block text-truncate" style="max-width: 600px;">
-                            <source srcset="assets/images/safari.jpg" type="image/svg+xml">
-                            <img src="assets/images/safari.jpg" class="img-fluid img-thumbnail" alt="Rooms">
-                        </picture>
-                    </div>
-                </div>
-
-
-
-                <form class="section colnm container bar-item button tablink" onclick="openLink(event, 'Hotel');"><i class="fa fa-bed margin-right">
-                        <div class="">
-                            <div class="container">
+                            </select>
+                        </fieldset>
+                        <div class="section form container">
+                            <div class="col bg-color-conferences section-column">
                                 <div class="row">
-                                    <div class="col bg-color-conferences section-column">
-                                        <div class="row">
-                                            <div class="col-12">
-                                                <div class="form-group">
-                                                    <label for=""></label>
-                                                    <input type="text" name="" id="" class="form-control" placeholder="" aria-describedby="helpId">
-                                                    <small id="helpId" class="text-muted">Help text</small>
+                                    <div class="col-12">
+                                        <br>
+                                        <fieldset>
+                                            <legend>Booking Details:</legend>
+                                            <i class="fa fa-info-circle fa-lg"></i>
+                                            <div class="row">
+                                                <div class="col bg-color-conferences section-column">
+                                                    <div class="row">
+                                                        <card class="col-12">
+                                                            <li><label for="date">Check in
+                                                                    date:</label> <input type="date" name="date" min="2021-Jan-05"></li>
+                                                            <li><label for="date">Check out
+                                                                    date:</label><input type="date" name="date" type="date" name="date"></li>
+                                                            <li> <label for="numberOfGuest">Number
+                                                                    Of Guest</label><input id="numberOfGuest" name="numberOfGuest" :</label>
+                                                                <input type="number" name="numberOfGuests" min='1' max='6' id="">
+                                                                <p>Do you require meals?</p>
+
+
+                                                                <label for="YesMeals">Yes</label><input id="yesMeals" type="radio" name="meals" value="yesMeals">
+                                                                <label for="noMeals">No
+
+
+
+                                                                    Meals</label><input id=noMeals type="radio" name="meals" value="noMeals">
+                                                                <br>
+                                                                <tbody>
+                                                                    <div class="col-1 slides">
+
+                                                                        <div class="overlay">
+                                                                            <div class="caption">
+                                                                                <label for="standardRoom">Standard
+                                                                                    Room</label><input type="checkbox" name="standardRoom" value="yes" checked>
+                                                                                <label for="standardRoom">Standard
+                                                                                    Room</label><input type="checkbox" name="standardRoom" value="no" checked>
+                                                                                <label for="doubleRoom">Double
+                                                                                    Room</label><input type="checkbox" name="doubleRoom" value="yes" checked>
+                                                                                <label for="doubleRoom">Double
+                                                                                    Room</label><input type="checkbox" name="doubleRoom" value="no" checked>
+                                                                                <label for="BookSafari">Book
+                                                                                    Safari</label><input type="checkbox" name="bookSafari" value="yes" checked>
+                                                                                <label for="NoSafari">Standard
+                                                                                    Room</label><input type="checkbox" name="noSafari" value="no" checked>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </tbody>
+                                                        </card>
+                                                    </div>
                                                 </div>
-                                                <form action="destination.html" method="GET">
-                                                    <fieldset>
-                                                        <legend>Personal Details:</legend>
-                                                        <label for="name">Username</label><input type="text" name="username" id="username" type="date" name="date">
-                                                        <label for="name">Email</label><input type="text" name="email" id="email" type="email" name="email">
-                                                        <label for="name">Phone</label><input type="text" name="Phone" id="Phone" type="phone" name="phone">
-                                                        <select name="town" required>
-                                                            <option value="Nairobi"></option>
-                                                            <option value="Mombasa"></option>
-                                                            <option value="Nakuru"></option>
-                                                            <option value="Kisumu"></option>
-
-                                                        </select>
-                                                    </fieldset>
-                                                    <div class="section form container">
-                                                        <div class="col bg-color-conferences section-column">
-                                                            <div class="row">
-                                                                <div class="col-12">
+                                            </div>
+                                    </div>
+                                    </fieldset>
+                                    <section class="section section-tour">
+                                        <div class="section-head">
+                                            <div class="section-line"></div>
+                                            <h3 class="section-title">5 RECOMENDED
+                                                TOURS
+                                            </h3>
+                                            <p class="section-subtitle">Safari</p>
+                                        </div>
+                                        <div class="section-tour-body">
+                                            <div class="row">
+                                                <div class="col-1 slides">
+                                                    <img src="assets/images/.jpg">
+                                                    <div class="overlay">
+                                                        <div class="caption">
+                                                            <div class="caption-text">
+                                                                <p>Diani Beach 2 Tour package </p>
+                                                                <span class="ion-ios-star checked"></span>
+                                                                <span class="ion-ios-star checked"></span>
+                                                                <span class="ion-ios-star checked"></span>
+                                                                <span class="ion-ios-star"></span>
+                                                                <span class="ion-ios-star"></span>
+                                                                <br>
+                                                                <span class="ion-bag big"></span>
+                                                                &nbsp;
+                                                                <b>Euro. 1160</b>
+                                                                <a href="single-destination.html" class="btn btn-orange btn-round right">See
+                                                                    Details</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-1 slides">
+                                                    <img src="assets/images/.jpg">
+                                                    <div class="overlay">
+                                                        <div class="caption">
+                                                            <div class="caption-text">
+                                                                <p>Nakuru National 3 day package</p>
+                                                                <span class="ion-ios-star checked"></span>
+                                                                <span class="ion-ios-star checked"></span>
+                                                                <span class="ion-ios-star checked"></span>
+                                                                <span class="ion-ios-star"></span>
+                                                                <span class="ion-ios-star"></span>
+                                                                <br>
+                                                                <span class="ion-bag big"></span>
+                                                                &nbsp;
+                                                                <b>Euro 2150</b>
+                                                                <a href="single-destination.html" class="btn btn-orange btn-round right">See
+                                                                    Details</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-2 slides">
+                                                    <img src="assets/images/.jpg">
+                                                    <div class="overlay">
+                                                        <div class="caption">
+                                                            <div class="caption-text">
+                                                                <p>Tsavo East 4 day package plus accommodation</p>
+                                                                <span class="ion-ios-star checked"></span>
+                                                                <span class="ion-ios-star checked"></span>
+                                                                <span class="ion-ios-star checked"></span>
+                                                                <span class="ion-ios-star checked"></span>
+                                                                <span class="ion-ios-star"></span>
+                                                                <br>
+                                                                <span class="ion-bag big"></span>
+                                                                &nbsp;
+                                                                <b>Euro. 3150 - Euro.
+                                                                    200</b> <br>
+                                                                <a href="single-destination.html" class="btn btn-orange btn-round">See
+                                                                    Details</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-2 slides">
+                                                    <img src="assets/images/.jpg">
+                                                    <div class="overlay">
+                                                        <div class="caption">
+                                                            <div class="caption-text">
+                                                                <p>Nairobi 3 day Package plus Accommodation</p>
+                                                                <span class="ion-ios-star checked"></span>
+                                                                <span class="ion-ios-star checked"></span>
+                                                                <span class="ion-ios-star checked"></span>
+                                                                <span class="ion-ios-star"></span>
+                                                                <span class="ion-ios-star"></span>
+                                                                <br>
+                                                                <span class="ion-bag big"></span>
+                                                                &nbsp;
+                                                                <b>Euro. 2275.000
                                                                     <br>
-                                                                    <fieldset>
-                                                                        <legend>Booking Details:</legend>
-                                                                        <i class="fa fa-info-circle fa-lg"></i>
-                                                                        <div class="row">
-                                                                            <div class="col bg-color-conferences section-column">
-                                                                                <div class="row">
-                                                                                    <div class="col-12">
-                                                                                        <label for="date">Check in
-                                                                                            date:</label> <input type="date" name="date" min="2021-Jan-05">
-                                                                                        <label for="date">Check out
-                                                                                            date:</label><input type="date" name="date" type="date" name="date">
-                                                                                        <label for="numberOfGuest">Number
-                                                                                            Of Guest</label><input id="numberOfGuest" name="numberOfGuest" :</label><input type="number" name="numberOfGuests" min='1' max='6' id="">
-                                                                                        <p>Do you require meals?</p>
+                                                                    <a href="single-package.html" class="btn btn-orange btn-round">See
+                                                                        Details</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-2 slides">
+                                                    <img src="assets/images/.jpg">
+                                                    <div class="overlay">
+                                                        <div class="caption">
+                                                            <div class="caption-text">
+                                                                <p>Malindi village tour</p>
+                                                                <span class="ion-ios-star checked"></span>
+                                                                <span class="ion-ios-star checked"></span>
+                                                                <span class="ion-ios-star checked"></span>
+                                                                <span class="ion-ios-star"></span>
+                                                                <span class="ion-ios-star"></span>
+                                                                <br>
+                                                                <span class="ion-bag big"></span>
+                                                                &nbsp;
+                                                                <b>Euro. 170</b>
+                                                                <br>
+                                                                <a href="single-destination.html" class="btn btn-orange btn-round">See
+                                                                    Details</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
 
-                                                                                        <label for="YesMeals">Yes</label><input id="yesMeals" type="radio" name="meals" value="yesMeals">
-                                                                                        <label for="noMeals">No
-                                                                                            Meals</label><input id=noMeals type="radio" name="meals" value="noMeals">
-                                                                                        <br>
-                                                                                        <label for="standardRoom">Standard
-                                                                                            Room</label><input type="checkbox" name="standardRoom" value="yes" checked>
-                                                                                        <label for="standardRoom">Standard
-                                                                                            Room</label><input type="checkbox" name="standardRoom" value="no" checked>
-                                                                                        <label for="doubleRoom">Double
-                                                                                            Room</label><input type="checkbox" name="doubleRoom" value="yes" checked>
-                                                                                        <label for="doubleRoom">Double
-                                                                                            Room</label><input type="checkbox" name="doubleRoom" value="no" checked>
-                                                                                        <label for="BookSafari">Book
-                                                                                            Safari</label><input type="checkbox" name="bookSafari" value="yes" checked>
-                                                                                        <label for="NoSafari">Standard
-                                                                                            Room</label><input type="checkbox" name="noSafari" value="no" checked>
-                                                                    </fieldset>
+                                    <!-- Section Newsletter -->
 
-                                                </form>
+                                    <section class="section-testi">
+                                        <div class="overlay">
+                                            <div class="head">
 
 
                                                 <div class="card-body" class="col-sm-6 no_left_padding no_right_padding">
+                                                    <p>Cost per day</p>
                                                     <div class="form-group">
                                                         <label for="srch_frm_hotel_single">Hotels</label>
                                                         <select name="hotel" id="hotel" class="form-control">
                                                             <option value="" selected>No Preference
                                                             </option>
-                                                            <option value="*O">*Sarova Hotels
+                                                            <option value="*O">*Sarova Hotels<b> Euro. 160</b>
+                                                                <br>
                                                             </option>
-                                                            <option value="*A">*Serena hotels
+                                                            <option value="*A">*Serena hotels<b> Euro. 180</b>
+                                                                <br>
                                                             </option>
-                                                            <option value="*S">*Intercontinental Hotels
+                                                            <option value="*S">*Intercontinental Hotels<b> Euro. 150</b>
+                                                                <br>
                                                             </option>
-                                                            <option value="*C">*Camping
+                                                            <option value="*C">*Camping<b> Euro. 80</b>
+                                                                <br>
                                                             </option>
-                                                            <option value="*K">*AirBnB
+                                                            <option value="*K">*AirBnB<b> Euro. 100</b>
+                                                                <br>
                                                             </option>
-                                                            <option value="JP">Safari Park Hotel Nairobi
+                                                            <option value="JP">Safari Park Hotel Nairobi <b> Euro. 130</b>
+                                                                <br>
                                                             </option>
-                                                            <option value="EI">Diani Hotel </option>
-                                                            <option value="JR">White Sands Holtel
+                                                            <option value="EI">Diani Hotel<b> Euro. 80</b>
+                                                                <br> </option>
+                                                            <option value="JR">White Sands Holtel<b> Euro. 140</b>
+                                                                <br>
                                                             </option>
-                                                            <option value="ML">Nakuru Lodge Hotel
+                                                            <option value="ML">Nakuru Lodge Hotel<b> Euro. 95</b>
+                                                                <br>
                                                             </option>
-                                                            <option value="PL">Intercontinental Hotel Nairobi
+                                                            <option value="PL">Intercontinental Hotel Nairobi<b> Euro. 125</b>
+                                                                <br>
                                                             </option>
-                                                            <option value="SX">Stanlley Hotel Nairobi
+                                                            <option value="SX">Stanlley Hotel Nairobi<b> Euro. 110</b>
+                                                                <br>
                                                             </option>
-                                                            <option value="SU">Red Elephant Hotel Tsavo</option>
-                                                            <option value="AR">Reef Hotel Mombasa
+                                                            <option value="SU">Red Elephant Hotel Tsavo<b>Euro. 85</b>
+                                                                <br></option>
+                                                            <option value="AR">Reef Hotel Mombasa<b> Euro. 120</b>
+                                                                <br>
                                                             </option>
-                                                            <option value="VW">Nyali Hotel Mombasa
+                                                            <option value="VW">Nyali Hotel Mombasa<b> Euro. 110</b>
+                                                                <br>
                                                             </option>
-                                                            <option value="AM">Voyager Hotel Mombasa</option>
-                                                            <option value="5L">African Safari Club Mombasa</option>
-                                                            <option value="DP">La Pelgola Malindi</option>
-                                                            <option value="DP">Mada Hotel Kilifi</option>
-                                                            <option value="RK">Bamburi Beach Resort Mombasa</option>
-                                                            <option value="AH">Kilifi Bay Resort Kilifi</option>
-                                                            <option value="FQ">Sun and Sand Club Mombasa</option>
-                                                            <option value="UU">Turtle Bay Watamu</option>
-                                                            <option value="7L">Windsor Hotel Nairobi</option>
-                                                            <option value="AC">FairMount Hotel and Resort Nairobi
+                                                            <option value="AM">Voyager Hotel Mombasa<b> Euro. 115</b>
+                                                                <br></option>
+                                                            <option value="5L">African Safari Club Mombasa<b> Euro. 107</b>
+                                                                <br></option>
+                                                            <option value="DP">La Pelgola Malindi<b> Euro. 100</b>
+                                                                <br></option>
+                                                            <option value="DP">Mada Hotel Kilifi<b> Euro. 90</b>
+                                                                <br></option>
+                                                            <option value="RK">Bamburi Beach Resort Mombasa<b> Euro. 110</b>
+                                                                <br></option>
+                                                            <option value="AH">Kilifi Bay Resort Kilifi<b> Euro. 170</b>
+                                                                <br></option>
+                                                            <option value="FQ">Sun and Sand Club Mombasa<b> Euro. 115</b>
+                                                                <br></option>
+                                                            <option value="UU">Turtle Bay Watamu<b> Euro. 70</b>
+                                                                <br></option>
+                                                            <option value="7L">Windsor Hotel Nairobi<b> Euro. 170</b>
+                                                                <br></option>
+                                                            <option value="AC">FairMount Hotel and Resort Nairobi<b> Euro. 185</b>
+                                                                <br>
                                                             </option>
 
                                                             </option>
@@ -352,254 +335,414 @@
 
                                                         </select>
                                                     </div>
+                                                    <div class="card-body" class="col-sm-6 no_left_padding no_right_padding">
+                                                        <div class="form-group">
+                                                            <label for="srch_frm_hotel_single">Safari </label>
+                                                            <select name="national park" id="hotel" class="form-control">
+                                                                <option value="" selected>No Preference
+                                                                </option>
+                                                                <option value="EI">Masaai Mara National Park<b> Euro. 60</b>
+                                                                    <br> </option>
+                                                                <option value="JR">Nairobi National Park<b> Euro. 60</b>
+                                                                    <br>
+                                                                </option>
+                                                                <option value="ML">Nakuru National Park<b> Euro. 60</b>
+                                                                    <br>
+                                                                </option>
+                                                                <option value="PL">Tsavo West National Park<b> Euro. 45</b>
+                                                                    <br>
+                                                                </option>
+                                                                <option value="SX">Amboseli National Park<b> Euro. 60</b>
+                                                                    <br>
+                                                                </option>
+                                                                <option value="SU"> Tsavo west National park<b> Euro. 60</b>
+                                                                    <br></option>
+                                                                <option value="AR">Tsavo east National Park<b> Euro. 60</b>
+                                                                    <br>
+                                                                </option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card-body" class="col-sm-6 no_left_padding no_right_padding">
+                                                        <div class="form-group">
+                                                            <label for="srch_frm_hotel_single">Activities </label>
+                                                            <select name="activities" id="activities" class="form-control">
+                                                                <option value="" selected>No Preference
+                                                                </option>
+                                                                <option value="JP">Theme parks<b> Euro. 20</b>
+                                                                    <br>
+                                                                </option>
+                                                                <option value="EI">Snorkkling<b> Euro. 30</b>
+                                                                    <br></option>
+                                                                <option value="JR">Village tours<b> Euro. 10</b>
+                                                                    <br>
+                                                                </option>
+                                                                <option value="ML">City tours<b> Euro. 20</b>
+                                                                    <br>
+                                                                </option>
+                                                                <option value="PL">Museums<b> Euro. 20</b>
+                                                                    <br>
+                                                                </option>
+                                                                <option value="SX">UNESCO sights<b> Euro. 35</b>
+                                                                    <br>
+                                                                </option>
+                                                                <option value="SU">Masaai Market<b> Euro. 25</b>
+                                                                    <br></option>
+                                                                <option value="AR">Open village market<b> Euro. 15</b>
+                                                                    <br>
+                                                                </option>
+                                                                <option value="VW">City malls
+                                                                </option>
+                                                                <option value="VW">Cinema
+                                                                </option>
+
+
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card-body" class="col-sm-6 no_left_padding no_right_padding">
+                                                        <div class="form-group">
+                                                            <label for="srch_frm_hotel_single">Transportation</label>
+                                                            <select name="activities" id="activities" class="form-control">
+                                                                <option value="" selected>No Preference
+                                                                </option>
+                                                                <option value="JP">Taxi
+                                                                    <b> To be advised</b>
+                                                                    <br>
+                                                                </option>
+                                                                <option value="EI">Private Jeep
+                                                                    <b> To be advised</b>
+                                                                    <br>
+                                                                </option>
+                                                                <option value="JR">Saloon car
+                                                                    <b> To be advised</b>
+                                                                    <br>
+                                                                </option>
+                                                                <option value="ML">Private car
+                                                                    <b> To be advised</b>
+                                                                    <br>
+                                                                </option>
+                                                                <option value="PL">Safari Van
+                                                                    <b> To be advised</b>
+                                                                    <br>
+                                                                </option>
+                                                                <option value="SX">VIP car
+                                                                    <b> To be advised</b>
+                                                                    <br>
+                                                                </option>
+                                                                <option value="SU">
+                                                                    <b> To be advised</b>
+                                                                    <br>4WD</option>
+                                                                <option value="AR">Uber
+                                                                    <b> To be advised</b>
+                                                                    <br>
+                                                                </option>
+
+
+                                                            </select>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
 
-                                        <input type="submit" value="Submit">
-                                    </div>
+
+                <input type="submit" value="Submit">
+            </div>
+        </div>
+
+        <section class="section-testi">
+            <div class="overlay">
+                <div class="head">
+
+
+                    <div class="card-body" class="col-sm-6 no_left_padding no_right_padding">
+                        <div class="form-group">
+                            <!-- customer Reservation details-->
+                            <form class="card" action="/action_page.php">
+
+                                <h4>To make reservations fill in your details below and we will get in
+                                    touch.</h4>
+                                <div class="input-container">
+                                    <i class="fa fa-user icon"></i>
+                                    <input class="input-field" type="text" placeholder="Username" name="usrnm">
                                 </div>
 
-                                <!-- customer Reservation details-->
-                                <form class="card" action="/action_page.php">
+                                <div class="input-container">
+                                    <i class="fa fa-envelope icon"></i>
+                                    <input class="input-field" type="text" placeholder="Email" name="email">
+                                </div>
 
-                                    <h4>To make reservations fill in your details below and we will get in
-                                        touch.</h4>
-                                    <div class="input-container">
-                                        <i class="fa fa-user icon"></i>
-                                        <input class="input-field" type="text" placeholder="Username" name="usrnm">
-                                    </div>
-
-                                    <div class="input-container">
-                                        <i class="fa fa-envelope icon"></i>
-                                        <input class="input-field" type="text" placeholder="Email" name="email">
-                                    </div>
-
-                                    <div class="input-container">
-                                        <i class="fa fa-key icon"></i>
-                                        <input class="input-field" type="password" placeholder="Password" name="psw">
-                                    </div>
-                                    <textarea name="msg" id="your inquiry" cols="30" rows="10"></textarea>
-                                    <form action="/action_page.php">
-                                        <input type="file" id="myFile" name="filename">
-                                        <input type="submit">
-                                    </form>
-
-
+                                <div class="input-container">
+                                    <i class="fa fa-key icon"></i>
+                                    <input class="input-field" type="password" placeholder="Password" name="psw">
+                                </div>
+                                <textarea name="msg" id="your inquiry" cols="30" rows="10"></textarea>
+                                <form action="/action_page.php">
+                                    <input type="file" id="myFile" name="filename">
+                                    <input type="submit">
                                 </form>
-                            </div>
 
 
-
-
-                            <hr class="my-12 inline-block col>
-                                    <div class=" container">
-                            <h4>Get the best offers first!</h4>
-
-                            <p>Join our newsletter.</p>
-                            <label>E-mail</label>
-                            <input class="input border" type="text" placeholder="Your Email address">
-                            <button type="button" class="button red margin-top">Subscribe</button>
+                            </form>
                         </div>
-                        <div>
-                            <footer class="col container-fluid ">
-                                <ul class="list-inline social-links">
-                                    <h3 class="uppercase general-sub">Social</h3>
-                                    <li class="list-inline-item">
-                                        <a target="_blank" href="ttps://www.facebook.com/simbapawtrail/">
-                                            <i class="fa fa-facebook" aria-hidden="true"></i>
-                                            <span class="sr-only">Facebook</span>
-                                        </a>
-                                    </li>
-                                    <li class="list-inline-item">
-                                        <a target="_blank" href="https://twitter.com/Safari78047357">
-                                            <i class="fa fa-twitter" aria-hidden="true"></i>
-                                            <span class="sr-only">twitter</span>
-                                        </a>
-                                    </li>
-                                    <li class="list-inline-item">
-                                        <a target="_blank" href="https://www.linkedin.com/company/37523851/admin/">
-                                            <i class="fa fa-linkedin" aria-hidden="true"></i>
-                                            <span class="sr-only">linkedin</span>
-                                        </a>
-                                    </li>
-
-                                    <li class="list-inline-item">
-                                        <a target="_blank" href="https://www.instagram.com/trysafari.ke/?hl=en>">
-                                            <i class="fa fa-instagram" aria-hidden="true"></i>
-                                            <span class="sr-only">Instagram</span>
-                                        </a>
-                                    </li>
-                                    <li class="list-inline-item">
-                                        <a target="_blank" href="https://www.youtube.com/embed/wSCGJD_H-n8">
-                                            <i class="fa fa-youtube" aria-hidden="true"></i>
-                                            <span class="sr-only">YouTube</span>
-                                        </a>
-                                    </li>
 
 
 
-                                    <button>Powered by <a href="#" target="_blank" class="hover-text-green">Xascapade</a></button>
-                                </ul>
+
+                        <hr class="my-12 inline-block col>
+                                    <div class=" container">
+                        <h4>Get the best offers first!</h4>
+
+                        <p>Join our newsletter.</p>
+                        <label>E-mail</label>
+                        <input class="input border" type="text" placeholder="Your Email address">
+                        <button type="button" class="button red margin-top">Subscribe</button>
+                    </div>
+                    <div>
+                        <footer class="col container-fluid ">
+                            <ul class="list-inline social-links">
+                                <h3 class="uppercase general-sub">Social</h3>
+                                <li class="list-inline-item">
+                                    <a target="_blank" href="ttps://www.facebook.com/simbapawtrail/">
+                                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                                        <span class="sr-only">Facebook</span>
+                                    </a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a target="_blank" href="https://twitter.com/Safari78047357">
+                                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                                        <span class="sr-only">twitter</span>
+                                    </a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a target="_blank" href="https://www.linkedin.com/company/37523851/admin/">
+                                        <i class="fa fa-linkedin" aria-hidden="true"></i>
+                                        <span class="sr-only">linkedin</span>
+                                    </a>
+                                </li>
+
+                                <li class="list-inline-item">
+                                    <a target="_blank" href="https://www.instagram.com/trysafari.ke/?hl=en>">
+                                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                                        <span class="sr-only">Instagram</span>
+                                    </a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a target="_blank" href="https://www.youtube.com/embed/wSCGJD_H-n8">
+                                        <i class="fa fa-youtube" aria-hidden="true"></i>
+                                        <span class="sr-only">YouTube</span>
+                                    </a>
+                                </li>
 
 
-                                <!-- Optional JavaScript -->
-                                <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-                                <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-                                </script>
-                                <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
-                                </script>
-                                <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
-                                </script>
-                            </footer>
-                            <script>
-                                // Tabs function openLink(evt, linkName) {
-                                var i, x, tablinks;
-                                x = document.getElementsByClassName("myLink");
-                                for (i = 0; i < x.length; i++) {
-                                    x[i].style.display = "none";
-                                }
-                                tablinks = document.getElementsByClassName("tablink");
-                                for (i = 0; i < x.length; i++) {
-                                    tablinks[i].className = tablinks[i].className.replace(" teal", "");
-                                }
-                                document.getElementById(linkName).style.display = "block";
-                                evt.currentTarget.className += " teal";
-                                }
-                                // autocomplete w3schhol snippet
-                                function autocomplete(inp, arr) {
-                                    /*the autocomplete function takes two arguments,
-                                    the text field element and an array of possible autocompleted values:*/
-                                    var currentFocus;
-                                    /*execute a function when someone writes in the text field:*/
-                                    inp.addEventListener("input", function(e) {
-                                        var a, b, i, val = this.value;
-                                        /*close any already open lists of autocompleted values*/
-                                        closeAllLists();
-                                        if (!val) {
-                                            return false;
+
+                                <button>Powered by <a href="#" target="_blank" class="hover-text-green">Xascapade</a></button>
+                            </ul>
+                            <section class="section-footer">
+                                <div class="texture-handler-top"></div>
+                                <div class="row">
+                                    <div class="col-left">
+                                        <p>Copyright &copy; 2021</p>
+                                        <p>Xascapade <br>
+                                            Phone : +25472586421 <br>
+                                            Email : xascapade@gmail.com </p>
+                                        <a href="#" target="_blank"><span class="ion-social-facebook icon-social"></span></a>
+                                        <a href="#" target="_blank"><span class="ion-social-instagram icon-social"></span></a>
+                                        <a href="#" target="_blank"><span class="ion-social-twitter icon-social"></span></a>
+                                    </div>
+
+                                    <div class="col-right">
+                                        <b>TRAVEL GUIDE</b>
+                                        <ul>
+                                            <li><a href="#">Tourism Guide</a></li>
+                                            <li><a href="#">Travel Agent</a></li>
+                                            <li><a href="#">Accomodations</a></li>
+                                            <li><a href="#">On Budget</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-right">
+                                        <b>WHAT'S HAPPEN</b>
+                                        <ul>
+                                            <li><a href="#">safari</a></li>
+                                            <li><a href="#">Tours</a></li>
+                                            <li><a href="#">Parks</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="footer-bottom">
+
+
+                                    <!-- Optional JavaScript -->
+                                    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+                                    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+                                    </script>
+                                    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+                                    </script>
+                                    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+                                    </script>
+                        </footer>
+                        <script>
+                            // Tabs function openLink(evt, linkName) {
+                            var i, x, tablinks;
+                            x = document.getElementsByClassName("myLink");
+                            for (i = 0; i < x.length; i++) {
+                                x[i].style.display = "none";
+                            }
+                            tablinks = document.getElementsByClassName("tablink");
+                            for (i = 0; i < x.length; i++) {
+                                tablinks[i].className = tablinks[i].className.replace(" teal", "");
+                            }
+                            document.getElementById(linkName).style.display = "block";
+                            evt.currentTarget.className += " teal";
+                            }
+                            // autocomplete w3schhol snippet
+                            function autocomplete(inp, arr) {
+                                /*the autocomplete function takes two arguments,
+                                the text field element and an array of possible autocompleted values:*/
+                                var currentFocus;
+                                /*execute a function when someone writes in the text field:*/
+                                inp.addEventListener("input", function(e) {
+                                    var a, b, i, val = this.value;
+                                    /*close any already open lists of autocompleted values*/
+                                    closeAllLists();
+                                    if (!val) {
+                                        return false;
+                                    }
+                                    currentFocus = -1;
+                                    /*create a DIV element that will contain the items (values):*/
+                                    a = document.createElement("DIV");
+                                    a.setAttribute("id", this.id + "autocomplete-list");
+                                    a.setAttribute("class", "autocomplete-items");
+                                    /*append the DIV element as a child of the autocomplete container:*/
+                                    this.parentNode.appendChild(a);
+                                    /*for each item in the array...*/
+                                    for (i = 0; i < arr.length; i++) {
+                                        /*check if the item starts with the same letters as the text field value:*/
+                                        if (arr[i].substr(0, val.length).toUpperCase() == val
+                                            .toUpperCase()) {
+                                            /*create a DIV element for each matching element:*/
+                                            b = document.createElement("DIV");
+                                            /*make the matching letters bold:*/
+                                            b.innerHTML = "<strong>" + arr[i].substr(0, val
+                                                    .length) +
+                                                "</strong>";
+                                            b.innerHTML += arr[i].substr(val.length);
+                                            /*insert a input field that will hold the current array item's value:*/
+                                            b.innerHTML += "<input type='hidden' value='" + arr[i] +
+                                                "'>";
+                                            /*execute a function when someone clicks on the item value (DIV element):*/
+                                            b.addEventListener("click", function(e) {
+                                                /*insert the value for the autocomplete text field:*/
+                                                inp.value = this.getElementsByTagName(
+                                                    "input")[
+                                                    0].value;
+                                                /*close the list of autocompleted values,
+                                                (or any other open lists of autocompleted values:*/
+                                                closeAllLists();
+                                            });
+                                            a.appendChild(b);
                                         }
-                                        currentFocus = -1;
-                                        /*create a DIV element that will contain the items (values):*/
-                                        a = document.createElement("DIV");
-                                        a.setAttribute("id", this.id + "autocomplete-list");
-                                        a.setAttribute("class", "autocomplete-items");
-                                        /*append the DIV element as a child of the autocomplete container:*/
-                                        this.parentNode.appendChild(a);
-                                        /*for each item in the array...*/
-                                        for (i = 0; i < arr.length; i++) {
-                                            /*check if the item starts with the same letters as the text field value:*/
-                                            if (arr[i].substr(0, val.length).toUpperCase() == val
-                                                .toUpperCase()) {
-                                                /*create a DIV element for each matching element:*/
-                                                b = document.createElement("DIV");
-                                                /*make the matching letters bold:*/
-                                                b.innerHTML = "<strong>" + arr[i].substr(0, val
-                                                        .length) +
-                                                    "</strong>";
-                                                b.innerHTML += arr[i].substr(val.length);
-                                                /*insert a input field that will hold the current array item's value:*/
-                                                b.innerHTML += "<input type='hidden' value='" + arr[i] +
-                                                    "'>";
-                                                /*execute a function when someone clicks on the item value (DIV element):*/
-                                                b.addEventListener("click", function(e) {
-                                                    /*insert the value for the autocomplete text field:*/
-                                                    inp.value = this.getElementsByTagName(
-                                                        "input")[
-                                                        0].value;
-                                                    /*close the list of autocompleted values,
-                                                    (or any other open lists of autocompleted values:*/
-                                                    closeAllLists();
-                                                });
-                                                a.appendChild(b);
-                                            }
+                                    }
+                                });
+                                // Get the video
+                                var video = document.getElementById("myVideo");
+
+                                // Get the button
+                                var btn = document.getElementById("myBtn");
+
+                                // Pause and play the video, and change the button text
+                                function myFunction() {
+                                    if (video.paused) {
+                                        video.play();
+                                        btn.innerHTML = "Pause";
+                                    } else {
+                                        video.pause();
+                                        btn.innerHTML = "Play";
+                                    }
+                                }
+                                /*execute a function presses a key on the keyboard:*/
+                                inp.addEventListener("keydown", function(e) {
+                                    var x = document.getElementById(this.id + "autocomplete-list");
+                                    if (x) x = x.getElementsByTagName("div");
+                                    if (e.keyCode == 40) {
+                                        /*If the arrow DOWN key is pressed,
+                                        increase the currentFocus variable:*/
+                                        currentFocus++;
+                                        /*and and make the current item more visible:*/
+                                        addActive(x);
+                                    } else if (e.keyCode == 38) { //up
+                                        /*If the arrow UP key is pressed,
+                                        decrease the currentFocus variable:*/
+                                        currentFocus--;
+                                        /*and and make the current item more visible:*/
+                                        addActive(x);
+                                    } else if (e.keyCode == 13) {
+                                        /*If the ENTER key is pressed, prevent the form from being submitted,*/
+                                        e.preventDefault();
+                                        if (currentFocus > -1) {
+                                            /*and simulate a click on the "active" item:*/
+                                            if (x) x[currentFocus].click();
                                         }
+                                    }
+                                });
+
+                                function addActive(x) {
+                                    /*a function to classify an item as "active":*/
+                                    if (!x) return false;
+                                    /*start by removing the "active" class on all items:*/
+                                    removeActive(x);
+                                    if (currentFocus >= x.length) currentFocus = 0;
+                                    if (currentFocus < 0) currentFocus = (x.length - 1);
+                                    /*add class "autocomplete-active":*/
+                                    x[currentFocus].classList.add("autocomplete-active");
+                                }
+
+                                function removeActive(x) {
+                                    /*a function to remove the "active" class from all autocomplete items:*/
+                                    for (var i = 0; i < x.length; i++) {
+                                        x[i].classList.remove("autocomplete-active");
+                                    }
+                                }
+
+                                function closeAllLists(elmnt) {
+                                    /*close all autocomplete lists in the document,
+                                    except the one passed as an argument:*/
+                                    var x = document.getElementsByClassName("autocomplete-items");
+                                    for (var i = 0; i < x.length; i++) {
+                                        if (elmnt != x[i] && elmnt != inp) {
+                                            x[i].parentNode.removeChild(x[i]);
+                                        }
+                                    }
+                                }
+                                /*execute a function when someone clicks in the document:*/
+                                document.addEventListener("click", function(e) {
+                                    closeAllLists(e.target);
+                                });
+                            }
+
+
+                            function initAutocomplete() {
+
+                                autocomplete = new google.maps.places.Autocomplete(
+
+                                    (document.getElementById('autocomplete')), {
+                                        types: ['Map']
                                     });
-                                    // Get the video
-                                    var video = document.getElementById("myVideo");
+                            });
 
-                                    // Get the button
-                                    var btn = document.getElementById("myBtn");
+                            <
+                            script type = "text/javascript"
+                            src = "js/jquery.js" >
+                        </script>
+                        <script type="text/javascript" src="js/main.js"></script>
+                        <script type="text/javascript" src="js/swipe.js"></script>
+</body>
 
-                                    // Pause and play the video, and change the button text
-                                    function myFunction() {
-                                        if (video.paused) {
-                                            video.play();
-                                            btn.innerHTML = "Pause";
-                                        } else {
-                                            video.pause();
-                                            btn.innerHTML = "Play";
-                                        }
-                                    }
-                                    /*execute a function presses a key on the keyboard:*/
-                                    inp.addEventListener("keydown", function(e) {
-                                        var x = document.getElementById(this.id + "autocomplete-list");
-                                        if (x) x = x.getElementsByTagName("div");
-                                        if (e.keyCode == 40) {
-                                            /*If the arrow DOWN key is pressed,
-                                            increase the currentFocus variable:*/
-                                            currentFocus++;
-                                            /*and and make the current item more visible:*/
-                                            addActive(x);
-                                        } else if (e.keyCode == 38) { //up
-                                            /*If the arrow UP key is pressed,
-                                            decrease the currentFocus variable:*/
-                                            currentFocus--;
-                                            /*and and make the current item more visible:*/
-                                            addActive(x);
-                                        } else if (e.keyCode == 13) {
-                                            /*If the ENTER key is pressed, prevent the form from being submitted,*/
-                                            e.preventDefault();
-                                            if (currentFocus > -1) {
-                                                /*and simulate a click on the "active" item:*/
-                                                if (x) x[currentFocus].click();
-                                            }
-                                        }
-                                    });
-
-                                    function addActive(x) {
-                                        /*a function to classify an item as "active":*/
-                                        if (!x) return false;
-                                        /*start by removing the "active" class on all items:*/
-                                        removeActive(x);
-                                        if (currentFocus >= x.length) currentFocus = 0;
-                                        if (currentFocus < 0) currentFocus = (x.length - 1);
-                                        /*add class "autocomplete-active":*/
-                                        x[currentFocus].classList.add("autocomplete-active");
-                                    }
-
-                                    function removeActive(x) {
-                                        /*a function to remove the "active" class from all autocomplete items:*/
-                                        for (var i = 0; i < x.length; i++) {
-                                            x[i].classList.remove("autocomplete-active");
-                                        }
-                                    }
-
-                                    function closeAllLists(elmnt) {
-                                        /*close all autocomplete lists in the document,
-                                        except the one passed as an argument:*/
-                                        var x = document.getElementsByClassName("autocomplete-items");
-                                        for (var i = 0; i < x.length; i++) {
-                                            if (elmnt != x[i] && elmnt != inp) {
-                                                x[i].parentNode.removeChild(x[i]);
-                                            }
-                                        }
-                                    }
-                                    /*execute a function when someone clicks in the document:*/
-                                    document.addEventListener("click", function(e) {
-                                        closeAllLists(e.target);
-                                    });
-                                }
-
-
-                                function initAutocomplete() {
-
-                                    autocomplete = new google.maps.places.Autocomplete(
-
-                                        (document.getElementById('autocomplete')), {
-                                            types: ['Map']
-                                        });
-                                }); <
-                                /footer>
-                                body > <
-                                    /html>
+</html>
+/footer>
+body > < /html>
