@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
     <link rel="stylesheet" href="https://stackpath.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
     </script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
@@ -19,331 +20,285 @@
 
 <body class="container-fluid no-gutter " class="container white padding-16 myLink">
 
-
-
-    <h1><span>XAS</span>CAPADE</h1>
-    <span>
-        Explore the World
-    </span>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top topnav">
-        <div class="bar white border-bottom xlarge">
-            <a href="index.html" class="bar-item button text-red hover-red"><b><i class="fa fa-map-marker margin-right"></i>
-                    <did id="map"><span>XASCAPADE</span>
-                </b></a>
-            <a href="index.html" class="bar-item w3-button right hover-red text-grey"><i class="fa fa-search"></i></a>
-        </div>
-        <button class="navbar-toggler hidden-lg-up btn-btn show-sm-dowm" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="true" aria-label="togglenavigation">Home</button>
-        <div class="collapse navbar-collapse " data-toggle="collapse" id="collapsibleNavId">
-            <ul class="navbar">
-                <li class="nav-item btn">
-                    <a class="nav-link" href="contact.html"><i class="fa fa-user-circle" aria-hidden="true"></i>Contact</a>
-                </li>
-                <li class="nav-item btn">
-                    <a class="nav-link" href="gallery.html"><i class="fa fa-camera" aria-hidden="true"></i>Gallery</a>
-                </li>
-
-                <li class="dropdown">
-                    <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Services
-                    </a>
-
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                        <a class="dropdown-item" href="safari.html">Safari</a>
-                        <a class="dropdown-item" href="reservation.html">Reserve</a>
-                        <a class="dropdown-item" href="products.html"></a>
-
-                    </div>
-                </li>
-                <li class="nav-item  btn">
-                    <a class="nav-link" href="about.html"><i class="fa fa-cloud" aria-hidden="true"></i>About</a>
-                </li>
-                <li class="nav-item active  btn">
-                    <a class="nav-link" href="index.html"><i class="fa fa-home" aria-hidden="true"></i>Home
-                        <span class="sr-only">(current)</span></a>
-                </li>
-            </ul>
-            <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="text" placeholder="Search">
-
-            </form>
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    <button class="navbar-toggler hidden-lg-up btn-btn show-sm-dowm" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="true" aria-label="togglenavigation">Home</button>
+    <nav class="nav class=" navbar navbar-expand-lg navbar-light bg-light fixed-top topnav"">
+        <a class="nav-link " href="contact.html">CONTACT</a>
+        <a class="nav-link" href="safari.html">SAFARIS</a>
+        <a class="nav-link" href="reservation.html">BOOKINGS</a>
+        <a class="nav-link" href="gallery.html">GALLERY</a>
+        <a class="nav-link" href="products.html">PRODUCTS</a>
+        <a class="nav-link" href="about.html">ABOUT</a>
+        <a class="nav-link active" href="index.html">HOME</a>
     </nav>
 
-    <section class="container-fluid">
-        <div class="container-fluid">
 
-            <a href="about.html" class="btn uppercase">
-                <h5 class="uppercase general-sub">About Us</h5>
-            </a>
-        </div>
+    <head>
+        <div class="w3-row-padding">
+            <div class="w3-third">
+                </header>
+                <section class="container-fluid">
+                    <section class="btnbtn button">
 
-        <head>
-            <div class="w3-row-padding">
-                <div class="w3-third">
-                    </header>
-                    <section class="container-fluid">
-                        <section class="btnbtn button">
-
-                            <!-- was inspired by the 3wschool example  -->
-                            <div class="dropdown text-center">
-                                <button class="dropbtn">Booking Information</button>
-                                <div class="dropdown-content">
-                                    <a href="safari.html">Safari Packages</a>
-                                    <a href="accommodation.html">Accommodations</a>
-                                    <a href="reservation.html">Reservation</a>
-                                </div>
+                        <!-- was inspired by the 3wschool example  -->
+                        <div class="dropdown text-center">
+                            <button class="dropbtn">Booking Information</button>
+                            <div class="dropdown-content">
+                                <a href="safari.html">Safari Packages</a>
+                                <a href="accommodation.html">Accommodations</a>
+                                <a href="reservation.html">Reservation</a>
                             </div>
-                        </section>
-
-                        <!-- Photo Grid -->
-                        <div>
-
-                            <picture class="d-inline-block text-truncate" style="max-width: 600px;">
-                                <source srcset="assets/images/flaming.jpg" type="image/svg+xml">
-                                <img src="assets/images/flaming.jpg" class="img-fluid img-thumbnail" alt="flamingo">
-                            </picture>
-
-                            <picture class="d-inline-block text-truncate" style="max-width: 600px;">
-                                <source srcset="assets/images/leopard.jpg" type="image/svg+xml">
-                                <img src="assets/images/leopard.jpg" class="img-fluid img-thumbnail" alt="Cheetah">
-                                <picture class="d-inline-block text-truncate" style="max-width: 600px;">
-                                    <source srcset="assets/images/cheetah.jpg" type="image/svg+xml">
-                                    <img src="assets/images/cheetah.jpg" class="img-fluid img-thumbnail" alt="cheetah">
-                                </picture>
-                            </picture>
-
-                            <picture class="d-inline-block text-truncate" style="max-width: 600px;">
-                                <source srcset="assets/images/urie.jpg" type="image/svg+xml">
-                                <img src="assets/images/urie.jpg" class="img-fluid img-thumbnail" alt="Lake nakuru">
-                            </picture>
-                            <picture class="d-inline-block text-truncate" style="max-width: 600px;">
-                                <source srcset="assets/images/jean.jpg" type="image/svg+xml">
-                                <img src="assets/images/jean.jpg" class="img-fluid img-thumbnail" alt="antelopes">
-                            </picture>
-                            </picture>
-
-                            <picture class="d-inline-block text-truncate" style="max-width: 600px;">
-                                <source srcset="assets/images/giraffes-.jpg" type="image/svg+xml">
-                                <img src="assets/images/giraffes-.jpg" class="img-fluid img-thumbnail" alt="Giraffes">
-                                <picture class="d-inline-block text-truncate" style="max-width: 600px;">
-                                    <source srcset="assets/images/the.jpg" type="image/svg+xml">
-                                    <img src="assets/images/the.jpg" class="img-fluid img-thumbnail" alt="room">
-                                </picture>
-                            </picture>
-
-                            <picture class="d-inline-block text-truncate" style="max-width: 600px;">
-                                <source srcset="assets/images/pop.jpg" type="image/svg+xml">
-                                <img src="assets/images/pop.jpg" class="img-fluid img-thumbnail" alt="Cheetah">
-                                <picture class="d-inline-block text-truncate" style="max-width: 600px;">
-                                    <source srcset="assets/images/lions.jpg" type="image/svg+xml">
-                                    <img src="assets/images/lions.jpg" class="img-fluid img-thumbnail" alt="lion">
-                                </picture>
-                            </picture>
-                            <picture class="d-inline-block text-truncate" style="max-width: 600px;">
-                                <source srcset="assets/images/leopard.jpg" type="image/svg+xml">
-                                <img src="assets/images/leopard.jpg" class="img-fluid img-thumbnail" alt="leopard">
-                            </picture>
-                            <picture class="d-inline-block text-truncate" style="max-width: 600px;">
-                                <source srcset="assets/images/flamingos.jpg" type="image/svg+xml">
-                                <img src="assets/images/flamingos.jpg" class="img-fluid img-thumbnail" alt="Flamingos">
-                            </picture>
-                            <picture class="d-inline-block text-truncate" style="max-width: 600px;">
-                                <source srcset="assets/images/red.jpg" type="image/svg+xml">
-                                <img src="assets/images/red.jpg" class="img-fluid img-thumbnail" alt="game drive">
-                            </picture>
-                            <picture class="d-inline-block text-truncate" style="max-width: 600px;">
-                                <source srcset="assets/images/qld.jpg" type="image/svg+xml">
-                                <img src="assets/images/qld.jpg" class="img-fluid img-thumbnail" alt="City">
-                            </picture>
-                            <picture class="d-inline-block text-truncate" style="max-width: 600px;">
-                                <source srcset="assets/images/off.jpg" type="image/svg+xml">
-                                <img src="assets/images/off.jpg" class="img-fluid img-thumbnail" alt="Beach">
-                            </picture>
-                            <picture class="d-inline-block text-truncate" style="max-width: 600px;">
-                                <source srcset="assets/images/emma.jpg" type="image/svg+xml">
-                                <img src="assets/images/emma.jpg" class="img-fluid img-thumbnail" alt="Amboseli">
-                            </picture>
-
-                            <picture class="d-inline-block text-truncate" style="max-width: 600px;">
-                                <source srcset="assets/images/urie.jpg" type="image/svg+xml">
-                                <img src="assets/images/urie.jpg" class="img-fluid img-thumbnail" alt="cheetah">
-                            </picture>
-                            <picture class="d-inline-block text-truncate" style="max-width: 600px;">
-                                <source srcset="assets/images/ron.jpg" type="image/svg+xml">
-                                <img src="assets/images/ron.jpg" class="img-fluid img-thumbnail" alt="Rooms">
-                            </picture>
                         </div>
-                </div>
-                <!-- footer section -->
+                    </section>
+
+                    <!-- Photo Grid -->
+                    <div>
+
+                        <picture class="d-inline-block text-truncate" style="max-width: 600px;">
+                            <source srcset="assets/images/flaming.jpg" type="image/svg+xml">
+                            <img src="assets/images/flaming.jpg" class="img-fluid img-thumbnail" alt="flamingo">
+                        </picture>
+
+                        <picture class="d-inline-block text-truncate" style="max-width: 600px;">
+                            <source srcset="assets/images/leopard.jpg" type="image/svg+xml">
+                            <img src="assets/images/leopard.jpg" class="img-fluid img-thumbnail" alt="Cheetah">
+                            <picture class="d-inline-block text-truncate" style="max-width: 600px;">
+                                <source srcset="assets/images/cheetah.jpg" type="image/svg+xml">
+                                <img src="assets/images/cheetah.jpg" class="img-fluid img-thumbnail" alt="cheetah">
+                            </picture>
+                        </picture>
+
+                        <picture class="d-inline-block text-truncate" style="max-width: 600px;">
+                            <source srcset="assets/images/urie.jpg" type="image/svg+xml">
+                            <img src="assets/images/urie.jpg" class="img-fluid img-thumbnail" alt="Lake nakuru">
+                        </picture>
+                        <picture class="d-inline-block text-truncate" style="max-width: 600px;">
+                            <source srcset="assets/images/jean.jpg" type="image/svg+xml">
+                            <img src="assets/images/jean.jpg" class="img-fluid img-thumbnail" alt="antelopes">
+                        </picture>
+                        </picture>
+
+                        <picture class="d-inline-block text-truncate" style="max-width: 600px;">
+                            <source srcset="assets/images/giraffes-.jpg" type="image/svg+xml">
+                            <img src="assets/images/giraffes-.jpg" class="img-fluid img-thumbnail" alt="Giraffes">
+                            <picture class="d-inline-block text-truncate" style="max-width: 600px;">
+                                <source srcset="assets/images/the.jpg" type="image/svg+xml">
+                                <img src="assets/images/the.jpg" class="img-fluid img-thumbnail" alt="room">
+                            </picture>
+                        </picture>
+
+                        <picture class="d-inline-block text-truncate" style="max-width: 600px;">
+                            <source srcset="assets/images/pop.jpg" type="image/svg+xml">
+                            <img src="assets/images/pop.jpg" class="img-fluid img-thumbnail" alt="Cheetah">
+                            <picture class="d-inline-block text-truncate" style="max-width: 600px;">
+                                <source srcset="assets/images/lions.jpg" type="image/svg+xml">
+                                <img src="assets/images/lions.jpg" class="img-fluid img-thumbnail" alt="lion">
+                            </picture>
+                        </picture>
+                        <picture class="d-inline-block text-truncate" style="max-width: 600px;">
+                            <source srcset="assets/images/leopard.jpg" type="image/svg+xml">
+                            <img src="assets/images/leopard.jpg" class="img-fluid img-thumbnail" alt="leopard">
+                        </picture>
+                        <picture class="d-inline-block text-truncate" style="max-width: 600px;">
+                            <source srcset="assets/images/flamingos.jpg" type="image/svg+xml">
+                            <img src="assets/images/flamingos.jpg" class="img-fluid img-thumbnail" alt="Flamingos">
+                        </picture>
+                        <picture class="d-inline-block text-truncate" style="max-width: 600px;">
+                            <source srcset="assets/images/red.jpg" type="image/svg+xml">
+                            <img src="assets/images/red.jpg" class="img-fluid img-thumbnail" alt="game drive">
+                        </picture>
+                        <picture class="d-inline-block text-truncate" style="max-width: 600px;">
+                            <source srcset="assets/images/qld.jpg" type="image/svg+xml">
+                            <img src="assets/images/qld.jpg" class="img-fluid img-thumbnail" alt="City">
+                        </picture>
+                        <picture class="d-inline-block text-truncate" style="max-width: 600px;">
+                            <source srcset="assets/images/off.jpg" type="image/svg+xml">
+                            <img src="assets/images/off.jpg" class="img-fluid img-thumbnail" alt="Beach">
+                        </picture>
+                        <picture class="d-inline-block text-truncate" style="max-width: 600px;">
+                            <source srcset="assets/images/emma.jpg" type="image/svg+xml">
+                            <img src="assets/images/emma.jpg" class="img-fluid img-thumbnail" alt="Amboseli">
+                        </picture>
+
+                        <picture class="d-inline-block text-truncate" style="max-width: 600px;">
+                            <source srcset="assets/images/urie.jpg" type="image/svg+xml">
+                            <img src="assets/images/urie.jpg" class="img-fluid img-thumbnail" alt="cheetah">
+                        </picture>
+                        <picture class="d-inline-block text-truncate" style="max-width: 600px;">
+                            <source srcset="assets/images/ron.jpg" type="image/svg+xml">
+                            <img src="assets/images/ron.jpg" class="img-fluid img-thumbnail" alt="Rooms">
+                        </picture>
+                    </div>
+            </div>
+            <!-- footer section -->
 
 
-                <!-- Footer -->
-                <section>
-                    <card class="form container-fluid inline-block">
-                        <div class="background-image" id="bgimg1">
-                            <hr class="my-4 inline-block col-sm-4" id="bgimg1">
+            <!-- Footer -->
+            <section>
+                <card class="form container-fluid inline-block">
+                    <div class="background-image" id="bgimg1">
+                        <hr class="my-4 inline-block col-sm-4" id="bgimg1">
 
-                            <div class="form-popup" id="myForm">
-                                <form action="/action_page.php" class="form-container">
-                                    <div class="bottom-container">
-                                        <div class="row">
-                                            <div class="col-4">
-                                                <a href="#" style="color:teal" class="btn">Sign up</a>
-                                            </div>
-
-                                            <div class="col-4">
-                                                <a href="#" style="color:teal" class="btn">Forgot password?</a>
-                                            </div>
-                                            <button type="submit" class="btn">Register</button>
+                        <div class="form-popup" id="myForm">
+                            <form action="/action_page.php" class="form-container">
+                                <div class="bottom-container">
+                                    <div class="row">
+                                        <div class="col-4">
+                                            <a href="#" style="color:teal" class="btn">Sign up</a>
                                         </div>
+
+                                        <div class="col-4">
+                                            <a href="#" style="color:teal" class="btn">Forgot password?</a>
+                                        </div>
+                                        <button type="submit" class="btn">Register</button>
                                     </div>
-                            </div>
-                            </form>
-                            <!-- End page content -->
+                                </div>
                         </div>
-                </section>
+                        </form>
+                        <!-- End page content -->
+                    </div>
+            </section>
 
 
-                <footer class="container-fluid">
-                    <card class="form  inline-block">
-                        <div>
-                            <hr class="my-4 inline-block col>
+            <footer class="container-fluid">
+                <card class="form  inline-block">
+                    <div>
+                        <hr class="my-4 inline-block col>
                                     <div class="">
                                 <h4>Get the best offers first!</h4>
 
                                 <p>Join our newsletter.</p>
                                 <label>E-mail</label>
                                 <input class=" input border" type="text" placeholder="Your Email address">
-                            <button type="button" class="button red margin-top">Subscribe</button>
-                        </div>
-            </div>
-            </div>
-            <!-- w3school snippet -->
-
-            <!-- footer section -->
-            <footer class="">
-
-
-
-                <section class=" form col-sm s12 progress-section social">
-                    <div class="">
-                        <form action="/action_page.php">
-                            <div class="col">
-                                <p style="text-align:center">Login with Social Media</p>
-                                <div class="vl">
-                                    <span class="vl-innertext">or</span>
-                                </div>
-
-                                <div class="col-sm">
-                                    <a href="#" class="fb btn">
-                                        <i class="fa fa-facebook fa-fw"></i>
-                                        Facebook
-                                    </a>
-                                    <a href="#" class="twitter btn">
-                                        <i class="fa fa-twitter fa-fw"></i>
-                                        Twitter
-                                    </a>
-                                    <a href="#" class="google btn">
-                                        <i class="fa fa-google fa-fw"></i>
-                                        Google+
-                                    </a>
-                                </div>
-
-                                <div class="col-sm">
-                                    <div class="hide-md-lg">
-                                        <p>Or sign in manually:</p>
-                                    </div>
-
-                                    <input type="text" name="username" placeholder="Username" required>
-                                    <input type="password" name="password" placeholder="Password" required>
-                                    <input type="submit" value="Login">
-                                </div>
-
-                            </div>
-                        </form>
+                        <button type="button" class="button red margin-top">Subscribe</button>
                     </div>
+        </div>
+        </div>
+        <!-- w3school snippet -->
 
-                    <div class="">
-                        <div class="row">
+        <!-- footer section -->
+        <footer class="">
+
+
+
+            <section class=" form col-sm s12 progress-section social">
+                <div class="">
+                    <form action="/action_page.php">
+                        <div class="col">
+                            <p style="text-align:center">Login with Social Media</p>
+                            <div class="vl">
+                                <span class="vl-innertext">or</span>
+                            </div>
+
                             <div class="col-sm">
-                                <a href="#" style="color:rgb(13, 81, 83)" class="btn">
-                                    <p>Sign up</p>
+                                <a href="#" class="fb btn">
+                                    <i class="fa fa-facebook fa-fw"></i>
+                                    Facebook
+                                </a>
+                                <a href="#" class="twitter btn">
+                                    <i class="fa fa-twitter fa-fw"></i>
+                                    Twitter
+                                </a>
+                                <a href="#" class="google btn">
+                                    <i class="fa fa-google fa-fw"></i>
+                                    Google+
                                 </a>
                             </div>
+
                             <div class="col-sm">
-                                <a href="#" style="color:rgb(13, 81, 83)" class="btn">Forgot
-                                    password?</a>
+                                <div class="hide-md-lg">
+                                    <p>Or sign in manually:</p>
+                                </div>
+
+                                <input type="text" name="username" placeholder="Username" required>
+                                <input type="password" name="password" placeholder="Password" required>
+                                <input type="submit" value="Login">
                             </div>
+
+                        </div>
+                    </form>
+                </div>
+
+                <div class="">
+                    <div class="row">
+                        <div class="col-sm">
+                            <a href="#" style="color:rgb(13, 81, 83)" class="btn">
+                                <p>Sign up</p>
+                            </a>
+                        </div>
+                        <div class="col-sm">
+                            <a href="#" style="color:rgb(13, 81, 83)" class="btn">Forgot
+                                password?</a>
                         </div>
                     </div>
-                </section>
-                <!-- w3school snippet -->
-                <!-- Footer -->
+                </div>
+            </section>
+            <!-- w3school snippet -->
+            <!-- Footer -->
 
 
 
 
-                <form class="autocomplete-items s12 opacity margin-bottom ">
+            <form class="autocomplete-items s12 opacity margin-bottom ">
 
-                    <!-- pop upform 3wschool snippet  -->
-                    <card action="/action_page.php">
-                        <div class="row">
+                <!-- pop upform 3wschool snippet  -->
+                <card action="/action_page.php">
+                    <div class="row">
 
-                            <div class="container">
-                                <form action="/action_page.php">
+                        <div class="container">
+                            <form action="/action_page.php">
 
-                                    <div class="xlarge padding-16">
-                                        <i class="fa fa-facebook-official hover-opacity"></i>
-                                        <i class="fa fa-instagram hover-opacity"></i>
-                                        <i class="fa fa-snapchat hover-opacity"></i>
-                                        <i class="fa fa-pinterest-p hover-opacity"></i>
-                                        <i class="fa fa-twitter hover-opacity"></i>
-                                        <i class="fa fa-linkedin hover-opacity"></i>
-                                    </div>
-                                </form>
-                            </div>
-                            <a href="mail@xascapade.com">info@xascapade.com</a></p>
-                            <p>Powered by <a href="#" target="_blank" class="hover-text-green" class="container" style="background-color:#e0ddd3">
-                                    Xascapade</a>
-                            </p>
+                                <div class="xlarge padding-16">
+                                    <i class="fa fa-facebook-official hover-opacity"></i>
+                                    <i class="fa fa-instagram hover-opacity"></i>
+                                    <i class="fa fa-snapchat hover-opacity"></i>
+                                    <i class="fa fa-pinterest-p hover-opacity"></i>
+                                    <i class="fa fa-twitter hover-opacity"></i>
+                                    <i class="fa fa-linkedin hover-opacity"></i>
+                                </div>
+                            </form>
                         </div>
-                </form>
+                        <a href="mail@xascapade.com">info@xascapade.com</a></p>
+                        <p>Powered by <a href="#" target="_blank" class="hover-text-green" class="container" style="background-color:#e0ddd3">
+                                Xascapade</a>
+                        </p>
+                    </div>
+            </form>
 
-    </section>
+            </section>
 
-    </footer>
+        </footer>
 
-    <a href="#" class="cd-top text-replace js-cd-top">Top</a>
+        <a href="#" class="cd-top text-replace js-cd-top">Top</a>
 
-    </section>
-
-
-
-    <script type="text/javascript" src="https://res.perfectibe.com/scripts/calendar.js">
-    </script>
-    <script type="text/javascript" src="https://res.perfectibe.com/scripts/jsDate.js"></script>
-    <script type="text/javascript" src="https://res.perfectibe.com/scripts/pibe.js"></script>
-    <script type="text/javascript" src="https://res.perfectibe.com/scripts/dropdown.js">
-    </script>
-    <script type="text/javascript"></script>
-    <!-- bootstrap scripr snippet -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
-    </script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
-    </script>
+        </section>
 
 
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <script type="text/javascript" src="https://res.perfectibe.com/scripts/calendar.js">
+        </script>
+        <script type="text/javascript" src="https://res.perfectibe.com/scripts/jsDate.js"></script>
+        <script type="text/javascript" src="https://res.perfectibe.com/scripts/pibe.js"></script>
+        <script type="text/javascript" src="https://res.perfectibe.com/scripts/dropdown.js">
+        </script>
+        <script type="text/javascript"></script>
+        <!-- bootstrap scripr snippet -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+        </script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+        </script>
 
 
-    <!-- bootstrap scripr snippet -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
-    </script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
-    </script>
+
+
+        <!-- bootstrap scripr snippet -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+        </script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+        </script>
 
 </body>
 
