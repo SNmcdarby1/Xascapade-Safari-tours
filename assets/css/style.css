@@ -16,27 +16,17 @@
     }
 }
 
-content {
 
-    : :-webkit-textfield-decoration-container:none;
+.background-container {
+    background-image: url('../images/lions.jpg');
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
 }
 
-}
-
-HEAD content {
-    margin: 0;
-    color: #142221;
-
-    .background-container {
-        background-image: url('../lions.jpg', no-reeat);
-        position: absolute;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        overflow: hidden;
-    }
-}
 
 #xas {
     position: absolute;
@@ -101,71 +91,73 @@ xas {
     text-align: center;
     text-transform: uppercase;
     font-size: 14px;
-    font-weight: 800;
+    font-weight: 200;
     letter-spacing: 2px;
 }
 
 /*-------------------------------------------------------------Hover.css*/
 
 .hvr-sweep-to-bottom:before {
-    background: rgb(160, 157, 157);
-    height: 120px;
+    background: rgb(252, 69, 69);
+    height: 12px;
+}
 
-    a:hover {
-        background-color: turquoise;
-        width: auto;
-        height: auto;
-        margin-top: 25px;
-        margin-bottom: 5px;
-        mix-blend-mode: darken;
-    }
+a:hover {
+    background-color: turquoise;
+    width: auto;
+    height: auto;
+    margin-top: 25px;
+    margin-bottom: 5px;
+    mix-blend-mode: darken;
+}
 
-    nav a {
-        display: block;
-    }
+nav a {
+    display: block;
+}
 
-    a :hover ul li {
-        color: rgb(223, 114, 18);
-    }
+a :hover ul li {
+    color: rgb(223, 114, 18);
+}
 
-    a.hvr-sweep-to-bottom:before {
-        background: rgb(250, 224, 76);
-        height: 60px;
-        position: fixed;
-    }
+a.hvr-sweep-to-bottom:before {
+    background: rgb(250, 224, 76);
+    height: 60px;
+    position: fixed;
+}
 
-    a {
-        color: rgb(9, 82, 69);
-    }
+a {
+    color: rgb(147, 248, 230);
+}
 
-    a:link,
-    a:visited {
-        background-color: #adbe0c;
-        color: rgb(131, 118, 118);
-        padding: 4px 15px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-    }
+a:link,
+a:visited {
+    background-color: #adbe0c;
+    color: rgb(131, 118, 118);
+    padding: 4px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
 
-    a:hover,
-    a:active {
-        background-color: rgb(11, 126, 91);
-
-    }
-
+a:hover,
+a:active {
+    background-color: rgb(11, 126, 91);
 
 }
 
+
+
+
 /*-------------------------------------------------------------Footer*/
 footer {
-    background-color: #215627 color: #0ee7cab0;
+    background-color: #484948;
+    color: #0ee7cab0;
     min-height: 120px;
     margin: 0;
 }
 
 .cv-pdf {
-    f font-size: 18px;
+    font-size: 18px;
     color: #1b1717;
     text-align: center;
     padding-left: 5px;
@@ -203,666 +195,5 @@ footer {
     background: #e84610;
 }
 
-#footer-details {
-    padding: 20px;
-}
-
-.footer-details {
-    padding: 20px;
-}
-
-/*-------------------------------------------------------------Three reasons*/
-.three-reasons-icon {
-    font-size: 26px;
-    color: #e67e22;
-}
-
-.three-reasons-heading {
-    margin-bottom: 15px;
-}
 
 /*-------------------------------------------------------------Personal info*/
-
-.personal-info-item {
-    margin-bottom: 20px;
-    display: block;
-    clear: both;
-}
-
-.personal-info-item .key,
-.personal-info-item .value {
-    padding-right: 8px;
-    display: inline-block;
-}
-
-.personal-info-item .key p,
-.personal-info-item .value p {
-    margin: 0;
-}
-
-.personal-info-item .key {
-    width: 30%;
-    margin-right: 21px;
-    padding-top: 2px;
-    vertical-align: top
-}
-
-.personal-info-item .key p {
-    font-weight: 700;
-}
-
-.personal-info-item .value {
-    position: relative;
-    width: 60%;
-}
-
-/*-------------------------------------------------------------Skills */
-.progress {
-    position: absolute;
-    height: 25px;
-    margin-bottom: 4px;
-}
-
-.progress-type {
-    position: absolute;
-    left: 0px;
-    font-weight: 400;
-    padding: 3px 30px 2px 10px;
-    color: #ec7a7a;
-    background-color: rgba(25, 25, 25, 0.2);
-}
-
-.progress-section {
-    margin: 40px 20px;
-}
-
-/*
- * Variables
- */
-
-:root {
-    --card-padding: 24px;
-    --card-height: 340px;
-    --card-skeleton: linear-gradient(rgb(110, 97, 97) var(--card-height), transparent 0);
-
-    --avatar-size: 32px;
-    --avatar-position: var(--card-padding) var(--card-padding);
-    --avatar-skeleton: radial-gradient(circle 16px at center, rgb(124, 163, 16) 99%, transparent 0);
-
-    --title-height: 32px;
-    --title-width: 200px;
-    --title-position: var(--card-padding) 180px;
-    --title-skeleton: linear-gradient(rgb(180, 163, 163) var(--title-height), transparent 0);
-
-    --desc-line-height: 16px;
-    --desc-line-skeleton: linear-gradient(rgb(128, 107, 107) var(--desc-line-height), transparent 0);
-    --desc-line-1-width: 230px;
-    --desc-line-1-position: var(--card-padding) 242px;
-    --desc-line-2-width: 180px;
-    --desc-line-2-position: var(--card-padding) 265px;
-
-    --footer-height: 40px;
-    --footer-position: 0 calc(var(--card-height) - var(--footer-height));
-    --footer-skeleton: linear-gradient(rgb(146, 61, 61) var(--footer-height), transparent 0);
-
-    --blur-width: 200px;
-    --blur-size: var(--blur-width) calc(var(--card-height) - var(--footer-height));
-}
-
-/*
- * Card Skeleton for Loading
- */
-
-.card {
-    width: 280px; //demo
-    height: var(--card-height);
-
-    &:empty::after {
-        content: "";
-        display: block;
-        width: 100%;
-        height: 100%;
-        border-radius: 6px;
-        box-shadow: 0 10px 45px rgba(0, 0, 0, .1);
-
-        background-image:
-            linear-gradient(90deg,
-                rgba(rgb(245, 149, 149)70, 70), 0) 0,
-            rgba(lightgrey, .8) 50%,
-            rgba(rgb(199, 69, 69), 0) 100%), //animation blur
-            var(--title-skeleton), //title
-            var(--desc-line-skeleton), //desc1
-            var(--desc-line-skeleton), //desc2
-            var(--avatar-skeleton), //avatar
-            var(--footer-skeleton), //footer bar
-            var(--card-skeleton) //card
-        ;
-
-        background-size:
-            var(--blur-size),
-            var(--title-width) var(--title-height),
-            var(--desc-line-1-width) var(--desc-line-height),
-            var(--desc-line-2-width) var(--desc-line-height),
-            var(--avatar-size) var(--avatar-size),
-            100% var(--footer-height),
-            100% 100%;
-
-        background-position:
-            -150% 0, //animation
-            var(--title-position), //title
-            var(--desc-line-1-position), //desc1
-            var(--desc-line-2-position), //desc2
-            var(--avatar-position), //avatar
-            var(--footer-position), //footer bar
-            0 0 //card
-        ;
-
-        background-repeat: no-repeat;
-        animation: loading 1.5s infinite;
-    }
-}
-
-@keyframes loading {
-    to {
-        background-position:
-            350% 0,
-            var(--title-position),
-            var(--desc-line-1-position),
-            var(--desc-line-2-position),
-            var(--avatar-position),
-            var(--footer-position),
-            0 0;
-    }
-}
-
-
-/* 
- * Demo Stuff
- */
-
-body {
-    min-height: 100vh;
-    background-color: rgb(118, 214, 206);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-/*-------------------------------------------------------------Work history*/
-
-
-.history-heading {
-    color: #eeaaaa;
-    margin-bottom: 50px;
-}
-
-.club-ethos {
-    height: 100px;
-    position: auto;
-}
-
-#left-about {
-    padding-top: 30px;
-    width: 33%;
-    float: left;
-    background-color: blue;
-}
-
-#right-about {
-    padding-top: 30px;
-    width: 33%;
-    float: right;
-    background-color: red;
-}
-
-#center-about {
-    padding-top: 30px;
-    width: 33%;
-    margin: 0 auto;
-    background-color: silver;
-}
-
-/*---------------------------------------------------------media queries*/
-@media(min-width: 992px) {
-    .center-form {
-        padding-top: 30px;
-        min-height: 240px;
-        margin: 0px, auto;
-        max-width: 50;
-    }
-
-
-
-    /*----------------------------CAROUSEL*/
-    .corousel-item {
-        -radius: .2rem;
-        z-index: auto;
-        transition: all 0.35s ease-in-out;
-        -moz-transition: all 0.35s ease-in-out;
-        -webkit-transition: all 0.35s ease-in-out;
-        -o-transition: all 0.35s ease-in-out;
-    }
-
-    .slide {
-        background-color: #8789aa
-    }
-
-    /*---------------------------------------------youtube*/
-    #youtube {
-        padding-top: 30px;
-        min-height: 240px;
-        margin: 0px, auto;
-        max-width: 50;
-        z-index: auto;
-        transition: all 0.35s ease-in-out;
-        -moz-transition: all 0.35s ease-in-out;
-        -webkit-transition: all 0.35s ease-in-out;
-        -o-transition: all 0.35s ease-in-out;
-    }
-
-}
-
-/*------------------------------------------------------- Media*/
-// Extra small devices (portrait phones, less than 576px)
-// No media query since this is the default in Bootstrap
-
-// Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) {
-    ...
-}
-
-// Medium devices (tablets, 768px and up)
-@media (min-width: 768px) {
-    ...
-}
-
-// Large devices (desktops, 992px and up)
-@media (min-width: 992px) {
-    ...
-}
-
-// Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) {
-    ...
-}
-
-=======
-
-/*-------------------------------------------------------------Hover.css*/
-#navbar {
-    background-color: rgb(238, 165, 165);
-    /* Black background color */
-    position: fixed;
-    /* Make it stick/fixed */
-    top: 0;
-    /* Stay on top */
-    width: 100%;
-    /* Full width */
-    transition: top 0.3s;
-    /* Transition effect when sliding down (and up) */
-}
-
-/* Style the navbar links */
-#navbar a {
-    float: left;
-    display: block;
-    font-size: 20px;
-    text-overflow: hidden;
-    color: rgb(180, 164, 20);
-    text-align: right;
-    padding: 25px;
-    text-decoration: none;
-}
-
-#nav a:hover {
-    background-color: rgb(78, 199, 169);
-    color: black;
-}
-
-/*---------------------------------------------------------media queries*/
-@media(min-width: 320px) {
-    .center-form {
-        padding-top: 30px;
-        min-height: 240px;
-        margin: 0 auto;
-        max-width: 50;
-    }
-
-    /*--------------------------------------------------------*/
-
-    a {
-        float: right;
-        justify-content: right;
-
-    }
-
-    a {
-        display: inline-block;
-    }
-
-    a {
-        display: block;
-        padding: 5px;
-        background-color: #918b8b;
-        color: #0f979b;
-    }
-
-    li a {
-        display: block;
-        padding: 8px;
-        background-color: #124b38;
-        border-left: 1rem;
-    }
-
-
-
-    /* Increase the font size of the heading */
-
-
-    /* w3s snippet popup chat box */
-        {
-        box-sizing: border-box;
-    }
-
-    /* Button used to open the chat form - fixed at the bottom of the page */
-
-
-    /* w3s header */
-    * {
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-    }
-
-    body {
-        margin: 0;
-        font-family: Arial, Helvetica, sans-serif;
-    }
-
-    .header {
-        overflow: hidden;
-        color: rgb(114, 5, 5);
-        background-color: #0b815e;
-        padding: 20px 10px;
-    }
-
-
-    @media screen and (max-width: 500px) {
-        .header a {
-            float: none;
-            display: block;
-            text-align: left;
-        }
-
-        .header-right {
-            float: none;
-        }
-    }
-
-    .body:after:after {
-        right: 0;
-        left: 0;
-        content: "";
-        background: linear-gradient(rgba(212, 97, 97, 0.8), rgba(119, 5, 5, 0.9) 50%, rgb(253, 4, 4));
-
-        /* Create two unequal columns that sits next to each other */
-        /* Sidebar/left column */
-        .side {
-            -ms-flex: 30%;
-
-            flex: 30%;
-            background-color: #f1f1f1;
-            padding: 20px;
-        }
-
-        /* Main column */
-        .main {
-            -ms-flex: 70%;
-            /* IE10 */
-            flex: 70%;
-            background-color: rgb(243, 234, 151);
-            padding: 20px;
-        }
-
-        /* Fake image, just for this example */
-
-
-        .dropbtn {
-            background-color: #4CAF50;
-            color: rgb(179, 37, 37);
-            padding: 16px;
-            font-size: 16px;
-            border: none;
-        }
-
-
-        /* Responsive layout - makes a two column-layout instead of four columns */
-        @media screen and (max-width: 800px) {
-            .column {
-                -ms-flex: 50%;
-                flex: 50%;
-                max-width: 50%;
-            }
-        }
-
-        /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-        @media screen and (max-width: 1090px) {
-            .column {
-                -ms-flex: 100%;
-                flex: 100%;
-                max-width: 100%;
-            }
-        }
-
-        a:link {
-            color: rgb(9, 116, 89);
-            padding: 25px;
-            margin-top: 15px;
-            margin-bottom: 10px;
-            justify-content: end;
-            padding-right: 5px;
-            position: relative;
-
-        }
-
-        /* visited link */
-        a:visited {
-            color: #00FF00;
-        }
-
-        /* mouse over link */
-        a:hover {
-            color: #FF00FF;
-        }
-
-        /* selected link */
-        a:active {
-            color: #0000FF;
-        }
-
-        * {
-            box-sizing: border-box;
-        }
-
-        body {
-            margin: 0;
-            font-family: 'Helvetica', sans-serif;
-        }
-
-        #navbar {
-            overflow: hidden;
-            background-color: #804917;
-            padding: 90px 10px;
-            transition: 0.4s;
-            position: fixed;
-            width: 100%;
-            top: 0;
-            z-index: 99;
-        }
-
-        #navbar a {
-            float: left;
-            color: black;
-            text-align: center;
-            padding: 5px;
-            text-decoration: none;
-            font-size: 18px;
-            line-height: 5px;
-            border-radius: 4px;
-        }
-
-        #navbar #logo {
-            font-size: 15px;
-            font-weight: bold;
-            transition: 0.4s;
-        }
-
-        #navbar a:hover {
-            background-color: rgb(199, 188, 32);
-            color: black;
-        }
-
-        #navbar a.active {
-            background-color: rgb(74, 243, 220);
-            color: rgb(11, 195, 228);
-        }
-
-        #navbar-right {
-            float: right;
-        }
-
-        /* Right-aligned link */
-        .navbar a.right {
-            float: right;
-        }
-
-        /* Change color on hover */
-        .navbar a:hover {
-            background-color: rgb(198, 230, 228);
-            color: rgb(241, 228, 228);
-        }
-
-        /* Column container */
-        .row {
-            display: -ms-flexbox;
-            /* IE10 */
-            display: flex;
-            -ms-flex-wrap: wrap;
-            /* IE10 */
-            flex-wrap: wrap;
-        }
-
-        pseudo.body:after:after {
-            position: absolute;
-            height: 100%;
-        }
-
-
-        @media screen and (max-width: 580px) {
-            #navbar {
-                padding: 20px 10px !important;
-            }
-
-            #navbar a {
-                float: none;
-                display: block;
-                text-align: right;
-                justify-content: right;
-            }
-
-            #navbar-right {
-                float: none;
-            }
-        }
-
-        #myBtn {
-            display: none;
-            /* Hidden by default */
-            position: fixed;
-            /* Fixed/sticky position */
-            bottom: 20px;
-            /* Place the button at the bottom of the page */
-            right: 30px;
-            /* Place the button 30px from the right */
-            z-index: 99;
-            /* Make sure it does not overlap */
-            border: none;
-            /* Remove borders */
-            outline: none;
-            /* Remove outline */
-            background-color: rgb(12, 83, 65);
-            /* Set a background color */
-            color: rgb(163, 13, 13);
-            /* Text color */
-            cursor: pointer;
-            /* Add a mouse pointer on hover */
-            padding: 15px;
-            /* Some padding */
-            border-radius: 10px;
-            /* Rounded corners */
-            font-size: 18px;
-            /* Increase font size */
-        }
-
-        #myBtn:hover {
-            background-color: #555;
-            /* Add a dark-grey background on hover */
-        }
-
-        */
-
-        /* Footer */
-        .footer {
-            padding: 20px;
-            text-align: center;
-            background: rgb(199, 84, 8);
-        }
-
-        /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
-        @media screen and (min-width: 576px) {
-            .row {
-                flex-direction: column;
-            }
-
-            col {
-                inline-size: auto;
-            }
-        }
-
-        /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
-        @media screen and (max-width: 786px) {
-            .navbar a {
-                float: none;
-                width: 100%;
-            }
-        }
-
-        @media (min-width: 768px) .container {
-            /* width: 750px; */
-        }
-
-        .container {
-            padding-right: 15px;
-            padding-left: 15px;
-            margin-right: auto;
-            margin-left: auto;
-        }
-
-        @media (min-width: 576px) {
-            ...
-        }
-
-        // Medium devices (tablets, 768px and up)
-        @media (min-width: 768px) {
-            ...
-        }
-
-        // Large devices (desktops, 992px and up)
-        @media (min-width: 992px) {
-            ...
-        }
-
-        // Extra large devices (large desktops, 1200px and up)
-        @media (min-width: 1200px) {
-            ...
-        }
