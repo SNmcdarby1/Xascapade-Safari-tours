@@ -1,7 +1,7 @@
-# Xascapade Travel
-A leisure travel platform for safaris bookings in Kenya
+# Xascapade Travel- MS2 project
+Is a leisure travel platform for holiday safari bookings in Kenya.
 
-It is a holiday booking platform-MS2 project
+platform-MS2 project
 
 ### Table of Content
 
