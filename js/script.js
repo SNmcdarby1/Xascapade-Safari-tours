@@ -9,16 +9,16 @@ $("").text(fontFamily);
 $("tr:odd").addClass("odd");
 $("tr:even").addClass("even");
 // 
-$("p").click(function () {
+$("p").click(function() {
     $("p").css("color", "aqua")
 });
-$("h").hover(function () {
+$("h").hover(function() {
     $("h3").css("background", "lightblue")
 });
-$(".card-panel").mouseenter(function () {
+$(".card-panel").mouseenter(function() {
     $("body").css("background-color", "black")
 });
-$(".card-panel").mouseleave(function () {
+$(".card-panel").mouseleave(function() {
     $("body").css("background-color", "rgba:(0, 0, 0, .3);");
 });
 // 
@@ -36,23 +36,23 @@ $("div").click()
     (".module-1")
     (".module-2").empty();
 // 
-$("p").click(function () {
+$("p").click(function() {
     $("p").text("All Changed");
 });
 // 
-$("").click(function () {
+$("").click(function() {
 
 });
 
 
 // 
-$(".button").hover(function () {
-    $("button").mouseenter(function () {
-        $("button").removeClass("make-red").addClass("make-border");
+$(".button").hover(function() {
+    $("button").mouseenter(function() {
+        $("button").removeClass("make-teal").addClass("make-border");
     })
 })
-$(".button").hover(function () {
-    $("button").mouseleave(function () {
+$(".button").hover(function() {
+    $("button").mouseleave(function() {
         $("button").removeClass("make-border").addClass("make-red");
     })
 })
@@ -61,10 +61,10 @@ $("#myButton").removeClass("border").addClass("blueBox");
 
 // 
 
-$("#button-card-1").click(function () {
+$("#button-card-1").click(function() {
     $("#par-1").hide(2000).show(2000);
 });
-$("#button-card-2").click(function () {
+$("#button-card-2").click(function() {
     $("#par-2").fadeOut(1000).fadeIn(1000);
 });
 
@@ -128,13 +128,13 @@ var arr3 = ['Taxi', 'Private Jeep', 'Saloon car', 'Private car', 'Safari Van', '
 
 
 
-var result = arrays.shift().filter(function (v) {
-    return arrays.every(function (a) {
+var result = arrays.shift().filter(function(v) {
+    return arrays.every(function(a) {
         return a.indexOf(v) !== -1;
     });
 });
 
-arrays.sort(function (a, b) {
+arrays.sort(function(a, b) {
     return a.length - b.length;
 });
 
