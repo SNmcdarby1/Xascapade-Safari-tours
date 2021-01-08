@@ -5,7 +5,7 @@ function calculate() {
     var da = document.getElementById('ArrivalDate');
     var total = document.getElementById('total_cost');
     var hotel = document.getElementById('hotel5');
-
+    this.form.controls['0 + 1 + 2 ...'].value
 
     if (!(dd.value * 1) || !(da.value * 1) || da.value > dd.value) {
         total.value = '0'; //you can set it to 'not allowed' also if you wish (instead of '0')
@@ -21,6 +21,7 @@ function calculate() {
         cost = 0;
     total.value = cost;
 }
+
 var mymap = L.map('mapid').setView([51.505, -0.09], 13);
 
 // Tabs function openLink(evt, linkName) {

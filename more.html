@@ -110,6 +110,16 @@
                         <input id="safari" class="safari">
 
                     </div>
+
+                    <div class="form-group">
+                        <label for=""></label>
+                        <select multiple class="custom-select" name="" id="safari">
+                            <option selected>Select one</option>
+                            <option value=""></option>
+                            <option value=""></option>
+                            <option value=""></option>
+                        </select>
+                    </div>
                 </fieldset>
     </legend>
     </div>
@@ -137,30 +147,32 @@
         </h3>
     </div>
     <div class="container teal">
-        <button href="contact.html" class="bar-item button tablink" onclick="openLink(event, = " contact.html" class="bar-item button tablink" onclick="openLink(event, 'Bookings');">
-            <h2>Contact</h2>
-            <p>Let us book your next trip!</p>
-            <i class="fa fa-map-marker" style="width:30px"></i> Greystones, IE<br>
-            <i class="fa fa-phone" style="width:30px"></i> Phone: +003538321 151515<br>
-            <i class="fa fa-envelope" style="width:30px"> </i> Email: xascapade@gmail.com<br>
-            <form action="/action_page.php" target="_blank">
+        <button href="contact.html" class="bar-item button tablink" onclick="openLink(event, = " reservation" class="bar-item button tablink" onclick="openLink(event, 'hotel');">
+            <h6>Contact</h6>
+        </button>
+
+        <p>Let us book your next trip!</p>
+        <i class="fa fa-map-marker" style="width:30px"></i> Greystones, IE<br>
+        <i class="fa fa-phone" style="width:30px"></i> Phone: +003538321 151515<br>
+        <i class="fa fa-envelope" style="width:30px"> </i> Email: xascapade@gmail.com<br>
+        <form action="/action_page.php" target="_blank">
 
 
-                <div class="form" onsubmit="return sendMail(this)">
-                    <form>
-                        <input type="text" name="name" id="fullname" class="form-control" placeholder="Name" required />
-                        <input type="email" name="email" id="emailaddress" class="form-control" placeholder="Email" required />
-                        <textarea rows="5" name="Inquarysummary" id="projectsummary" class="form-control" placeholder="Inquery" required></textarea>
-                        <div class="form-row text-center">
-                            <div class="col">
-                                <button type="submit" class="btn btn-secondary">Send
-                                    Your
-                                    Inquiry</button>
-                            </div>
+            <div class="form" onsubmit="return sendMail(this)">
+                <form>
+                    <input type="text" name="name" id="fullname" class="form-control" placeholder="Name" required />
+                    <input type="email" name="email" id="emailaddress" class="form-control" placeholder="Email" required />
+                    <textarea rows="5" name="Inquarysummary" id="projectsummary" class="form-control" placeholder="Inquery" required></textarea>
+                    <div class="form-row text-center">
+                        <div class="col">
+                            <button type="submit" class="btn btn-secondary">Send
+                                Your
+                                Inquiry</button>
                         </div>
-                    </form>
-                </div>
-            </form>
+                    </div>
+                </form>
+            </div>
+        </form>
 
     </div>
 
