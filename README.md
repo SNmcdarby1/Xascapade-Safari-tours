@@ -5,54 +5,52 @@ It is a holiday booking platform-MS2 project
 
 ### Table of Content
 
-1. Who are we
+##### Who are we
  - We are a privately owned travel gaency company that does personalised safari travel packages in Kenya.
 
 - Project Strategy and Intent is to personalise the tours according to the clients desires.
 - Guiding Principles is the brand to connect with the communities back in Kenya in both historical and cultural values.
 - Functionality and Subjectibility is to bring the feeling for clarity of the safaris in Kenya that will satisfy the need of the customer. 
 
-2 Approach
+### 1. Approach
 
-a) Properties
+a) Properties 
+b) Linear properties
+c) The ease in and ease out of the pages to be visible and easy to navigate through the pages and to have a smoth transition in and ou of the pages.
  
- * Linear properties
- * The ease in and ease out of the pages to be visible and easy to navigate through the pages and to have a smoth transition in and ou of the pages.
- 
-
-b) Objectives
+ ### 2. Objectives
  
  *  An experienced mapping.  
  * Collabotration packed with data
  * Time intense
  * Reliable data
                              * 
- c)Approaches
+ ### Approaches
  
  * is to implement features that will enable the client to  select different options in  the travel platforms.
  * Updating the products and services of travel packages 
  * Share and innovating producyts and services.
  
- d)Project Goals
+ ### Project Goals
  
 * Enabling the websiteto have current travel designs and product services that are customer friendly and easily access of the webpage
 * Typography that has a good feel and friendly to clients.
 
 * Enabling features that will sell the product and services. Making it easy to convey the story to the client.
 
-3 UX
+### 3. UX
 - Developers and Business Goals-
   Easy access of the website. The art and design /visual designers and data collection that used to create the website.
 
-4 Features for the website design.
+### 4. Features for the website design.
 
-* Images 
-* Contents
-* Social pages
-* Social links
-* Mapping 
-* Emailing process
-* Booking forms
+  * Images 
+  * Contents
+  * Social pages
+  * Social links
+  * Mapping 
+  * Emailing process
+  * Booking forms
 
       - Code used CSS HTML Javascript and Jquery
       - Landing page with a page drop image container.
@@ -72,27 +70,30 @@ b) Objectives
 
 
     
-- User Stories.
+### 5. User Stories.
 
   * The Navigation bar was not easily accessible . I have to try diffent designs that will anablethe client to press the home button to access other pages.
   * The packages had no value , soi added up the value and uploaded images to show the product.
   * The carousel in the gallery page was not working so i decided to have static images all in one page.
-  * The client asked to have different options of products . I added in the safari packages and different locations of the Safaris, and activities that can be done during the holidays.
+  * The client asked to have different options of products . I added in the safari packages and different locations of the Safaris, and activities that can be done during the    holidays.
   * The reservation page had a lot of information icons that made the page look messy . I ended up reducing the content and be short ad precise of the contents.  
-- Web Design I did a lot of reserch in youtube and i was inspired by three main developres 
+- Web Design.
+  I did a lot of reserch in youtube and i was inspired by three main developres 
      * Sayar flight booking example
 
-- Wireframes
+### 6. Wireframes
+   The Mockup generator page of Xascapade Travel.
 
 
-5 Technology
+### 7. Technology
 
  - Github[github](https://github.com/) used for storying and accessing data.
  - Gitpod[gitpod]() IDE platform for creating website.
  - While doing my reasearch i came across materializes platform.This site inspired me by the endlook and feel of the website, It resonates with a suitable ux friendly look and feel that embodies a lot of the features.
 - Used w3school for snippets. I am inspire withthe look and feel of the navigation bar, and inputs examples in the w3school page.
 - Youtube tutorial
-- Google Mapping -  used (Map Quest)[https://developer.mapquest.com/documentation/tools/latitude-longitude-finder/]. To find accurate locations. But unfortunatly it was not responding . I trie the Leaflet mapping.
+- Multiple device mockup genarator. I sed this site to create a mockup image of the websites landing page. Thissight can be accessed in google webpage. once you access the page you will need to copy your deployed link to the in the multiple device generator that is on the top left top nav. Then click the genarator button to genarate the image of the website. 
+- Google Mapping -  used (Map Quest)[https://developer.mapquest.com/documentation/tools/latitude-longitude-finder/]. To find accurate locations. But unfortunatly it was not  responding . I trie the Leaflet mapping.
 - Emailjs - I created an accout with Google emailjs that will enable the emails to be interactive.
 - I created the 404v folder to direct error responses.that will collect data from error messages.
 There were different tuturial that i watched in youtube. Below are a few that reall inspired byhthe style and design of the page. 
@@ -104,7 +105,7 @@ There were different tuturial that i watched in youtube. Below are a few that re
 - youtube tutorial hamberger menu (web dev simplified)[https://www.youtube.com/watch?v=At4B7A4GOPg].(Better dev)[https://www.youtube.com/watch?v=_Ue9_rLIMAQ] [https://www.youtube.com/watch?v=uZNWak44SI8]
 
 
-6 Trouble shooting
+### 8. Trouble shooting
 
  *  Decide to change the li element to lo because the ux appearance was not suitable to the and user friendly 6 Testing
  * While i was updating the git status i entered a git commit that change the changes that i had made . Resulted into doing a git reset command to using the SHA number f68f166.
@@ -115,27 +116,25 @@ There were different tuturial that i watched in youtube. Below are a few that re
  * I debuged the 
 
 
-7 Deployment.
+### 9. Deployment.
 
 I deployed the page in Github page under settings. Scroll down to the Github pages. Select the main-branch under the source. Once selected clickthe save button. A link will be enabled,once you receive the link you select it copy the link on your search engine. This will lead you to your public page. Ad that is how you deploy your repository to a public site. 
 
-8 Testing
+### 10. Testing
 The site was deployed in github and i shared the link to family and other users through whats app platform that made it easier to access the links on their phones. I also shared the using emailing process for desktop users and other devices as ipads,tablets, etc.
 
 
-9 Credits
-
+### 11.
 - Code Insitute student care for the support and responding to my calls and chat messages.
 - Google search and wikipedia sites for some of the Contents used in the site.
 - Stack Overflow website that i used to access information when i got stack.
  
- 10 Media Images
-
+### 12. Media
 I) Media \* Google search free comercialised images*\ 
 II) (unsplashed)[https://unsplash.com/] 
 III) Pixabay
 
-Photographers
+I. Photographers
 
 * Image by Christine Sponchia from Pixabay 
 * Image by Kirsi Kataniemi from Pixabay
@@ -166,7 +165,7 @@ Photographers
 * <span>Photo by <a href="https://unsplash.com/@davidclode?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">David Clode</a> on <a href="https://unsplash.com/s/photos/lodgei-in-kenya?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
 * Photo by Louis Hansel @shotsoflouis
 
-b) Youtube tutorials
+### 13. Youtube tutorials
 
 * I was inspired by the followimng youtube tutorials by (DevEd)[https:////www.youtube.com/watch?v=8x1mO1d6-4w] , (Traversy Media)[https://www.youtube.com/watch?v=MaP3vO-vEsg],
 
@@ -175,7 +174,7 @@ b) Youtube tutorials
 * [Github]community platform
  - [Sayar](https://github.com/sayar/flight-booking)
 
-10 Acknowledgements
+### 14. Acknowledgements
 
 I would like to thank 
 
