@@ -1,37 +1,4 @@
 function initMap() {
-    var map = new google.maps.Map(document.getElementById("map"), {
-        zoom: 3,
-        center: {
-
-        }
-    });
-
-    var labels = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-
-    var locations = [
-
-    ];
-
-    var markers = locations.map(function(location, i) {
-        return new google.maps.Marker({
-            position: location,
-            label: labels[i % labels.length]
-        });
-    });
-
-    var markerCluster = new MarkerClusterer(map, markers, {
-        imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'
-    });
-}
-const markers = locations.map((location, i) => {
-    return new google.maps.Marker({
-        position: location,
-        label: labels[i % labels.length],
-    });
-});
-
-
-function initMap() {
     map = new google.maps.Map(document.getElementById('googleMap'), {
         zoom: 8,
 
@@ -83,11 +50,6 @@ function initMap() {
 
 
     var markerCluster = new MarkerClusterer(map, markers, {
-        imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'
-    }); <
-    /script> <
-    script src = "https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js" > < /script>    <
-    script async defer src = "https://maps.googleapis.com/maps/api/js?key=AIzaSyDu9EMPEt4GX-YMhTjYoHL0ATPN-odHDa0&callback=initMap" > < /script></script >
-        <
-        /footer>
-    body
+        imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js'
+    });
+}

@@ -150,6 +150,9 @@
             </script>
             <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
             </script>
+
+            <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDu9EMPEt4GX-YMhTjYoHL0ATPN-odHDa0&callback=initMap"></script>
+            <script scr="assets/js/maps.js"></script>
         </footer>
         <script>
             // Tabs function openLink(evt, linkName) {
@@ -289,16 +292,6 @@
                     closeAllLists(e.target);
                 });
             }
-
-
-            function initAutocomplete() {
-
-                autocomplete = new google.maps.places.Autocomplete(
-
-                    (document.getElementById('autocomplete')), {
-                        types: ['Map']
-                    });
-            });
         </script>
         </footer>
 </body>
