@@ -1,10 +1,23 @@
 # Xascapade Travel- MS2 project
 Is a leisure travel platform for holiday safari bookings in Kenya.
 
-platform-MS2 project
 
 ### Table of Content
-
+ 1.Who we are
+ 2.Approach
+ 3.Objectives
+ 4. Approaches 
+ 5. Project goals
+ 6.
+ 7.
+ 8.
+ 9.
+ 10.
+ 11.
+ 12.
+ 13.
+ 14.
+ 
 ##### Who are we
  - We are a privately owned travel gaency company that does personalised safari travel packages in Kenya.
 
@@ -98,7 +111,8 @@ c) The ease in and ease out of the pages to be visible and easy to navigate thro
 - Emailjs - I created an accout with Google emailjs that will enable the emails to be interactive.
 - I created the 404v folder to direct error responses.that will collect data from error messages.
 There were different tuturial that i watched in youtube. Below are a few that reall inspired byhthe style and design of the page. 
-* During my reasearch i came across a youtube tutorial that was talking about Materialize platform (Materialise)[https://materializecss.com/media.html]for creating websites and snippets by (Traversy Media)[https://www.youtube.com/watch?v=MaP3vO-vEsg]. I used the tutorial to create the index page .
+* During my reasearch i came across a youtube tutorial that was talking about Materialize platform (Materialise)[https://materializecss.com/media.html]for creating websites and snippets by (Traversy Media)[https://www.youtube.com/watch?v=MaP3vO-vEsg]. I used the tutorial to create the index page . I aslo used snippets from -[W3school](https://www.w3schools.com/), [Bootstrap](https://getbootstrap.com/docs/4.0/getting-started/introduction/), and [Materialisecss](https://materializecss.com/), that helped me to come up with different designs of the webpage. 
+
 [https://www.youtube.com/watch?v=Zxf1mnP5zcw]
 
 - I also added Adam live server to checking live open source for the pages while coding
@@ -123,14 +137,8 @@ I deployed the page in Github page under settings. Scroll down to the Github pag
 
 ### 10. Testing
 The site was deployed in github and i shared the link to family and other users through whats app platform that made it easier to access the links on their phones. I also shared the using emailing process for desktop users and other devices as ipads,tablets, etc.
-
-
-### 11.
-- Code Insitute student care for the support and responding to my calls and chat messages.
-- Google search and wikipedia sites for some of the Contents used in the site.
-- Stack Overflow website that i used to access information when i got stack.
  
-### 12. Media
+### 11. Media credits
 I) Media \* Google search free comercialised images*\ 
 II) (unsplashed)[https://unsplash.com/] 
 III) Pixabay
@@ -166,7 +174,7 @@ I. Photographers
 * <span>Photo by <a href="https://unsplash.com/@davidclode?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">David Clode</a> on <a href="https://unsplash.com/s/photos/lodgei-in-kenya?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
 * Photo by Louis Hansel @shotsoflouis
 
-### 13. Youtube tutorials
+### 12. Youtube tutorials
 
 * I was inspired by the followimng youtube tutorials by (DevEd)[https:////www.youtube.com/watch?v=8x1mO1d6-4w] , (Traversy Media)[https://www.youtube.com/watch?v=MaP3vO-vEsg],
 
@@ -174,6 +182,12 @@ I. Photographers
 
 * [Github]community platform
  - [Sayar](https://github.com/sayar/flight-booking)
+ 
+ ### 13. Credits
+- Code Insitute student care for the support and responding to my calls and chat messages.
+- Google search and wikipedia sites for some of the Contents used in the site.
+- Stack Overflow website that i used to access information when i got stack.
+- W3school, Bootstrap, Materialised, platform. 
 
 ### 14. Acknowledgements
 
