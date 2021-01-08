@@ -22,31 +22,30 @@ a) Properties
 
 b) Objectives
  
- * * An experienced mapping.  * Collabotration packed with data
-                             * Time intense
-                             * Reliable data
+ *  An experienced mapping.  
+ * Collabotration packed with data
+ * Time intense
+ * Reliable data
                              * 
  c)Approaches
  
- * Researching the travel platfrms
- * Updating the products
- * Share and innovation 
+ * is to implement features that will enable the client to  select different options in  the travel platforms.
+ * Updating the products and services of travel packages 
+ * Share and innovating producyts and services.
  
- d)Value
+ d)Project Goals
  
-* current designs
-* Typography
-* 
+* Enabling the websiteto have current travel designs and product services that are customer friendly and easily access of the webpage
+* Typography that has a good feel and friendly to clients.
+
+* Enabling features that will sell the product and services. Making it easy to convey the story to the client.
 
 3 UX
+- Developers and Business Goals-
+  Easy access of the website. The art and design /visual designers and data collection that used to create the website.
 
-- Project Goals
-- Developers and Business Goals
-- User Stories
-- Web Design
-- Wireframes
+4 Features for the website design.
 
-4 Features
 * Images 
 * Contents
 * Social pages
@@ -55,14 +54,47 @@ b) Objectives
 * Emailing process
 * Booking forms
 
+      - Code used CSS HTML Javascript and Jquery
+      - Landing page with a page drop image container.
+      - cards
+      - Images
+      - Table
+      - feildset
+      - Controlgroup
+      - Social links
+      - Font awesome icons
+      - Materialised link - I was inspired by the look and feel of the Link that made the site look better feel about it.
+      - Bootstrap snippets that enabled meto have different designs
+      - CDNJS site enabled me to get the tags and JS scripts that are used to create the website.
+      - Jquery CDN  uncompressed min script 
+      - Leaflet link and tags for js google mapping
+      - Emailjs used for the interactive email
 
-- Features used
+
+    
+- User Stories.
+
+  * The Navigation bar was not easily accessible . I have to try diffent designs that will anablethe client to press the home button to access other pages.
+  * The packages had no value , soi added up the value and uploaded images to show the product.
+  * The carousel in the gallery page was not working so i decided to have static images all in one page.
+  * The client asked to have different options of products . I added in the safari packages and different locations of the Safaris, and activities that can be done during the holidays.
+  * The reservation page had a lot of information icons that made the page look messy . I ended up reducing the content and be short ad precise of the contents.  
+- Web Design I did a lot of reserch in youtube and i was inspired by three main developres 
+     * Sayar flight booking example
+
+- Wireframes
+
 
 5 Technology
+
+ - Github[github](https://github.com/) used for storying and accessing data.
+ - Gitpod[gitpod]() IDE platform for creating website.
  - While doing my reasearch i came across materializes platform.This site inspired me by the endlook and feel of the website, It resonates with a suitable ux friendly look and feel that embodies a lot of the features.
 - Used w3school for snippets. I am inspire withthe look and feel of the navigation bar, and inputs examples in the w3school page.
 - Youtube tutorial
-- Mapping used (Map Quest)[https://developer.mapquest.com/documentation/tools/latitude-longitude-finder/]. To find aqccurate locations.
+- Google Mapping -  used (Map Quest)[https://developer.mapquest.com/documentation/tools/latitude-longitude-finder/]. To find accurate locations. But unfortunatly it was not responding . I trie the Leaflet mapping.
+- Emailjs - I created an accout with Google emailjs that will enable the emails to be interactive.
+- I created the 404v folder to direct error responses.that will collect data from error messages.
 There were different tuturial that i watched in youtube. Below are a few that reall inspired byhthe style and design of the page. 
 * During my reasearch i came across a youtube tutorial that was talking about Materialize platform (Materialise)[https://materializecss.com/media.html]for creating websites and snippets by (Traversy Media)[https://www.youtube.com/watch?v=MaP3vO-vEsg]. I used the tutorial to create the index page .
 [https://www.youtube.com/watch?v=Zxf1mnP5zcw]
@@ -73,32 +105,39 @@ There were different tuturial that i watched in youtube. Below are a few that re
 
 
 6 Trouble shooting
- *  Decide to change the li element to lo because the ux appearance was not suitable to the and user friendly 6 Testing
 
+ *  Decide to change the li element to lo because the ux appearance was not suitable to the and user friendly 6 Testing
  * While i was updating the git status i entered a git commit that change the changes that i had made . Resulted into doing a git reset command to using the SHA number f68f166.
  * The navigation bar is glitching the dropdown links are not visible in the mobile devise. I decided to change and delete the dropdown in the navigation bar and decided to add    a button that has etra pages. 
  * I encountered problems with the sidenav. Some of the content were not visible so i decided to change the design and use the navigation button that is displayed in w3school site.
+ * The navigation link was not working on small devices . I decided to use the button (xascapade) that has a collapsible id when clicked, to access the menu bar.
+ * My google maps was not responsive , I decided to use the leaflet maps.
+ * I debuged the 
 
 
 7 Deployment.
+
 I deployed the page in Github page under settings. Scroll down to the Github pages. Select the main-branch under the source. Once selected clickthe save button. A link will be enabled,once you receive the link you select it copy the link on your search engine. This will lead you to your public page. Ad that is how you deploy your repository to a public site. 
 
 8 Testing
-
+The site was deployed in github and i shared the link to family and other users through whats app platform that made it easier to access the links on their phones. I also shared the using emailing process for desktop users and other devices as ipads,tablets, etc.
 
 
 9 Credits
 
-- Code
-- Content
-- Media \* Google search free comercialised images \ 
-- (unsplashed)[https://unsplash.com/]
- * 
- * 
- * 
- * 
- - Pixabay
- * Image by Christine Sponchia from Pixabay 
+- Code Insitute student care for the support and responding to my calls and chat messages.
+- Google search and wikipedia sites for some of the Contents used in the site.
+- Stack Overflow website that i used to access information when i got stack.
+ 
+ 10 Media Images
+
+I) Media \* Google search free comercialised images*\ 
+II) (unsplashed)[https://unsplash.com/] 
+III) Pixabay
+
+Photographers
+
+* Image by Christine Sponchia from Pixabay 
 * Image by Kirsi Kataniemi from Pixabay
 * Image by PatternPictures from Pixabay 
 * Image by Herbert Aust from Pixabay 
@@ -125,18 +164,27 @@ I deployed the page in Github page under settings. Scroll down to the Github pag
 * <span>Photo by <a href="https://unsplash.com/@riolec?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Rio Lecatompessy</a> on <a href="https://unsplash.com/s/photos/kenyan-hotel-room?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
 * <span>Photo by <a href="https://unsplash.com/@mattpunsplash?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Matthieu Pétiard</a> on <a href="https://unsplash.com/s/photos/camping-safari-in-kenya?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
 * <span>Photo by <a href="https://unsplash.com/@davidclode?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">David Clode</a> on <a href="https://unsplash.com/s/photos/lodgei-in-kenya?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
-
-
- * 
- * 
- 
-
-
 * Photo by Louis Hansel @shotsoflouis
-Image by 
-- I was inspired by the followimng youtube tutorials by (DevEd)[https:////www.youtube.com/watch?v=8x1mO1d6-4w] , (Traversy Media)[https://www.youtube.com/watch?v=MaP3vO-vEsg],
 
-- [Easy tutorila](https://www.youtube.com/watch?v=25AiXy8e09E)
+b) Youtube tutorials
+
+* I was inspired by the followimng youtube tutorials by (DevEd)[https:////www.youtube.com/watch?v=8x1mO1d6-4w] , (Traversy Media)[https://www.youtube.com/watch?v=MaP3vO-vEsg],
+
+*  [Easy tutorila](https://www.youtube.com/watch?v=25AiXy8e09E)
+
+* [Github]community platform
+ - [Sayar](https://github.com/sayar/flight-booking)
 
 10 Acknowledgements
+
+I would like to thank 
+
+- My mentor [Can Sucullu]() For all the advise and encouraging me to keep on striving and challenging me to do better.
+- The code institute slack community for the other set of eyes and responding to my queries.
+- The Code Institute lectures, developers and the team behind the code institute platform .
+- [gitpod]() ide platform.
+- [stackoverflow](https://stackoverflow.com/) platform. I used to access coding problem solving when i got stack. 
+
+
+
 
