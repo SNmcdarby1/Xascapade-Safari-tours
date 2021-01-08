@@ -9,29 +9,29 @@ Is a leisure travel platform for holiday safari bookings in Kenya.
  
  3.Objectives
  
- 4. Approaches 
+ 4.Approaches 
  
- 5. Project goals
+ 5.Project goals
  
- 6. UX
+ 6.UX
  
- 7. Feature or the website designs
+ 7.Feature or the website designs
  
- 8. User stories
+ 8.User stories
  
- 9. Wireframes
+ 9.Wireframes
  
  10.Technology 
  
- 11. Troubleshooting 
+ 11.Troubleshooting 
  
- 12. Deployment 
+ 12.Deployment 
+  
+ 13.Testing
  
- 13. Testing
+ 14.Credits
  
- 14. Credits
- 
- 15. Acknowledgement 
+ 15.Acknowledgement 
  
 ##### Who are we
  - We are a privately owned travel gaency company that does personalised safari travel packages in Kenya.
