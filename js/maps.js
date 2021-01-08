@@ -39,6 +39,8 @@ function initMap() {
         }
     ];
 
+    markers = ["A, B, C,D E, F , G ,H ,I ,J ,K ,L M, N, O, P, Q, R, S, T, U, V, W, X, Y, Z"];
+
 
 
     var markers = locations.map(function(location, i) {
@@ -47,9 +49,4 @@ function initMap() {
             label: labels[i % labels.length]
         });
     });
-
-
-    var markerCluster = new MarkerClusterer(map, markers, {
-        imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js'
-    });
-}
+};
