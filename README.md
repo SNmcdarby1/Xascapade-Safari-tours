@@ -34,11 +34,10 @@ Is a leisure travel platform for holiday safari bookings in Kenya.
  15.Acknowledgement 
  
 ##### Who are we
- - We are a privately owned travel gaency company that does personalised safari travel packages in Kenya.
-
-- Project Strategy and Intent is to personalise the tours according to the clients desires.
+- We are a privately owned travel agency company that does personalised safari travel packages in Kenya.
+- The project Strategy and Intent is to personalise the tours according to the clients desires.
 - Guiding Principles is the brand to connect with the communities back in Kenya in both historical and cultural values.
-- Functionality and Subjectibility is to bring the feeling for clarity of the safaris in Kenya that will satisfy the need of the customer. 
+- The Functionality and Subjectibility by providing the feel and look  for clarity of the safaris in Kenya that will satisfy the need of the customer. 
 
 ### 1. Approach
 
@@ -119,13 +118,14 @@ c) The ease in and ease out of the pages to be visible and easy to navigate thro
  - Github[github](https://github.com/) used for storying and accessing data.
  - Gitpod[gitpod]() IDE platform for creating website.
  - While doing my reasearch i came across materializes platform.This site inspired me by the endlook and feel of the website, It resonates with a suitable ux friendly look and feel that embodies a lot of the features.
-- Used w3school for snippets. I am inspire withthe look and feel of the navigation bar, and inputs examples in the w3school page.
-- Youtube tutorial
-- Multiple device mockup genarator. I sed this site to create a mockup image of the websites landing page. Thissight can be accessed in google webpage. once you access the page you will need to copy your deployed link to the in the multiple device generator that is on the top left top nav. Then click the genarator button to genarate the image of the website. 
-- Google Mapping -  used (Map Quest)[https://developer.mapquest.com/documentation/tools/latitude-longitude-finder/]. To find accurate locations. But unfortunatly it was not  responding . I trie the Leaflet mapping.
-- Emailjs - I created an accout with Google emailjs that will enable the emails to be interactive.
-- I created the 404v folder to direct error responses.that will collect data from error messages.
-There were different tuturial that i watched in youtube. Below are a few that reall inspired byhthe style and design of the page. 
+ - Used w3school for snippets. I am inspire withthe look and feel of the navigation bar, and inputs examples in the w3school page.
+ - Youtube tutorial
+ - Multiple device mockup genarator. I sed this site to create a mockup image of the websites landing page. Thissight can be accessed in google webpage. once you access the page you will need to copy your deployed link to the in the multiple device generator that is on the top left top nav. Then click the genarator button to genarate the image of the website. 
+ - Google Mapping -  used (Map Quest)[https://developer.mapquest.com/documentation/tools/latitude-longitude-finder/]. To find accurate locations. But unfortunatly it was not  responding . I trie the Leaflet mapping.
+ - Emailjs - I created an accout with Google emailjs that will enable the emails to be interactive.
+ - I created the 404v folder to direct error responses.that will collect data from error messages.
+There were different tuturial that i watched in youtube. Below are a few that reall inspired byhthe style and design of the page.
+
 * During my reasearch i came across a youtube tutorial that was talking about Materialize platform (Materialise)[https://materializecss.com/media.html]for creating websites and snippets by (Traversy Media)[https://www.youtube.com/watch?v=MaP3vO-vEsg]. I used the tutorial to create the index page . I aslo used snippets from -[W3school](https://www.w3schools.com/), [Bootstrap](https://getbootstrap.com/docs/4.0/getting-started/introduction/), and [Materialisecss](https://materializecss.com/), that helped me to come up with different designs of the webpage. 
 
 [https://www.youtube.com/watch?v=Zxf1mnP5zcw]
