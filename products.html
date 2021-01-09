@@ -5,11 +5,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Xascapade Travel</title>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
     <link rel="stylesheet" href="https://stackpath.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css" type="text/css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script type="text/javascript" src="main.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
     </script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
@@ -17,16 +18,17 @@
 
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
 </head>
+<div id="data"></div>
 
 <body class="container-fluid no-gutter " class="container lemon padding-16 myLink">
 
 
-    <nav class="navbar navbar-expand-lg show-sm-dowm navbar-light bg-light fixed-top topnav id=" xas" class="col-3">
+    <nav class="navbar navbar-expand-lg show-sm-dowm navbar-light bg-light fixed-top topnav" id="xas" class="col-3">
         <div class="bar transmission-automatic-v beige border-bottom xlarge">
 
             <nav class="navbar-toggler teal hidden-lg-up btn-btn show-sm-dowm" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="true" aria-label="togglenavigation">
                 XASCAPADE - Home</span> <span><i class="fa fa fa-home" aria-hidden="true"></i></span>
-                <li><span>Home</span></li>
+
             </nav>
             <div class="collapse navbar-collapse " data-toggle="collapse" id="collapsibleNavId">
                 <navitems class="nav-items">
@@ -35,8 +37,8 @@
 
                             <li><a href="index.html">HOME</a></li>
                             <li><a href="about.html">ABOUT</a></li>
-                            <li><a href="products.html">SERVICES</a></li>
-                            <li><a href="galery.html">GALLERY</a></li>
+                            <li><a href="more.html">SERVICES</a></li>
+                            <li><a href="contact.html">GALLERY</a></li>
                             <li><a href="reservation.html">RESERVATIONS</a></li>
                             <li><a href="safari.html">SAFARI</a></li>
                             <li><a href="contact.html">CONTACT</a></li>
@@ -49,7 +51,10 @@
     <section class="container-fluid">
 
 
-        <head>
+        <section class="container-fluid">
+
+
+
             <div class="w3-row-padding">
                 <div class="w3-third">
                     <section class="container-fluid ">
@@ -58,9 +63,9 @@
                             <!-- was inspired by the 3wschool example  -->
                             <div class="dropdown text-center">
                                 <button class="dropbtn">Booking Information</button>
-                                <div class="dropdown-content">
+                                <div class="">
 
-                                    <a href="accommodation.html">Accommodations</a>
+                                    <a href="reservation.html">Accommodations</a>
                                 </div>
                             </div>
                         </section>
@@ -72,187 +77,173 @@
                         <p>Resort.</p>
                 </div>
             </div>
-            <div class="container right">
-                <div class="content">
-                    <picture class="d-inline-block text-truncate" style="max-width: 400px;">
-                        <source srcset="assets/images/room.jpg" type="image/svg+xml">
-                        <img src="assets/images/room.jpg" class="img-fluid img-thumbnail" alt="Rooms">
-                    </picture>
-                    <h4>Kilifi</h4>
-                    <p>Luxury.</p>
+            <section class="containet">
+                <hr class="my-4  col">
+                <div class="container right">
+                    <div class="content">
+                        <picture class="d-inline-block text-truncate" style="max-width: 400px;">
+                            <source srcset="assets/images/room.jpg" type="image/svg+xml">
+                            <img src="assets/images/room.jpg" class="img-fluid img-thumbnail" alt="Rooms">
+                        </picture>
+                        <h4>Kilifi</h4>
+                        <p>Luxury.</p>
+                    </div>
                 </div>
-            </div>
 
-            <div class=" left">
-                <div class="content">
-                    <picture class=" d-inline-block text-truncate" style="max-width: 400px;">
-                        <source srcset="assets/images/hotel.jpg" type="image/svg+xml">
-                        <img src="assets/images/hotel.jpg" class="img-fluid img-thumbnail" alt="Rooms">
-                    </picture>
-                    <h4>AirBnb</h4>
-                    <p>Standard.</p>
+                <div class=" left">
+                    <div class="content">
+                        <picture class=" d-inline-block text-truncate" style="max-width: 400px;">
+                            <source srcset="assets/images/hotel.jpg" type="image/svg+xml">
+                            <img src="assets/images/hotel.jpg" class="img-fluid img-thumbnail" alt="Rooms">
+                        </picture>
+                        <h4>AirBnb</h4>
+                        <p>Standard.</p>
 
 
+
+                    </div>
+                </div>
+                <div class=" right">
+                    <div class="content">
+                        <h4>Safari Lodge</h4>
+                        <picture class="d-inline-block text-truncate" style="max-width: 400px;">
+                            <source srcset="assets/images/lodge.jpg" type="image/svg+xml">
+                            <img src="assets/images/lodge.jpg" class="img-fluid img-thumbnail" alt="Rooms">
+                        </picture>
+                        <p>Lodge.</p>
+                    </div>
+                </div>
 
                 </div>
-            </div>
-            <div class=" right">
-                <div class="content">
-                    <h4>Safari Lodge</h4>
-                    <picture class="d-inline-block text-truncate" style="max-width: 400px;">
-                        <source srcset="assets/images/lodge.jpg" type="image/svg+xml">
-                        <img src="assets/images/lodge.jpg" class="img-fluid img-thumbnail" alt="Rooms">
-                    </picture>
-                    <p>Lodge.</p>
+                <!-- Tabs -->
+                <div id="Flight" class="white  myLink">
+                    <h4>Book holiday packages with us</h4>
+
                 </div>
-            </div>
+            </section>
+            <card>
+                <div>
 
-            </div>
-            <!-- Tabs -->
-            <div id="Flight" class="white  myLink">
-                <h4>Book holiday packages with us</h4>
+                    <div class=" container ">
+                        <h4>Get the best offers first!</h4>
 
-            </div>
-
-
-
-            <footer class="card">
-
+                        <p>Join our newsletter.</p>
+                        <label>E-mail</label>
+                        <input class="input border" type="text" placeholder="Your Email address">
+                        <button type="button" class="button red margin-top">Subscribe</button>
+                    </div>
+                </div>
+                <!-- w3school snippet -->
 
                 <!-- footer section -->
-
-                <footer class="">
-                    <card>
-                        <div>
-                            <hr class="my-4  col">
-                            <div class=" container">
-                                <h4>Get the best offers first!</h4>
-
-                                <p>Join our newsletter.</p>
-                                <label>E-mail</label>
-                                <input class="input border" type="text" placeholder="Your Email address">
-                                <button type="button" class="button red margin-top">Subscribe</button>
-                            </div>
-                        </div>
-                        <!-- w3school snippet -->
-
-                        <!-- footer section -->
-                        <footer>
+                <footer>
 
 
 
-                            <section class=" form col-sm s12 progress-section social">
-                                <div class="container">
-                                    <form action="/action_page.php">
-                                        <div class="col">
-                                            <p style="text-align:center">Login with Social Media</p>
-                                            <div class="vl">
-                                                <span class="vl-innertext">or</span>
-                                            </div>
+                    <section class=" form col-sm s12 progress-section social">
+                        <div class="container">
+                            <form action="/action_page.php">
+                                <div class="col">
+                                    <p style="text-align:center">Login with Social Media</p>
+                                    <div class="vl">
+                                        <span class="vl-innertext">or</span>
+                                    </div>
 
-                                            <div class="col-sm">
-                                                <a href="#" class="fb btn">
-                                                    <i class="fa fa-facebook fa-fw"></i>
-                                                    Facebook
-                                                </a>
-                                                <a href="#" class="twitter btn">
-                                                    <i class="fa fa-twitter fa-fw"></i>
-                                                    Twitter
-                                                </a>
-                                                <a href="#" class="google btn">
-                                                    <i class="fa fa-google fa-fw"></i>
-                                                    Google+
-                                                </a>
-                                            </div>
+                                    <div class="col-sm">
+                                        <a href="#" class="fb btn">
+                                            <i class="fa fa-facebook fa-fw"></i>
+                                            Facebook
+                                        </a>
+                                        <a href="#" class="twitter btn">
+                                            <i class="fa fa-twitter fa-fw"></i>
+                                            Twitter
+                                        </a>
+                                        <a href="#" class="google btn">
+                                            <i class="fa fa-google fa-fw"></i>
+                                            Google+
+                                        </a>
+                                    </div>
 
 
-                                        </div>
-                                    </form>
                                 </div>
+                            </form>
+                        </div>
 
 
-                            </section>
-                            <!-- w3school snippet -->
-                            <!-- Footer -->
-
-
-
-                            <footer class="col container-fluid ">
-                                <ul class="list-inline social-links">
-                                    <h3 class="uppercase general-sub">Social</h3>
-                                    <li class="list-inline-item">
-                                        <a target="_blank" href="https://www.facebook.com/simbapawtrail/">
-                                            <i class="fa fa-facebook" aria-hidden="true"></i>
-                                            <span class="sr-only">Facebook</span>
-                                        </a>
-                                    </li>
-                                    <li class="list-inline-item">
-                                        <a target="_blank" href="https://twitter.com/Safari78047357">
-                                            <i class="fa fa-twitter" aria-hidden="true"></i>
-                                            <span class="sr-only">twitter</span>
-                                        </a>
-                                    </li>
-                                    <li class="list-inline-item">
-                                        <a target="_blank" href="https://www.linkedin.com/company/37523851/admin/">
-                                            <i class="fa fa-linkedin" aria-hidden="true"></i>
-                                            <span class="sr-only">linkedin</span>
-                                        </a>
-                                    </li>
-
-                                    <li class="list-inline-item">
-                                        <a target="_blank" href="https://www.instagram.com/trysafari.ke/?hl=en>">
-                                            <i class="fa fa-instagram" aria-hidden="true"></i>
-                                            <span class="sr-only">Instagram</span>
-                                        </a>
-                                    </li>
-                                    <li class="list-inline-item">
-                                        <a target="_blank" href="https://www.youtube.com/embed/wSCGJD_H-n8">
-                                            <i class="fa fa-youtube" aria-hidden="true"></i>
-                                            <span class="sr-only">YouTube</span>
-                                        </a>
-                                    </li>
+                    </section>
+                    <!-- w3school snippet -->
+                    <!-- Footer -->
 
 
 
-                                    <button>Powered by <a href="#" target="_blank" class="hover-text-green">Xascapade</a></button>
-                                </ul>
+                    <footer class="col container-fluid ">
+                        <ul class="list-inline social-links">
+                            <h3 class="uppercase general-sub">Social</h3>
+                            <li class="list-inline-item">
+                                <a target="_blank" href="https://www.facebook.com/simbapawtrail/">
+                                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                                    <span class="sr-only">Facebook</span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a target="_blank" href="https://twitter.com/Safari78047357">
+                                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                                    <span class="sr-only">twitter</span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a target="_blank" href="https://www.linkedin.com/company/37523851/admin/">
+                                    <i class="fa fa-linkedin" aria-hidden="true"></i>
+                                    <span class="sr-only">linkedin</span>
+                                </a>
+                            </li>
+
+                            <li class="list-inline-item">
+                                <a target="_blank" href="https://www.instagram.com/trysafari.ke/?hl=en>">
+                                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                                    <span class="sr-only">Instagram</span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a target="_blank" href="https://www.youtube.com/embed/wSCGJD_H-n8">
+                                    <i class="fa fa-youtube" aria-hidden="true"></i>
+                                    <span class="sr-only">YouTube</span>
+                                </a>
+                            </li>
 
 
 
-                                <a href="#" class="cd-top text-replace js-cd-top">Top</a>
+                            <button>Powered by <a href="#" target="_blank" class="hover-text-green">Xascapade</a></button>
+                        </ul>
 
 
 
-
-                                <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js">
-                                </script>
-                                <script type="text/javascript" src="https://res.perfectibe.com/scripts/calendar.js">
-                                </script>
-                                <script type="text/javascript" src="https://res.perfectibe.com/scripts/jsDate.js">
-                                </script>
-                                <script type="text/javascript" src="https://res.perfectibe.com/scripts/pibe.js">
-                                </script>
-                                <script type="text/javascript" src="https://res.perfectibe.com/scripts/dropdown.js">
-                                </script>
-                                <script type="text/javascript"></script>
-                                <!-- bootstrap scripr snippet -->
-                                <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
-                                </script>
-                                <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
-                                </script>
-                                <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
-                                </script>
+                        <a href="#" class="cd-top text-replace js-cd-top">Top</a>
 
 
 
 
-                                <!-- bootstrap scripr snippet -->
-                                <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
-                                </script>
-                                <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
-                                </script>
-                                <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
-                                </script>
+                        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js">
+                        </script>
+                        <script type="text/javascript" src="https://res.perfectibe.com/scripts/calendar.js">
+                        </script>
+                        <script type="text/javascript" src="https://res.perfectibe.com/scripts/jsDate.js">
+                        </script>
+                        <script type="text/javascript" src="https://res.perfectibe.com/scripts/pibe.js">
+                        </script>
+                        <script type="text/javascript" src="https://res.perfectibe.com/scripts/dropdown.js">
+                        </script>
+                        <script type="text/javascript"></script>
+
+
+
+                        <!-- bootstrap scripr snippet -->
+                        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+                        </script>
+                        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+                        </script>
+                        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+                        </script>
 
 </body>
 

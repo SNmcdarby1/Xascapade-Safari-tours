@@ -43,7 +43,7 @@ Is a leisure travel platform for holiday safari bookings in Kenya.
 
 a) Properties 
 b) Linear properties
-c) The ease in and ease out of the pages to be visible and easy to navigate through the pages and to have a smoth transition in and ou of the pages.
+c) The ease in and ease out of the pages to be visible and easy to  navigate through the pages and to have a smoth transition in and   ou of the pages.
  
  ### 2. Objectives
  

@@ -5,11 +5,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Xascapade Travel</title>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
     <link rel="stylesheet" href="https://stackpath.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css" type="text/css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script type="text/javascript" src="main.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
     </script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
@@ -17,16 +18,17 @@
 
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
 </head>
+<div id="data"></div>
 
 <body class="container-fluid no-gutter " class="container lemon padding-16 myLink">
 
 
-    <nav class="navbar navbar-expand-lg show-sm-dowm navbar-light bg-light fixed-top topnav id=" xas" class="col-3">
+    <nav class="navbar navbar-expand-lg show-sm-dowm navbar-light bg-light fixed-top topnav" id="xas" class="col-3">
         <div class="bar transmission-automatic-v beige border-bottom xlarge">
 
             <nav class="navbar-toggler teal hidden-lg-up btn-btn show-sm-dowm" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="true" aria-label="togglenavigation">
                 XASCAPADE - Home</span> <span><i class="fa fa fa-home" aria-hidden="true"></i></span>
-                <li><span>Home</span></li>
+
             </nav>
             <div class="collapse navbar-collapse " data-toggle="collapse" id="collapsibleNavId">
                 <navitems class="nav-items">
@@ -35,7 +37,7 @@
 
                             <li><a href="index.html">HOME</a></li>
                             <li><a href="about.html">ABOUT</a></li>
-                            <li><a href="products.html">SERVICES</a></li>
+                            <li><a href="more.html">SERVICES</a></li>
                             <li><a href="contact.html">GALLERY</a></li>
                             <li><a href="reservation.html">RESERVATIONS</a></li>
                             <li><a href="safari.html">SAFARI</a></li>
@@ -47,6 +49,7 @@
                         </nav-items>
     </nav>
     <section class="container-fluid">
+
 
     </section>
     <fieldset>
@@ -109,12 +112,12 @@
 
                         <label for="safari" class="safari"># safari package</label>
                         <input id="safari" class="safari">
-
+                        <input:total>Cost</input:total>
                     </div>
 
                     <div class="form-group">
-                        <label for=""></label>
-                        <select multiple class="custom-select" name="" id="safari">
+                        <label for="euro"></label>
+                        <select multiple class="custom-select" name="euro" id="safari">
                             <option selected>Select one</option>
                             <option value=""></option>
                             <option value=""></option>
@@ -148,15 +151,15 @@
         </h3>
     </div>
     <div class="container teal">
-        <button href="contact.html" class="bar-item button tablink" onclick="openLink(event, = " reservation" class="bar-item button tablink" onclick="openLink(event, 'hotel');">
-            <h6>Contact</h6>
-        </button>
+        <button href="contact.html" class="bar-item button tablink" onclick="openLink(event," reservation" class="bar-item button tablink" onclick="openLink(event, " book, submit,)></button>
+        <h6>Contact</h6>
+
 
         <p>Let us book your next trip!</p>
-        <i class="fa fa-map-marker" style="width:30px"></i> Greystones, IE<br>
-        <i class="fa fa-phone" style="width:30px"></i> Phone: +003538321 151515<br>
-        <i class="fa fa-envelope" style="width:30px"> </i> Email: xascapade@gmail.com<br>
-        <form action="/action_page.php" target="_blank">
+        <i class='fa fa-map-marker' style='width:30px'></i> Greystones, IE<br>
+        <i class='fa fa-phone' style='width:30px'></i> Phone: +003538321 151515<br>
+        <i class='fa fa-envelope' style='width:30px'> </i> Email: xascapade@gmail.com<br>
+        <form action='/action_page.php' target='_blank'>
 
 
             <div class="form" onsubmit="return sendMail(this)">
@@ -220,7 +223,17 @@
                 <button>Powered by <a href="#" target="_blank" class="hover-text-green">Xascapade</a></button>
             </ul>
 
-
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js">
+            </script>
+            <script type="text/javascript" src="https://res.perfectibe.com/scripts/calendar.js">
+            </script>
+            <script type="text/javascript" src="https://res.perfectibe.com/scripts/jsDate.js">
+            </script>
+            <script type="text/javascript" src="https://res.perfectibe.com/scripts/pibe.js">
+            </script>
+            <script type="text/javascript" src="https://res.perfectibe.com/scripts/dropdown.js">
+            </script>
+            <script type="text/javascript"></script>
             <!-- Optional JavaScript -->
             <!-- jQuery first, then Popper.js, then Bootstrap JS -->
             <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">

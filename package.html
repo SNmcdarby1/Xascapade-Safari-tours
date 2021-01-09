@@ -5,11 +5,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Xascapade Travel</title>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
     <link rel="stylesheet" href="https://stackpath.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css" type="text/css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script type="text/javascript" src="main.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
     </script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
@@ -17,6 +18,7 @@
 
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
 </head>
+<div id="data"></div>
 
 <body class="container-fluid no-gutter " class="container lemon padding-16 myLink">
 
@@ -26,7 +28,7 @@
 
             <nav class="navbar-toggler teal hidden-lg-up btn-btn show-sm-dowm" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="true" aria-label="togglenavigation">
                 XASCAPADE - Home</span> <span><i class="fa fa fa-home" aria-hidden="true"></i></span>
-                <li><span>Home</span></li>
+
             </nav>
             <div class="collapse navbar-collapse " data-toggle="collapse" id="collapsibleNavId">
                 <navitems class="nav-items">
@@ -47,198 +49,210 @@
                         </nav-items>
     </nav>
     <section class="container-fluid">
-        <section class="section-testi">
-            <div class="overlay">
-                <div class="head">
-                    <section class="container">
-                        <div class="content">
-                            <h3>Xascapade travel package </h3>
-                            <p>Best offers</p>
-                            <!-- Use a button to pause/play the video with JavaScript -->
-                            <button id="myBtn" onclick="myFunction()">Pause</button>
-                        </div>
-                        <!--w3school Page content -->
-                        <div class="w3-content" style="max-width:1100px;">
 
-                            <!-- Good offers -->
-                            <div class="w3-container w3-margin-top">
-                                <h3>Good Offers Right Now</h3>
-                                <h6>Up to <strong>50%</strong> discount.</h6>
+
+        <section class="container-fluid">
+            <section class="section-testi">
+                <div class="overlay">
+                    <div class="head">
+                        <section class="container">
+                            <div class="content">
+                                <h3>Xascapade travel package </h3>
+                                <p>Best offers</p>
+
                             </div>
-                            <div class="w3-row-padding w3-text-white w3-large">
+                            <!--w3school Page content -->
+                            <div class="w3-content" style="max-width:1100px;">
+
+                                <!-- Good offers -->
+                                <div class="w3-container w3-margin-top">
+                                    <h3>Good Offers Right Now</h3>
+                                    <h6>Up to <strong>50%</strong> discount.</h6>
+                                </div>
+                                <div class="w3-row-padding w3-text-white w3-large">
+                                    <div class="w3-half w3-margin-bottom">
+                                        <picture class="d-inline-block text-truncate" style="max-width: 600px;">
+                                            <source srcset="assets/images/lodge.jpg" type="image/svg+xml">
+                                            <img src="assets/images/lodge.jpg" class="img-fluid img-thumbnail" alt="Rooms">
+                                        </picture>
+                                        <span class="w3-display-bottomleft w3-padding">Book a night at a resort</span>
+                                    </div>
+
+                                </div>
+                                <div class="w3-half">
+                                    <div class="w3-row-padding" style="margin:0 -16px">
+                                        <div class="w3-half w3-margin-bottom">
+                                            <div class="w3-display-container">
+
+                                                <picture class="d-inline-block text-truncate" style="max-width: 600px;">
+                                                    <source srcset="assets/images/room.jpg" type="image/svg+xml">
+                                                    <img src="assets/images/room.jpg" class="img-fluid img-thumbnail" alt="Rooms">
+                                                </picture>
+                                                <span class="w3-display-bottomleft w3-padding">Book an accommodation
+                                                    either at a Hotel or AirBnB at
+                                                    desired your location</span>
+                                            </div>
+                                        </div>
+                                        <div class="w3-half w3-margin-bottom">
+                                            <div class="w3-display-container">
+                                                <picture class="d-inline-block text-truncate" style="max-width: 600px;">
+                                                    <source srcset="assets/images/cheetah.jpg" type="image/svg+xml">
+                                                    <img src="assets/images/cheetah.jpg" class="img-fluid img-thumbnail" alt="Rooms">
+                                                </picture>
+                                                <span class="w3-display-bottomleft w3-padding">Cheetahs</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="w3-row-padding" style="margin:0 -16px">
+                                        <div class="w3-half w3-margin-bottom">
+                                            <div class="w3-display-container">
+                                                <picture class="d-inline-block text-truncate" style="max-width: 600px;">
+                                                    <source srcset="assets/images/flaming.jpg" type="image/svg+xml">
+                                                    <img src="assets/images/flaming.jpg" class="img-fluid img-thumbnail" alt="Rooms">
+                                                </picture>
+                                                <span class="w3-display-bottomleft w3-padding">Flamingos at Lake Nakuru
+                                                    national park</span>
+                                            </div>
+                                        </div>
+                                        <div class="w3-half w3-margin-bottom">
+                                            <div class="w3-display-container">
+                                                <picture class="d-inline-block text-truncate" style="max-width: 600px;">
+                                                    <source srcset="assets/images/red.jpg" type="image/svg+xml">
+                                                    <img src="assets/images/red.jpg" class="img-fluid img-thumbnail" alt="Rooms">
+                                                </picture>
+                                                <span class="w3-display-bottomleft w3-padding">Amboseli National
+                                                    park</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Explore Nature -->
+                            <div class="w3-container">
+                                <h3>Explore Nature</h3>
+                                <p>Travel with us and see nature at its finest.</p>
+                            </div>
+                            <div class="w3-row-padding">
                                 <div class="w3-half w3-margin-bottom">
-                                    <picture class="d-inline-block text-truncate" style="max-width: 600px;">
-                                        <source srcset="assets/images/lodge.jpg" type="image/svg+xml">
-                                        <img src="assets/images/lodge.jpg" class="img-fluid img-thumbnail" alt="Rooms">
-                                    </picture>
-                                    <span class="w3-display-bottomleft w3-padding">Book a night at a resort</span>
-                                </div>
+                                    <img src="assets/images/giraffes-.jpg" alt="Nairobi national park" style="width:100%">
+                                    <div class="w3-container w3-white">
+                                        <h3>Nairobi game reserve</h3>
+                                        <p> 1 Day safari from sunset to dawn.</p>
+                                        <p class="w3-opacity">$279</p>
 
-                            </div>
-                            <div class="w3-half">
-                                <div class="w3-row-padding" style="margin:0 -16px">
-                                    <div class="w3-half w3-margin-bottom">
-                                        <div class="w3-display-container">
-
-                                            <picture class="d-inline-block text-truncate" style="max-width: 600px;">
-                                                <source srcset="assets/images/room.jpg" type="image/svg+xml">
-                                                <img src="assets/images/room.jpg" class="img-fluid img-thumbnail" alt="Rooms">
-                                            </picture>
-                                            <span class="w3-display-bottomleft w3-padding">Book an accommodation
-                                                either at a Hotel or AirBnB at
-                                                desired your location</span>
-                                        </div>
-                                    </div>
-                                    <div class="w3-half w3-margin-bottom">
-                                        <div class="w3-display-container">
-                                            <picture class="d-inline-block text-truncate" style="max-width: 600px;">
-                                                <source srcset="assets/images/cheetah.jpg" type="image/svg+xml">
-                                                <img src="assets/images/cheetah.jpg" class="img-fluid img-thumbnail" alt="Rooms">
-                                            </picture>
-                                            <span class="w3-display-bottomleft w3-padding">Cheetahs</span>
-                                        </div>
+                                        <button class="w3-button w3-margin-bottom">Buy Tickets</button>
                                     </div>
                                 </div>
-                                <div class="w3-row-padding" style="margin:0 -16px">
-                                    <div class="w3-half w3-margin-bottom">
-                                        <div class="w3-display-container">
-                                            <picture class="d-inline-block text-truncate" style="max-width: 600px;">
-                                                <source srcset="assets/images/flaming.jpg" type="image/svg+xml">
-                                                <img src="assets/images/flaming.jpg" class="img-fluid img-thumbnail" alt="Rooms">
-                                            </picture>
-                                            <span class="w3-display-bottomleft w3-padding">Flamingos at Lake Nakuru
-                                                national park</span>
-                                        </div>
-                                    </div>
-                                    <div class="w3-half w3-margin-bottom">
-                                        <div class="w3-display-container">
-                                            <picture class="d-inline-block text-truncate" style="max-width: 600px;">
-                                                <source srcset="assets/images/red.jpg" type="image/svg+xml">
-                                                <img src="assets/images/red.jpg" class="img-fluid img-thumbnail" alt="Rooms">
-                                            </picture>
-                                            <span class="w3-display-bottomleft w3-padding">Amboseli National
-                                                park</span>
-                                        </div>
+                                <div class="w3-half w3-margin-bottom">
+                                    <img src="assets/images/lions.jpg" alt="Masaai mara" style="width:100%">
+                                    <div class="w3-container w3-white">
+                                        <h3>Masaai Mara</h3>
+                                        <p>A 5 day safari package.</p>
+                                        <p class="opacity">$3159 plus Accommodation</p>
+
+                                        <button class="w3-button w3-margin-bottom">Buy Tickets</button>
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </section>
 
-                        <!-- Explore Nature -->
-                        <div class="w3-container">
-                            <h3>Explore Nature</h3>
-                            <p>Travel with us and see nature at its finest.</p>
-                        </div>
-                        <div class="w3-row-padding">
-                            <div class="w3-half w3-margin-bottom">
-                                <img src="assets/images/giraffes-.jpg" alt="Nairobi national park" style="width:100%">
-                                <div class="w3-container w3-white">
-                                    <h3>Nairobi game reserve</h3>
-                                    <p> 1 Day safari from sunset to dawn.</p>
-                                    <p class="w3-opacity">$279</p>
 
-                                    <button class="w3-button w3-margin-bottom">Buy Tickets</button>
-                                </div>
-                            </div>
-                            <div class="w3-half w3-margin-bottom">
-                                <img src="assets/images/lions.jpg" alt="Masaai mara" style="width:100%">
-                                <div class="w3-container w3-white">
-                                    <h3>Masaai Mara</h3>
-                                    <p>A 5 day safari package.</p>
-                                    <p class="opacity">$3159 plus Accommodation</p>
-
-                                    <button class="w3-button w3-margin-bottom">Buy Tickets</button>
-                                </div>
+                        <div class="container left">
+                            <div class="content">
+                                <h2>Standard room</h2>
+                                <p>Air BnB.</p>
+                                <picture class="d-inline-block text-truncate" style="max-width: 600px;">
+                                    <source srcset="assets/images/the.jpg" type="image/svg+xml">
+                                    <img src="assets/images/the.jpg" class="img-fluid img-thumbnail" alt="Rooms">
+                                </picture>
                             </div>
                         </div>
-                    </section>
+                        <div class="container right">
+                            <div class="content">
+                                <h2>Safari Lodge</h2>
+                                <p>A Resort..</p>
+                                <picture class="card d-inline-block text-truncate" style="max-width: 600px;">
 
-
-                    <div class="container left">
-                        <div class="content">
-                            <h2>Standard room</h2>
-                            <p>Air BnB.</p>
-                            <picture class="d-inline-block text-truncate" style="max-width: 600px;">
-                                <source srcset="assets/images/the.jpg" type="image/svg+xml">
-                                <img src="assets/images/the.jpg" class="img-fluid img-thumbnail" alt="Rooms">
-                            </picture>
+                                    <source srcset="assets/images/lodge.jpg" type="image/svg+xml">
+                                    <img src="assets/images/lodge.jpg" class="img-fluid img-thumbnail" alt="Rooms">
+                                </picture>
+                            </div>
                         </div>
-                    </div>
-                    <div class="container right">
-                        <div class="content">
-                            <h2>Safari Lodge</h2>
-                            <p>A Resort..</p>
-                            <picture class="card d-inline-block text-truncate" style="max-width: 600px;">
-
-                                <source srcset="assets/images/lodge.jpg" type="image/svg+xml">
-                                <img src="assets/images/lodge.jpg" class="img-fluid img-thumbnail" alt="Rooms">
-                            </picture>
+                        <div class="container left">
+                            <div class="content">
+                                <h2>Restaurant</h2>
+                                <p>A restaurant at the Lodge..</p>
+                                <picture class="d-inline-block text-truncate" style="max-width: 600px;">
+                                    <source srcset="assets/images/safari.jpg" type="image/svg+xml">
+                                    <img src="assets/images/safari.jpg" class="img-fluid img-thumbnail" alt="Rooms">
+                                </picture>
+                            </div>
                         </div>
-                    </div>
-                    <div class="container left">
-                        <div class="content">
-                            <h2>Restaurant</h2>
-                            <p>A restaurant at the Lodge..</p>
-                            <picture class="d-inline-block text-truncate" style="max-width: 600px;">
-                                <source srcset="assets/images/safari.jpg" type="image/svg+xml">
-                                <img src="assets/images/safari.jpg" class="img-fluid img-thumbnail" alt="Rooms">
-                            </picture>
-                        </div>
-                    </div>
 
 
-        </section>
+            </section>
 
-        <footer class="col container-fluid ">
-            <ul class="list-inline social-links">
-                <h3 class="uppercase general-sub">Social</h3>
-                <li class="list-inline-item">
-                    <a target="_blank" href="ttps://www.facebook.com/simbapawtrail/">
-                        <i class="fa fa-facebook" aria-hidden="true"></i>
-                        <span class="sr-only">Facebook</span>
-                    </a>
-                </li>
-                <li class="list-inline-item">
-                    <a target="_blank" href="https://twitter.com/Safari78047357">
-                        <i class="fa fa-twitter" aria-hidden="true"></i>
-                        <span class="sr-only">twitter</span>
-                    </a>
-                </li>
-                <li class="list-inline-item">
-                    <a target="_blank" href="https://www.linkedin.com/company/37523851/admin/">
-                        <i class="fa fa-linkedin" aria-hidden="true"></i>
-                        <span class="sr-only">linkedin</span>
-                    </a>
-                </li>
+            <footer class="col container-fluid ">
+                <ul class="list-inline social-links">
+                    <h3 class="uppercase general-sub">Social</h3>
+                    <li class="list-inline-item">
+                        <a target="_blank" href="ttps://www.facebook.com/simbapawtrail/">
+                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                            <span class="sr-only">Facebook</span>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a target="_blank" href="https://twitter.com/Safari78047357">
+                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                            <span class="sr-only">twitter</span>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a target="_blank" href="https://www.linkedin.com/company/37523851/admin/">
+                            <i class="fa fa-linkedin" aria-hidden="true"></i>
+                            <span class="sr-only">linkedin</span>
+                        </a>
+                    </li>
 
-                <li class="list-inline-item">
-                    <a target="_blank" href="https://www.instagram.com/trysafari.ke/?hl=en>">
-                        <i class="fa fa-instagram" aria-hidden="true"></i>
-                        <span class="sr-only">Instagram</span>
-                    </a>
-                </li>
-                <li class="list-inline-item">
-                    <a target="_blank" href="https://www.youtube.com/embed/wSCGJD_H-n8">
-                        <i class="fa fa-youtube" aria-hidden="true"></i>
-                        <span class="sr-only">YouTube</span>
-                    </a>
-                </li>
+                    <li class="list-inline-item">
+                        <a target="_blank" href="https://www.instagram.com/trysafari.ke/?hl=en>">
+                            <i class="fa fa-instagram" aria-hidden="true"></i>
+                            <span class="sr-only">Instagram</span>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a target="_blank" href="https://www.youtube.com/embed/wSCGJD_H-n8">
+                            <i class="fa fa-youtube" aria-hidden="true"></i>
+                            <span class="sr-only">YouTube</span>
+                        </a>
+                    </li>
 
 
 
-                <button>Powered by <a href="#" target="_blank" class="hover-text-green">Xascapade</a></button>
-            </ul>
+                    <button>Powered by <a href="#" target="_blank" class="hover-text-green">Xascapade</a></button>
+                </ul>
 
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js">
+                </script>
+                <script type="text/javascript" src="https://res.perfectibe.com/scripts/calendar.js">
+                </script>
+                <script type="text/javascript" src="https://res.perfectibe.com/scripts/jsDate.js">
+                </script>
+                <script type="text/javascript" src="https://res.perfectibe.com/scripts/pibe.js">
+                </script>
+                <script type="text/javascript" src="https://res.perfectibe.com/scripts/dropdown.js">
+                </script>
+                <script type="text/javascript"></script>
+                <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+                </script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+                </script>
+                <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+                </script>
 
-            <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
-            </script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
-            </script>
-            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
-            </script>
-
-        </footer>
-        < / </body>
+            </footer>
+            < / </body>
 
 </html>
 <

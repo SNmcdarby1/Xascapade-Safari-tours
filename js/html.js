@@ -119,7 +119,7 @@ function autocomplete(inp, arr) {
         /*start by removing the "active" class on all items:*/
         removeActive(x);
         if (currentFocus >= x.length) currentFocus = 0;
-        if (currentFocus < 0) currentFocus = (x.length - 1);
+        if (currentFocus < 0) currentFocus = (x.length 1);
         /*add class "autocomplete-active":*/
         x[currentFocus].classList.add("autocomplete-active");
     }
@@ -145,4 +145,31 @@ function autocomplete(inp, arr) {
     document.addEventListener("click", function(e) {
         closeAllLists(e.target);
     });
+}
+myFunction()
+">Click me.</button>
+
+function myFunction() {
+    document.
+    getElementById
+        ("SAFARI").
+    innerHTML
+        = "THANK YOU";
+
+}
+
+function foo() {
+    var result = []
+    for (var i = 0; i < 3; i++) {
+        result.push(function inner() {
+            console.log(i)
+        })
+    }
+    return result
+}
+
+const result = foo()
+// The following will print `3`, three times...
+for (var i = 0; i < 3; i++) {
+    result[i]()
 }

@@ -1,13 +1,13 @@
 //   <script>
 // Tabs function openLink(evt, linkName) {
-var i, x, tablinks;
+var i, x, myLink;
 x = document.getElementsByClassName("myLink");
 for (i = 0; i < x.length; i++) {
     x[i].style.display = "none";
 
     tablinks = document.getElementsByClassName("tablink");
     for (i = 0; i < x.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" teal", "");
+        tablinks[i].className = tablinks[i].className.replace(" teal", "book");
     }
     document.getElementById(linkName).style.display = "block";
     evt.currentTarget.className += " teal";
@@ -23,7 +23,7 @@ function autocomplete(inp, arr) {
     the text field element and an array of possible autocompleted values:*/
     var currentFocus;
     /*execute a function when someone writes in the text field:*/
-    inp.addEventListener("input", function(e) {
+    inp.addEventListener("input", function() {
         var a, b, i, val = this.value;
         /*close any already open lists of autocompleted values*/
         closeAllLists();
@@ -40,7 +40,7 @@ function autocomplete(inp, arr) {
         /*for each item in the array...*/
         for (i = 0; i < arr.length; i++) {
             /*check if the item starts with the same letters as the text field value:*/
-            if (arr[i].substr(0, val.length).toUpperCase() == val
+            if (arr[i].substr(, val.length).toUpperCase() == val
                 .toUpperCase()) {
                 /*create a DIV element for each matching element:*/
                 b = document.createElement("DIV");
@@ -52,10 +52,9 @@ function autocomplete(inp, arr) {
                 b.innerHTML += "<input type='hidden' value='" + arr[i] +
                     "'>";
                 /*execute a function when someone clicks on the item value (DIV element):*/
-                b.addEventListener("click", function(e) {
+                b.addEventListener("click", function() {
                     /*insert the value for the autocomplete text field:*/
-                    inp.value = this.getElementsByTagName("input")[
-                        0].value;
+                    inp.value = this.getElementsByTagName("input")[].value;
                     /*close the list of autocompleted values,
                     (or any other open lists of autocompleted values:*/
                     closeAllLists();
@@ -63,6 +62,79 @@ function autocomplete(inp, arr) {
                 a.appendChild(b);
             }
         }
+    });
+
+    //  list
+
+    //Append individual ITEM and individual PRICE to document
+    var addToList = '<li class="addedItem">' + addItem +
+        '<span> will cost you $</span>' + addPrice +
+        '<button class="delete">Delete</button></li>';
+    $('#items').append(addToList);
+
+    $(document).ready(function() {
+
+        //Stop the form from submitting
+        $('#submit-form').submit(function(e) {
+            e.preventDefault();
+        });
+
+        //Variables to store totals
+        var itemCounter = 0;
+        var priceCounter = 1000;
+
+        //Handler to get value of ITEM and PRICE
+        $('#submit-btn').click(function() {
+
+            //Get value for submitted item and append to list
+            var addItem = $('#item').val();
+            itemCounter++;
+
+            //Functionality to keep track of TOTAL PRICE and be able to remove an 
+            //item so the price reflects the removal
+            var addPrice = Number.parseInt($('#cost').val());
+            alert(typeof(addPrice));
+            priceCounter += addPrice;
+
+
+
+
+
+            //Append ITEM and PRICE to document
+            var addToList = '<li class="addedItem">' + addItem + '<span> will cost you $</span>' + addPrice + '<button class="delete">Delete</button></li>';
+            $('#items').append(addToList);
+
+            //Clear the form after submit
+            $('#item').val('');
+            $('#cost').val('');
+
+            //Clear ESTIMATED COST TOTAL and append new total
+            $('#estimatedCost').html('');
+            $('#estimatedCost').append(priceCounter);
+
+
+            //Appends totals to TOTALS
+            //HTML to append
+            $('#itemsTotal').html('');
+            $('#itemsTotal').append(itemCounter);
+
+
+        });
+
+        //Functionality for Delete Button
+        $(document).on('click', '.delete', function() { //Because the delete button has been created   
+            //dynamically you must specify    
+            $(this).parent().remove(); //to listen to the DOCUMENT for the click on 'DELETE'
+            $(this).remove();
+            alert($(this).prev().val());
+            $('#estimatedCost').append(priceCounter);
+
+
+        });
+
+        //Function to create sum all off prices
+        function sumPrice() {}
+
     });
 
     /*execute a function presses a key on the keyboard:*/
@@ -137,3 +209,71 @@ $(function() {
         "direction": "vertical"
     });
 });
+// submit
+
+$(document).ready(function() {
+    $(":submit").css("background-color", "red");
+});
+
+$(document).ready(function() {
+    $("button").click(function() {
+        alert("Value: " + $("#safari").val());
+    });
+});
+$(document).ready(function() {
+    $("#basic-form").validate();
+});
+$("button").
+submit
+    ();
+// validation 
+$(function() {
+    // set up form validation here
+});
+$(function() {
+    $("form").validate();
+});
+$("form").on("submit", function(e) {
+
+var dataString = $(this).serialize();
+
+// alert(dataString); return false;
+
+$.ajax({
+    type: "POST",
+    url: "bin/process.php",
+    data: dataString,
+    success: function() {
+        $("#contact_form").html("<div id='message'></div>");
+        $("#message")
+            .html("<h2>Contact Form Submitted!</h2>")
+            .append("<p>We will be in touch soon.</p>")
+            .hide()
+            .fadeIn(1500, function() {
+                $("#message").append(
+                    "<img id='checkmark' src='images/check.png' />"
+                );
+            });
+    }
+});
+
+e.preventDefault();
+});
+});
+$("form").on("submit", function(e) {
+    var dataString = $(this).serialize();
+
+    $.ajax({
+        type: "POST",
+        url: "bin/process.php",
+        data: dataString,
+        success: function() {
+            // Display message back to the user here
+        }
+    });
+
+    e.preventDefault();
+});
+document.getElementById("submit").
+addEventListener
+    ("click", myFunction);

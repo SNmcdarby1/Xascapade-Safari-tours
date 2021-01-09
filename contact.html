@@ -6,22 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Xascapade Travel</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css" />
+    <script src="jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <scr <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
+    <link rel="stylesheet" href="https://stackpath.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css" type="text/css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script type="text/javascript" src="main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="" />
 </head>
+<div id="data"></div>
 
 <body class="container-fluid no-gutter " class="container lemon padding-16 myLink">
 
 
-    <nav class="navbar navbar-expand-lg show-sm-dowm navbar-light bg-light fixed-top topnav id=" xas" class="col-3">
+    <nav class="navbar navbar-expand-lg show-sm-dowm navbar-light bg-light fixed-top topnav" id="xas" class="col-3">
         <div class="bar transmission-automatic-v beige border-bottom xlarge">
 
             <nav class="navbar-toggler teal hidden-lg-up btn-btn show-sm-dowm" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="true" aria-label="togglenavigation">
                 XASCAPADE - Home</span> <span><i class="fa fa fa-home" aria-hidden="true"></i></span>
-                <li><span>Home</span></li>
+
             </nav>
             <div class="collapse navbar-collapse " data-toggle="collapse" id="collapsibleNavId">
                 <navitems class="nav-items">
@@ -30,8 +39,8 @@
 
                             <li><a href="index.html">HOME</a></li>
                             <li><a href="about.html">ABOUT</a></li>
-                            <li><a href="products.html">SERVICES</a></li>
-                            <li><a href="gallery.html">GALLERY</a></li>
+                            <li><a href="more.html">SERVICES</a></li>
+                            <li><a href="contact.html">GALLERY</a></li>
                             <li><a href="reservation.html">RESERVATIONS</a></li>
                             <li><a href="safari.html">SAFARI</a></li>
                             <li><a href="contact.html">CONTACT</a></li>
@@ -41,129 +50,148 @@
                         </ul>
                         </nav-items>
     </nav>
-
-    <section class="container-fluid teal">
-        <div id="mapid"></div>
-    </section>
-
-    <div class="row">
-        <div class="col-12">
-            <div id="Hotel" class="container teal padding-16 myLink  ">
-                <h3>Book safari tours plus accommodation
-                </h3>
-                <p>Best rates and promotions.</p>
-                <p>We know hotels - we know comfort.</p>
+    <section class="container-fluid">
 
 
-                <div class="dropdown-content">
+        <section class="container-fluid teal">
+            <div id="mapid"></div>
+        </section>
 
-                    <a href="contact.html">Get In touch </a>
+        <div class="row">
+            <div class="col-12">
+                <div id="Hotel" class="container teal padding-16 myLink  ">
+                    <h3>Book safari tours plus accommodation
+                    </h3>
+                    <p>Best rates and promotions.</p>
+                    <p>We know hotels - we know comfort.</p>
 
+
+                    <div class="dropdown-content">
+
+                        <a href="contact.html">Get In touch </a>
+
+                    </div>
                 </div>
-            </div>
-            </p>
+                </p>
 
+
+            </div>
+            </h3>
+        </div>
+        <div class="card text-left">
+            <img class="card-img-top" src="assets/images/antelope.jpg" alt="">
+            <div class="card-body">
+                <h4 class="card-title">Title</h4>
+                <p class="card-text">Body</p>
+                <div id="mapid"></div>
+            </div>
+        </div>
+        <div class="container teal">
+
+            <h2>Contact</h2>
+            <p>Let us book your next trip!</p>
+            <i class="fa fa-map-marker" style="width:30px"></i> Greystones, IE<br>
+            <i class="fa fa-phone" style="width:30px"></i> Phone: +003538321 151515<br>
+            <i class="fa fa-envelope" style="width:30px"> </i> Email: xascapade@gmail.com<br>
+            <form action="/action_page.php" target="_blank">
+
+
+                <div class="form" onsubmit="return sendMail(this)">
+                    <form>
+                        <input type="text" name="name" id="fullname" class="form-control" placeholder="Name" required />
+                        <input type="email" name="email" id="emailaddress" class="form-control" placeholder="Email" required />
+                        <textarea rows="5" name="Inquarysummary" id="projectsummary" class="form-control" placeholder="Inquery" required></textarea>
+                        <div class="form-row text-center">
+                            <div class="col">
+                                <button type="submit" class="btn btn-secondary">Send
+                                    Your
+                                    Inquiry</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </form>
 
         </div>
-        </h3>
-    </div>
 
-    <div class="container teal">
+        <!-- w3school snippet -->
+        <div>
+            <footer class="col container-fluid ">
+                <ul class="list-inline social-links">
+                    <h3 class="uppercase general-sub">Social</h3>
+                    <li class="list-inline-item">
+                        <a target="_blank" href="ttps://www.facebook.com/simbapawtrail/">
+                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                            <span class="sr-only">Facebook</span>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a target="_blank" href="https://twitter.com/Safari78047357">
+                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                            <span class="sr-only">twitter</span>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a target="_blank" href="https://www.linkedin.com/company/37523851/admin/">
+                            <i class="fa fa-linkedin" aria-hidden="true"></i>
+                            <span class="sr-only">linkedin</span>
+                        </a>
+                    </li>
 
-        <h2>Contact</h2>
-        <p>Let us book your next trip!</p>
-        <i class="fa fa-map-marker" style="width:30px"></i> Greystones, IE<br>
-        <i class="fa fa-phone" style="width:30px"></i> Phone: +003538321 151515<br>
-        <i class="fa fa-envelope" style="width:30px"> </i> Email: xascapade@gmail.com<br>
-        <form action="/action_page.php" target="_blank">
+                    <li class="list-inline-item">
+                        <a target="_blank" href="https://www.instagram.com/trysafari.ke/?hl=en>">
+                            <i class="fa fa-instagram" aria-hidden="true"></i>
+                            <span class="sr-only">Instagram</span>
+                        </a>
+                    </li>
 
-
-            <div class="form" onsubmit="return sendMail(this)">
-                <form>
-                    <input type="text" name="name" id="fullname" class="form-control" placeholder="Name" required />
-                    <input type="email" name="email" id="emailaddress" class="form-control" placeholder="Email" required />
-                    <textarea rows="5" name="Inquarysummary" id="projectsummary" class="form-control" placeholder="Inquery" required></textarea>
-                    <div class="form-row text-center">
-                        <div class="col">
-                            <button type="submit" class="btn btn-secondary">Send
-                                Your
-                                Inquiry</button>
-                        </div>
-                    </div>
-                </form>
-            </div>
-        </form>
-
-    </div>
-
-    <!-- w3school snippet -->
-    <div>
-        <footer class="col container-fluid ">
-            <ul class="list-inline social-links">
-                <h3 class="uppercase general-sub">Social</h3>
-                <li class="list-inline-item">
-                    <a target="_blank" href="ttps://www.facebook.com/simbapawtrail/">
-                        <i class="fa fa-facebook" aria-hidden="true"></i>
-                        <span class="sr-only">Facebook</span>
-                    </a>
-                </li>
-                <li class="list-inline-item">
-                    <a target="_blank" href="https://twitter.com/Safari78047357">
-                        <i class="fa fa-twitter" aria-hidden="true"></i>
-                        <span class="sr-only">twitter</span>
-                    </a>
-                </li>
-                <li class="list-inline-item">
-                    <a target="_blank" href="https://www.linkedin.com/company/37523851/admin/">
-                        <i class="fa fa-linkedin" aria-hidden="true"></i>
-                        <span class="sr-only">linkedin</span>
-                    </a>
-                </li>
-
-                <li class="list-inline-item">
-                    <a target="_blank" href="https://www.instagram.com/trysafari.ke/?hl=en>">
-                        <i class="fa fa-instagram" aria-hidden="true"></i>
-                        <span class="sr-only">Instagram</span>
-                    </a>
-                </li>
-
-                <li class="list-inline-item">
-                    <a target="_blank" href="https://www.youtube.com/embed/wSCGJD_H-n8">
-                        <i class="fa fa-youtube" aria-hidden="true"></i>
-                        <span class="sr-only">YouTube</span>
-                    </a></li>
+                    <li class="list-inline-item">
+                        <a target="_blank" href="https://www.youtube.com/embed/wSCGJD_H-n8">
+                            <i class="fa fa-youtube" aria-hidden="true"></i>
+                            <span class="sr-only">YouTube</span>
+                        </a></li>
 
 
 
 
-                <button>Powered by <a href="#" target="_blank" class="hover-text-green">Xascapade</a></button>
-            </ul>
+                    <button>Powered by <a href="#" target="_blank" class="hover-text-green">Xascapade</a></button>
+                </ul>
 
-            <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+                <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
 
 
 
-            <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+                <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
 
-            <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
-            </script>
-            <script type="text/javascript">
-                (function() {
-                    emailjs.init("Yuser_4yI8AhyqyWQa3VahbN5Ra");
-                    emailjs.send("gmail", "xascapade travel", {
-                        name: "Susan",
-                        notes: "Thank you for youremail we will get back o ou as soon as possible",
-                    })
-                })();
-            </script>
-            </script>
-            <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-            </script>
-            <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
-            </script>
-            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
-            </script>
-        </footer>
+                <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
+                </script>
+                <script type="text/javascript">
+                    (function() {
+                        emailjs.init("Yuser_4yI8AhyqyWQa3VahbN5Ra");
+                        emailjs.send("gmail", "xascapade travel", {
+                            name: "Susan",
+                            notes: "Thank you for youremail we will get back o ou as soon as possible",
+                        })
+                    })();
+                </script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js">
+                </script>
+                <script type="text/javascript" src="https://res.perfectibe.com/scripts/calendar.js">
+                </script>
+                <script type="text/javascript" src="https://res.perfectibe.com/scripts/jsDate.js">
+                </script>
+                <script type="text/javascript" src="https://res.perfectibe.com/scripts/pibe.js">
+                </script>
+                <script type="text/javascript" src="https://res.perfectibe.com/scripts/dropdown.js">
+                </script>
+                <script type="text/javascript"></script>
+                <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+                </script>
+                <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+                </script>
+                <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+                </script>
+            </footer>
 
 </body>
 

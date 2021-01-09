@@ -14,10 +14,10 @@ $("h").hover(function() {
     $("h3").css("background", "lightblue")
 });
 $(".card-panel").mouseenter(function() {
-    $("body").css("background-color", "black")
+    $("body").css("background-color", "")
 });
 $(".card-panel").mouseleave(function() {
-    $("body").css("background-color", "rgba:(0, 0, 0, .3);");
+    $("body").css("background-color", "rgba:(0,0,0,0.3);");
 });
 // 
 // background img
@@ -60,10 +60,10 @@ $("#myButton").removeClass("border").addClass("blueBox");
 // 
 
 $("#button-card-1").click(function() {
-    $("#par-1").hide(2000).show(2000);
+    $("#par-1").hide(5000).show(8000);
 });
 $("#button-card-2").click(function() {
-    $("#par-2").fadeOut(1000).fadeIn(1000);
+    $("#par-2").fadeOut(5000).fadeIn(8000);
 });
 
 

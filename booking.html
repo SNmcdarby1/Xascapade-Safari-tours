@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Xascapade Travel</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
+    <link rel="stylesheet" href="https://stackpath.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script type="text/javascript" src="main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+</head>
+<div id="data"></div>
+
+<body class="container-fluid no-gutter " class="container lemon padding-16 myLink">
+
+
+    <nav class="navbar navbar-expand-lg show-sm-dowm navbar-light bg-light fixed-top topnav" id="xas" class="col-3">
+        <div class="bar transmission-automatic-v beige border-bottom xlarge">
+
+            <nav class="navbar-toggler teal hidden-lg-up btn-btn show-sm-dowm" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="true" aria-label="togglenavigation">
+                XASCAPADE - Home</span> <span><i class="fa fa fa-home" aria-hidden="true"></i></span>
+
+            </nav>
+            <div class="collapse navbar-collapse " data-toggle="collapse" id="collapsibleNavId">
+                <navitems class="nav-items">
+                    <li>
+                        <ul class="justify-fixed-content-right fixed-top fixed-top">
+
+                            <li><a href="index.html">HOME</a></li>
+                            <li><a href="about.html">ABOUT</a></li>
+                            <li><a href="more.html">SERVICES</a></li>
+                            <li><a href="contact.html">GALLERY</a></li>
+                            <li><a href="reservation.html">RESERVATIONS</a></li>
+                            <li><a href="safari.html">SAFARI</a></li>
+                            <li><a href="contact.html">CONTACT</a></li>
+
+
+
+                        </ul>
+                        </nav-items>
+    </nav>
+
+
+    <section class="container-fluid teal">
+
+    </section>
+
+    <body>
+        <header>
+            <h4>Safari</h4>
+        </header>
+
+        <div class='main-form'>
+            <form id='submit-form' name='submit-form'>
+                <!--        Form submit for ITEM        -->
+                <input type='text' id='safari' placeholder="Safari package?">
+                <input type='number' value='number' id='cost' placeholder="Estimated Cost"><br>
+                <input type='submit' name='submit-btn' id='submit-btn' value="Book!">
+            </form>
+        </div>
+
+        <section id='safari'>
+            <ul id='items'></ul>
+            <div id='totals'>
+                <div>
+                    <h3>Safari package</h3>
+                </div>
+                <div id='itemsTotal'></div>
+            </div>
+
+            <div id='budget'></div>
+        </section>
+        <section class="container">
+
+            <div class="Booking"></div>
+            </header>
+            <main>
+                <section id="safari">
+
+                </section>
+                <section id="add-safari">
+
+
+                    <form class="form">
+                        <input type="text" id="name" placeholder="Name">
+                        <input type="number" id="attendee" placeholder="Attendees">
+                        <textarea id="description" cols="30" rows="10" placeholder="Description..."></textarea>
+                        <select id="status">
+                            <option value="0">Free</option>
+                            <option value="1">Paid</option>
+                            <option value="2">Paid</option>
+                            <option value="3">Paid</option>
+                            <option value="4">Paid</option>
+                            <option value="5">Paid</option>
+                            <option value="6">Paid</option>
+                            <option value="7">Paid</option>
+                            <option value="8">Paid</option>
+                            <option value="9">Paid</option>
+                            <option value="10">Paid</option>
+                            <option value="11">Paid</option>
+                            <option value="12">Paid</option>
+                        </select>
+                        <button class="btn btn-primary">Book</button>
+                    </form>
+                </section>
+            </main>
+            <form action="">
+                Name: <input type="text" name="user"><br>
+                Password: <input type="password" name="password"><br>
+                <button type="button">Useless Button</button>
+                <input type="button" value="Another useless button"><br>
+                <input type="reset" value="Reset">
+                <input type="submit" value="Submit"><br>
+            </form>
+            <p>Book: <input type="text" id="safari" value="safari"></p>
+            <button>Show Value</button>
+            <form id="basic-form" action="" method="post">
+                <p>
+                    <label for="name">Name <span>(required, at least 3 characters)</span></label>
+                    <input id="name" name="name" minlength="3" type="text" required>
+                </p>
+                <p>
+                    <label for="email">E-Mail <span>(required)</span></label>
+                    <input id="email" type="email" name="email" required>
+                </p>
+                <p>
+                    <input class="submit" type="submit" value="SUBMIT">
+                </p>
+            </form>
+            <button onclick="
+myFunction()
+">Click me.</button>
+        </section>
+
+        <div class="container container--main container--home-featured featuredbar hide show-t">
+            <img src="assets/images/Kenya-maasai.jpg" class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" alt="">
+            <div id="contact_form">
+                <form name="contact" action="">
+                    <fieldset>
+                        <div class="input-box">
+                            <label for="name" id="name_label">Name</label>
+                            <input type="text" name="name" id="name" minlength="3" placeholder="Monty" class="text-input" required />
+                        </div>
+
+                        <div class="input-box">
+                            <label for="email" id="email_label">Email</label>
+                            <input type="email" name="email" id="email" placeholder="example@tutsplus.com" class="text-input" />
+                        </div>
+
+                        <div class="input-box">
+                            <label for="phone" id="phone_label">Phone</label>
+                            <input type="tel" name="phone" id="phone" class="text-input" placeholder="856-261-9988" />
+                        </div>
+
+                        <input type="submit" name="submit" class="button" id="submit_btn" value="Send" />
+                    </fieldset>
+                </form>
+                <div class="greetings">
+                    <h1>Contact US</h1>
+                    <p>We are waiting to hear from you!</p>
+                </div>
+            </div>
+        </div>
+        </div>
+        <!-- language: lang-html -->
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js">
+        </script>
+        <script type="text/javascript" src="https://res.perfectibe.com/scripts/calendar.js">
+        </script>
+        <script type="text/javascript" src="https://res.perfectibe.com/scripts/jsDate.js">
+        </script>
+        <script type="text/javascript" src="https://res.perfectibe.com/scripts/pibe.js">
+        </script>
+        <script type="text/javascript" src="https://res.perfectibe.com/scripts/dropdown.js">
+        </script>
+        <script type="text/javascript"></script>
