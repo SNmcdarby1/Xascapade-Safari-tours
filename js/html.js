@@ -22,7 +22,6 @@ function calculate() {
     total.value = cost;
 }
 
-var mymap = L.map('mapid').setView([51.505, -0.09], 13);
 
 // Tabs function openLink(evt, linkName) {
 var i, x, tablinks;

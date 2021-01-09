@@ -7,7 +7,7 @@ function initMap() {
             lng: 36.82003
         }
     });
-
+    var mymap = L.map('mapid').setView([-1.28579, 36.82003], 8);
     var labels = "ABCDEFGHIJKLMONPQRSTUVWXYZ";
     let locations = [{
             lat: -4.05428,
