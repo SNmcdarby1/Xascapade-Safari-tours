@@ -1,405 +1,187 @@
-<!DOCTYPE html>
-<html lang="en-US">
+ <!doctype html>
+ <html lang="en">
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Xascapade Travel</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
-    <link rel="stylesheet" href="https://stackpath.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css" type="text/css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <script type="text/javascript" src="main.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
-    </script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
-    </script>
-
-    <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
-</head>
-<div id="data"></div>
-
-<body class="container-fluid no-gutter " class="container lemon padding-16 myLink">
+ <head>
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <meta name="author" content="Hans McMurdy">
+     <title>Xascapade gallery</title>
+     <meta name="title" content="#JavaScriptFirst">
+     <meta name="description" content="Learn how to code with #JavaScriptFirst: https://github.com/HansUXdev/JavaScript-First">
+     <!-- Bootstrap core CSS -->
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous">
+     </script>
+     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+     </script>
+     <link rel="canonical" href="https://v5.getbootstrap.com/docs/5.0/examples/navbar-bottom/">
 
 
-    <nav class="navbar navbar-expand-lg show-sm-dowm navbar-light bg-light fixed-top topnav" id="xas" class="col-3">
-        <div class="bar transmission-automatic-v beige border-bottom xlarge">
+     <head class="container-fluid no-gutter " class="container white padding-16 myLink">
+         <nav class="navbar navbar-expand-lg show-sm-dowm navbar-light bg-light fixed-top topnav" id="xas" class="col-3">
+             <div class="bar transmission-automatic-v beige border-bottom xlarge">
 
-            <nav class="navbar-toggler teal hidden-lg-up btn-btn show-sm-dowm" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="true" aria-label="togglenavigation">
-                XASCAPADE - Home</span> <span><i class="fa fa fa-home" aria-hidden="true"></i></span>
+                 <nav class="navbar-toggler teal hidden-lg-up btn-btn show-sm-dowm" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="true" aria-label="togglenavigation">
+                     XASCAPADE Home</span> <span><i class="fa fa fa-home" aria-hidden="true"></i></span>
 
-            </nav>
-            <div class="collapse navbar-collapse " data-toggle="collapse" id="collapsibleNavId">
-                <navitems class="nav-items">
-                    <li>
-                        <ul class="justify-fixed-content-right fixed-top fixed-top">
+                 </nav>
 
-                            <li><a href="index.html">HOME</a></li>
-                            <li><a href="about.html">ABOUT</a></li>
-                            <li><a href="more.html">SERVICES</a></li>
-                            <li><a href="contact.html">GALLERY</a></li>
-                            <li><a href="reservation.html">RESERVATIONS</a></li>
-                            <li><a href="safari.html">SAFARI</a></li>
-                            <li><a href="contact.html">CONTACT</a></li>
+     <body class="container-fluid no-gutter " class="container white padding-16 myLink">
+         <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#home">Click here</button>
+         <div id="home" class="collapse">
+             <nav class="navbar-toggler hidden-lg-up btn-btn show-sm-dowm" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="true" aria-label="togglenavigation">Xascapade</button>
+                 <nav-items class="nav  navbar navbar-expand-lg navbar-light bg-light fixed-top topnav  teal">
+                     <li href="index.html">HOME</li>
+                     <li>|</li>
+                     <li href="about.html">ABOUT</li>
+                     <li>|</li>
+                     <li href="more.html">SERVICES</li>
+                     <li>|</li>
+                     <li href="gallery.html">GALLERY</li>
+                     <li>|</li>
+                     <li href="reservation.html">RESERVATIONS</li>
+                     <li>|</li>
+                     <li href="safarihtml">SAFARI</li>
+                     <li>|</li>
+                     <li href="contact.html">CONTACT</a></li>
 
+                 </nav-items>
+             </nav>
 
+ </head>
+ <div class="container card">
+     <div id="demo" class="carousel slide" data-ride="carousel">
 
-                        </ul>
-                        </nav-items>
-    </nav>
-    <section class="container-fluid">
+         <!-- Indicators -->
+         <ul class="carousel-indicators">
+             <li data-target="#mycarousell" data-slide-to="0" class="active"></li>
+             <li data-target="#mycarousel" data-slide-to="1"></li>
+             <li data-target="#carousel" data-slide-to="2"></li>
+             <li data-target="#carousel" data-slide-to="3"></li>
 
+             <li data-target="#carousel" data-slide-to="4"></li>
+             <li data-target="#carousel" data-slide-to="5"></li>
+             <li data-target="#carousel" data-slide-to="6"></li>
+         </ul>
 
-    </section>
-    <section class="container">
-        <div class="content">
-            <h3>Heading</h3>
-            <h5>Best offers</h5>
-            <!-- Use a button to pause/play the video with JavaScript -->
+         <!-- The slideshow -->
+         <div>
+             <div class="carousel-item active">
+                 <img src="assets/images/flaming.jpg" style="width:100%">
 
-        </div>
-        <!--w3school Page content -->
-        <div class="w3-content" style="max-width:1100px;">
+             </div>
+             <div class="carousel-item">
+                 <img src="assets/images/jean.jpg" style="width:100%">
+             </div class="carousel-item">
+             <div class="carousel-item">
+                 <img src="assets/images/leopard.jpg" style="width:100%">
+             </div>
 
-            <!-- Good offers -->
-            <div class="w3-container w3-margin-top">
-                <h5>Good Offers Right Now</h35> discount.</h6>
-            </div>
-            <div class="w3-row-padding w3-text-white w3-large">
-                <div class="w3-half w3-margin-bottom">
-                    <picture class="d-inline-block text-truncate" style="max-width: 600px;">
-                        <source srcset="assets/images/lodge.jpg" type="image/svg+xml">
-                        <img src="assets/images/lodge.jpg" class="img-fluid img-thumbnail" alt="Rooms">
-                    </picture>
-                    <span class="w3-display-bottomleft w3-padding">Book a night at a resort</span>
-                </div>
+             <div class="carousel-item">
+                 <img src="assets/images/lion.jpg" style="width:100%">
+             </div>
+             <div class="carousel-item">
+                 <img src="assets/images/safari.jpg" style="width:100%">
+             </div>
+             <div class="carousel-item">
+                 <img src="assets/images/the.jpg" style="width:100%">
+             </div>
+             <div class="carousel-item">
+                 <img src="assets/images/lions.jpg" style="width:100%">
+             </div>
+         </div>
 
-            </div>
-            <div class="w3-half">
-                <div class="w3-row-padding" style="margin:0 -16px">
-                    <div class="w3-half w3-margin-bottom">
-                        <div class="w3-display-container">
+         <!-- Left and right controls -->
+         <a class="carousel-control-prev" href="#demo" data-slide="prev">
+             <span class="carousel-control-prev-icon"></span>
+         </a>
+         <a class="carousel-control-next" href="#demo" data-slide="next">
+             <span class="carousel-control-next-icon"></span>
+         </a>
 
-                            <picture class="d-inline-block text-truncate" style="max-width: 600px;">
-                                <source srcset="assets/images/room.jpg" type="image/svg+xml">
-                                <img src="assets/images/room.jpg" class="img-fluid img-thumbnail" alt="Rooms">
-                            </picture>
-                            <span class="w3-display-bottomleft w3-padding">Book an accommodation
-                                either at a Hotel or AirBnB at
-                                desired your location</span>
-                        </div>
-                    </div>
-                    <div class="w3-half w3-margin-bottom">
-                        <div class="w3-display-container">
-                            <picture class="d-inline-block text-truncate" style="max-width: 600px;">
-                                <source srcset="assets/images/cheetah.jpg" type="image/svg+xml">
-                                <img src="assets/images/cheetah.jpg" class="img-fluid img-thumbnail" alt="Rooms">
-                            </picture>
-                            <span class="w3-display-bottomleft w3-padding">Cheetahs</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="w3-row-padding" style="margin:0 -16px">
-                    <div class="w3-half w3-margin-bottom">
-                        <div class="w3-display-container">
-                            <picture class="d-inline-block text-truncate" style="max-width: 600px;">
-                                <source srcset="assets/images/flaming.jpg" type="image/svg+xml">
-                                <img src="assets/images/flaming.jpg" class="img-fluid img-thumbnail" alt="Rooms">
-                            </picture>
-                            <span class="w3-display-bottomleft w3-padding">Flamingos at Lake Nakuru
-                                national park</span>
-                        </div>
-                    </div>
-                    <div class="w3-half w3-margin-bottom">
-                        <div class="w3-display-container">
-                            <picture class="d-inline-block text-truncate" style="max-width: 600px;">
-                                <source srcset="assets/images/red.jpg" type="image/svg+xml">
-                                <img src="assets/images/red.jpg" class="img-fluid img-thumbnail" alt="Rooms">
-                            </picture>
-                            <span class="w3-display-bottomleft w3-padding">Amboseli National
-                                park</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+     </div>
 
-        <!-- Explore Nature -->
-        <div class="w3-container">
-            <h3>Explore Nature</h3>
-            <p>Travel with us and see nature at its finest.</p>
-        </div>
-        <div class="w3-row-padding">
-            <div class="w3-half w3-margin-bottom">
-                <img src="assets/images/giraffes-.jpg" alt="Nairobi national park" style="width:100%">
-                <div class="w3-container w3-white">
-                    <h3>Nairobi game reserve</h3>
-                    <p> 1 Day safari from sunset to dawn.</p>
-                    <p class="w3-opacity">$279</p>
+ </div>
+ </section>
+ <main class="container-fluid card">
+
+     <section>
+         <picture class="d-inline-block text-truncate">
+             <img src="assets/images/hippo.jpg" style="width:100%">
+
+         </picture>
+
+     </section>
+
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js">
+     </script>
+     <script type="text/javascript" src="https://res.perfectibe.com/scripts/calendar.js">
+     </script>
+     <script type="text/javascript" src="https://res.perfectibe.com/scripts/jsDate.js">
+     </script>
+     <script type="text/javascript" src="https://res.perfectibe.com/scripts/pibe.js">
+     </script>
+     <script type="text/javascript" src="https://res.perfectibe.com/scripts/dropdown.js">
+     </script>
+     <script type="text/javascript"></script>
 
 
-                </div>
-            </div>
-            <div class="w3-half w3-margin-bottom">
-                <img src="assets/images/lions.jpg" alt="Masaai mara" style="width:100%">
-                <div class="w3-container w3-white">
-                    <h3>Masaai Mara</h3>
-                    <p>A 5 day safari package.</p>
-                    <p class="opacity">$3159 plus Accommodation</p>
+     </head>
 
+     <body>
 
-                </div>
-            </div>
-        </div>
-    </section>
+         <main class="container">
+             <div class="d-flex align-items-center p-3 my-3 text-dark-50 bg-purple rounded shadow-sm">
+                 <img class="mr-3" src="https://hansmcmurdy.com/JavaScript-First/logo.svg" alt="" width="48" height="48">
+                 <div class="lh-1">
+                     <h6 class="mb-1 text-dark lh-2">#JavaScriptFirst</h6>
+                     <small class="text-sm-left lh-base font-normal text-lowercase text-decoration-none text-reset">
+                         Discover amazing wildlife and natural beauty with our experiences credited local tour guides in
+                         Kenya with a 4x4 Safari tour drive. Book your Africa adventure with Xascapade today.
+                     </small>
+                 </div>
+             </div>
+         </main>
 
+         </nav>
+         <nav class="navbar fixed-bottom navbar-expand-sm navbar-dark bg-dark">
+             <div class="container-fluid">
+                 <a class="navbar-brand" href="#">Xascapade</a>
+                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                     <span class="navbar-toggler-icon"></span>
+                 </button>
+                 <div class="collapse navbar-collapse" id="navbarCollapse">
+                     <ul class="navbar-nav">
+                         <li class="nav-item active">
+                             <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                         </li>
+                         <li class="nav-item">
+                             <a class="nav-link" href="about.html">About</a>
+                         </li>
+                         <li class="nav-item">
+                             <a class="nav-link" href="products.html" tabindex="-1" aria-enabled="true">Products</a>
+                         </li>
+                         <li class="nav-item dropup">
+                             <a class="nav-link dropdown-toggle" href="safari.html" id="dropdown10" data-toggle="dropdown" aria-expanded="true">Safari</a>
+                             <ul class="dropdown-menu" aria-labelledby="dropdown10">
+                                 <li><a class="dropdown-item" href="#">Gallery</a></li>
+                                 <li><a class="dropdown-item" href="reservation.html">Reservations</a></li>
+                                 <li><a class="dropdown-item" href="contact.html">Contact</a></li>
+                             </ul>
+                         </li>
+                     </ul>
+                 </div>
+             </div>
+         </nav>
 
-    <div class="container left">
-        <div class="content">
-            <h2>2017</h2>
-            <p>Air BnB.</p>
-            <picture class="d-inline-block text-truncate" style="max-width: 600px;">
-                <source srcset="assets/images/the.jpg" type="image/svg+xml">
-                <img src="assets/images/the.jpg" class="img-fluid img-thumbnail" alt="Rooms">
-            </picture>
-        </div>
-    </div>
-    <div class="container right">
-        <div class="content">
-            <h2>2016</h2>
-            <p>A Resort..</p>
-            <picture class="card d-inline-block text-truncate" style="max-width: 600px;">
+     </body>
 
-                <source srcset="assets/images/lodge.jpg" type="image/svg+xml">
-                <img src="assets/images/lodge.jpg" class="img-fluid img-thumbnail" alt="Rooms">
-            </picture>
-        </div>
-    </div>
-    <div class="container left">
-        <div class="content">
-            <h2>2017</h2>
-            <p>A restaurant at the Lodge..</p>
-            <picture class="d-inline-block text-truncate" style="max-width: 600px;">
-                <source srcset="assets/images/safari.jpg" type="image/svg+xml">
-                <img src="assets/images/safari.jpg" class="img-fluid img-thumbnail" alt="Rooms">
-            </picture>
-        </div>
-    </div>
+ </html>
+ <li><a class="nav-item" href="index.html">home</a></li>
 
+ </nav>
 
+ </body>
 
-    <form class="section colnm container bar-item button tablink" onclick="openLink(event, 'Hotel');"><i class="fa fa-bed margin-right">
-            <div class="">
-                <div class="container">
-                    <div class="row">
-                        <div class="col bg-color-conferences section-column">
-                            <div class="row">
-                                <div class="col-12">
-                                    <div class="form-group">
-                                        <label for=""></label>
-                                        <input type="text" name="" id="" class="form-control" placeholder="" aria-describedby="helpId">
-                                        <small id="helpId" class="text-muted">Help text</small>
-                                    </div>
-                                    <form action="destination.html" method="GET">
-                                        <fieldset>
-                                            <legend>Personal Details:</legend>
-                                            <label for="name">Username</label><input type="text" name="username" id="username" type="date" name="date">
-                                            <label for="name">Email</label><input type="text" name="email" id="email" type="email" name="email">
-                                            <label for="name">Phone</label><input type="text" name="Phone" id="Phone" type="phone" name="phone">
-                                            <select name="town" required>
-                                                <option value="Nairobi"></option>
-                                                <option value="Mombasa"></option>
-                                                <option value="Nakuru"></option>
-                                                <option value="Kisumu"></option>
-
-                                            </select>
-                                        </fieldset>
-                                        <div class="section form container">
-                                            <div class="col bg-color-conferences section-column">
-                                                <div class="row">
-                                                    <div class="col-12">
-                                                        <br>
-                                                        <fieldset>
-                                                            <legend>Booking Details:</legend>
-                                                            <i class="fa fa-info-circle fa-lg"></i>
-                                                            <div class="row">
-                                                                <div class="col bg-color-conferences section-column">
-                                                                    <div class="row">
-                                                                        <div class="col-12">
-                                                                            <label for="date">Check in
-                                                                                date:</label> <input type="date" name="date" min="2021-Jan-05">
-                                                                            <label for="date">Check out
-                                                                                date:</label><input type="date" name="date" type="date" name="date">
-                                                                            <label for="numberOfGuest">Number
-                                                                                Of Guest</label><input id="numberOfGuest" name="numberOfGuest" :</label><input type="number" name="numberOfGuests" min='1' max='6' id="">
-                                                                            <p>Do you require meals?</p>
-
-                                                                            <label for="YesMeals">Yes</label><input id="yesMeals" type="radio" name="meals" value="yesMeals">
-                                                                            <label for="noMeals">No
-                                                                                Meals</label><input id=noMeals type="radio" name="meals" value="noMeals">
-                                                                            <br>
-                                                                            <label for="standardRoom">Standard
-                                                                                Room</label><input type="checkbox" name="standardRoom" value="yes" checked>
-                                                                            <label for="standardRoom">Standard
-                                                                                Room</label><input type="checkbox" name="standardRoom" value="no" checked>
-                                                                            <label for="doubleRoom">Double
-                                                                                Room</label><input type="checkbox" name="doubleRoom" value="yes" checked>
-                                                                            <label for="doubleRoom">Double
-                                                                                Room</label><input type="checkbox" name="doubleRoom" value="no" checked>
-                                                                            <label for="BookSafari">Book
-                                                                                Safari</label><input type="checkbox" name="bookSafari" value="yes" checked>
-                                                                            <label for="NoSafari">Standard
-                                                                                Room</label><input type="checkbox" name="noSafari" value="no" checked>
-                                                        </fieldset>
-
-                                    </form>
-
-
-
-                                    <div class="card-body" class="col-sm-6 no_left_padding no_right_padding">
-                                        <div class="form-group">
-                                            <label for="srch_frm_hotel_single">Hotels</label>
-                                            <select name="hotel" id="hotel" class="form-control">
-                                                <option value="" selected>No Preference
-                                                </option>
-                                                <option value="*O">*Sarova Hotels
-                                                </option>
-                                                <option value="*A">*Serena hotels
-                                                </option>
-                                                <option value="*S">*Intercontinental Hotels
-                                                </option>
-                                                <option value="*C">*Camping
-                                                </option>
-                                                <option value="*K">*AirBnB
-                                                </option>
-                                                <option value="JP">Safari Park Hotel Nairobi
-                                                </option>
-                                                <option value="EI">Diani Hotel </option>
-                                                <option value="JR">White Sands Holtel
-                                                </option>
-                                                <option value="ML">Nakuru Lodge Hotel
-                                                </option>
-                                                <option value="PL">Intercontinental Hotel
-                                                    Nairobi
-                                                </option>
-                                                <option value="SX">Stanlley Hotel Nairobi
-                                                </option>
-                                                <option value="SU">Red Elephant Hotel Tsavo
-                                                </option>
-                                                <option value="AR">Reef Hotel Mombasa
-                                                </option>
-                                                <option value="VW">Nyali Hotel Mombasa
-                                                </option>
-                                                <option value="AM">Voyager Hotel Mombasa
-                                                </option>
-                                                <option value="5L">African Safari Club
-                                                    Mombasa
-                                                </option>
-                                                <option value="DP">La Pelgola Malindi
-                                                </option>
-                                                <option value="DP">Mada Hotel Kilifi
-                                                </option>
-                                                <option value="RK">Bamburi Beach Resort
-                                                    Mombasa
-                                                </option>
-                                                <option value="AH">Kilifi Bay Resort Kilifi
-                                                </option>
-                                                <option value="FQ">Sun and Sand Club Mombasa
-                                                </option>
-                                                <option value="UU">Turtle Bay Watamu
-                                                </option>
-                                                <option value="7L">Windsor Hotel Nairobi
-                                                </option>
-                                                <option value="AC">FairMount Hotel and
-                                                    Resort
-                                                    Nairobi
-                                                </option>
-
-                                                </option>
-
-
-                                            </select>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-
-                            <input type="submit" value="Submit">
-                        </div>
-                    </div>
-
-    </form>
-    </div>
-
-
-    <!-- customer Reservation details-->
-    <form class="card" action="/action_page.php">
-
-        <footer class="col container-fluid ">
-            <ul class="list-inline social-links">
-                <h3 class="uppercase general-sub">Social</h3>
-                <li class="list-inline-item">
-                    <a target="_blank" href="ttps://www.facebook.com/simbapawtrail/">
-                        <i class="fa fa-facebook" aria-hidden="true"></i>
-                        <span class="sr-only">Facebook</span>
-                    </a>
-                </li>
-                <li class="list-inline-item">
-                    <a target="_blank" href="https://twitter.com/Safari78047357">
-                        <i class="fa fa-twitter" aria-hidden="true"></i>
-                        <span class="sr-only">twitter</span>
-                    </a>
-                </li>
-                <li class="list-inline-item">
-                    <a target="_blank" href="https://www.linkedin.com/company/37523851/admin/">
-                        <i class="fa fa-linkedin" aria-hidden="true"></i>
-                        <span class="sr-only">linkedin</span>
-                    </a>
-                </li>
-
-                <li class="list-inline-item">
-                    <a target="_blank" href="https://www.instagram.com/trysafari.ke/?hl=en>">
-                        <i class="fa fa-instagram" aria-hidden="true"></i>
-                        <span class="sr-only">Instagram</span>
-                    </a>
-                </li>
-                <li class="list-inline-item">
-                    <a target="_blank" href="https://www.youtube.com/embed/wSCGJD_H-n8">
-                        <i class="fa fa-youtube" aria-hidden="true"></i>
-                        <span class="sr-only">YouTube</span>
-                    </a>
-                </li>
-
-
-
-                <button>Powered by <a href="#" target="_blank" class="hover-text-green">Xascapade</a></button>
-            </ul>
-
-
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js">
-            </script>
-            <script type="text/javascript" src="https://res.perfectibe.com/scripts/calendar.js">
-            </script>
-            <script type="text/javascript" src="https://res.perfectibe.com/scripts/jsDate.js">
-            </script>
-            <script type="text/javascript" src="https://res.perfectibe.com/scripts/pibe.js">
-            </script>
-            <script type="text/javascript" src="https://res.perfectibe.com/scripts/dropdown.js">
-            </script>
-            <script type="text/javascript"></script>
-            <!-- Optional JavaScript -->
-            <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js">
-            </script>
-            <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-            </script>
-            <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
-            </script>
-            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
-            </script>
-        </footer>
-        /
-
-        <body>
+ </html>

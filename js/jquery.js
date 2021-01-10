@@ -23,7 +23,8 @@ $(".card-panel").mouseleave(function() {
 // background img
 $('myObject').css('background-image', 'url(' + imageUrl + ')');
 
--
+// -collapse
+$('.collapse').collapse()
 // 
 $("p").append("<span>paragraph</span>")
 $("a").remove()

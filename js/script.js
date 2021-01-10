@@ -17,6 +17,33 @@ $('.dropdown-toggle').dropdown()
 $('#myDropdown').on('show.bs.dropdown', function() {
 
 })
+// carousel
+// Activate Carousel
+$("#myCarousel").carousel();
+
+// Enable Carousel Indicators
+$(".item").click(function() {
+    $("#myCarousel").carousel(1);
+});
+
+// Enable Carousel Controls
+$(".carousel-control-prev").click(function() {
+    $("#myCarousel").carousel("prev");
+});
+
+// topnav
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+} <
+// 
+(this: Window, ev: MouseEvent) => any)
+onclick = "myFunction();
+
 // autocomplete w3schhol snippet
 function autocomplete(inp, arr) {
     /*the autocomplete function takes two arguments,

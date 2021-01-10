@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
     <link rel="stylesheet" href="https://stackpath.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
     </script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
@@ -17,11 +18,21 @@
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
 </head>
 
-<body class="container-fluid no-gutter " class="container white padding-16 myLink">
+<body class="container-fluid no-gutter  myLink">
     <ul>
         <nav class="navbar-toggler teal hidden-lg-up btn-btn show-sm-dowm" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="true" aria-label="togglenavigation">
             XASCAPADE - Home</span> <span><i class="fa fa fa-home" aria-hidden="true"></i></span>
+            <div class="topnav" id="myTopnav">
+                <a href="#home" class="active">Home</a>
 
+                <a href="#news">News</a>
+                <a href="#contact">Contact</a>
+
+                <a href="#about">About</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
         </nav>
         <ul class="nav nav-tabs">
             <li class="nav-item">
@@ -51,164 +62,73 @@
         </ul>
 
     </ul>
-    <section class="container-fluid">
-        <div class="container-fluid">
+    <div class="container-fluid teal">
+        <div class="row">
+            <div class="col-sm-3 bg-success">
 
-            <a href="about.html" class="btn uppercase">
-                <h5 class="uppercase general-sub">About Us</h5>
-            </a>
-        </div>
-
-        <head>
-
-            <div class="container-fluid card">
-                <section>
-                    <h1>Sorry. </h1>
-                    <h3>Don't worry. We looking into it. Click on the home button.</h3>
-
-                    <!-- was inspired by the 3wschool example  -->
-
-                </section>
-
-
-
-
-                <footer class="container-fluid">
-                    <card class="form  inline-block">
-                        <div>
-                            <hr class="my-4 inline-block col>
-                                    <div class="">
-                                <h4>Get the best offers first!</h4>
-
-                                <p>Join our newsletter.</p>
-                                <label>E-mail</label>
-                                <input class=" input border" type="text" placeholder="Your Email address">
-                            <button type="button" class="button red margin-top">Subscribe</button>
-                        </div>
+                <a href="about.html" class="btn uppercase">
+                    <h5 class="uppercase general-sub">About Us</h5>
+                </a>
             </div>
-            <!-- w3school snippet -->
 
-            <!-- footer section -->
-            <footer class="">
+            <head>
+
+                <div class="container-fluid card">
+                    <section>
+                        <h1>Sorry. </h1>
+                        <h3>Don't worry. We looking into it. Click on the home button.</h3>
+
+                        <!-- was inspired by the 3wschool example  -->
+
+                    </section>
+
+                    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
 
 
 
-                <section class=" form col-sm s12 progress-section social">
-                    <div class="">
-                        <form action="/action_page.php">
-                            <div class="col">
-                                <p style="text-align:center">Login with Social Media</p>
-                                <div class="vl">
-                                    <span class="vl-innertext">or</span>
-                                </div>
 
-                                <div class="col-sm">
-                                    <a href="#" class="fb btn">
-                                        <i class="fa fa-facebook fa-fw"></i>
-                                        Facebook
-                                    </a>
-                                    <a href="#" class="twitter btn">
-                                        <i class="fa fa-twitter fa-fw"></i>
-                                        Twitter
-                                    </a>
-                                    <a href="#" class="google btn">
-                                        <i class="fa fa-google fa-fw"></i>
-                                        Google+
-                                    </a>
-                                </div>
+                    <div class="topnav" id="myTopnav">
+                        <a href="#home" class="active">Home</a>
 
-                                <div class="col-sm">
-                                    <div class="hide-md-lg">
-                                        <p>Or sign in manually:</p>
-                                    </div>
+                        <a href="#news">News</a>
+                        <a href="#contact">Contact</a>
 
-                                    <input type="text" name="username" placeholder="Username" required>
-                                    <input type="password" name="password" placeholder="Password" required>
-                                    <input type="submit" value="Login">
-                                </div>
-
-                            </div>
-                        </form>
+                        <a href="#about">About</a>
+                        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                            <i class="fa fa-bars"></i>
+                        </a>
                     </div>
 
-                    <div class="">
-                        <div class="row">
-                            <div class="col-sm">
-                                <a href="#" style="color:rgb(13, 81, 83)" class="btn">
-                                    <p>Sign up</p>
-                                </a>
-                            </div>
-                            <div class="col-sm">
-                                <a href="#" style="color:rgb(13, 81, 83)" class="btn">Forgot password?</a>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <!-- w3school snippet -->
-                <!-- Footer -->
-
-
-                <form class="autocomplete-items s12 opacity margin-bottom ">
-
-                    <!-- pop upform 3wschool snippet  -->
-                    <card action="/action_page.php">
-                        <div class="row">
-
-                            <div class="container">
-                                <form action="/action_page.php">
-
-                                    <div class="xlarge padding-16">
-                                        <i class="fa fa-facebook-official hover-opacity"></i>
-                                        <i class="fa fa-instagram hover-opacity"></i>
-                                        <i class="fa fa-snapchat hover-opacity"></i>
-                                        <i class="fa fa-pinterest-p hover-opacity"></i>
-                                        <i class="fa fa-twitter hover-opacity"></i>
-                                        <i class="fa fa-linkedin hover-opacity"></i>
-                                    </div>
-                                </form>
-                            </div>
-                            <a href="mail@xascapade.com">info@xascapade.com</a></p>
-                            <p>Powered by <a href="#" target="_blank" class="hover-text-green" class="container" style="background-color:#e0ddd3">
-                                    Xascapade</a>
-                            </p>
-                        </div>
-                </form>
-
-    </section>
-
-    </footer>
-
-    <a href="#" class="cd-top text-replace js-cd-top">Top</a>
-
-    </section>
 
 
 
-    <script type="text/javascript" src="https://res.perfectibe.com/scripts/calendar.js">
-    </script>
-    <script type="text/javascript" src="https://res.perfectibe.com/scripts/jsDate.js"></script>
-    <script type="text/javascript" src="https://res.perfectibe.com/scripts/pibe.js"></script>
-    <script type="text/javascript" src="https://res.perfectibe.com/scripts/dropdown.js">
-    </script>
-    <script type="text/javascript"></script>
-    <!-- bootstrap scripr snippet -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
-    </script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
-    </script>
+                    <footer class="container-fluid">
+                        <card class="form  inline-block">
+                            <div>
+                                <hr class="my-4 inline-block col> <
+                        div class = "" >
+                            <h4 > Get the best offers first! < /h4>
+
+                            <p > Join our newsletter. </p> <
+                      
+                                                <script src=" https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+                                </script>
+                                <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+                                </script>
+                                <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+                                </script>
 
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+                                <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js">
+                                </script>
 
-    <!-- bootstrap scripr snippet -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
-    </script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
-    </script>
+                                <!-- bootstrap scripr snippet -->
+                                <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+                                </script>
+                                <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+                                </script>
+                                <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+                                </script>
 
 </body>
 
