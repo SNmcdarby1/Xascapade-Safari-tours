@@ -173,3 +173,74 @@ const result = foo()
 for (var i = 0; i < 3; i++) {
     result[i]()
 }
+// I was inspared by this developers . i did most of my reserach but was not easy to understad how to do travel bookings and i came across this developer  https://res.perfectibe.com/scripts/pibe.js
+// to guide me through my project
+
+var now = new Date();
+var -CheckIn = new Date();
+var Checkout = new Date();
+CheckIn.setDate(now.getDate() + 7);
+Checkout.setDate(now.getDate() + 14);
+
+
+
+function copyTextbox(obj1, obj2) {
+    obj2.value = obj1.value;
+}
+
+function validateSearch() {
+    alert_message = "";
+    const newLocal = "frmArrSearch";
+    formObj = document.forms[newLocal];
+    var now = new Date();
+
+    if (formObj.safari.value == "" || formObj.any.value == formObj.safari.getAttribute("defValue")) {
+        alert_message += " - safari packages 1\n";
+    } else {
+        formObj.accommodation.value = formObj.accommodation.value.split("-")[0];
+    }
+    if (formObj.txtActivities1.value == "" || formObj.Activities1.value == formObj.Activities1.getAttribute("defValue")) {
+        alert_message += " - Specify a activity 1\n";
+    } else {
+        formObj.HireCar.value = formObj.txtHireCar1.value.split("-")[0];
+    }
+    if (dateDiff('d', formObj.txtDate1.value, dateAdd('d', 0, Today)) > 0) alert_message += " - Checkin date for  1 has to be atleast today or after\n";
+
+    if (formObj.TripType[0].checked || formObj.TripType[2].checked) {
+        if (formObj.txtLocation.value == "" || formObj.txtlocation2.value == formObj.txtLocation2.getAttribute("defValue")) {
+            alert_message += " - Specify a lLocation 2\n";
+        } else {
+            formObj.txtsafariPackage2.value = formObj.txtSafariPackage2.value.split("-")[0];
+        }
+        if (formObj.txtaccommodation2.value == "" || formObj.Accommodation2.value == formObj.txtAcommodation2.getAttribute("defValue")) {
+            alert_message += " - Specify a Destination City for Flight 2\n";
+        } else {
+            formObj.txtActivities2.value = formObj.txtActivities2.value.split("-")[0];
+        }
+        if (dateDiff('d', formObj.txtDate2.value, formObj.txtDate1.value) > 0) alert_message += " -  Date  has to be on or after the date of Flight 1\n";
+    }
+
+    if (alert_message != "") {
+        alert("Please fix the following problems: \n" + alert_message);
+        return false;
+    }
+    return true;
+}
+// I was inspared by this developers . i did most of my reserach but was not easy to understad how to do travel bookings and i came across this developer  https://res.perfectibe.com/scripts/pibe.js
+// to guide me through my project
+function validateHotelSearch() {
+    alert_message = "";
+    formObj = document.forms["frmhotelSearch"];
+    var now = new Date();
+    if ((formObj.txtDepCityHotel1.value == "" || formObj.txtDepCityHotel1.value == formObj.txtDepCityHotel1.getAttribute("defValue"))) alert_message += " - Specify a  City for Hotel\n";
+
+    if (dateDiff('d', formObj.txtHotelDate1.value, dateAdd('d', 0, Today)) > 0) alert_message += " -CheckIn has to be atleast today or after\n";
+
+    if (dateDiff('d', formObj.txtHotelDate2.value, formObj.txtHotelDate1.value) > 0) alert_message += " -CheckOut date has to be on or after the date of Check in\n";
+    if (dateDiff('d', formObj.txtHotelDate2.value, formObj.txtHotelDate2.value) > 0 || formObj.txtHotelDate2.value == "mm/dd/yyyy" || formObj.txtHotelDate1.value == "mm/dd/yyyy" || formObj.txtHotelDate2.value == "mm/dd/yyyy") alert_message += " - Please Select Valid Checkout Date 1\n";
+    if (alert_message != "") {
+        alert("Please fix the following problems: \n" + alert_message);
+        return false;
+    }
+    return true;
+}
