@@ -192,7 +192,6 @@ function validateSearch() {
     alert_message = "";
     const newLocal = "frmArrSearch";
     formObj = document.forms[newLocal];
-    var now = new Date();
 
     if (formObj.safari.value == "" || formObj.any.value == formObj.safari.getAttribute("defValue")) {
         alert_message += " - safari packages 1\n";
@@ -228,19 +227,50 @@ function validateSearch() {
 }
 // I was inspared by this developers . i did most of my reserach but was not easy to understad how to do travel bookings and i came across this developer  https://res.perfectibe.com/scripts/pibe.js
 // to guide me through my project
-function validateHotelSearch() {
+function qualityValue() {
     alert_message = "";
-    formObj = document.forms["frmhotelSearch"];
-    var now = new Date();
-    if ((formObj.txtDepCityHotel1.value == "" || formObj.txtDepCityHotel1.value == formObj.txtDepCityHotel1.getAttribute("defValue"))) alert_message += " - Specify a  City for Hotel\n";
+    formValuee = document.forms["input"];
+    if ((formObj.txtInput.value == "" || formObj.any.value == formObj.any.getAttribute("defValue"))) alert_message += " - Specify booking\n";
 
-    if (dateDiff('d', formObj.txtHotelDate1.value, dateAdd('d', 0, Today)) > 0) alert_message += " -CheckIn has to be atleast today or after\n";
+    if (dateDiff('d', formObj.any.value, dateAdd('d', 0, Today)) > 0) alert_message += " -\n";
 
-    if (dateDiff('d', formObj.txtHotelDate2.value, formObj.txtHotelDate1.value) > 0) alert_message += " -CheckOut date has to be on or after the date of Check in\n";
-    if (dateDiff('d', formObj.txtHotelDate2.value, formObj.txtHotelDate2.value) > 0 || formObj.txtHotelDate2.value == "mm/dd/yyyy" || formObj.txtHotelDate1.value == "mm/dd/yyyy" || formObj.txtHotelDate2.value == "mm/dd/yyyy") alert_message += " - Please Select Valid Checkout Date 1\n";
+    if (dateDiff('d', formObj.any.value, formObj.txtany.value) > 0) alert_message += " -\n";
+    if (dateDiff('d', formObj.txtany.value, formObj.txtany.value) > 0 || formObj.txtDate1.value == "mm/dd/yyyy" || formObj.txtDate2.value == "mm/dd/yyyy" || formObj.txtDates3.value == "mm/dd/yyyy") alert_message += " - Please Select Valid Date 1\n";
     if (alert_message != "") {
         alert("Please fix the following problems: \n" + alert_message);
         return false;
     }
     return true;
-}
+    // get qvalues
+
+    function qualityValue() {
+        varString: qualityValue {
+            getAttribute(qualified: String)
+            var String: StringConstructor();
+            this(varString = inFinite
+                function isFinite(number: number): boolean) {
+                if `( let i ==> 0 )` {
+                    InputDeviceInfo('book') {
+                        qualityValue
+
+                        function safari(params: book) {
+                            else(i == > i + i + i()) {
+                                globalThis.ActiveXObject: ValidityState
+
+                                function value(params: safari) {
+                                    bookSafari.apply
+
+                                    function(bookings);
+
+                                    function getComputedStyle(elt: Element, pseudoElt ? : string): CSSStyleDeclaration(addNewSafari);
+                                    HTMLFormControlsCollection.apply(thisArg: any, argArray ? : any): any();
+                                    var console: Console();
+
+                                }
+                            }
+                        });
+
+                });
+        });
+
+    console.log(any[Book]);

@@ -203,7 +203,7 @@ I. Photographers
 - Google search and wikipedia sites for some of the Contents used in the site.
 - Stack Overflow website that i used to access information when i got stack.
 - W3school, Bootstrap, Materialised, platform. 
-
+- I was inspared by this developers . I did most of my reserach but was not easy to understad how to do travel bookings and i came across this developer  https://res.perfectibe.com/scripts/pibe.js // to guide me through my project.
 ### 14. Acknowledgements
 
 I would like to thank 

@@ -1,4 +1,4 @@
 function focusDate(obj) {
     if (obj.value == "MM/dd/yyyy")
-        obj.value = "";
+        obj.value = "checkin";
 }
