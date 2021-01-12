@@ -124,7 +124,8 @@ c) The ease in and ease out of the pages to be visible and easy to  navigate thr
  - Google Mapping -  used (Map Quest)[https://developer.mapquest.com/documentation/tools/latitude-longitude-finder/]. To find accurate locations. But unfortunatly it was not  responding . I trie the Leaflet mapping.
  - Emailjs - I created an accout with Google emailjs that will enable the emails to be interactive.
  - I created the 404v folder to direct error responses.that will collect data from error messages.
-There were different tuturial that i watched in youtube. Below are a few that reall inspired byhthe style and design of the page.
+ - There were different tuturial that i watched in youtube. Below are a few that reall inspired byhthe style and design of the page.
+ - ECMA scripts reasearch page
 
 * During my reasearch i came across a youtube tutorial that was talking about Materialize platform (Materialise)[https://materializecss.com/media.html]for creating websites and snippets by (Traversy Media)[https://www.youtube.com/watch?v=MaP3vO-vEsg]. I used the tutorial to create the index page . I aslo used snippets from -[W3school](https://www.w3schools.com/), [Bootstrap](https://getbootstrap.com/docs/4.0/getting-started/introduction/), and [Materialisecss](https://materializecss.com/), that helped me to come up with different designs of the webpage. 
 

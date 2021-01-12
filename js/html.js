@@ -113,13 +113,15 @@ function autocomplete(inp, arr) {
         }
     });
 
+    const newLocal = 1;
+
     function addActive(x) {
         /*a function to classify an item as "active":*/
         if (!x) return false;
         /*start by removing the "active" class on all items:*/
         removeActive(x);
         if (currentFocus >= x.length) currentFocus = 0;
-        if (currentFocus < 0) currentFocus = (x.length 1);
+        if (currentFocus < 0) currentFocus = (x.length);
         /*add class "autocomplete-active":*/
         x[currentFocus].classList.add("autocomplete-active");
     }
@@ -146,8 +148,9 @@ function autocomplete(inp, arr) {
         closeAllLists(e.target);
     });
 }
-myFunction()
-">Click me.</button>
+myFunction() {
+"click me"
+});
 
 function myFunction() {
     document.
@@ -248,21 +251,21 @@ function qualityValue() {
             getAttribute(qualified: String)
             var String: StringConstructor();
             this(varString = inFinite
-                function isFinite(number: number): boolean) {
+                function isFinite(_number: number): boolean) {
                 if `( let i ==> 0 )` {
                     InputDeviceInfo('book') {
                         qualityValue
 
-                        function safari(params: book) {
+                        function safari(_params: book) {
                             else(i == > i + i + i()) {
                                 globalThis.ActiveXObject: ValidityState
 
-                                function value(params: safari) {
+                                function value(_params: safari) {
                                     bookSafari.apply
 
                                     function(bookings);
 
-                                    function getComputedStyle(elt: Element, pseudoElt ? : string): CSSStyleDeclaration(addNewSafari);
+                                    function getComputedStyle(_elt: Element, _pseudoElt ? : string): CSSStyleDeclaration(addNewSafari);
                                     HTMLFormControlsCollection.apply(thisArg: any, argArray ? : any): any();
                                     var console: Console();
 

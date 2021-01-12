@@ -111,19 +111,11 @@ var arr2 = ['safari', 'fish', 'apple', 'pizza'];
 
 
 // Taxi To be advised
-Private Jeep To be advised
-Saloon car To be advised
-
-Private car To be advised
-Safari VanTo be advised
-VIP car To be advised
-To be advised To be advised
 
 
 
-var arr3 = ['Taxi', 'Private Jeep', 'Saloon car', 'Private car', 'Safari Van', 'VIP car', ''
-    '', '', ''
-];
+
+var arr3 = ['Taxi', 'Private Jeep', 'Saloon car', 'Private car', 'Safari Van', 'VIP car', ];
 
 
 
@@ -140,11 +132,45 @@ arrays.sort(function(a, b) {
 function newFunction() {
     return '';
 }
+const newLocal = l.GroupBy;
 // $npm install @fortawesome/fontawesome-svg-core
 // 
-l.GroupBy(x => x.id).
+newLocal(x => x.id).
 Select(x => {
     var ret = x.First();
     ret.value = x.Sum(xt => xt.value);
     return ret;
 }).ToList();
+
+
+If(value) = Number,
+    return value.
+If(value) = Object
+value = [
+    [NumberData]
+]
+Let n == > value[[NumberData]].
+    (n) is Number.
+Return(n);
+
+If f≠ 0, then
+    of m.
+Set("."),
+    If e = 0,
+    Let c
+const newLocal = "+".;
+be(newLocal)
+Let d
+const newLocal_1 = "0";
+be(newLocal_1).
+Else,
+If e > 0,
+    let c be
+const newLocal_2 = "+";
+newLocal_2.
+Else,
+Assert: e < 0.
+Let c be "-".
+var Set: SetConstructor
+
+// 
