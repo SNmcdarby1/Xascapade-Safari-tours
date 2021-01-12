@@ -114,6 +114,68 @@ Style the links inside the navigation bar */
     }
 }
 
+/*  -----grid container */
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 10px;
+    background-color: #2196F3;
+    padding: 10px;
+}
+
+.grid-container>div {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid black;
+    text-align: center;
+    font-size: 30px;
+}
+
+.item1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+table {
+    font-family: 'Arial';
+    margin: 25px auto;
+    border-collapse: collapse;
+    border: 1px solid #eee;
+    border-bottom: 2px solid #00cccc;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.10),
+        0px 10px 20px rgba(0, 0, 0, 0.05),
+        0px 20px 20px rgba(0, 0, 0, 0.05),
+        0px 30px 20px rgba(0, 0, 0, 0.05);
+
+    tr {
+        &:hover {
+            background: #f4f4f4;
+
+            td {
+                color: #555;
+            }
+        }
+    }
+
+    th,
+    td {
+        color: #999;
+        border: 1px solid #eee;
+        padding: 12px 35px;
+        border-collapse: collapse;
+    }
+
+    th {
+        background: #00cccc;
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 12px;
+
+        &.last {
+            border-right: none;
+        }
+    }
+}
+
 /*------------------------------------------------------gallery*/
 
 
@@ -389,7 +451,109 @@ footer {
 }
 
 
-/*-------------------------------------------------------------media*/
+.image-container {
+    display: -ms-grid;
+    display: grid;
+    grid-gap: 30px;
+    -ms-grid-columns: 200px 30px auto;
+    grid-template-columns: 480px auto;
+}
+
+.image-details {
+    position: relative;
+}
+
+.wp_cart_product_display_box {
+    max-width: 250px;
+    float: left;
+    margin-right: 10px;
+}
+
+.cd-quick-view {
+    display: block;
+    position: fixed;
+    max-width: 900px;
+    visibility: hidden;
+
+    /* Force Hardware Acceleration in WebKit */
+    transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+
+    will-change: left, top, width;
+    z-index: 1;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+products {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+    .column {
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
+.product-card {
+    padding: 2%;
+    flex-grow: 1;
+    flex-basis: 16%;
+
+    display: flex;
+    /* so child elements can use flexbox stuff too! */
+}
+
+.product-card {
+    flex: 1 16%;
+}
+
+.product-image img {
+    max-width: 100%;
+
+    @media (max-width: 920px) {
+        .product-card {
+            flex: 1 21%;
+        }
+    }
+}
+
+/*-----
+--------------------------------------------------------media*/
 @media(min-width:768px) and (max-width:1200px) {
     *.container body
 }
@@ -399,5 +563,21 @@ footer {
         font-size: 3.5rem;
     }
 }
+
+@media screen and (min-width: 1224px) {
+    div.image {
+        width: 300px;
+    }
 }
+
+@media screen and (min-width: 1044px) and (max-width: 1224px) {
+    div.image {
+        width: 250px;
+    }
+}
+
+@media screen and (min-width: 845px) and (max-width: 1044px) {
+    div.image {
+        width: 200px;
+    }
 }

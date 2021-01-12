@@ -174,3 +174,8 @@ Let c be "-".
 var Set: SetConstructor
 
 // 
+for ($i = 1; $i <= 5; $i++) {
+    $selected = "";
+    if (!empty($query[$key]["average_rating"]) && $i <= $query[$key]["average_rating"]) {
+        $selected = "selected";
+    }
