@@ -14,9 +14,7 @@ for (i = 0; i < x.length; i++) {
 }
 // dropdown
 $('.dropdown-toggle').dropdown()
-$('#myDropdown').on('show.bs.dropdown', function() {
-
-})
+$('#myDropdown').on('show.bs.dropdown', function() {})
 // carousel
 // Activate Carousel
 $("#myCarousel").carousel();
@@ -39,11 +37,13 @@ function myFunction() {
     } else {
         x.className = "topnav";
     }
-} <
-// 
-(this: Window, ev: MouseEvent) => any)
+    (this: Window, ev: MouseEvent) => any)
 onclick = "myFunction();
-
+// onclick button
+function myFunction() {
+    var x = document.getElementById("xas1", "xas2", "xas3", "xas4", "xas5", arguments, ).method;
+    document.getElementById("safari").innerHTML = x;
+}
 // autocomplete w3schhol snippet
 function autocomplete(inp, arr) {
     /*the autocomplete function takes two arguments,
@@ -90,9 +90,20 @@ function autocomplete(inp, arr) {
             }
         }
     });
-
+    // 
+    function myFunction() {
+        var x = document.getElementById("safari");
+        var text = "";
+        var i;
+        for (i = 0; i < x.length; i++) {
+            text += x.elements[i].value + "<br>";
+        }
+        document.getElementById("safari").innerHTML = text;
+    }
     //  list
-
+    function myFunction() {
+        document.getElementById("myForm").submit();
+    }
     //Append individual ITEM and individual PRICE to document
     var addToList = '<li class="addedItem">' + addItem +
         '<span> will cost you $</span>' + addPrice +
