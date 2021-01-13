@@ -3,7 +3,7 @@
 
  <head>
      <meta charset="utf-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <title>Xascapade Travel</title>
 
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -68,117 +68,58 @@
      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
      <section>
-         <div class="wrap-collabsible">
-             <input id="collapsible" class="toggle" type="checkbox">
-             <label for="collapsible" class="lbl-toggle">More Info</label>
-             <div class="collapsible-content">
-                 <div class="content-inner">
-                     <p>
-                         <div class="container-fluid">
-                             <div class="container">
-                                 <!-- Button trigger modal -->
-                                 <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modelId">
 
 
+         <!-- The slideshow -->
+         <div>
+             <picture class="d-inline-block text-truncate" style="max-width: 600px;">
+                 <source srcset="assets/images/flaming.jpg" type="image/svg+xml">
+                 <img src="assets/images/flaming.jpg" class="img-fluid img-thumbnail" alt="lake nakuru">
+             </picture>
 
-                                     <h1>Grid Container</h1>
-
-                                     <p>A Grid Container consists of grid items arranged in columns and rows</p>
-
-                                     <div class="grid-container inner-grid">
-                                         <div>1</div>
-                                         <div>2</div>
-                                         <div>3</div>
-                                         <div>4</div>
-                                         <div>5</div>
-                                         <div>6</div>
-                                         <div>7</div>
-                                         <div>8</div>
-                                     </div>
-
-                                     <p>Direct child elements(s) of the grid container automatically becomes grid items.</p>
-
-                                 </button>
-
-                                 <!-- Modal -->
-                                 <div class="modal fade" id="modelId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
-                                     <div class="modal-dialog" role="document">
-                                         <div class="modal-content">
-                                             <div class="modal-header">
-                                                 <h5 class="modal-title">Modal title</h5>
-                                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                     <span aria-hidden="true">&times;</span>
-                                                 </button>
-                                             </div>
-                                             <div class="modal-body">
-                                                 <div class="container-fluid">
-                                                     Add rows here
-                                                 </div>
-                                             </div>
-                                             <div class="modal-footer">
-                                                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                                 <button type="button" class="btn btn-primary">Save</button>
-                                             </div>
-                                         </div>
-                                     </div>
-                                 </div>
-                             </div>
-                         </div>
-                     </p>
-                 </div>
-             </div>
          </div>
-         <div class="container card">
-             <div id="demo" class="carousel slide" data-ride="carousel">
+         <div>
+             <picture class="d-inline-block text-truncate" style="max-width: 600px;">
+                 <source srcset="assets/images/antelope.jpg" type="image/svg+xml">
+                 <img src="assets/images/antelope.jpg" class="img-fluid img-thumbnail" alt="amboseli park">
+             </picture>
 
-                 <!-- Indicators -->
-                 <ul class="carousel-indicators">
-                     <li data-target="#mycarousell" data-slide-to="0" class="active"></li>
-                     <li data-target="#mycarousel" data-slide-to="1"></li>
-                     <li data-target="#carousel" data-slide-to="2"></li>
-                     <li data-target="#carousel" data-slide-to="3"></li>
+         </div>
+         <div>
+             <picture class="d-inline-block text-truncate" style="max-width: 600px;">
+                 <source srcset="assets/images/leopard.jpg" type="image/svg+xml">
+                 <img src="assets/images/leopard.jpg" class="img-fluid img-thumbnail" alt="leopard">
+             </picture>
 
-                     <li data-target="#carousel" data-slide-to="4"></li>
-                     <li data-target="#carousel" data-slide-to="5"></li>
-                     <li data-target="#carousel" data-slide-to="6"></li>
-                 </ul>
+         </div>
 
-                 <!-- The slideshow -->
-                 <div>
-                     <div class="carousel-item active">
-                         <img src="assets/images/flaming.jpg" style="width:100%">
+         <div>
+             <picture class="d-inline-block text-truncate" style="max-width: 600px;">
+                 <source srcset="assets/images/lions.jpg" type="image/svg+xml">
+                 <img src="assets/images/lions.jpg" class="img-fluid img-thumbnail" alt="lion">
+             </picture>
 
-                     </div>
-                     <div class="carousel-item">
-                         <img src="assets/images/jean.jpg" style="width:100%">
-                     </div class="carousel-item">
-                     <div class="carousel-item">
-                         <img src="assets/images/leopard.jpg" style="width:100%">
-                     </div>
+         </div>
+         <div>
+             <picture class="d-inline-block text-truncate" style="max-width: 600px;">
+                 <source srcset="assets/images/safari.jpg" type="image/svg+xml">
+                 <img src="assets/images/safari.jpg" class="img-fluid img-thumbnail" alt="safari">
+             </picture>
 
-                     <div class="carousel-item">
-                         <img src="assets/images/lion.jpg" style="width:100%">
-                     </div>
-                     <div class="carousel-item">
-                         <img src="assets/images/safari.jpg" style="width:100%">
-                     </div>
-                     <div class="carousel-item">
-                         <img src="assets/images/the.jpg" style="width:100%">
-                     </div>
-                     <div class="carousel-item">
-                         <img src="assets/images/lions.jpg" style="width:100%">
-                     </div>
-                 </div>
+         </div>
 
-                 <!-- Left and right controls -->
-                 <a class="carousel-control-prev" href="#demo" data-slide="prev">
-                     <span class="carousel-control-prev-icon"></span>
-                 </a>
-                 <a class="carousel-control-next" href="#demo" data-slide="next">
-                     <span class="carousel-control-next-icon"></span>
-                 </a>
+         <div>
+             <picture class="d-inline-block text-truncate" style="max-width: 600px;">
+                 <source srcset="assets/images/Kenya-maasai.jpg" type="image/svg+xml">
+                 <img src="assets/images/Kenya-maasai.jpg" class="img-fluid img-thumbnail" alt="Masai Mara">
+             </picture>
+         </div>
+         </div>
 
-             </div>
+         <!-- Left and right controls -->
+
+
+         </div>
 
          </div>
      </section>
@@ -205,54 +146,80 @@
 
              <main class="container">
                  <div class="d-flex align-items-center p-3 my-3 text-dark-50 bg-purple rounded shadow-sm">
-                     <img class="mr-3" src="https://hansmcmurdy.com/JavaScript-First/logo.svg" alt="" width="48" height="48">
-                     <div class="lh-1">
-                         <h6 class="mb-1 text-dark lh-2">#JavaScriptFirst</h6>
-                         <small class="text-sm-left lh-base font-normal text-lowercase text-decoration-none text-reset">
-                             Discover amazing wildlife and natural beauty with our experiences credited local tour guides in
-                             Kenya with a 4x4 Safari tour drive. Book your Africa adventure with Xascapade today.
-                         </small>
-                     </div>
+                     natural beauty with our experiences credited local tour
+                     guides in
+                     Kenya with a 4x4 Safari tour drive. Book your Africa adventure with Xascapade today.
+                     </small>
+                 </div>
                  </div>
              </main>
 
              </nav>
-             <nav class="navbar fixed-bottom navbar-expand-sm navbar-dark bg-dark">
-                 <div class="container-fluid">
-                     <a class="navbar-brand" href="#">Xascapade</a>
-                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                         <span class="navbar-toggler-icon"></span>
-                     </button>
-                     <div class="collapse navbar-collapse" id="navbarCollapse">
-                         <ul class="navbar-nav">
-                             <li class="nav-item active">
-                                 <a class="nav-link" aria-current="page" href="index.html">Home</a>
-                             </li>
-                             <li class="nav-item">
-                                 <a class="nav-link" href="about.html">About</a>
-                             </li>
-                             <li class="nav-item">
-                                 <a class="nav-link" href="products.html" tabindex="-1" aria-enabled="true">Products</a>
-                             </li>
-                             <li class="nav-item dropup">
-                                 <a class="nav-link dropdown-toggle" href="safari.html" id="dropdown10" data-toggle="dropdown" aria-expanded="true">Safari</a>
-                                 <ul class="dropdown-menu" aria-labelledby="dropdown10">
-                                     <li><a class="dropdown-item" href="#">Gallery</a></li>
-                                     <li><a class="dropdown-item" href="reservation.html">Reservations</a></li>
-                                     <li><a class="dropdown-item" href="contact.html">Contact</a></li>
-                                 </ul>
-                             </li>
-                         </ul>
+
+
+             <footer class="col container-fluid" id="xas">
+                 <ul class="list-inline social-links">
+                     <h3 class="uppercase general-sub">Social</h3>
+                     <li class="list-inline-item">
+                         <a target="_blank" href="ttps://www.facebook.com/simbapawtrail/">
+                             <i class="fa fa-facebook" aria-hidden="true"></i>
+                             <span class="sr-only">Facebook</span>
+                         </a>
+                     </li>
+                     <li class="list-inline-item">
+                         <a target="_blank" href="https://twitter.com/Safari78047357">
+                             <i class="fa fa-twitter" aria-hidden="true"></i>
+                             <span class="sr-only">twitter</span>
+                         </a>
+                     </li>
+                     <li class="list-inline-item">
+                         <a target="_blank" href="https://www.linkedin.com/company/37523851/admin/">
+                             <i class="fa fa-linkedin" aria-hidden="true"></i>
+                             <span class="sr-only">linkedin</span>
+                         </a>
+                     </li>
+
+                     <li class="list-inline-item">
+                         <a target="_blank" href="https://www.instagram.com/trysafari.ke/?hl=en>">
+                             <i class="fa fa-instagram" aria-hidden="true"></i>
+                             <span class="sr-only">Instagram</span>
+                         </a>
+                     </li>
+                     <li class="list-inline-item">
+                         <a target="_blank" href="https://www.youtube.com/embed/wSCGJD_H-n8">
+                             <i class="fa fa-youtube" aria-hidden="true"></i>
+                             <span class="sr-only">YouTube</span>
+                         </a>
+                     </li>
+                     <a href="mail@xascapade.com">info@xascapade.com</a></p>
+                     <p>Powered by <a href="#" target="_blank" class="hover-text-green" class="container" style="background-color:#e0ddd3">
+                             Xascapade</a>
+                     </p>
                      </div>
-                 </div>
-             </nav>
+                     </card>
+                     </form>
+                     </section>
+             </footer>
+
+             <a href="#" class="cd-top text-replace js-cd-top">Top</a>
+
+             </section>
+
+             <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js">
+             </script>
+
+             </script>
+
+
+             <!-- bootstrap scripr snippet -->
+             <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+             </script>
+             <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+             </script>
+             <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+             </script>
+
 
          </body>
-         <script type="text/javascript" src="main.js"></script>
-         </script>
-         <script type="text/javascript"></script>
-
-
- </body>
 
  </html>
