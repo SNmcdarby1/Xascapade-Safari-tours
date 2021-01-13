@@ -1,15 +1,13 @@
-const baseURL = "https://ci-swapi.herokuapp.com/api/";
-
-function getData(type, cb) {
+function getData(url, cb) {
     var xhr = new XMLHttpRequest();
 
-    xhr.onreadystatechange = function() {
+    xhr.onreadystatechange = function(_send) {
         if (this.readyState == 4 && this.status == 200) {
             cb(JSON.parse(this.responseText));
         }
     };
 
-    xhr.open("GET", baseURL + type + "/");
+    xhr.open("GET", url);
     xhr.send();
 }
 
@@ -17,18 +15,33 @@ function getTableHeaders(obj) {
     var tableHeaders = [];
 
     Object.keys(obj).forEach(function(key) {
-        tableHeaders.push(`<td>${key}</td>`)
+        tableHeaders.push(`<td>${key}</td>`);
     });
 
     return `<tr>${tableHeaders}</tr>`;
 }
 
-function writeToDocument(type) {
-    var el = document.getElementById("data");
-    el.innerHTML = "";
+function generateSubmitButtons(next, prev) {
+    if (next && prev) {
+        return `<button onclick="writeToDocument('${submit}')">Previous</button>
+                <button onclick="writeToDocument('${book}')">Next</button>`;
+    } else if (next && !prev) {
+        return `<button onclick="writeToDocument('${book}')">Next</button>`;
+    } else if (!next && prev) {
+        return `<button onclick="writeToDocument('${submit}')">Previous</button>`;
+    }
+}
 
-    getData(type, function(data) {
-        var tableRows = [];
+function writeToDocument(url) {
+    var tableRows = [];
+    var el = document.getElementById("data");
+
+    getData(url, function(data) {
+        var button, submit = "";
+
+        if (data.next || data.previous) {
+            submit = generateSubmitButtons(data.next, data.previous);
+        }
         data = data.results;
         var tableHeaders = getTableHeaders(data[0]);
 
@@ -36,19 +49,20 @@ function writeToDocument(type) {
             var dataRow = [];
 
             Object.keys(item).forEach(function(key) {
-                dataRow.push(`<td>${item[key]}</td>`);
+                var rowData = item[key].toString();
+                var truncatedData = rowData.substring(0, 15);
+                dataRow.push(`<td>${truncatedData}</td>`);
             });
-            tableRows.push(dataRow)
+            tableRows.push(`<tr>${dataRow}</tr>`);
         });
 
-        el.innerHTML = `<table>${tableHeaders}${tableRows}</table>`;
+        el.innerHTML = `<table>${tableHeaders}${tableRows}</table>${button, submit}`.replace(/,/g, "");
     });
 }
+// 
+const baseURL = "URL";
 
-
-const baseURL = "https://ci-swapi.herokuapp.com/api/";
-
-function getData(type, cb) {
+function getData(_URL, cb) {
     var xhr = new XMLHttpRequest();
 
     xhr.onreadystatechange = function() {
@@ -58,7 +72,7 @@ function getData(type, cb) {
     };
 }
 
-function getTableHeaders(Obj) {
+function getTableHeaders(_Obj) {
     var getTableHeaders = [];
 
     Object.keys(obj).forEach(function(key) {
@@ -77,7 +91,7 @@ function writeToDocument(type) {
         data = data.results;
         var tableHeaders = getTableHeaders(data[0]);
 
-        data.forEach(function(item) {
+        data.forEach(function(_item) {
 
             //    el.innerHTML += "<p>  + item.name +" </p>;
         });
@@ -85,9 +99,9 @@ function writeToDocument(type) {
     });
 
 
-    xhr.open("GET", baseURL + type + "/"); {
+    xhr.open("GET", URL + type + "/"); {
         xhr.send() {
-                Object.keys(item).forEach(function(key) {};
+                Object.keys(item).forEach(function(_key) {};
 
                         function showCustomer(str) {
                             var xhttp;
@@ -105,9 +119,9 @@ function writeToDocument(type) {
                             xhttp.send();
                         }
 
-                        var xmlhttp = new XMLHttpRequest(); xmlhttp.onreadystatechange = function() {
+                        var XMLHttpRequest: new() => XMLHttpRequest(); xmlhttp.onreadystatechange = function() {
                             if (this.readyState == 4 && this.status == 200) {
                                 var myObj = JSON.parse(this.responseText);
                                 document.getElementById("demo").innerHTML = myObj.name;
                             }
-                        }; xmlhttp.open("GET", "demo_file.php", "safari", true); xmlhttp.send();
+                        }; xmlhttp.open("GET", "_file.php", "safari", true); xmlhttp.send();

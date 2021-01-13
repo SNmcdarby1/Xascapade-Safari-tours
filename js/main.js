@@ -3,7 +3,7 @@ var xhr = new XMLHttpRequest();
 function getData(cb) {
     var xhr = new XMLHttpRequest();
 
-    xhr.open("GET", "https://ci-swapi.herokuapp.com/api/");
+    xhr.open("GET", "URL");
     xhr.send();
 
     xhr.onreadystatechange = function() {
@@ -52,7 +52,7 @@ $.ajax({
     url: newFunction(),
     data: dataString,
     success: function() {
-        $("#contact_form").html("<div id='message'></div>");
+        $("#contact_form").html("<div id='404'></div>");
         $("#message")
             .html("<h2>Contact Form Submitted!</h2>")
             .append("<p>We will be in touch soon.</p>")
@@ -66,8 +66,7 @@ $.ajax({
 });
 
 e.preventDefault();
-});
-});
+
 
 function newFunction() {
     return "bin/process.php";
