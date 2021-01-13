@@ -7,18 +7,14 @@
     <title>Xascapade Travel</title>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css" type="text/css" />
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" cript>
-        < script src = "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity = "sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin = "anonymous" >
-    </script>
-    <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+
 </head>
 <div id="data"></div>
 
@@ -28,11 +24,9 @@
 
     <nav class="navbar navbar-expand-lg show-sm-dowm navbar-light bg-light fixed-top topnav" id="xas" class="col-3">
         <div class="bar transmission-automatic-v teal-accent-3 border-bottom xlarge">
-            <nav class="navbar-toggler teal hidden-lg-up btn-btn d-right show-sm-dowm" type="button"
-                data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
-                aria-expanded="true" aria-label="togglenavigation">
+            <nav class="navbar-toggler teal hidden-lg-up btn-btn d-right show-sm-dowm" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="true" aria-label="togglenavigation">
 
-                </span> <span><i class="fa fa fa-home" aria-hidden="true">Xascapade Home</i></span>/v>
+                </span> <span><i class="fa fa fa-home" aria-hidden="true">Xascapade Home</i></span>
 
 
 
@@ -53,6 +47,7 @@
                             <li class="nav-item">
                                 <a class="nav-link " href="contact.html">Contact</a>
                             </li>
+
                         </ul>
                     </div>
                     <div class="card-body">
@@ -203,7 +198,10 @@
                         </div>
                     </div>
                 </form>
-                <div id="map"></div>
+                <section>
+                    <div id="map"></div>
+                </section>
+
                 <section class="container-fluid">
                     <section class=" form col-sm s12 progress-section social">
                         <card class="form container-fluid inline-block">
@@ -256,41 +254,12 @@
                                             <span class="sr-only">YouTube</span>
                                         </a>
                                     </li>
-                                    <button>Powered by <a href="#" target="_blank"
-                                            class="hover-text-green">Xascapade</a></button>
+                                    <button>Powered by <a href="#" target="_blank" class="hover-text-green">Xascapade</a></button>
                                 </ul>
-
-                                <script type="text/javascript"
-                                    src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
-                                </script> ="text/javascript">
-                                (function() {
-                                emailjs.init("user_4yI8AhyqyWQa3VahbN5Ra");
-                                })(); ript>
-
-
-                                <script type=text/javascript"></script>
-                                <script
-                                    src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js">
+                                <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js">
                                 </script>
-
+                                <script async defer src="https://maps.googleapis.com/maps/api/js?key= AIzaSyBWLqLkyKdVVXKBoQ2n9EVX3Epp7gLOSs0&callback=initMap">
                                 </script>
-                                <script type="text/javascript"></script>
-                                <script
-                                    src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js">
-                                    < /scrip ipt defer src="https:/ / maps.googleapis.com / maps / api / js ? key =
-                                        AIzaSyBWLqLkyKdVVXKBoQ2n9EVX3Epp7gLOSs0 & callback = initMap ">
-                                    let map: google.maps.Map;
-
-
-
-                                    fun map = new google.maps.Map(document.getElementById("map") as HTMLElement, {
-                                        center: {
-                                            lng: 36.817223
-                                        }
-                                    });
-                                    }
-                                </script>
-
 
                                 <script src="assets/js/maps.js"></script>
 
