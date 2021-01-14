@@ -210,12 +210,13 @@ table {
     left: 0;
     top: 0;
     width: 100%;
-    height: 100%;
+    height: 50%;
     overflow: hidden;
 }
 
 #map {
-    height: 180px;
+    height: 400px;
+    width: 100%;
 }
 
 #xas {
@@ -227,6 +228,7 @@ table {
     margin: 0 0 20px;
     text-align: center;
     transition: .8s;
+    viewport-fit: 50%;
 }
 
 .image-1 {

@@ -1,3 +1,7 @@
+function() {
+    emailjs.init("user_4yI8AhyqyWQa3VahbN5Ra")
+};
+
 function sendMail(contactForm) {
     emailjs.send("gmail", "xascapade travel", {
             "from_name": contactForm.name.value,
@@ -13,4 +17,4 @@ function sendMail(contactForm) {
             }
         );
     return false; // To block from loading a new page
-}
+};
