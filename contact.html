@@ -7,36 +7,34 @@
     <title>Xascapade Travel</title>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-        type="text/css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
-    </script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
-    </script>
-
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+
+
+
+    <script src="assets/js/sendEmail.js"></script>
+    <script type="text /javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
+    </script>
+    <script type="text /javascript">
+        (function() {
+        emailjs.init("user_4yI8AhyqyWQa3VahbN5Ra");
+        })();
+        </script>
 </head>
 
-<script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.2.4/email.min.js"></script>
-<script type="text/javascript">
-    (function () {
-        emailjs.init("user_4yI8AhyqyWQa3VahbN5Ra");
-    })();
-</script>
 
 <body class="container-fluid no-gutter " class="container lemon padding-16 myLink">
     <nav class="navbar navbar-expand-lg show-sm-dowm navbar-light bg-light fixed-top topnav" id="xas" class="col-3">
         <div class="bar transmission-automatic-v teal-accent-3 border-bottom xlarge">
-            <nav class="navbar-toggler teal hidden-lg-up btn-btn d-right show-sm-dowm" type="button"
-                data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
-                aria-expanded="true" aria-label="togglenavigation">
+            <nav class="navbar-toggler teal hidden-lg-up btn-btn d-right show-sm-dowm" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="true" aria-label="togglenavigation">
 
                 </span> <span><i class="fa fa fa-home" aria-hidden="true">Xascapade Home</i></span>
                 <nav-items class="nav  navbar navbar-expand-lg navbar-light bg-light fixed-top topnav  teal">
@@ -66,110 +64,79 @@
         </div>
         </nav-items>
     </nav>
+    <div class="container-fluid">
+        <div class="col-12">
+            <div class="col bg-success">
+                <picture class="d-inline-block text-truncate" style="max-width: 600px;">
+                    <source srcset="assets/images/elephant.jpg" type="image/svg+xml">
+                    <img src="assets/images/elephant.jpg" class="img-fluid img-thumbnail" alt="Rooms">
+                </picture>
+                <div id="Hotel" class="container-fluid teal padding-16 myLink  ">
+                    <h5>Book safari tours plus accommodation </h5>
+                    <p>Best rates and promotions.</p>
+                    <p>We know hotels - we know comfort.</p>
+                    <div class="col">
 
-
-
-
-    <section>
-        <div class="container-fluid">
-            <div class="col-12">
-                <div class="col bg-success">
-
-                    <div id="Hotel" class="container-fluid teal padding-16 myLink  ">
-                        <h5>Book safari tours plus accommodation </h5>
-                        <p>Best rates and promotions.</p>
-                        <p>We know hotels - we know comfort.</p>
-                        <div class="dropdown-content">
-
-                            <a href="contact.html">Get In touch </a>
-
+                        <h2>Contact</h2>
+                        <p>Let us book your next trip!</p>
+                        <i class="fa fa-map-marker" style="width:30px"></i> Greystones, IE<br>
+                        <i class="fa fa-phone" style="width:30px"></i> Phone: +003538321 151515<br>
+                        <i class="fa fa-envelope" style="width:30px"> </i> Email:
+                        xascapade@gmail.com<br>
+                        <div class="container">
+                            <input type="text" id="toName" placeholder="Enter to name">
+                            <input type="text" id="fromName" placeholder="Enter From name">
+                            <input type="text" id="message" placeholder="Enter your  message">
+                            <button onclick='sendEmail()'>Send Email</button>
+                            <section>
                         </div>
                     </div>
-                    <div class="container-fluid ">
-                        <picture class="d-inline-block text-truncate" style="max-width: 600px;">
-                            <source srcset="assets/images/elephant.jpg" type="image/svg+xml">
-                            <img src="assets/images/elephant.jpg" class="img-fluid img-thumbnail" alt="Rooms">
-                        </picture>
-                        <div class="container">
-                            <h4 class="col-12">Title</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="ol-12 container-fluid ">
+        <ul class="inline social-links">
+            <h3 class="uppercase general-sub">Social</h3>
+            <li class="list-inline-bloc">
+                <a target="_blank" href="ttps://www.facebook.com/simbapawtrail/">
+                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                    <span class="sr-only">Facebook</span>
+                </a>
+            </li>
+            <li class="inline-block">
+                <a target="_blank" href="https://twitter.com/Safari78047357">
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                    <span class="sr-only">twitter</span>
+                </a>
+
+            <li class="inline-block">
+                <a target="_blank" href="https://www.linkedin.com/company/37523851/admin/">
+                    <i class="fa fa-linkedin" aria-hidden="true"></i>
+                    <span class="sr-only">linkedin</span>
+                </a>
+
+
+            <li clas="inline-block">
+                <a target="_blank" href="https://www.instagram.com/trysafari.ke/?hl=en>">
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                    <span class="sr-only">Instagram</span>
+                </a>
+            </li class="inline-block">
+            <a target="_blank" href="https://www.youtube.com/embed/wSCGJD_H-n8">
+                <i class="fa fa-youtube" aria-hidden="true"></i>
+                <span class="sr-only">YouTube</span>
+            </a>
+            </li>
+            <button>Powered by <a href="#" target="_blank" class="hover-text-green">Xascapade</a></button>
+        </ul>
+    </footer>
+
+    <script scr="assets/js/sendEmail.js"></script>
+    </section>
 
 
 
-
-                            <div class="col">
-
-                                <h2>Contact</h2>
-                                <p>Let us book your next trip!</p>
-                                <i class="fa fa-map-marker" style="width:30px"></i> Greystones, IE<br>
-                                <i class="fa fa-phone" style="width:30px"></i> Phone: +003538321 151515<br>
-                                <i class="fa fa-envelope" style="width:30px"> </i> Email:
-                                xascapade@gmail.com<br>
-                                <div class="container">
-
-
-                                    <div class="center-form">
-
-                                        <input type="text" name="name" class="form-control" id="fullname"
-                                            placeholder="Name" required />
-                                        <input type="text" name="emailaddress" class="form-control" id="emailaddress"
-                                            placeholder="Email" required />
-                                        <textarea rows="5" name="projectsummary" class="form-control"
-                                            id="projectsummary" placeholder="Project Description" required></textarea>
-                                        <button type="submit" class="btn btn-secondary center-block">Inqueries</button>
-                                        </form>
-
-
-                                        <!-- w3school snippet -->
-                                        <section>
-                                            <footer class="ol-12 container-fluid ">
-                                                <ul class="inline social-links">
-                                                    <h3 class="uppercase general-sub">Social</h3>
-                                                    <li class="list-inline-bloc">
-                                                        <a target="_blank"
-                                                            href="ttps://www.facebook.com/simbapawtrail/">
-                                                            <i class="fa fa-facebook" aria-hidden="true"></i>
-                                                            <span class="sr-only">Facebook</span>
-                                                        </a>
-                                                    </li>
-                                                    <li class="inline-block">
-                                                        <a target="_blank" href="https://twitter.com/Safari78047357">
-                                                            <i class="fa fa-twitter" aria-hidden="true"></i>
-                                                            <span class="sr-only">twitter</span>
-                                                        </a>
-
-                                                    <li class="inline-block">
-                                                        <a target="_blank"
-                                                            href="https://www.linkedin.com/company/37523851/admin/">
-                                                            <i class="fa fa-linkedin" aria-hidden="true"></i>
-                                                            <span class="sr-only">linkedin</span>
-                                                        </a>
-
-
-                                                    <li clas="inline-block">
-                                                        <a target="_blank"
-                                                            href="https://www.instagram.com/trysafari.ke/?hl=en>">
-                                                            <i class="fa fa-instagram" aria-hidden="true"></i>
-                                                            <span class="sr-only">Instagram</span>
-                                                        </a>
-                                                    </li class="inline-block">
-                                                    <a target="_blank" href="https://www.youtube.com/embed/wSCGJD_H-n8">
-                                                        <i class="fa fa-youtube" aria-hidden="true"></i>
-                                                        <span class="sr-only">YouTube</span>
-                                                    </a>
-                                                    </li>
-                                                    <button>Powered by <a href="#" target="_blank"
-                                                            class="hover-text-green">Xascapade</a></button>
-                                                </ul>
-                                                <script
-                                                    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js">
-                                                </script>
-                                                <script
-                                                    src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js">
-                                                </script>
-
-
-                                                <script scr="assets/js/sendEmail.js"></script>
-                                        </section>
-
+</body>
 
 </html>
