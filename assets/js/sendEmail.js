@@ -1,17 +1,17 @@
-function sendEmail(params) {
+function sendEmail(tempParams) {
     var tempParams = {
         from_name: document.getElementById("fromName").value,
-        to_name: document.getElementById("toname").value,
+        to_name: document.getElementById("toName").value,
         message: document.getElementById("message").value,
     };
-    emailjs.send("service_y2i261b", "template_gjh9ejg",
-            tempParam)
-        .then(function(res) {
+    emailjs.send("service_aw4lcie", "template_p9qe11h", tempParams)
+        .then(function (res) {
                 console.log("success", res.status);
             },
-            ifelse(function(error) {
+            function (error) {
                 console.log("failed", error);
-            });
-            return false; // To block from loading a new page
-            // 
-        });
+            }
+        );
+    return false;
+}
+// 
