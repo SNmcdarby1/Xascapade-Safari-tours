@@ -143,13 +143,9 @@ c) The ease in and ease out of the pages to be visible and easy to  navigate thr
  * The navigation bar is glitching the dropdown links are not visible in the mobile devise. I decided to change and delete the dropdown in the navigation bar and decided to add    a button that has etra pages. 
  * I encountered problems with the sidenav. Some of the content were not visible so i decided to change the design and use the navigation button that is displayed in w3school site.
  * The navigation link was not working on small devices . I decided to use the button (xascapade) that has a collapsible id when clicked, to access the menu bar.
-<<<<<<< HEAD
- * My google maps was not responsive , I decided to use the leaflet maps.
- * My google mapping was not responding. I kept on getting error 404 and uncaught syntax error. 
-=======
  * My google maps was not responsive , ![](https://downloads.intercomcdn.com/i/o/287481355/00fe74efb7f78a7c4754aff4/image.png). With 404 and uncoaught syntax error. where i was able to get intouch with the support team and we managed to fix the bug.
  * Email js was not responsive as well![](https://downloads.intercomcdn.com/i/o/287947159/50f3a6490df580d6a0e2c094/image.png). The support team help me find where the problem was and tried to fix it.  
->>>>>>> c5df905792d3fedb9671125a6cf7505ffd1eba9e
+
 
 
 ### 9. Deployment.
@@ -158,6 +154,7 @@ I deployed the page in Github page under settings. Scroll down to the Github pag
 
 ### 10. Testing
 The site was deployed in github and i shared the link to family and other users through whats app platform that made it easier to access the links on their phones. I also shared the using emailing process for desktop users and other devices as ipads,tablets, etc.
+* The lighthouse test results of the pge was as follows, Performances is at 72, Accessibility at 82, Best performance at 86 and the SEO at 92. as it shows in the attached pdf.
  
 ### 11. Media credits
 I) Media \* Google search free comercialised images*\ 
