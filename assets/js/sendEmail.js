@@ -5,10 +5,10 @@ function sendEmail(tempParams) {
         message: document.getElementById("message").value,
     };
     emailjs.send("service_aw4lcie", "template_p9qe11h", tempParams)
-        .then(function (res) {
+        .then(function(res) {
                 console.log("success", res.status);
             },
-            function (error) {
+            function(error) {
                 console.log("failed", error);
             }
         );

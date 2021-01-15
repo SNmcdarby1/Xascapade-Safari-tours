@@ -144,7 +144,7 @@ c) The ease in and ease out of the pages to be visible and easy to  navigate thr
  * I encountered problems with the sidenav. Some of the content were not visible so i decided to change the design and use the navigation button that is displayed in w3school site.
  * The navigation link was not working on small devices . I decided to use the button (xascapade) that has a collapsible id when clicked, to access the menu bar.
  * My google maps was not responsive , I decided to use the leaflet maps.
- * I debuged the 
+ * My google mapping was not responding. I kept on getting error 404 and uncaught syntax error. 
 
 
 ### 9. Deployment.
