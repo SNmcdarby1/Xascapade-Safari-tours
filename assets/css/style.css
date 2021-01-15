@@ -245,7 +245,7 @@ nav {
     padding: 1rem 0.5rem;
     z-index: 100;
     width: 100%;
-    transition: background 0.3s;
+    transition: background 0.2s;
     position: fixed;
     top: 0;
     left: 0;
@@ -403,7 +403,7 @@ a.hvr-sweep-to-bottom:before {
 }
 
 a {
-    color: rgb(10, 8, 8);
+    color: rgba(255, 254, 254, 0.932);
 }
 
 a:link,
