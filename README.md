@@ -153,14 +153,8 @@ c) The ease in and ease out of the pages to be visible and easy to  navigate thr
 I deployed the page in Github page under settings. Scroll down to the Github pages. Select the main-branch under the source. Once selected clickthe save button. A link will be enabled,once you receive the link you select it copy the link on your search engine. This will lead you to your public page. Ad that is how you deploy your repository to a public site. 
 
 ### 10. Testing
-<<<<<<< HEAD
 The site was deployed in github and i shared the link to family and other users through whats app platform that made it easier to access the links on their phones. I also shared the using emailing process for desktop users and other devices as ipads,tablets, etc.
 * The lighthouse test results of the pge was as follows, Performances is at 72, Accessibility at 82, Best performance at 86 and the SEO at 92. as it shows in the attached pdf.
-=======
-* The site was deployed in github and i shared the link to family and other users through whats app platform that made it easier to access the links on their phones. I also shared the using emailing process for desktop users and other devices as ipads,tablets, etc.
-* The other test i did is the lighthouse that is accessible by clicking the right click the mouse under inspect.At the top right corner of the page. The results of the page was as follows, Performances is at 72, Accessibility at 82, Best performance at 86 and the SEO at 92. as it shows in the attached pdf.
-[Susan Ngereso Mc Darby - MS2 Project- Xascapade Travel.pdf](https://github.com/SNmcdarby1/Xascapade-Travel/files/5822779/Susan.Ngereso.Mc.Darby.-.MS2.Project-.Xascapade.Travel.pdf)
->>>>>>> 3324eafc6cf126e63f01697cfbd3559bd54c2dcb
  
 ### 11. Media credits
 I) Media \* Google search free comercialised images*\ 

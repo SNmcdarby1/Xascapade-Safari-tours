@@ -31,7 +31,9 @@ body {
     line-height: 1.6;
 }
 
+
 /* navbar */
+
 .navbar {
     position: relative;
     min-height: 50px;
@@ -41,53 +43,47 @@ body {
 
 .topnav {
     background-color: rgb(192, 187, 187);
-
     overflow: hidden;
 }
 
 .topnav {
     background-color: rgb(250, 239, 239);
-
     overflow: hidden;
 }
 
+
 /* 
 Style the links inside the navigation bar */
-.topnav a {
 
+.topnav a {
     float: left;
     display: block;
-
     color: #0f6568;
     text-align: center;
-
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
 }
 
+
 /* Change the color of links on hover */
 
 .topnav a:hover {
     background-color: azure;
-
     color: rgb(248, 247, 247);
 }
 
-
-
 .topnav a.active {
     background-color: rgb(189, 212, 190);
-
     color: rgb(185, 184, 184);
 }
+
 
 /* Hide the link that should open and close the topnav on small screens */
 
 .topnav .icon {
     display: none;
 }
-
 
 .topnav a:not(:first-child) {
     display: none;
@@ -97,7 +93,6 @@ Style the links inside the navigation bar */
     float: right;
     display: block;
 }
-
 
 @media screen and (max-width: 600px) {
     .topnav.responsive {
@@ -115,11 +110,12 @@ Style the links inside the navigation bar */
         display: block;
         text-align: right;
         justify-content: right;
-
     }
 }
 
+
 /*  -----grid container */
+
 .grid-container {
     display: grid;
     grid-template-columns: auto auto auto auto;
@@ -146,10 +142,7 @@ table {
     border-collapse: collapse;
     border: 1px solid #eee;
     border-bottom: 2px solid #555858;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.10),
-        0px 10px 20px rgba(0, 0, 0, 0.05),
-        0px 20px 20px rgba(0, 0, 0, 0.05),
-        0px 30px 20px rgba(0, 0, 0, 0.05);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.10), 0px 10px 20px rgba(0, 0, 0, 0.05), 0px 20px 20px rgba(0, 0, 0, 0.05), 0px 30px 20px rgba(0, 0, 0, 0.05);
 
     tr {
         &:hover {
@@ -181,15 +174,14 @@ table {
     }
 }
 
-/*------------------------------------------------------gallery*/
 
+/*------------------------------------------------------gallery*/
 
 @media (min-width: 1200px) {
     .bd-placeholder-img-lg {
         font-size: 3.5rem;
     }
 }
-
 
 .background-container {
     background-image: url('../images/lions.jpg');
@@ -200,7 +192,6 @@ table {
     height: 100%;
     overflow: hidden;
 }
-
 
 #xas {
     position: absolute;
@@ -346,13 +337,16 @@ div.input-box label.error {
     height: 100%;
 }
 
+
 /* Optional: Makes the sample page fill the window. */
+
 html,
 body {
     height: 100%;
     margin: 0;
     padding: 0;
 }
+
 
 /*-------------------------------------------------------------Hover.css*/
 
@@ -385,14 +379,12 @@ a:hover {
     }
 }
 
-
 nav a {
     display: block;
     position: relative;
     list-style: none;
     border-radius: 2px;
     margin-right: 5:px;
-
 }
 
 li {
@@ -429,21 +421,17 @@ a:visited {
 a:hover,
 a:active {
     background-color: rgba(228, 22, 22, 0.856);
-
 }
 
 
-
-
 /*-------------------------------------------------------------Footer*/
+
 footer {
     background-color: #ddf0f0;
     color: #203632b0;
     min-height: 120px;
     margin: 0;
 }
-
-
 
 .social-links i:hover {
     color: #727473
@@ -477,7 +465,6 @@ footer {
     list-style: none;
 }
 
-
 .image-container {
     display: -ms-grid;
     display: grid;
@@ -501,12 +488,10 @@ footer {
     position: fixed;
     max-width: 900px;
     visibility: hidden;
-
     /* Force Hardware Acceleration in WebKit */
     transform: translateZ(0);
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
-
     will-change: left, top, width;
     z-index: 1;
 }
@@ -527,7 +512,9 @@ products {
     padding: 0 4px;
 }
 
+
 /* Create four equal columns that sits next to each other */
+
 .column {
     flex: 25%;
     max-width: 25%;
@@ -540,7 +527,9 @@ products {
     width: 100%;
 }
 
+
 /* Responsive layout - makes a two column-layout instead of four columns */
+
 @media screen and (max-width: 800px) {
     .column {
         flex: 50%;
@@ -548,7 +537,9 @@ products {
     }
 }
 
+
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+
 @media screen and (max-width: 600px) {
     .column {
         flex: 100%;
@@ -560,7 +551,6 @@ products {
     padding: 2%;
     flex-grow: 1;
     flex-basis: 16%;
-
     display: flex;
     /* so child elements can use flexbox stuff too! */
 }
@@ -579,8 +569,10 @@ products {
     }
 }
 
+
 /*-----
 --------------------------------------------------------media*/
+
 @media(min-width:768px) and (max-width:1200px) {
     *.container body
 }
@@ -608,3 +600,5 @@ products {
         width: 200px;
     }
 }
+
+/* validated cade using freeformatter.com */
