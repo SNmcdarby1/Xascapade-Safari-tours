@@ -32,6 +32,7 @@ body {
 }
 
 
+
 /* navbar */
 
 .navbar {
@@ -114,67 +115,6 @@ Style the links inside the navigation bar */
 }
 
 
-/*  -----grid container */
-
-.grid-container {
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    grid-gap: 10px;
-    background-color: rgb(8, 129, 129);
-    padding: 10px;
-}
-
-.grid-container>div {
-    background-color: rgba(255, 255, 255, 0.8);
-    border: 1px solid black;
-    text-align: center;
-    font-size: 30px;
-}
-
-.item1 {
-    grid-column-start: 1;
-    grid-column-end: 3;
-}
-
-table {
-    font-family: 'Arial';
-    margin: 25px auto;
-    border-collapse: collapse;
-    border: 1px solid #eee;
-    border-bottom: 2px solid #555858;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.10), 0px 10px 20px rgba(0, 0, 0, 0.05), 0px 20px 20px rgba(0, 0, 0, 0.05), 0px 30px 20px rgba(0, 0, 0, 0.05);
-
-    tr {
-        &:hover {
-            background: azure;
-
-            td {
-                color: rgb(189, 13, 13);
-            }
-        }
-    }
-
-    th,
-    td {
-        color: rgb(11, 31, 68);
-        border: 1px solid #eee;
-        padding: 12px 35px;
-        border-collapse: collapse;
-    }
-
-    th {
-        background: #00cccc;
-        color: rgba(192, 7, 7, 0.795);
-        text-transform: uppercase;
-        font-size: 12px;
-
-        &.last {
-            border-right: none;
-        }
-    }
-}
-
-
 /*------------------------------------------------------gallery*/
 
 @media (min-width: 1200px) {
@@ -193,7 +133,7 @@ table {
     overflow: hidden;
 }
 
-#xas {
+.background-container {
     position: absolute;
     left: 0;
     top: 0;
@@ -207,17 +147,6 @@ table {
     width: 100%;
 }
 
-#xas {
-    background-image: url('../images/lions.jpg');
-    position: relative;
-    background-position: 80%;
-    background-size: cover;
-    background-color: rgb(182, 187, 186);
-    margin: 0 0 20px;
-    text-align: center;
-    transition: .8s;
-    viewport-fit: 50%;
-}
 
 .image-1 {
     max-block-size: 30%
@@ -377,50 +306,6 @@ a:hover {
     .bd-placeholder-img-lg {
         font-size: 3.5rem;
     }
-}
-
-nav a {
-    display: block;
-    position: relative;
-    list-style: none;
-    border-radius: 2px;
-    margin-right: 5:px;
-}
-
-li {
-    margin-top: 25px;
-    margin-bottom: 10px;
-}
-
-ul li a :hover {
-    color: rgb(90, 89, 88);
-}
-
-a.hvr-sweep-to-bottom:before {
-    background: rgb(133, 132, 129);
-    height: 60px;
-    position: fixed;
-}
-
-a {
-    color: rgba(255, 254, 254, 0.932);
-}
-
-a:link,
-a:visited {
-    background-color: #018675;
-    color: #a79292;
-    font-size: rem;
-    color: rgb(206, 179, 179);
-    padding: 4px 15px;
-    text-align: center;
-    text-decoration: none;
-    justify-content: right;
-}
-
-a:hover,
-a:active {
-    background-color: rgba(228, 22, 22, 0.856);
 }
 
 

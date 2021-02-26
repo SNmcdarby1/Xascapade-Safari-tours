@@ -20,45 +20,7 @@ $(".card-panel").mouseleave(function() {
     $("body").css("background-color", "azure");
 });
 // 
-// background img
-$('myObject').css('background-image', 'url(' + imageUrl + ')');
 
-// -collapse
-$('.collapse').collapse()
-// 
-
-
-// 
-$(".button").hover(function() {
-    $("button").mouseenter(function() {
-        $("button").removeClass("make-teal").addClass("make-border");
-    })
-})
-$(".button").hover(function() {
-    $("button").mouseleave(function() {
-        $("button").removeClass("make-border").addClass("make-red");
-    })
-})
-// 
-$("#myButton").removeClass("border").addClass("blueBox");
-
-// 
-
-$("#button-card-1").click(function() {
-    $("#par-1").hide(5000).show(8000);
-});
-$("#button-card-2").click(function() {
-    $("#par-2").fadeOut(5000).fadeIn(8000);
-});
-
-
-
-// 
-
-
-// 
-
-// 
 var arr1 = ['Sarova Hotels', 'Serena hotels', 'Intercontinental Hotels', 'Camping', 'AirBnB', 'Safari Park Hotel Nairobi', 'Diani Hotel', 'White Sands Holtel', ];
 var arr2 = ['safari', 'fish', 'apple', 'pizza'];
 var arr3 = ['Theme',
