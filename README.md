@@ -151,6 +151,8 @@ c) The ease in and ease out of the pages to be visible and easy to  navigate thr
  * The navigation link was not working on small devices . I decided to use the button (xascapade) that has a collapsible id when clicked, to access the menu bar.
  * My google maps was not responsive , ![](https://downloads.intercomcdn.com/i/o/287481355/00fe74efb7f78a7c4754aff4/image.png). With 404 and uncoaught syntax error. where i was able to get intouch with the support team and we managed to fix the bug.
  * Email js was not responsive as well![](https://downloads.intercomcdn.com/i/o/287947159/50f3a6490df580d6a0e2c094/image.png). The support team help me find where the problem was and tried to fix it.  
+ * The footer in the place was not working. I noticed that some of the tags were not closed once i did that the footer was visible to the user.
+ * I deleted the safari page. 
 
 
 
