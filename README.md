@@ -153,7 +153,7 @@ c) The ease in and ease out of the pages to be visible and easy to  navigate thr
  * My google maps was not responsive , ![](https://downloads.intercomcdn.com/i/o/287481355/00fe74efb7f78a7c4754aff4/image.png). With 404 and uncoaught syntax error. where i was able to get intouch with the support team and we managed to fix the bug.
  * Email js was not responsive as well![](https://downloads.intercomcdn.com/i/o/287947159/50f3a6490df580d6a0e2c094/image.png). The support team help me find where the problem was and tried to fix it.  
  * The footer in the place was not working. I noticed that some of the tags were not closed once i did that the footer was visible to the user.
- * I deleted the safari and booking page. Reason being i wnted to merge the form group with the contact placeholder. this makes makes it easier for the user to select and fill in the details without moving frompage to page.
+ * I deleted the safari and booking page. Reason being i wnted to merge the form group with the contact placeholder. this makes makes it easier for the user to select and fill in the details without moving frompage to page. In the contact page i ditted text area and added input, i added collipsibles in the about page.According to the feedback that i received fromthe accessors one of the comments was that i needed specify the usage of the site. The collisible gives the user different ideas of the tours. 
 
 
 
