@@ -38,7 +38,7 @@
 
     <div class="container-fluid">
         <div class="col-12">
-            <div class="col bg-success">
+            <div class="col-12">
                 <picture class="d-inline-block text-truncate" style="max-width: 600px;">
                     <source srcset="assets/images/elephant.jpg" type="image/svg+xml">
                     <img src="assets/images/elephant.jpg" class="img-fluid img-thumbnail" alt="Rooms">
@@ -48,27 +48,96 @@
     </div>
     <div class="container-fluid">
         <div class="col-12">
-            <div id="Hotel" class="container-fluid padding-16 myLink  ">
+            <div  class="container-fluid">
                 <h4>Book safari tours plus accommodation </h4>
                 <h5>Best rates and promotions.</h5>
                 <h5>We know hotels - we know comfort.</h5>
-                
-                            <div class="card-body" class="col-sm-6 no_left_padding no_right_padding" class="form" onsubmit="return sendMail(this);" method="POST">
-                               
-<section class= "container-fliud">  
-<div class="col form ">
-                   <div class="col-12 contact_form">
-                        <input type="text" id="fromName" class="form-control" placeholder="Name">
-                        <input type="text" id="toName" class="form-control" placeholder="Email address">
-                        <input textarea rows="5" type="text" class="form-control" id="message" placeholder="Enter your  message">
-  <div class="mt-o">
-    <label for="validationTextarea">Textarea</label>
-    <textarea class="form-control is-invalid" id="validationTextarea" placeholder="Required example textarea" required></textarea>
-    <div class="invalid-feedback">
-      Please enter a message in the textarea.
-    </div>
-  </div>
+               
+<div class="row">
+    <div class="col-12-"> 
+        <fieldset class="form-group">
+            <label id="fieldTitle">Equipment Length</label>
+            <select id="selectOption" class="form-control" required data="text">
+       <div class="form-group">
+           <label for=""></label>
+           <select class="custom-select" name="" id="">
+               <option selected>Select one</option>
+               <option value="cg">1</option>
+               <option value="nj">2</option>
+               <option value="ft">3</option>
+           </select>
+       </div>
+            </select>
+            <div class="help-block with-errors"></div>
+             <section class="container">
+                            <form class="card" class="form" onsubmit="return sendMail(this);" method="POST">
+                                <div class="card-body" class="col-sm-6 no_left_padding no_right_padding">
+                                    <div class="form-group">
+                                        <label for="srch_frm_hotel_single">Hotels</label>
+                                        <select name="hotel" id="hotel" class="form-control">
+                                            <option value="" selected>No Preference
+                                            </option>
+                                            <option value="*O">*Sarova Hotels
+                                            </option>
+                                            <option value="*A">*Serena hotels
+                                            </option>
+                                            <option value="*S">*Intercontinental Hotels
+                                            </option>
+                                            <option value="*C">*Camping
+                                            </option>
+                                            <option value="*K">*AirBnB
+                                            </option>
+                                            <option value="JP">Safari Park Hotel Nairobi
+                                            </option>
+                                            <option value="EI">Diani Hotel </option>
+                                            <option value="JR">White Sands Holtel
+                                            </option>
+                                            <option value="ML">Nakuru Lodge Hotel
+                                            </option>
+                                            <option value="PL">Intercontinental Hotel
+                                                Nairobi
+                                            </option>
+                                            <option value="SX">Stanlley Hotel Nairobi
+                                            </option>
+                                            <option value="SU">Red Elephant Hotel Tsavo
+                                            </option>
+                                            <option value="AR">Reef Hotel Mombasa
+                                            </option>
+                                            <option value="VW">Nyali Hotel Mombasa
+                                            </option>
+                                            <option value="AM">Voyager Hotel Mombasa
+                                            </option>
+                                            <option value="5L">African Safari Club
+                                                Mombasa
+                                            </option>
+                                            <option value="DP">La Pelgola Malindi
+                                            </option>
+                                            <option value="DP">Mada Hotel Kilifi
+                                            </option>
+                                            <option value="RK">Bamburi Beach Resort
+                                                Mombasa
+                                            </option>
+                                            <option value="AH">Kilifi Bay Resort Kilifi
+                                            </option>
+                                            <option value="FQ">Sun and Sand Club Mombasa
+                                            </option>
+                                            <option value="UU">Turtle Bay Watamu
+                                            </option>
+                                            <option value="7L">Windsor Hotel Nairobi
+                                            </option>
+                                            <option value="AC">FairMount Hotel and
+                                                Resort
+                                                Nairobi
+                                            </option>
+                                            </select>
+                                    </div>
 
+                                </div>
+                            </form>
+                    </section>
+        </fieldset>
+    </div>
+    <div class="col-sm-9">  
   <div class="custom-control custom-checkbox mb-3">
     <input type="checkbox" class="custom-control-input" id="customControlValidation1" required>
     <label class="custom-control-label" for="customControlValidation1">Check this custom checkbox</label>
@@ -108,17 +177,24 @@
     <div class="invalid-feedback">Example invalid custom file feedback</div>
   </div>
 </form>
-
-                
-                        <button onclick='sendEmail()'>Send Email</button>
-                   
-                    
-                    </div>
-                </div>
-            </div>
-        </div>
+<div class="card-body" class="col-sm-6 no_left_padding no_right_padding" class="form" onsubmit="return sendMail(this);" method="POST">
+                <input type="text" id="fromName" class="form-control" placeholder="Name">
+                  <input type="text" id="toName" class="form-control" placeholder="Email address">
+                  <input textarea rows="30" type="text" class="form-control" id="message" placeholder="Enter your  message">
+  <div>
+    <label for="validationTextarea">Textarea</label>
+    <textarea class="form-control is-invalid" id="validationTextarea" placeholder="Required example textarea" required></textarea>
+    <div class="invalid-feedback">
+      Please enter a message in the textarea.
     </div>
+  </div>
+    <fieldset class="form-group">
+            <label id="fieldTitle">Customer Notes</label>
+            <textarea class="form-control" placeholder="email"model="myTextarea" required data="Please enter customer notes"></textarea>
+            <div class="tesxarea"></div>
+        </fieldset>
     </div>
+  <button onclick='sendEmail()'>Send Email</button>
 
     <!--Footer section  bootstrap snippet-->
  <blockquote class="blockquote text-center">
