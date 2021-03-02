@@ -19,9 +19,41 @@
     box-sizing: border-box;
 }
 
+h1,
+h2,
+h3,
+h4 {
+    margin: 0;
+    color: #142221;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.general-sub {
+    font-family: "Exo", sans-serif;
+    font-weight: 300;
+    color: #382d2d
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.row-table {
+    display: table;
+}
+
+.section-column {
+    display: table-cell;
+    padding: 20px, 30px;
+    float: right;
+}
+
 html {
     --primary-color: #4d0404;
-    --secondary-color: rgb(211, 80, 80);
+    --secondary-color: rgb(173, 117, 117);
     --tertiary-color: rgb(92, 90, 90);
     --light-color: rgb(2, 63, 60);
     scroll-behavior: smooth;
@@ -62,7 +94,7 @@ li {
 }
 
 .topnav {
-    background-color: rgb(177, 157, 157);
+    background-color: rgb(161, 151, 151);
     overflow: hidden;
 }
 
@@ -81,13 +113,13 @@ li {
 /* Navbar links */
 #navbar a {
     float: left;
-    text-indent: 2rem;
-    font-size: medium;
-    display: block;
+    text-indent: 1.8rem;
+    font-size: 1.8rem;
+    font-weight: 200px;
+    display: flex;
     color: #7a1717;
     text-align: right;
     padding: 25px;
-    text-decoration: none;
 }
 
 /* Page content */
@@ -320,6 +352,10 @@ div.input-box label.error {
     height: 100%;
 }
 
+.skip-navigation {
+    @include sr-only;
+    @include sr-only-focusable;
+}
 
 /* Optional: Makes the sample page fill the window. */
 

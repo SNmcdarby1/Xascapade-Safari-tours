@@ -129,3 +129,15 @@ function get_post($post = null, $output = OBJECT, $filter = 'raw') {
 
     return $_post;
 }
+var tours = ["guided_tour", "private_tour", "self_tour"];
+var tours = new Array("guided_tour", "private_tour", "self_tour"); // declaration
+
+alert(tour[1]); // access value at index, first item being [0]
+tours[0] = "safari"; // change the first item
+
+for (var i = 0; i < safari.length; i++) { // parsing with array.length
+    console.log(tours[i]);
+}
+x.sort(function(a, b) {
+    return 0.5 - Math.random()
+});
