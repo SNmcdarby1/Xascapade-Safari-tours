@@ -94,6 +94,8 @@ c) The ease in and ease out of the pages to be visible and easy to  navigate thr
       - Jquery CDN  uncompressed min script 
       - Leaflet link and tags for js google mapping
       - Emailjs used for the interactive email
+      - One of the users suggested that the images covered a lot of space on the computer and it meant that the user has to scroll p and down to view one image. I deciced to change that layout to that will allow the user to view ll the images without scrolling upand down.
+      - The navigation bar was not user friendly. I managed to simplify the color and typography to font-family: Verdana, Geneva, Tahoma, sans-serif;
 
 
     
@@ -107,6 +109,7 @@ c) The ease in and ease out of the pages to be visible and easy to  navigate thr
 - Web Design.
   I did a lot of reserch in youtube and i was inspired by three main developres 
      * Sayar flight booking example
+     - One of the users suggested that the images covered a lot of space on the computer and it meant that the user has to scroll p and down to view one image. I deciced to change that layout to that will allow the user to view ll the images without scrolling upand down.
 
 ### 6. Wireframes
    The xascapade wireframe is  create using balsamic and downloaded it in the ide platform under documents as a pdf. 
