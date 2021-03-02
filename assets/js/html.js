@@ -140,4 +140,19 @@ for (var i = 0; i < safari.length; i++) { // parsing with array.length
 }
 x.sort(function(a, b) {
     return 0.5 - Math.random()
-});
+}); <
+script type = "text/javascript" > < !--
+allClassesLink = document.getElementById("allclasses_navbar_bottom");
+if (window == top) {
+    allClassesLink.style.display = "block";
+} else {
+    allClassesLink.style.display = "none";
+}
+constant - values.html " target="
+_top "
+allClassesLink = document.getElementById("allclasses_navbar_bottom");
+if (window == top) {
+    allClassesLink.style.display = "block";
+} else {
+    allClassesLink.style.display = "none";
+}
