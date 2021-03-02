@@ -33,12 +33,10 @@
   <a href="places.html">Places</a>
   <a href="contact.html">Contact</a>
 </div>
-    <body class="container-fluid">
-
-
-    <div class="container-fluid">
+<body class="container-fluid">
+ <div>
         <div class="col-12">
-            <div class="col-12">
+            <div class="col">
                 <picture class="d-inline-block text-truncate" style="max-width: 600px;">
                     <source srcset="assets/images/elephant.jpg" type="image/svg+xml">
                     <img src="assets/images/elephant.jpg" class="img-fluid img-thumbnail" alt="Rooms">
@@ -55,12 +53,12 @@
                
 <div class="row">
     <div class="col-12-"> 
-        <fieldset class="form-group">
+        <fieldset class="form-group" id="get_post">
             <label id="fieldTitle">Equipment Length</label>
             <select id="selectOption" class="form-control" required data="text">
        <div class="form-group">
            <label for=""></label>
-           <select class="custom-select" name="" id="">
+           <select class="custom-select" name="" id="get_post">
                <option selected>Select one</option>
                <option value="cg">1</option>
                <option value="nj">2</option>
@@ -71,8 +69,8 @@
             <div class="help-block with-errors"></div>
              <section class="container">
                             <form class="card" class="form" onsubmit="return sendMail(this);" method="POST">
-                                <div class="card-body" class="col-sm-6 no_left_padding no_right_padding">
-                                    <div class="form-group">
+                                <div class="card-body" class="col-sm-6 ">
+                                    <div class="form-group " id="get_post">
                                         <label for="srch_frm_hotel_single">Hotels</label>
                                         <select name="hotel" id="hotel" class="form-control">
                                             <option value="" selected>No Preference
@@ -138,7 +136,7 @@
         </fieldset>
     </div>
     <div class="col-sm-9">  
-  <div class="custom-control custom-checkbox mb-3">
+  <div class="custom-control custom-checkbox form">
     <input type="checkbox" class="custom-control-input" id="customControlValidation1" required>
     <label class="custom-control-label" for="customControlValidation1">Check this custom checkbox</label>
     <div class="invalid-feedback">Example invalid feedback text</div>
@@ -156,8 +154,9 @@
   </div>
 
   <div class="form-group">
-    <select class="custom-select" required>
+    <select class="custom-select" required="recompile" id="get_post">
       <option value="">Open this select menu</option>
+       <option selected>Choose...</option>
       <option value="1">One</option>
       <option value="2">Two</option>
       <option value="3">Three</option>
@@ -174,32 +173,33 @@
   <div class="custom-file">
     <input type="file" class="custom-file-input" id="validatedCustomFile" required>
     <label class="custom-file-label" for="validatedCustomFile">Choose file...</label>
-    <div class="invalid-feedback">Example invalid custom file feedback</div>
+    <div class="invalid-feedback">Enter your details</div>
   </div>
 </form>
 <div class="card-body" class="col-sm-6 no_left_padding no_right_padding" class="form" onsubmit="return sendMail(this);" method="POST">
                 <input type="text" id="fromName" class="form-control" placeholder="Name">
                   <input type="text" id="toName" class="form-control" placeholder="Email address">
-                  <input textarea rows="30" type="text" class="form-control" id="message" placeholder="Enter your  message">
-  <div>
-    <label for="validationTextarea">Textarea</label>
-    <textarea class="form-control is-invalid" id="validationTextarea" placeholder="Required example textarea" required></textarea>
-    <div class="invalid-feedback">
-      Please enter a message in the textarea.
-    </div>
-  </div>
-    <fieldset class="form-group">
+                  <input textarea rows="30" type="text" class="form-control" id="message" placeholder="Enter your  message" >
+                  <fieldset class="form-group">
             <label id="fieldTitle">Customer Notes</label>
-            <textarea class="form-control" placeholder="email"model="myTextarea" required data="Please enter customer notes"></textarea>
-            <div class="tesxarea"></div>
+            <textarea class="form-control" placeholder="Notes"model="myTextarea" required data="Please enter customer notes"></textarea>
+            <div class="textarea"></div>
         </fieldset>
     </div>
+  <div>
+    <label for="validationTextarea">Requests</label>
+    <textarea class="form-control is-invalid" id="validationTextarea" placeholder="Required information" required></textarea>
+    <div class="invalid-feedback">
+      Please enter any required information.
+    </div>
+  </div>
+    
   <button onclick='sendEmail()'>Send Email</button>
 
     <!--Footer section  bootstrap snippet-->
- <blockquote class="blockquote text-center">
+ <blockquote class="blockquote text-center container-fluid">
   <p class="mb-0"> Start your unforgetable, customised,  exceptional luxurious Kenya safari holidays with us today!</p>
-  <footer class="blockquote-footer">
+  <footer class="container-fluid blockquote-footer">
   <ul class="list-inline social-links">
    <li class="list-inline-item">
                       <a target="_blank" href="ttps://www.facebook.com/simbapawtrail/">
@@ -269,6 +269,11 @@ $form-validation-states: map-merge(
   ),
   $form-validation-states
 );
+// onclick function
+function myFunction() {
+    var x = document.createElement("POST")
+    document.body.appendChild(x);
+}
 
 // Loop from `_forms.scss`
 // Any modifications to the above Sass map will be reflected in your compiled
