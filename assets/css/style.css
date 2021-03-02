@@ -5,6 +5,10 @@
 * {
     box-sizing: none;
     margin: 0;
+    text-emphasis: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    scrollbar-highlight-color: #0d755b;
 }
 
 *,
@@ -58,7 +62,7 @@ li {
 }
 
 .topnav {
-    background-color: rgb(192, 187, 187);
+    background-color: rgb(177, 157, 157);
     overflow: hidden;
 }
 
@@ -77,10 +81,12 @@ li {
 /* Navbar links */
 #navbar a {
     float: left;
+    text-indent: 2rem;
+    font-size: medium;
     display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px;
+    color: #7a1717;
+    text-align: right;
+    padding: 25px;
     text-decoration: none;
 }
 
@@ -107,7 +113,7 @@ Style the links inside the navigation bar */
 .topnav a {
     float: left;
     display: block;
-    color: #0f6568;
+    color: #cbcfcf;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
