@@ -1,3 +1,5 @@
+[![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/SNmcdarby1/Xascapade-Travel)
+
 # Xascapade Travel- MS2 project
 Is a leisure travel platform for holiday safari bookings in Kenya.
 
