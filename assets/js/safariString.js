@@ -7,3 +7,13 @@ function safariString() {
     }
     return safari;
 }
+
+function tourString() {
+    var product = '';
+    for (var i = 0; i < arguments.length; i++) {
+        if (arguments[i].length > tour.length) {
+            tour = arguments[i];
+        }
+    }
+    return tour;
+}
