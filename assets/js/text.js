@@ -33,7 +33,6 @@ function get_post($post = null, $output = OBJECT, $filter = 'raw') {
         return array_values($_post - > to_array());
     }
 
-    return $_post;
 }
 $.ajax({
             type: "POST",
@@ -150,12 +149,9 @@ $.ajax({
                     return array_values($_post - > to_array());
                 }
 
-                return $_post;
             }
 
 
             // Theme parks Snorkkling tour City tours Museum UNESCOSights Masaai Market Open village market City mall Cinema
         }
-
-
         // Theme parks Snorkkling tour City tours Museum UNESCOSights Masaai Market Open village market City mall Cinema
