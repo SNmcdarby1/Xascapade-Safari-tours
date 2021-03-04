@@ -58,7 +58,7 @@ c) The ease in and ease out of the pages to be visible and easy to  navigate thr
  
  * is to implement features that will enable the client to  select different options in  the travel platforms.
  * Updating the products and services of travel packages 
- * Share and innovating producyts and services.
+ * Share and innovating products and services.
  
  ### Project Goals
  
@@ -67,34 +67,45 @@ c) The ease in and ease out of the pages to be visible and easy to  navigate thr
 
 * Enabling features that will sell the product and services. Making it easy to convey the story to the client.
 
-### 3. UX
-- Developers and Business Goals-
-  Easy access of the website. The art and design /visual designers and data collection that used to create the website.
+### 3. UX 
 
+- User Goals
+   * Easy access of the website. The art and design 
+   * visual designs and data collection are working.
+   * The pages are easy accessibl
+   * The site is suitable for all demographics
+
+- developers goals
+
+* Having clean coding languages that will be easy to navigate through the code
+* Easily accessible todevelopers
+* A project that one will be excited to make as their own 
 ### 4. Features for the website design.
 
   * Images 
   * Contents
-  * Social pages
   * Social links
-  * Mapping 
-  * Emailing process
-  * Booking forms
+   [https://www.facebook.com/simbapawtrail/](Facebook), [https://www.youtube.com/embed/wSCGJD_H-n8](Youtube) [https://www.instagram.com/trysafari.ke/?hl=en](Instagram), [https://www.linkedin.com/company/37523851/admin/](linkedin), [https://twitter.com/Safari78047357](Twitter).
 
-      - Code used CSS HTML Javascript and Jquery
-      - Landing page with a page drop image container.
-      - cards
-      - Images
-      - Table
-      - feildset
-      - Controlgroup
-      - Social links
+  * Mapping- using google map
+
+  * Emailing process(Emailjs)
+
+ * Code 
+      The language used in this project is CSS HTML Javascript and Jquery
+
+ * There are different ways styles that i used of layouts of the pages.
+
+        Grid         Tables         Cards     Fieldset      Formgroup 
+        All pages   |About page  | Contact page |Contact page  |Contact page
+       Gallery page
+    
       - Font awesome icons
       - Materialised link - I was inspired by the look and feel of the Link that made the site look better feel about it.
       - Bootstrap snippets that enabled meto have different designs
       - CDNJS site enabled me to get the tags and JS scripts that are used to create the website.
       - Jquery CDN  uncompressed min script 
-      - Leaflet link and tags for js google mapping
+      - Google mapping APi for js google mapping
       - Emailjs used for the interactive email
       - One of the users suggested that the images covered a lot of space on the computer and it meant that the user has to scroll p and down to view one image. I deciced to change that layout to that will allow the user to view ll the images without scrolling upand down.
       - The navigation bar was not user friendly. I managed to simplify the color and typography to font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -103,13 +114,19 @@ c) The ease in and ease out of the pages to be visible and easy to  navigate thr
     
 ### 5. User Stories.
 
-  * The Navigation bar was not easily accessible . I have to try diffent designs that will anablethe client to press the home button to access other pages.
+  * The ability for the user to access information in all pages ,buttons and the social links.
+  * Visually my first approach was not user friendly beacuse the navigation bottons where not neat . This time i tried to narrow it down.
+  * 
+  *  The Navigation bar was not easily accessible . I have to try diffent designs that will anablethe client to press the home button to access other pages.
   * The packages had no value , soi added up the value and uploaded images to show the product.
   * The carousel in the gallery page was not working so i decided to have static images all in one page.
-  * The client asked to have different options of products . I added in the safari packages and different locations of the Safaris, and activities that can be done during the    holidays.
+  * The client asked to have different options of products . I added in the safari packages and different locations of the Safaris, and activities that can be done during the  holidays.
   * The reservation page had a lot of information icons that made the page look messy . I ended up reducing the content and be short ad precise of the contents.  
-- Web Design.
-  I did a lot of reserch in youtube and i was inspired by three main developres 
+
+
+##### Web Design research.
+
+  I did a lot of reserch in youtube and i was inspired by three main developers 
      * Sayar flight booking example
      - One of the users suggested that the images covered a lot of space on the computer and it meant that the user has to scroll p and down to view one image. I deciced to change that layout to that will allow the user to view ll the images without scrolling upand down.
 
@@ -169,7 +186,8 @@ I deployed the page in Github page under settings. Scroll down to the Github pag
 ### 10. Testing
 The site was deployed in github and i shared the link to family and other users through whats app platform that made it easier to access the links on their phones. I also shared the using emailing process for desktop users and other devices as ipads,tablets, etc.
 * The lighthouse test results of the pge was as follows, Performances is at 72, Accessibility at 82, Best performance at 86 and the SEO at 92. as it shows in the attached pdf.
- 
+
+`-` 
 ### 11. Media credits
 I) Media \* Google search free comercialised images*\ 
 II) (unsplashed)[https://unsplash.com/] 
