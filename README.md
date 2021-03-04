@@ -115,7 +115,8 @@ c) The ease in and ease out of the pages to be visible and easy to  navigate thr
    The xascapade wireframe is  create using balsamic and downloaded it in the ide platform under documents as a pdf. 
    See attached below a copy of the wireframe. 
    [xascapade.pdf](https://github.com/SNmcdarby1/Xascapade-Travel/files/6061243/xascapade.pdf).
-   after receing my feedback from my accessers i realised that the layout does not work with my design and i ended up changing the wireffram to suit the user.
+   after receiving my feedback from my accessors i realised that the layout does not work with my design and i ended up changing the wireframe to suit the user.
+   Below is the new wireframe. What i tried to do is to simlify the styke and design that will suite the user and easy accessible. XASCAPADE .pdf](https://github.com/SNmcdarby1/Xascapade-Travel/files/6087100/XASCAPADE.pdf)
    
    Below is a Multiple devices Mockup generator image that shows you how the landing page looks in different devices.
    The Mockup generator page of Xascapade Travel.
