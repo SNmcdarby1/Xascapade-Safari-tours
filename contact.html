@@ -19,7 +19,9 @@
 </script>
 </head>
 <div id="data"></div>
-
+<script type="text/javascript "></script>
+<script type="text/javascript" id="Post">
+</script>
 <body class="container-fluid no-gutter">
       <div class="card-body">
                      <h1 class="card">XASCAPADE TOUR GUIDE</h1>
@@ -43,88 +45,50 @@
             </div>
         </div>
     </div>
-   <h4>Book safari tours plus accommodation </h4>
+    <Section class="container-fluid inline-block">
+            <div class="background-image" id="bgimg1">
+            
+                    <div class="panel padding-16 white opacity card hover-opacity-off">
+                        
+            <footer class="container-fluid  opacity margin-bottom">
+                <h5>Find Us On</h5>
+    <h4>Book safari tours plus accommodation </h4>
                 <h5>Best rates and promotions.</h5>
                 <h5>We know hotels - we know comfort.</h5>
         <fieldset class="form-group" id="get_post">
-            <label id="fieldTitle">Equipment Length</label>
+            <label id="fieldTitle">Location</label>
             <select id="selectOption" class="form-control" required data="text">
        <div class="form-group">
-           <label for=""></label>
-           <select class="custom-select" name="" id="get_post">
-               <option selected>Select one</option>
-               <option value="cg">1</option>
-               <option value="nj">2</option>
-               <option value="ft">3</option>
-               <option value="cg">1</option>
-               <option value="nj">2</option>
-               <option value="ft">3</option>
-               <option value="cg">1</option>
-               <option value="nj">2</option>
-               <option value="ft">3</option>
+           <label for=""> <option value="ft">City</option>
+                <option value="a">Nairobi</option>
+               <option value="b">Mombasa</option>
+               <option value="c">Nakuru</option>
+                <option value="d">Kisumu</option>
+               <option value="e">Lamu</option></label>
+           <select class="custom-select" name="City" id="get_post">
+               <option value="a">Nairobi</option>
+               <option value="b">Mombasa</option>
+               <option value="c">Nakuru</option>
+                <option value="d">Kisumu</option>
+               <option value="e">Lamu</option>
            </select>
        </div>
             </select>
             <div class="help-block with-errors"></div>
              <section class="container">
                             <form class="card" class="form" onsubmit="return sendMail(this);" method="POST">
+                            <input type="hidden" name="NumberOfProperty[]" id="NumberOfPropertyTxt<?php echo $id;?>" value=""/>
                                 <div class="card-body" class="col-sm-6 ">
                                     <div class="form-group " id="get_post">
-                                        <label for="srch_frm_hotel_single">Hotels</label>
-                                        <select name="hotel" id="hotel" class="form-control">
-                                            <option value="" selected>No Preference
+                                        <label for="safari">Tours</label>
+                                        <select name="tour" id="safari" class="form-control">
+                                            <option value="1" selected>Type off tours
                                             </option>
-                                            <option value="*O">*Sarova Hotels
+                                            <option value="2">Private Tour
                                             </option>
-                                            <option value="*A">*Serena hotels
+                                            <option value="3">*Self guided Tour
                                             </option>
-                                            <option value="*S">*Intercontinental Hotels
-                                            </option>
-                                            <option value="*C">*Camping
-                                            </option>
-                                            <option value="*K">*AirBnB
-                                            </option>
-                                            <option value="JP">Safari Park Hotel Nairobi
-                                            </option>
-                                            <option value="EI">Diani Hotel </option>
-                                            <option value="JR">White Sands Holtel
-                                            </option>
-                                            <option value="ML">Nakuru Lodge Hotel
-                                            </option>
-                                            <option value="PL">Intercontinental Hotel
-                                                Nairobi
-                                            </option>
-                                            <option value="SX">Stanlley Hotel Nairobi
-                                            </option>
-                                            <option value="SU">Red Elephant Hotel Tsavo
-                                            </option>
-                                            <option value="AR">Reef Hotel Mombasa
-                                            </option>
-                                            <option value="VW">Nyali Hotel Mombasa
-                                            </option>
-                                            <option value="AM">Voyager Hotel Mombasa
-                                            </option>
-                                            <option value="5L">African Safari Club
-                                                Mombasa
-                                            </option>
-                                            <option value="DP">La Pelgola Malindi
-                                            </option>
-                                            <option value="DP">Mada Hotel Kilifi
-                                            </option>
-                                            <option value="RK">Bamburi Beach Resort
-                                                Mombasa
-                                            </option>
-                                            <option value="AH">Kilifi Bay Resort Kilifi
-                                            </option>
-                                            <option value="FQ">Sun and Sand Club Mombasa
-                                            </option>
-                                            <option value="UU">Turtle Bay Watamu
-                                            </option>
-                                            <option value="7L">Windsor Hotel Nairobi
-                                            </option>
-                                            <option value="AC">FairMount Hotel and
-                                                Resort
-                                                Nairobi
+                                            <option value="4"> Guided Tour
                                             </option>
                                             </select>
                                     </div>
@@ -133,69 +97,174 @@
                             </form>
                     </section>
         </fieldset>
-  <div class="custom-control custom-checkbox form">
-    <input type="checkbox" class="custom-control-input" id="customControlValidation1" required>
-    <label class="custom-control-label" for="customControlValidation1">Check this custom checkbox</label>
-    <div class="invalid-feedback">Example invalid feedback text</div>
-  </div>
+      
+                        <div class="searchForm" style="height:375px" ng-app="firstApp" ng-controller="formController">
+                            <h4 style="text-align: center">Travel and Entertainment Search</h4>
 
-  <div class="custom-control custom-radio">
-    <input type="radio" class="custom-control-input" id="customControlValidation2" name="radio-stacked" required>
-    <label class="custom-control-label" for="customControlValidation2">Toggle this custom radio
-    </label>
-  </div>
-  <div class="custom-control custom-radio mb-3">
-    <input type="radio" class="custom-control-input" id="customControlValidation3" name="radio-stacked" required>
-    <label class="custom-control-label" for="customControlValidation3">Or toggle this other custom radio</label>
-    <div class="invalid-feedback">More example invalid feedback text</div>
-  </div>
+                            <form action="" role="form" id="form" class="form-horizontal" style="margin-left: 86px" method="get" ng-submit="processForm()">
 
-  <div class="form-group">
-    <select class="custom-select" required="recompile" id="get_post">
-      <option value="">Open this select menu</option>
-       <option selected>Choose...</option>
-      <option value="1">One</option>
-      <option value="2">Two</option>
-      <option value="3">Three</option>
-       <option value="1">One</option>
-      <option value="2">Two</option>
-      <option value="3">Three</option>
-       <option value="1">One</option>
-      <option value="2">Two</option>
-      <option value="3">Three</option>
-    </select>
-    <div class="invalid-feedback">Example invalid custom select feedback</div>
-  </div>
+                                <div class="form-group">
+                                    <label for="keyword" class="col-sm-2 control-lable">keyword*</label>
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control" id="keyword" ng-model="formData.keyword" name="keyword" data-bv-message="Please enter a keyword" required data-bv-notempty-message="" style="width: 386px; margin-left: 21px;">
+                                    </div>
+                                </div>
 
-  <div class="custom-file">
-    <input type="file" class="custom-file-input" id="validatedCustomFile" required>
-    <label class="custom-file-label" for="validatedCustomFile">Choose file...</label>
-    <div class="invalid-feedback">Enter your details</div>
-  </div>
-</form>
-<div class="card-body" class="col-sm-6 no_left_padding no_right_padding" class="form" onsubmit="return sendMail(this);" method="POST">
-                <input type="text" id="fromName" class="form-control" placeholder="Name">
-                  <input type="text" id="toName" class="form-control" placeholder="Email address">
-                  <input textarea rows="30" type="text" class="form-control" id="message" placeholder="Enter your  message" >
-                  <fieldset class="form-group">
-            <label id="fieldTitle">Customer Notes</label>
-            <textarea class="form-control" placeholder="Notes"model="myTextarea" required data="Please enter customer notes"></textarea>
-            <div class="textarea"></div>
-        </fieldset>
-    </div>
-  <div>
-    <label for="validationTextarea">Requests</label>
-    <textarea class="form-control is-invalid" id="validationTextarea" placeholder="Required information" required></textarea>
-    <div class="invalid-feedback">
-      Please enter any required information.
-    </div>
-  </div>
+
+                                <div class="form-group">
+                                    <label for="Category" class="col-sm-2 control-lable">Category</label>
+                                    <div class="col-sm-10">
+                                        <select name="category" class="form-control" id="Category" ng-model="formData.category" style="margin-left: 23px; width: 270px;">
+                                            <option value="Default">Default</option>
+                                            <option value="Airport">Airport</option>
+                                            <option value="Amusement_Park">Amusement Park</option>
+                                            <option value="Aquarium">Aquarium</option>
+                                            <option value="Art_Gallery">Art Gallery</option>
+                                            <option value="Bakery">Bakery</option>
+                                            <option value="Bar">Bar</option>
+                                            <option value="Beauty_Salon">Beauty Salon</option>
+                                            <option value="Bowling_Alley">Bowling Alley</option>
+                                            <option value="Bus_Station">Bus Station</option>
+                                            <option value="Cafe">Cafe</option>
+                                            <option value="Campground">Campground</option>
+                                            <option value="Car_Rental">Car Rental</option>
+                                            <option value="Casino">Casino</option>
+                                            <option value="Lodging">Lodging</option>
+                                            <option value="Movie_Theater">Movie Theater</option>
+                                            <option value="Museum">Museum</option>
+                                            <option value="Night_Club">Night Club</option>
+                                            <option value="Park">Park</option>
+                                            <option value="Parking">Parking</option>
+                                            <option value="Restaurant">Restaurant</option>
+                                            <option value="Shopping_Mall">Shopping Mall</option>
+                                            <option value="Stadium">Stadium</option>
+                                            <option value="Subway_Station">Subway Station</option>
+                                            <option value="Taxi_Stand">Taxi Stand</option>
+                                            <option value="Train_Station">Train Station</option>
+                                            <option value="Transit_Station">Transit Station</option>
+                                            <option value="Travel_Agency">Travel Agency</option>
+                                            <option value="Zoo">Zoo</option>
+                                        </select>
+                                    </div>
+                                </div>
+   <hr class="my-4 inline-block col-sm-4" id="bgimg1">
+                <div class="container">
+                
+                    <h2>Contact</h2>
+                    <p>Let us book your next trip!</p>
+                    <i class="fa fa-map-marker" style="width:30px"></i> Chicago, US<br>
+                    <i class="fa fa-phone" style="width:30px"></i> Phone: +00 151515<br>
+                    <i class="fa fa-envelope" style="width:30px"> </i> Email: mail@mail.com<br>
+                    <form action="/action_page.php" target="_blank">
+                        <p><input class="w3-input padding-16 border" type="text" placeholder="Name" required name="Name">
+                        </p>
+                        <p><input class="input padding-16 border" type="text" placeholder="Email" required name="Email">
+                        </p>
+                        <p><input class="input padding-16 border" type="text" placeholder="Message" required name="Message">
+                        </p>
+                        <p><button autofill onsubmit="sendEmail" onclick='sendEmail()' class="padding-large" type="submit">SEND MESSAGE</button></p>
+                    </form>
+
+
+
+                            <script>
+                                // Get the modal
+                                var modal = document.getElementById('id01');
+
+                                // When the user clicks anywhere outside of the modal, close it
+                                window.onclick = function(event) {
+                                    if (event.target == modal) {
+                                        modal.style.display = "none";
+                                    }
+                                }
+                                // Tabs
+                                function openLink(evt, linkName) {
+                                    var i, x, tablinks;
+                                    x = document.getElementsByClassName("myLink");
+                                    for (i = 0; i < x.length; i++) {
+                                        x[i].style.display = "none";
+                                    }
+                                    tablinks = document.getElementsByClassName("tablink");
+                                    for (i = 0; i < x.length; i++) {
+                                        tablinks[i].className = tablinks[i].className.replace(" teal", "");
+                                    }
+                                    document.getElementById(linkName).style.display = "block";
+                                    evt.currentTarget.className += " teal";
+                                }
+
+                                // Click on the first tablink on load
+                                document.getElementsByClassName("tablink")[0].click(); <
+                                script type = "text/javascript" >
+                                    // This example displays an address form, using the autocomplete feature
+                                    // of the Google Places API to help users fill in the information.
+
+                                    // This example requires the Places library. Include the libraries=places
+                                    // parameter when you first load the API. For example:
+                                    // <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places">
+
+                                    var placeSearch, autocomplete;
+                                var componentForm = {
+                                    street_number: 'short_name',
+                                    route: 'long_name',
+                                    locality: 'long_name',
+                                    administrative_area_level_1: 'short_name',
+                                    country: 'long_name',
+                                    postal_code: 'short_name'
+                                };
+
+                                function initAutocomplete() {
+                                    // Create the autocomplete object, restricting the search to geographical
+                                    // location types.
+                                    autocomplete = new google.maps.places.Autocomplete(
+                                        /** @type {!HTMLInputElement} */
+                                        (document.getElementById('autocomplete')), {
+                                            types: ['geocode']
+                                        });
+
+                                    // When the user selects an address from the dropdown, populate the address
+                                    // fields in the form.
+                                    autocomplete.addListener('place_changed', fillInAddress);
+                                }
+
+                                function fillInAddress() {
+
+                                }
+
+                                // Bias the autocomplete object to the user's geographical location,
+                                // as supplied by the browser's 'navigator.geolocation' object.
+                            </script>
+                            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDoAhH36BoUXnvwwe4WS38Zx_tShnv-p8c&libraries=places&callback=initAutocomplete" async defer></script>
+
+
+                            <script>
+                                var firstApp = angular.module('firstApp', []);
+
+                                function formController($scope, $http) {
+                                    $scope.formData = {};
+                                    $scope.processForm = function() {
+                                        $http({
+                                                method: 'GET',
+                                                url: '',
+                                                data: $.param($scope.formData),
+                                                headers: {
+                                                    'Content-Type': ''
+                                                }
+                                            })
+                                            .success(function(data) {
+                                                console.log(data);
+                                            });
+                                    };
+                                }
+                            </script>
+                        </footer>
+            </body>
+
+    </html>
     
   <button onclick='sendEmail()'>Send Email</button>
 
     <!--Footer section  bootstrap snippet-->
  <blockquote class="blockquote text-center container-fluid">
-  <p class="mb-0"> Start your unforgetable, customised,  exceptional luxurious Kenya safari holidays with us today!</p>
   <footer class="container-fluid blockquote-footer">
   <ul class="list-inline social-links">
    <li class="list-inline-item">
@@ -240,13 +309,47 @@
                 <a href="#" class="cd-top text-replace js-cd-top">Top</a>
 </cite></footer>
 </blockquote>
-              
+
+
+                    </div>
+                    <div class="col">
+                        <div class="hide-sm-btn">
+                            <btn>Or sign in manually:</btn>
+                        </div>
+
+                        <input type="text" name="username" placeholder="Username" required>
+                        <input type="password" name="password" placeholder="Password" required>
+                        <input type="submit" value="Login">
+                    </div>
+
+
+            <script>
+            
+                // Tabs
+                function openLink(evt, linkName) {
+                    var i, x, tablinks;
+                    x = document.getElementsByClassName("myLink");
+                    for (i = 0; i < x.length; i++) {
+                        x[i].style.display = "none";
+                    }
+                    tablinks = document.getElementsByClassName("tablink");
+                    for (i = 0; i < x.length; i++) {
+                        tablinks[i].className = tablinks[i].className.replace(" teal", "");
+                    }
+                    document.getElementById(linkName).style.display = "block";
+                    evt.currentTarget.className += " teal";
+                }
+
+                // Click on the first tablink on load
+                document.getElementsByClassName("tablink")[0].click();
+            </script>
+
+            </body>             
                
         </section>
 
          <script src="assets/js/sendEmail.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
