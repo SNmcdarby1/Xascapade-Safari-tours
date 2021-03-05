@@ -1409,7 +1409,7 @@ div.desc {
             }
 
             .navbar a:hover {
-                background-color: #ddd;
+                background-color: rgb(245, 231, 231);
                 color: rgb(241, 77, 77);
             }
 
