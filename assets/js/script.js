@@ -43,63 +43,24 @@
      }
  });
  // Material Boxed
- const mb = document.querySelectorAll('.materialboxed');
- M.Materialbox.init(mb, {});
 
- // Scrollspy
- const ss = document.querySelectorAll('.scrollspy');
- M.ScrollSpy.init(ss, {});
-
- const ac = document.querySelector('.a.mobie-nav');
- M.Autocomplete.init(ac, {
-     data: {
-         "Abi Dhabi": null,
-         "Rio": null,
-         "Spain": null,
-         "Aruba": null,
-         "Kenya": null,
-         "London": null,
-         "Dublin": null,
-         "Cancun Mexico": null,
-         "Hawai": null,
-         "Florida": null,
-         "New York": null,
-         "Jamaica": null,
-         "France": null,
-         "Australia": null,
-         "China": null,
-         "Netherlands": null,
-         "China": null,
-         "Malaysia": null,
-         "Newzealand": null,
-         "Ontrio": null,
-         "Auckland": null,
-
-     }
- });
  // Material Boxed
  $("button").click(function() {
      $("button").toggleClass(".tab");
  });
- $(newFunction('')).css("background-color", "yellow");
+ const newLocal = "background-color";
+ $(newFunction('')).css(newLocal, "yellow");
 
 
- var countries = ["Afghanistan", "Albania", "Algeria", "Andorra", "Angola", "Anguilla", "Antigua &amp; Barbuda", "Argentina", "Armenia", "Aruba", "Australia", "Austria", "Azerbaijan", "Bahamas", "Bahrain", "Bangladesh", "Barbados", "Belarus", "Belgium", "Belize", "Benin", "Bermuda", "Bhutan", "Bolivia", "Bosnia &amp; Herzegovina", "Botswana", "Brazil", "British Virgin Islands", "Brunei", newFunction_1()];
+ var city = ["Nairobi", "Lamu", "Mombasa", "Nakuru", "Kisumu", "Masai Mara", "Tsavo"]
+ newFunction_1()];
 
- $('#myCarousel').on('slid.bs.carousel', function(_) {
-     $('#myCarousel').carousel('2') // Will slide to the slide 2 as soon as the transition to slide 1 is finished
- });
  $(document).ready(function() {
      $("p").click(function() {
          $(this).hide();
      });
  });
- $('#myCarousel').carousel('2') // Will slide to the slide 2 as soon as the transition to slide 1 is finished
- $(document).ready(function() {
-     $("p").click(function() {
-         $(this).hide();
-     });
- });
+
  $(function() {
      $('#myTab li:last-child a').tab('show')
  });
@@ -162,17 +123,17 @@
      }
  }
  // Tabs
- function openLink(evt, linkName) {
+ function openLink(k, v) {
      var i, x, tablinks;
-     x = document.getElementsByClassName("myLink");
+     x = document.getElementsByClassName("email");
      for (i = 0; i < x.length; i++) {
          x[i].style.display = "none";
      }
-     tablinks = document.getElementsByClassName("tablink");
+     tablinks = document.getElementsByClassName("k");
      for (i = 0; i < x.length; i++) {
          tablinks[i].className = tablinks[i].className.replace(" teal", "");
      }
-     document.getElementById(linkName).style.display = "block";
+     document.getElementById(any).style.display = "block";
      evt.currentTarget.className += " teal";
  }
 
@@ -191,9 +152,9 @@
      street_number: 'short_name',
      route: 'long_name',
      locality: 'long_name',
-     administrative_area_level_1: 'short_name',
+     location: 'short_name',
      country: 'long_name',
-     postal_code: 'short_name'
+     tour: 'short_name'
  };
 
  function initAutocomplete() {
@@ -217,9 +178,9 @@
  // Bias the autocomplete object to the user's geographical location,
  // as supplied by the browser's 'navigator.geolocation' object.
  <
- /script> <
- script
- src = "https://maps.googleapis.com/maps/api/js?key=AIzaSyDoAhH36BoUXnvwwe4WS38Zx_tShnv-p8c&libraries=places&callback=initAutocomplete"
+ /script>  <
+ script > < /script></script >
+     src = "https://maps.googleapis.com/maps/api/js?key=AIzaSyDoAhH36BoUXnvwwe4WS38Zx_tShnv-p8c&libraries=places&callback=initAutocomplete"
  async defer > < /script>
 
 
@@ -324,15 +285,7 @@
      var btn = document.getElementById("myBtn");
 
      // Pause and play the video, and change the button text
-     function myFunction() {
-         if (video.paused) {
-             video.play();
-             btn.innerHTML = "Pause";
-         } else {
-             video.pause();
-             btn.innerHTML = "Play";
-         }
-     }
+
      /*execute a function presses a key on the keyboard:*/
      inp.addEventListener("keydown", function(e) {
          var x = document.getElementById(this.id + "autocomplete-list");
@@ -377,18 +330,18 @@
          }
      }
      // Tabs
-     function openLink(evt, linkName) {
+     function openLink(evt, tour) {
          var i, x, tablinks;
-         x = document.getElementsByClassName("flight");
+         x = document.getElementsByClassName("selftour");
          for (i = 0; i < x.length; i++) {
              x[i].style.display = "none";
          }
-         tablinks = document.getElementsByClassName("ddlAirline");
+         tablinks = document.getElementsByClassName("grouptour");
          for (i = 0; i < x.length; i++) {
-             flights[i].className = flights[i].className.replace(" teal", "");
+             flights[i].className = tour[i].className.replace(" privatetour", "");
          }
-         document.getElementById(flights).style.display = "ddlAirline";
-         evt.currentTarget.className += " teal";
+         document.getElementById(tour).style.display = "privatetour";
+         evt.currentTarget.className += " tour";
      }
 
      function closeAllLists(elmnt) {

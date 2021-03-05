@@ -60,8 +60,8 @@ html {
 }
 
 textarea {
-    width: 300px;
-    height: 450px;
+    width: 800px;
+    height: 600px;
 }
 
 body {
@@ -85,8 +85,8 @@ ul {
 
 li {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
+    margin: 10px;
+    padding: 10px;
 }
 
 /* navbar */
@@ -112,7 +112,8 @@ li {
 /*w3school*/
 #navbar {
     overflow: hidden;
-    background-color: rgb(252, 255, 53);
+    padding-top: 10px;
+    padding: 15px;
 }
 
 /* Navbar links */
@@ -149,11 +150,11 @@ Style the links inside the navigation bar */
 
 .topnav a {
     float: left;
-    display: block;
-    color: rgb(235, 233, 128) text-align: center;
-    padding: 14px 16px;
+    display: flex;
+    color: rgb(240, 240, 236) text-align: center;
+    padding: 4px 6px;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 1rem;
 }
 
 
@@ -161,7 +162,7 @@ Style the links inside the navigation bar */
 .bar a:link,
 .bar a:visited,
 .bar a:active {
-    color: #FFFFFF;
+    color: rgb(62, 231, 28);
     text-decoration: none;
 }
 
@@ -427,7 +428,7 @@ div.input-box label.error {
 }
 
 #mapid {
-    height: 180px;
+    height: 80px;
 }
 
 #map {
@@ -735,12 +736,12 @@ section {
 body {
     margin: 0;
     font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    font-size: 1rem;
+    font-size: 2.5rem;
     font-weight: 400;
-    line-height: 1.5;
+    line-height: 2.5;
     color: #212529;
     text-align: left;
-    background-color: #fff;
+    background-color: rgb(250, 246, 246);
 }
 
 [tabindex="-1"]:focus:not(:focus-visible) {
@@ -789,7 +790,7 @@ ol,
 ul,
 dl {
     margin-top: 0;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
 
 ol ol,
@@ -845,6 +846,7 @@ a {
 
 a:hover {
     color: #e6b301;
+    font-size: 1rem;
     text-decoration: underline;
 }
 
@@ -1180,8 +1182,8 @@ mark,
 
 .img-thumbnail {
     padding: 0.25rem;
-    background-color: #fff;
-    border: 1px solid #dee2e6;
+    background-color: rgb(243, 239, 239);
+    border: 1px solid #f9fcff;
     border-radius: 0.25rem;
     max-width: 100%;
     height: auto;
@@ -11923,7 +11925,7 @@ header.masthead .masthead-heading {
     position: relative;
     float: right;
     width: 100%;
-    padding: 0 20px 0 100px;
+    padding: 0 40px 0 100px;
     text-align: left;
 }
 
@@ -12092,8 +12094,8 @@ header.masthead .masthead-heading {
 }
 
 .team-member img {
-    width: 14rem;
-    height: 14rem;
+    width: 28rem;
+    height: 28rem;
     border: 0.5rem solid rgba(0, 0, 0, 0.1);
 }
 
@@ -12104,7 +12106,7 @@ header.masthead .masthead-heading {
 
 section#contact {
     background-color: #212529;
-    background-image: url("../assets/img/map-image.png");
+    background-image: url("../assets/images/shoes.jpg");
     background-repeat: no-repeat;
     background-position: center;
 }

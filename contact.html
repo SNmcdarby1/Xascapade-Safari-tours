@@ -5,13 +5,18 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Xascapade Travel</title>
-     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
-    <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.2.4/email.min.js"></script>
+</head>
+<div id="data"></div>
+<script type="text/javascript "></script>
+<script type="text/javascript" id="index">
+</script>
+ <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.2.4/email.min.js"></script>
 <script type="text/javascript">
     (function() {
         emailjs.init("user_cbk0RT9vpd78BlYyPC67x");
@@ -19,239 +24,79 @@
 </script>
 </head>
 <div id="data"></div>
-<script type="text/javascript "></script>
-<script type="text/javascript" id="Post">
-</script>
-<body class="container-fluid no-gutter">
-      <div class="card-body">
-                     <h1 class="card">XASCAPADE TOUR GUIDE</h1>
-                    <p class="card-text">SAFARI TOURS</p>
-                    
-                </div>
-  <div id="navbar">
-  <a href="index.html">Home</a>
-  <a href="about.html">About</a>
-   <a href="gallery.html">Gallery</a>
-  <a href="places.html">Places</a>
-  <a href="contact.html">Contact</a>
-</div>
 
-<body class="container-fluid">
-    <Section class="container-fluid inline-block">
-            <div class="background-image" id="bgimg1">
-     
-            <div class="help-block with-errors"></div>
-             <section class="container">
-                    <form class="card" class="form" onsubmit="return sendMail(this);" method="POST">
-                     <input type="hidden" name="NumberOfProperty[]" id="NumberOfPropertyTxt<?php echo $id;?>" value=""/>
-                     <div class="card-body" class="col-sm-6 ">
-                     <div class="form-group " id="get_post">
-                     <label for="safari">Tours</label>
-                    <select name="tour" id="safari" class="form-control">
-                   <option value="1" selected>Type off tours
-                      </option>
-                       <option value="2">Private Tour
-                        </option>
-                           <option value="3">*Self guided Tour
-                             </option>
-                             <option value="4"> Guided Tour
-                               </option>
-                                 </select>
-                                 </div>
-
-                                </div>
-                            </form>
-                    </section>
-        </fieldset>
-      
-                        <div class="searchForm" style="height:375px" ng-app="firstApp" ng-controller="formController">
-                            <h4 style="text-align: center">Travel and Entertainment Search</h4>
-
-                            <form action="" role="form" id="form" class="form-horizontal" style="margin-left: 86px" method="get" ng-submit="processForm()">
-
-                                <div class="form-group">
-                                    <label for="keyword" class="col-sm-2 control-lable">keyword*</label>
-                                    <div class="col-sm-10">
-                                        <input type="text" class="form-control" id="keyword" ng-model="formData.keyword" name="keyword" data-bv-message="Please enter a keyword" required data-bv-notempty-message="" style="width: 386px; margin-left: 21px;">
-                                    </div>
-                                </div>
-
-
-                                <div class="form-group">
-                                    <label for="Category" class="col-sm-2 control-lable">Category</label>
-                                    <div class="col-sm-10">
-                                        <select name="category" class="form-control" id="Category" ng-model="formData.category" style="margin-left: 23px; width: 270px;">
-                                            <option value="a">Nairobi</option>
-               <option value="b">Mombasa</option>
-               <option value="c">Nakuru</option>
-                <option value="d">Kisumu</option>
-               <option value="e">Lamu</option></label>
-              <select class="custom-select" name="City" id="get_post">
-               <option value="a">Nairobi</option>
-               <option value="b">Mombasa</option>
-               <option value="c">Nakuru</option>
-                <option value="d">Kisumu</option>
-               <option value="e">Lamu</option>
-                                        </select>
-                                    </div>
-                                </div>
-   <hr class="my-4 inline-block col-sm-4" id="bgimg1">
-                <div class="container">
-                <section class="page-section" id="contact">
-            <div class="container">
-                <div class="text-center">
-                
-                    <h2 class="section-heading text-uppercase">Contact Us</h2>
-                    <h3 class="section-subheading text-muted">Looking forward to hear from you.</h3>
-                </div>
-                <form id="contactForm" name="sentMessage" novalidate="novalidate">
-                    <div class="row align-items-stretch mb-5">
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <input class="form-control" id="name" type="text" placeholder="Your Name *" required="required" data-validation-required-message="Please enter your name." />
-                                <p class="help-block text-danger"></p>
-                            </div>
-                            <div class="form-group">
-                                <input class="form-control" id="email" type="email" placeholder="Your Email *" required="required" data-validation-required-message="Please enter your email address." />
-                                <p class="help-block text-danger"></p>
-                            </div>
-                            <div class="form-group mb-md-0">
-                                <input class="form-control" id="phone" type="tel" placeholder="Your Phone *" required="required" data-validation-required-message="Please enter your phone number." />
-                                <p class="help-block text-danger"></p>
-                            </div>
-                        </div>
-                        <div class="col-md-12">
-                            <div class="form-group form-group-textarea mb-md-0">
-                                <textarea class="form-control" id="message" placeholder="Your Message *" required="required" data-validation-required-message="Please enter a message."></textarea>
-                                
-                                <p class="help-block text-danger"></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="text-center">
-                        <div id="success"></div>
-                        <button class="btn btn-primary btn-xl text-uppercase" id="sendMessageButton" onclick='sendEmail()' type="submit">Send Message</button>
-                    </div>
-                </form>
-            </div>
-        </section>
-        <!-- Footer-->
-        <footer class="footer py-4">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-4 text-lg-left">Copyright © Your Website 2020</div>
-                    <div class="col-lg-4 my-3 my-lg-0">
-                        
-                    </div>
-                    <div class="col-lg-4 text-lg-right">
-                        <a class="mr-3" href="#!">Privacy Policy</a>
-                        <a href="#!">Terms of Use</a>
-                        
-                    </div>
-                </div>
-            </div>
-        </footer>
-        <!-- Portfolio Modals-->
-        <!-- Modal 1-->
-        
-
-
-                            <script>
-                                // Get the modal
-                                var modal = document.getElementById('id01');
-
-                                // When the user clicks anywhere outside of the modal, close it
-                                window.onclick = function(event) {
-                                    if (event.target == modal) {
-                                        modal.style.display = "none";
-                                    }
-                                }
-                                // Tabs
-                                function openLink(evt, linkName) {
-                                    var i, x, tablinks;
-                                    x = document.getElementsByClassName("myLink");
-                                    for (i = 0; i < x.length; i++) {
-                                        x[i].style.display = "none";
-                                    }
-                                    tablinks = document.getElementsByClassName("tablink");
-                                    for (i = 0; i < x.length; i++) {
-                                        tablinks[i].className = tablinks[i].className.replace(" teal", "");
-                                    }
-                                    document.getElementById(linkName).style.display = "block";
-                                    evt.currentTarget.className += " teal";
-                                }
-
-
-                                    var placeSearch, autocomplete;
-                                var componentForm = {
-                                    street_number: 'short_name',
-                                    route: 'long_name',
-                                    locality: 'long_name',
-                                    administrative_area_level_1: 'short_name',
-                                    country: 'long_name',
-                                    postal_code: 'short_name'
-                                };
-
-                                function initAutocomplete() {
-                                    // Create the autocomplete object, restricting the search to geographical
-                                    // location types.
-                                    autocomplete = new google.maps.places.Autocomplete(
-                                        /** @type {!HTMLInputElement} */
-                                        (document.getElementById('autocomplete')), {
-                                            types: ['geocode']
-                                        });
-
-                                    // When the user selects an address from the dropdown, populate the address
-                                    // fields in the form.
-                                    autocomplete.addListener('place_changed', fillInAddress);
-                                }
-
-                                function fillInAddress() {
-
-                                }
-
-                                // Click on the first tablink on load
-                                    
-                                // Bias the autocomplete object to the user's geographical location,
-                                // as supplied by the browser's 'navigator.geolocation' object.
-                                document.getElementsByClassName("tablink")[0].click(); <script type = "text/javascript" >
-                                   
-                                <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDoAhH36BoUXnvwwe4WS38Zx_tShnv-p8c&libraries=places&callback=initAutocomplete" async defer></script>
-
-                             
-                          
-                            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDoAhH36BoUXnvwwe4WS38Zx_tShnv-p8c&libraries=places&callback=initAutocomplete" async defer></script>
-
-
-                            <script>
-                                var firstApp = angular.module('firstApp', []);
-
-                                function formController($scope, $http) {
-                                    $scope.formData = {};
-                                    $scope.processForm = function() {
-                                        $http({
-                                                method: 'GET',
-                                                url: '',
-                                                data: $.param($scope.formData),
-                                                headers: {
-                                                    'Content-Type': ''
-                                                }
-                                            })
-                                            .success(function(data) {
-                                                console.log(data);
-                                            });
-                                    };
-                                }
-                            </script>
-                        </footer>
-            </body>
-
-    </html>
+<body class="container-fluid" id="page-top">
+       <!--body-->                       
     
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="assets/images/xascapade.jpg" alt="" /></a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Home
+                    <i class="fas fa-bars ml-1"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav text-uppercase ml-auto">
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="places.html">Places</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="about.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="gallery.html">Gallery</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="contacthtml">Contact</a></li>
+                    </ul>
+                    <a href="index.html">Home</a>
+  
+                </div>
+            </div>
+        </nav>
+<body class="container-fluid">
+<br><b> Choose your desired tour guides: </b><br>  
+<input type="radio" id="selftour" value="tour1">Self 4WD tour<br>   
+<input type="radio" id="localtour" value="tour2">Local Tour Guide<br>   
+<input type="radio" id="privatetour" value="tour3">Accreditted tour guide<br>  
+<input type="radio" id="grouptour" value="tour4">Group Tour guides<br><br> 
+ 
 
+<button type="button" onclick=" checkButton()"> Submit </button>   
+<script>  
+function checkButton() {    
+if(document.getElementById('tour1').checked) {   
+document.getElementById("disp").innerHTML   
+= document.getElementById("selftour").value   
++ " radio button is checked";   
+}   
+else if(document.getElementById('tour2').checked) {   
+document.getElementById("disp").innerHTML   
+= document.getElementById("privatetour").value   
++ " radio button is checked";     
+}   
+else if(document.getElementById('tour3').checked) {   
+document.getElementById("disp").innerHTML   
+= document.getElementById("grouptour").value   
++ " radio button is checked";     
+}   
+else if(document.getElementById('tour4').checked) {   
+document.getElementById("disp").innerHTML   
+= document.getElementById("grouptour").value   
++ " radio button is checked";     
+}  
+else {   
+document.getElementById("error").innerHTML   
+= "You have not selected any season";   
+}   
+}   
+</script>   
+
+<h3 id="disp" style= "color:green"> </h3>  
+<h4 id="error" style= "color:red"> </h4>  
+</body>  
+
+
+  <button onclick='sendEmail()'>Send Email</button>
 
     <!--Footer section  bootstrap snippet-->
  <blockquote class="blockquote text-center container-fluid">
+ 
   <footer class="container-fluid blockquote-footer">
   <ul class="list-inline social-links">
    <li class="list-inline-item">
@@ -296,46 +141,19 @@
                 <a href="#" class="cd-top text-replace js-cd-top">Top</a>
 </cite></footer>
 </blockquote>
-
-
-                    </div>
-                    
-
-
-            <script>
-            
-                // Tabs
-                function openLink(evt, linkName) {
-                    var i, x, tablinks;
-                    x = document.getElementsByClassName("myLink");
-                    for (i = 0; i < x.length; i++) {
-                        x[i].style.display = "none";
-                    }
-                    tablinks = document.getElementsByClassName("tablink");
-                    for (i = 0; i < x.length; i++) {
-                        tablinks[i].className = tablinks[i].className.replace(" teal", "");
-                    }
-                    document.getElementById(linkName).style.display = "block";
-                    evt.currentTarget.className += " teal";
-                }
-
-                // Click on the first tablink on load
-                document.getElementsByClassName("tablink")[0].click();
-            </script>
-
-            </body>             
+              
                
         </section>
 
          <script src="assets/js/sendEmail.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
     </script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
     // Override this and recompile your Sass to generate different states
-    s<script
 $form-validation-states: map-merge(
   (
     "valid": (
@@ -347,7 +165,7 @@ $form-validation-states: map-merge(
       "icon": $form-feedback-icon-invalid
     )
   ),
-  $form-validation-states
+  $form-validation-tour
 );
 // onclick function
 function myFunction() {
@@ -358,8 +176,8 @@ function myFunction() {
 // Loop from `_forms.scss`
 // Any modifications to the above Sass map will be reflected in your compiled
 // CSS via this loop.
-@each $state, $data in $form-validation-states {
-  @include form-validation-state($state, map-get($data, color), map-get($data, icon));
+@each $tour, $data in $form-validation-tour {
+  @include form-validation-tour($tour, tour-get($data, color), emeil-get($data, requirement));
 }
     </script>
 
@@ -368,3 +186,9 @@ function myFunction() {
 </html>
 
    
+   
+
+
+
+
+
