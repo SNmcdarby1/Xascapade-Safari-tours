@@ -74,12 +74,22 @@ c) The ease in and ease out of the pages to be visible and easy to  navigate thr
    * visual designs and data collection are working.
    * The pages are easy accessibl
    * The site is suitable for all demographics
+   * usability and key factors is functionalityand capture the images and information needed to the user.
+   
+   Home page
+   ---------
+* The navigation buttons and images to be clear to the user
+* To find plenty of beautiful images of idyllic places
+* The typography to be appealing to the user
+* The content and classification should give direct     information to the user
 
-- developers goals
+Developers goals
+-----------------
 
 * Having clean coding languages that will be easy to navigate through the code
 * Easily accessible todevelopers
 * A project that one will be excited to make as their own 
+
 ### 4. Features for the website design.
 
   * Images 
@@ -116,7 +126,7 @@ c) The ease in and ease out of the pages to be visible and easy to  navigate thr
 
   * The ability for the user to access information in all pages ,buttons and the social links.
   * Visually my first approach was not user friendly beacuse the navigation bottons where not neat . This time i tried to narrow it down.
-  * 
+  * Allowing the user to navigate easily from page to page  
   *  The Navigation bar was not easily accessible . I have to try diffent designs that will anablethe client to press the home button to access other pages.
   * The packages had no value , soi added up the value and uploaded images to show the product.
   * The carousel in the gallery page was not working so i decided to have static images all in one page.
@@ -177,6 +187,8 @@ c) The ease in and ease out of the pages to be visible and easy to  navigate thr
  * Email js was not responsive as well![](https://downloads.intercomcdn.com/i/o/287947159/50f3a6490df580d6a0e2c094/image.png). The support team help me find where the problem was and tried to fix it.  
  * The footer in the place was not working. I noticed that some of the tags were not closed once i did that the footer was visible to the user.
  * I deleted the safari and booking page. Reason being i wnted to merge the form group with the contact placeholder. this makes makes it easier for the user to select and fill in the details without moving frompage to page. In the contact page i ditted text area and added input, i added collipsibles in the about page.According to the feedback that i received fromthe accessors one of the comments was that i needed specify the usage of the site. The collisible gives the user different ideas of the tours. 
+ * Choosing a theme and navigation that would look good was a challenge. I did some research and i ended up using the bootstap starters template given that i neede to save time and work with timeframe that i had. 
+* To do this i dowloaded the folder and unziped it in the workspace using the unzip git command. This enabled me to change some of the styles , content, images and typography. According to my design.
 
 
 
@@ -224,6 +236,8 @@ I. Photographers
 * <span>Photo by <a href="https://unsplash.com/@mattpunsplash?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Matthieu Pétiard</a> on <a href="https://unsplash.com/s/photos/camping-safari-in-kenya?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
 * <span>Photo by <a href="https://unsplash.com/@davidclode?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">David Clode</a> on <a href="https://unsplash.com/s/photos/lodgei-in-kenya?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
 * Photo by Louis Hansel @shotsoflouis
+*  Google safari images under the  tools dropbox settings i was able to select images in the Commercial & other licenses, Creative Commons Usage rights dropbox
+
 
 ### 12. Youtube tutorials
 
