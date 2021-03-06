@@ -6,7 +6,7 @@ function sendEmail(tempParams) {
         message: document.getElementById("tours").value,
         message: document.getElementById("login").value,
         message: document.getElementById("keyword").value,
-        message: document.getElementById("category").value,
+        message: document.getElementById("category").value
     };
     emailjs.send("service_aw4lcie", "template_p9qe11h", tempParams)
         .then(function(res) {

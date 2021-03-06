@@ -2,18 +2,7 @@
 
 /*------------------------------------------------------body*/
 
-* {
-    box-sizing: none;
-    margin: 0;
-    margin=top: 15px;
-    margin-bottom: 15px;
-    text-emphasis: none;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 15px;
-    scrollbar-highlight-color: black;
-}
-
-*,
+* *,
 *::after,
 *::before {
     margin: 0;
@@ -55,8 +44,8 @@ h4 {
 
 html {
     --primary-color: #4d0404;
-    --secondary-color: rgb(173, 117, 117);
-    --tertiary-color: rgb(92, 90, 90);
+    --secondary-color: rgb(54, 51, 51);
+    --tertiary-color: rgb(44, 14, 14);
     --light-color: rgb(2, 63, 60);
     scroll-behavior: smooth;
 }
@@ -185,16 +174,16 @@ Style the links inside the navigation bar */
 }
 
 /*
-Navigation bar styles
-*/
-.bar background-image: url("resources/background.gif");
-background-repeat: repeat-x;
-color: #FFFFFF;
-padding: .8em .5em .4em .8em;
-height: auto;
-/*height:1.8em;*/
-font-size: 1em;
-margin: 0;
+Navigation bar styles*/
+.bar {
+    background-image: url("..images/1075.jpg");
+    background-repeat: repeat-x;
+    color: #FFFFFF;
+    padding: .8em .5em .4em .8em;
+    height: auto;
+    /*height:1.8em;*/
+    font-size: 1em;
+    margin: 0;
 }
 
 .topNav {
@@ -362,13 +351,14 @@ nav li:not(:last-child),
 }
 
 div#contact_form {
-    width: 800px;
+    width: 200px;
     display: flex;
     align-items: stretch;
     font-size: medium;
     justify-content: space-evenly;
-    border: 2px solid rgb(19, 22, 22);
+    border: 1px solid rgb(19, 22, 22);
     padding: 10px;
+    margin-top: 25px;
 }
 
 div.input-box {
@@ -430,7 +420,7 @@ div.input-box label.error {
 }
 
 #mapid {
-    height: 80px;
+    height: auto;
 }
 
 #map {
@@ -2341,7 +2331,7 @@ pre code {
 .form-control:focus {
     color: #495057;
     background-color: #fff;
-    border-color: #ffeeb5;
+    border-color: #ffcab5;
     outline: 0;
     box-shadow: 0 0 0 0.2rem rgba(254, 209, 54, 0.25);
 }
@@ -2859,21 +2849,21 @@ fieldset:disabled a.btn {
 
 .btn-primary {
     color: #fff;
-    background-color: #fed136;
-    border-color: #fed136;
+    background-color: #7a7564;
+    border-color: #979797;
 }
 
 .btn-primary:hover {
     color: #fff;
     background-color: #131312;
-    border-color: #fec503;
+    border-color: #131212;
 }
 
 .btn-primary:focus,
 .btn-primary.focus {
     color: #fff;
-    background-color: #fec810;
-    border-color: #fec503;
+    background-color: #636261;
+    border-color: #302f2d;
     box-shadow: 0 0 0 0.2rem rgba(254, 216, 84, 0.5);
 }
 
@@ -2888,7 +2878,7 @@ fieldset:disabled a.btn {
 .btn-primary:not(:disabled):not(.disabled).active,
 .show>.btn-primary.dropdown-toggle {
     color: rgb(7, 3, 3);
-    background-color: #fec503;
+    background-color: rgb(71, 70, 67);
     border-color: #f3bd01;
 }
 
@@ -4639,7 +4629,7 @@ input[type=button].btn-block {
 }
 
 .nav-tabs .nav-link.disabled {
-    color: #6c757d;
+    color: #e8eaec;
     background-color: transparent;
     border-color: transparent;
 }
@@ -5063,7 +5053,7 @@ input[type=button].btn-block {
 }
 
 .navbar-light .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.5%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    background-image: url("..image/saf.jpg");
 }
 
 .navbar-light .navbar-text {
@@ -5105,7 +5095,7 @@ input[type=button].btn-block {
 .navbar-dark .navbar-nav .active>.nav-link,
 .navbar-dark .navbar-nav .nav-link.show,
 .navbar-dark .navbar-nav .nav-link.active {
-    color: #fff;
+    color: rgb(7, 0, 0);
 }
 
 .navbar-dark .navbar-toggler {
@@ -5122,12 +5112,12 @@ input[type=button].btn-block {
 }
 
 .navbar-dark .navbar-text a {
-    color: #fff;
+    color: rgb(10, 1, 1);
 }
 
 .navbar-dark .navbar-text a:hover,
 .navbar-dark .navbar-text a:focus {
-    color: #fff;
+    color: rgb(7, 0, 0);
 }
 
 .card {
@@ -11176,9 +11166,9 @@ img::-moz-selection {
 }
 
 #mainNav {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    background-color: #8b822f;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    background-color: #81817e;
 }
 
 #mainNav .navbar-toggler {
@@ -11216,15 +11206,15 @@ img::-moz-selection {
 
 @media (min-width: 992px) {
     #mainNav {
-        padding-top: 1.5rem;
-        padding-bottom: 1.5rem;
+        padding-top: .5rem;
+        padding-bottom: .5rem;
         border: none;
-        background-color: black;
+        background-color: rgb(105, 104, 104);
         transition: padding-top 0.3s ease-in-out, padding-bottom 0.3s ease-in-out;
     }
 
     #mainNav .navbar-brand {
-        font-size: 1.5em;
+        font-size: .5em;
         transition: font-size 0.3s ease-in-out;
     }
 
@@ -11691,4 +11681,24 @@ section#contact form#contactForm :-ms-input-placeholder {
     text-align: center;
     font-size: 0.9rem;
     font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.footer {
+    text-align: center;
+    font-size: 0.9rem;
+    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+font-family: "Montserrat",
+-apple-system,
+BlinkMacSystemFont,
+"Segoe UI",
+Roboto,
+"Helvetica Neue",
+Arial,
+sans-serif,
+"Apple Color Emoji",
+"Segoe UI Emoji",
+"Segoe UI Symbol",
+"Noto Color Emoji";
 }
