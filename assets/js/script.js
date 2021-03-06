@@ -96,22 +96,8 @@
      ();
      return;
      any;
-     xl: 1200;
-     px; {
-         return;
-         $container - max - widths;
-         () => {
-             540;
-             px,
-             720;
-             px,
-             960;
-             px,
-             1140;
-             px;
-         };
-         return;
-     };
+
+ };
  }
  // Get the modal
  var modal = document.getElementById('id01');
