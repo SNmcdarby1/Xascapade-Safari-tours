@@ -176,7 +176,6 @@ Style the links inside the navigation bar */
 /*
 Navigation bar styles*/
 .bar {
-    background-image: url("..images/1075.jpg");
     background-repeat: repeat-x;
     color: #FFFFFF;
     padding: .8em .5em .4em .8em;
@@ -842,7 +841,7 @@ sup {
 }
 
 a {
-    color: #c6c8ca;
+    color: #fed136;
     text-decoration: none;
     background-color: transparent;
 }
@@ -10961,6 +10960,7 @@ a.text-dark:focus {
 
 .text-muted {
     color: #6c757d !important;
+    text-align: left !important
 }
 
 .text-black-50 {
@@ -11257,7 +11257,7 @@ header.masthead {
     padding-bottom: 2rem;
     text-align: center;
     color: rgb(15, 15, 15);
-    background-image: url("../images/1075.jpg");
+    background-image: url("../images/back.jpg");
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-position: center center;
