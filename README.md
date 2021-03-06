@@ -68,7 +68,7 @@ c) The ease in and ease out of the pages to be visible and easy to  navigate thr
 * Enabling features that will sell the product and services. Making it easy to convey the story to the client.
 
 ### 3. UX 
-
+  * * I was inspired by the bootsrap4 starter template 
 - User Goals
    * Easy access of the website. The art and design 
    * visual designs and data collection are working.
