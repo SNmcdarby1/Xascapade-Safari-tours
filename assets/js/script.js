@@ -13,7 +13,28 @@
      $('#myTab li:last-child a').tab('show') // Select last tab
      $('#myTab li:nth-child(3) a').tab('show') // Select third tab
  });
+ $('#myList a').on('click', function(e) {
+     e.preventDefault()
+     $(this).tab('show')
+ })
+ $('#myList a[href="#profile"]').tab('show') // Select tab by name
+ $('#myList a:first-child').tab('show') // Select first tab
+ $('#myList a:last-child').tab('show') // Select last tab
+ $('#myList a:nth-child(3)').tab('show') // Select third tab
+     <
+     /script> <
+ script type = "text/javascript" >
+     <
+     !--allClassesLink = document.getElementById("allclasses_navbar_bottom");
+ if (window == top) {
+     allClassesLink.style.display = "block";
+ } else {
+     allClassesLink.style.display = "none";
+ }
 
+
+ <
+ !--validated cade using freeformatter.com-- > < /script>
 
  const ac = document.querySelector('.autocomplete');
  M.Autocomplete.init(ac, {

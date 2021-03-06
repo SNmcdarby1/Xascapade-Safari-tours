@@ -303,8 +303,11 @@ Navigation bar styles*/
 }
 
 #map {
-    height: 400px;
+    height: 200px;
     width: 100%;
+    float: left;
+    display: block;
+    justify-content: left;
 }
 
 
@@ -839,13 +842,13 @@ sup {
 }
 
 a {
-    color: #fed136;
+    color: #c6c8ca;
     text-decoration: none;
     background-color: transparent;
 }
 
 a:hover {
-    color: #e6b301;
+    color: #ad922d;
     font-size: 1rem;
     text-decoration: underline;
 }
@@ -2311,6 +2314,8 @@ pre code {
     border-radius: 0.25rem;
     transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
+
+
 
 @media (prefers-reduced-motion: reduce) {
     .form-control {

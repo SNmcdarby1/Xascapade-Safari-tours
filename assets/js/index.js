@@ -1,3 +1,9 @@
+$("button").click(function() {
+    $("h3, h4, p").addClass("green");
+    $("div").addClass("important");
+}); <
+/script>
+
 function openLink(evt, linkName) {
     var i, x, tablinks;
     x = document.getElementsByClassName("myLink");
@@ -225,4 +231,5 @@ function fillInAddress() {
 }
 
 // Bias the autocomplete object to the user's geographical location,
+// as supplied by the browser's 'navigator.geolocation' object.tion,
 // as supplied by the browser's 'navigator.geolocation' object.
