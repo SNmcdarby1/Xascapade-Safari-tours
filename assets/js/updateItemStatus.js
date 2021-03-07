@@ -1,3 +1,13 @@
+function updateItemStatus() {
+    var cbId = this.id.replace("cb_", "");
+    var itemText = document.getElementById("item_" + cbId);
+    if (this.checked) {
+        itemText.style.textDecoration = "line-through";
+    } else {
+        itemText.style.textDecoration = "none";
+    }
+}
+
 function addNewItem(list, itemText) {
     var date = new Date();
     var id = "" + date.getMinutes(); + date.getSeconds() +
@@ -22,7 +32,7 @@ function addNewItem(list, itemText) {
 var inItemText = document.getElementById("e");
 
 var btnNew = document.getElementById("btnAdd");
-btnNew.onclick = function() {
+btnNew.onclick = function () {
     var inItemText = document.getElementById("inItemText");
     var itemText = inItemText.value;
     if (!itemText || itemText === "" || itemText === " ") {
@@ -32,7 +42,7 @@ btnNew.onclick = function() {
     addNewItem(document.getElementById("todolist"), itemText);
 };
 
-inItemText.onkeyup = function(event) {
+inItemText.onkeyup = function (event) {
     if (event.which == 13) {
         var itemText = inItemText.value;
 

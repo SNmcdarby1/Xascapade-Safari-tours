@@ -69,8 +69,75 @@
   </header>
 <!-- Navigation-->
 <body class="container-fluid">
-    <div class="container row">
+    <div class="container">
       <div class="col-lg-8 col-md-10 mx-auto">
+     <div class="col">
+           <form class="col">
+             
+             <div class="step step-1 index active">
+               <div class="form-group">
+                 <label for="firstName">First Name</lable>
+                   <input  type="text" id="firstName" name="firstName"> 
+                  </div>
+                  <div class="form-group">
+                 <label for="firstLame">Last Name</lable>
+                   <input  type="text" id="lastName" name="lastName"> 
+                  </div>
+                </div>
+                <div class="form-group">
+                 <label for="nickName">Nick Name</lable>
+                   <input  type="text" id="nickName" name="nickName"> 
+                  </div>
+                  <button type="button" class="next-btn">Next</button>
+               </div>
+ 
+            <div class="step step-2 ">
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email">
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="number" id="phone" name="phone-number">
+            </div>
+            <button type="button" class="previous-btn">Prev</button>
+            <button type="button" class="next-btn">Next</button>
+        </div>
+         <div class="step step-3">
+              <div class="form-group">
+                <label for="country">Country</label>
+                <input type="text" id="country" name="country">
+            </div>
+            <div class="form-group">
+                <label for="phone">City</label>
+                <input type="text" id="city" name="city">
+            </div>
+              <div class="form-group">
+                <label for="postCode">Post-Code</label>
+                <input type="text" id="postCode" name="postCode">
+            </div>
+            <button type="button" class="previous-btn">Prev</button>
+             <button type="submit" class="submit-btn">Submit</button>
+            </div>
+         </form>
+
+           </div>
+
+     </div>
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="container">
+
         <p>Want to get in touch? Fill out the form below to send me a message and I will get back to you as soon as possible!</p>
         <!-- Contact Form - Enter your email address on line 19 of the mail/contact_me.php file to make this form work. -->
         <!-- WARNING: Some web hosts do not allow emails to be sent through forms to common mail hosts like Gmail or Yahoo. It's recommended that you use a private domain email address! -->
@@ -101,23 +168,24 @@
             <div class="form-group floating-label-form-group controls">
               <label>Message</label>
               <br><b> Choose your desired tour guides: </b><br>  
-<input type="radio" id="selftour" value="tour1">Self 4WD tour<br>   
-<input type="radio" id="localtour" value="tour2">Local Tour Guide<br>   
-<input type="radio" id="privatetour" value="tour3">Accreditted tour guide<br>  
-<input type="radio" id="grouptour" value="tour4">Group Tour guides<br><br> 
+            <input type="radio" id="selftour" value="tour1">Self 4WD tour<br>   
+            <input type="radio" id="localtour" value="tour2">Local Tour Guide<br>   
+           <input type="radio" id="privatetour" value="tour3">Accreditted tour guide<br>  
+            <input type="radio" id="grouptour" value="tour4">Group Tour guides<br><br> 
               <textarea rows="5" class="form-control" placeholder="Message" id="message" required data-validation-required-message="Please enter a message."></textarea>
               <p class="help-block text-danger"></p>
             </div>
           </div>
           <br>
           <div id="success"></div>
-          <button type="submit" class="btn btn-primary" id="sendMessageButton" onclick="sendEmail() checkButton()">send Email</button>
+          <button onclick='sendEmail()'>Send Email</button>
         </form>
       </div>
     </div>
   </div>
 
   <hr>
+  
     <!--Footer section  bootstrap snippet-->
  <blockquote class="blockquote text-center container-fluid">
  
@@ -176,56 +244,10 @@
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
     </script>
+
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
     // Override this and recompile your Sass to generate different states
 
-function checkButton() {    
-if(document.getElementById('tour1').checked) {   
-document.getElementById("disp").innerHTML   
-= document.getElementById("selftour").value   
-+ " radio button is checked";   
-}   
-else if(document.getElementById('tour2').checked) {   
-document.getElementById("disp").innerHTML   
-= document.getElementById("privatetour").value   
-+ " radio button is checked";     
-}   
-else if(document.getElementById('tour3').checked) {   
-document.getElementById("disp").innerHTML   
-= document.getElementById("grouptour").value   
-+ " radio button is checked";     
-}   
-else if(document.getElementById('tour4').checked) {   
-document.getElementById("disp").innerHTML   
-= document.getElementById("grouptour").value   
-+ " radio button is checked";     
-}  
-else {   
-document.getElementById("error").innerHTML   
-= "You have not selected any season";   
-}   
-}   
- 
-
-
-$form-validation-states: map-merge(
-  (
-    "valid": (
-      "color": $form-feedback-valid-color,
-      "icon": $form-feedback-icon-valid
-    ),
-    "invalid": (
-      "color": $form-feedback-invalid-color,
-      "icon": $form-feedback-icon-invalid
-    )
-  ),
-  $form-validation-tour
-);
-// onclick function
-function myFunction() {
-    var x = document.createElement("POST")
-    document.body.appendChild(x);
-}
 
 // Loop from `_forms.scss`
 // Any modifications to the above Sass map will be reflected in your compiled
@@ -234,7 +256,16 @@ function myFunction() {
   @include form-validation-tour($tour, tour-get($data, color), emeil-get($data, requirement));
 }
     </script>
-
+<script src="assets/js/sendEmail.js"></script>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/contact.js"></script>
+<script src="assets/js/html.js"></script>
+<script src="assets/js/index.js"></script>
+<script src="assets/js/jquery.js"></script>
+<script src="assets/js/safariString.js"></script>
+<script src="assets/js/script.js"></script>
+<script src="assets/js/text.js"></script>
+<script src="assets/js/todolist.js"></script>
     </body>
 
 </html>

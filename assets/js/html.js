@@ -1,10 +1,9 @@
 const File = require('file-js');
 
 const file = File.create('myDir');
-const files = await file.getList();
+
 files.forEach(console.log);
 
-const file = File.create('myDirectory');
 if (file.isDirectorySync()) {
     console.log('processing directory');
 }
@@ -86,73 +85,7 @@ const obj = {
     }
 };
 
-console.log(obj.latest); <
-!--List group-- >
+
 $('#myCollapsible').on('hidden.bs.collapse', function() {
     // do something...
 })
-
-function get_post($post = null, $output = OBJECT, $filter = 'raw') {
-    if (empty($post) && isset($GLOBALS['post'])) {
-        $post = $GLOBALS['post'];
-    }
-
-    if ($post instanceof WP_Post) {
-        $_post = $post;
-    }
-    elseif(is_object($post)) {
-        if (empty($post - > filter)) {
-            $_post = sanitize_post($post, 'raw');
-            $_post = new WP_Post($_post);
-        }
-        elseif('raw' === $post - > filter) {
-            $_post = new WP_Post($post);
-        } else {
-            $_post = WP_Post::get_instance($post - > ID);
-        }
-    } else {
-        $_post = WP_Post::get_instance($post);
-    }
-
-    if (!$_post) {
-        return null;
-    }
-
-    $_post = $_post - > filter($filter);
-
-    if (ARRAY_A == $output) {
-        return $_post - > to_array();
-    }
-    elseif(ARRAY_N == $output) {
-        return array_values($_post - > to_array());
-    }
-
-    return $_post;
-}
-var tours = ["guided_tour", "private_tour", "self_tour"];
-var tours = new Array("guided_tour", "private_tour", "self_tour"); // declaration
-
-alert(tour[1]); // access value at index, first item being [0]
-tours[0] = "safari"; // change the first item
-
-for (var i = 0; i < safari.length; i++) { // parsing with array.length
-    console.log(tours[i]);
-}
-x.sort(function(a, b) {
-    return 0.5 - Math.random()
-}); <
-script type = "text/javascript" > < !--
-allClassesLink = document.getElementById("allclasses_navbar_bottom");
-if (window == top) {
-    allClassesLink.style.display = "block";
-} else {
-    allClassesLink.style.display = "none";
-}
-constant - values.html " target="
-_top "
-allClassesLink = document.getElementById("allclasses_navbar_bottom");
-if (window == top) {
-    allClassesLink.style.display = "block";
-} else {
-    allClassesLink.style.display = "none";
-}
