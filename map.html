@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en-US">
 
@@ -11,83 +12,76 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
-</head>
-<div id="data"></div>
-<script type="text/javascript "></script>
-<script type="text/javascript" id="index">
-</script>
-
-
-<body class="">
+ </head>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+ <body>
+  
        <!--body-->                       
         <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
-            <div class="container">
-                <a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="assets/images/xascapade.jpg" alt="" /></a>
-                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                    Home
-                    <i class="fas fa-bars ml-1"></i>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                      <ul class="navbar-nav text-uppercase ml-auto">
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="index.html">Home</a></li>
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="places.html">Places</a></li>
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="about.html">About</a></li>
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="gallery.html">Gallery</a></li>
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="contact.html">Contact</a></li>
-                    </ul>
-                    <a href="index.html">Home</a>
-  
-                </div>
-            </div>
-        </nav>    
-<div class="col-md-12" id="map"></div> 
-<section class=" container-fluid no-gutter  lemon padding-30 myLink ">
-<div class=" container-fluid col" >
 
-    <section class= "condimentum">
+      
+    <script>
+      // If you're adding a number of markers, you may want to drop them on the map
+      // consecutively rather than all at once. This example shows how to use
+      // window.setTimeout() to space your markers' animation.
+      const neighborhoods = [
+        {lat: -1.373333, lng: 36.858889},
+        {lat: -1.490000,  lng: 35.143890},
+        {lat: -4.050000,  lng: 39.666667 },
+        { lat: -2.269444, lng: 40.902222},];
+      let markers = [];
+      let map;
+      let dropMarker;
 
-    <div class="col">
-    <h1>Guided Tours</h1>
-     <div class="media-body col-md-6">
-                 <h5 class="mt-0 mb-1">Masaai Mara</h5>
-              <p>   Masai Mara is famous and popular safari destination in Kenya,it is famous for its leopard, lion, and cheetah, but there's plenty more game to see on the wide-open plains, from giraffe and eland to smaller predators such as bat-eared fox, spotted hyena and black-backed jackal.
-              </div>
-       
-     
-    <div class="media-body col-md-6">
-      <h5 class="mt-0 mb-1">Mombasa beautiful Beaches</h5>
-                <p> Mombasa is famous for its beaches, world-class beach resorts, and it's historical significance. It is the most popular tourist destination it is the second largest city in Kenya. with beautiful beach resorts and the Old Town, where fragrant spices waft from local markets.</p>
-       </div>
-      <li class="nav-item menu-table">
-                 <a href="#" class="nav-link">Mombasa</a>
-                    <div class="col-md-6">
-                                         <li class="media my-4"><a target="_blank" href="#">
-                          <picture class="d-inline-block text-truncate" style="max-width: 800px;">
-                                    <source srcset="assets/images/momb.jpg" type="image/svg+xml">
-                                    <img src="assets/images/momb.jpg" class="img-fluid img-thumbnail" alt="mombasa">
+      function initMap() {
+        map = new google.maps.Map(document.getElementById("map"), {
+          zoom: 12,
+          center: { lat: -1.37, lng: 36.85 },
+        });
+      }
 
-                                   <div class="centered">Mombasa Town</div>
-                                </picture>
-                       </li>
-                  </div> 
-                 </li>
-         </div>
-    </section>
+      function drop() {
+        clearMarkers();
+
+        for (let i = 0; i < neighborhoods.length; i++) {
+          addMarkerWithTimeout(neighborhoods[i], i * 200);
+        }
+      }
+
+      function addMarkerWithTimeout(position, timeout) {
+        window.setTimeout(() => {
+          markers.push(
+            new google.maps.Marker({
+              position: position,
+              map,
+              animation: google.maps.Animation.DROP,
+            })
+          );
+        }, timeout);
+      }
+
+      function clearMarkers() {
+        for (let i = 0; i < markers.length; i++) {
+          markers[i].setMap(null);
+        }
+        markers = [];
+      }
+    </script>
+ 
+    <div id="floating-panel">
+      <button id="drop" onclick="drop()">Drop Markers</button>
+      <button id="text" onclick=("index.html")><a href="index.html">home</a></button>
     </div>
-    </section>
-</section>
-<div class="card">
-            <img class="card-img-top" src="holder.js/100x180/" alt="">
-            <div class="card-body">
-                <button class="card-title"><a href="map.html">home</a>Maps</button>
-        
-            </div>
-        </div>
-    </div>
-
-
-<!--Footer section  bootstrap snippet-->
+    <div id="map"></div>
+   <script src="assets/js/marker.js"></script>
+            <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js">
+            </script>
+    <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key= AIzaSyAzg7ZIew1eZQZKhD33xCmO6HyDj_6p0xE&callback=initMap&libraries=&v=weekly"
+      async
+    ></script>
+ 
 <section class="footer">
 <blockquote class="blockquote">
   
@@ -138,14 +132,6 @@
 </footer>
 </blockquote>
 </section>
-            <script src="assets/js/marker.js"></script>
-            <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js">
-            </script>
-            
-            <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAzg7ZIew1eZQZKhD33xCmO6HyDj_6p0xE&callback=initMap">
-            </script>
-            <script src="assets/js/maps.js"></script>
-
   <!-- bootstrap scripr snippet -->
             <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
             </script>
@@ -169,6 +155,3 @@
 <!-- validated cade using freeformatter.com  -->
 </body>
 <html>
-<!--Validated in w3.org
-Erro found Error: Parse Error. Style sheets should not include HTML syntax..
-Revit to validate the error-->
