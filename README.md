@@ -1,4 +1,5 @@
 ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+<<<<<<< SNmcdarby1/gitpod-setup
 
 # Xascapade Travel- MS2 project
 
@@ -232,5 +233,9 @@ I would like to thank
 - The Code Institute lectures, developers and the team behind the code institute platform .
 - [gitpod]() ide platform.
 - [stackoverflow](https://stackoverflow.com/) platform. I used to access coding problem solving when i got stack. 
+=======
+>>>>>>> main
+
+
 
 
