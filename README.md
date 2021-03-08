@@ -1,7 +1,7 @@
 ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
 # Xascapade Safari Tours
-=====================
+-------------------------
 
 ## MS2 Project
 -----------------
@@ -12,6 +12,7 @@ Description
 A Leisure travel website platform that offers safari tour guides services to its users.
 
 ### Table of Content
+
  1.Who we are
 
  2.Approach
