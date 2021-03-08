@@ -175,6 +175,10 @@ I deployed the page in Github page under settings. Scroll down to the Github pag
 The site was deployed in github and i shared the link to family and other users through whats app platform that made it easier to access the links on their phones. I also shared the using emailing process for desktop users and other devices as ipads,tablets, etc.
 * The lighthouse test results of the pge was as follows, Performances is at 72, Accessibility at 82, Best performance at 86 and the SEO at 92. as it shows in the attached pdf.
 
+* In the developers tool i accessed the the inspect the DOM by right clicking the mouse right button and select the inspect property. and i could edit different properties such as Appearance, Sources,Elements, Network,performance, Console and the lighthouse settings. 
+as shown in the image below.
+*   
+* 
 ### 11. Media credits
 I) Media \* Google search free comercialised images*\ 
 II) (unsplashed)[https://unsplash.com/] 
