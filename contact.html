@@ -57,19 +57,7 @@
         <!-- Masthead-->
      <!-- Services-->
      <script>
-  var progressBar = document.getElementById("p"),
-      client = new XMLHttpRequest()
-  client.open("GET", "magical-unicorns")
-  client.onprogress = function(pe) {
-    if(pe.lengthComputable) {
-      progressBar.max = pe.total
-      progressBar.value = pe.loaded
-    }
-  }
-  client.onloadend = function(pe) {
-    progressBar.value = pe.loaded
-  }
-  client.send()
+  
 
   var modal = document.getElementById('id01');
 
@@ -79,6 +67,42 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+var xhr = new XMLHttpRequest();
+xhr.open('POST', 'somewhere', true);
+xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+xhr.onload = function () {
+    // do something to response
+    console.log(this.responseText);
+};
+xhr.send('user=person&pwd=password&organization=place&requiredkey=key');
+or 
+ if you can count on browser support you could use FormData:
+
+var data = new FormData();
+data.append('user', 'person');
+data.append('pwd', 'password');
+data.append('organization', 'place');
+data.append('requiredkey', 'key');
+
+var xhr = new XMLHttpRequest();
+xhr.open('POST', 'somewhere', true);
+xhr.onload = function () {
+    // do something to response
+    console.log(this.responseText);
+};
+xhr.send(data);
+
+const url = "http://example.com";
+fetch(url, {
+    method : "POST",
+    body: new FormData(document.getElementById("inputform")),
+  
+}).then(
+    response => response.text() // .json(), etc.
+    // same as function(response) {return response.text();}
+).then(
+    html => console.log(html)
+);
 </script>
 
 <header class="" style="z-index:0;">
@@ -98,203 +122,6 @@ window.onclick = function(event) {
 <body class="container-fluid">
     <div class="container">
     <header Login Details></header>
-     <div class="form-outer">
-            <form id="" action="#">
-                <div id="" class="page">
-                    <div id="" class="title">Basic Info:</div>
-                    <div class="field">
-                       <div class="label">First Name</div>
-                       <input type="text">
-                      </div>
-                    </div>
-                     <div class="field">
-                       <div class="label">Last Name</div>
-                       <input type="text" id="lname" name="firstname">
-                      </div>
-                    </div>
-                     <div class="field">
-                       <button>Next</button>
-                      </div>
-                    </div>
-                    <div id="" class="page">
-                    <div id="" class="title">Contact Info:</div>
-                    <div class="field">
-                       <div class="label">Email Address</div>
-                       <input type="text">
-                      </div>
-                    </div>
-                     <div class="field">
-                       <div class="label">Phone Number</div>
-                      <input type="number"  id="phone-number" >
-                      </div>       
-                    </div>
-                     <div class="field btn">
-                        <button class="prev-1 prev">Previous</button>
-                        <button class="prev-1 prev">Next</button>
-                      </div>
-                    </div>
-
-                     <div id="" class="page">
-                    <div id="" class="title">Date of Birth:</div>
-                    <div class="field">
-                       <div class="label">Date</div>
-                       <input type="text">
-                      </div>
-                    </div>
-                     <div class="field">
-                       <div class="label">Gender</div>
-                       <select>
-                         <option>Male</option>
-                          <option>Female</option>
-                           <option>Other</option>
-                       </select>
-                      </div>
-                     <div class="field btn">
-                        <button class="prev-2 prev">Previous</button>
-                        <button class="prev-2 prev">Next</button>
-                      </div>
-                    </div>
-
-                     <div id="" class="page">
-                    <div id="" class="title">Login Details:</div>
-                    <div class="field">
-                       <div class="label">Username</div>
-                       <input tyxt="text">
-                      </div>
-                    </div>
-                     <div class="field">
-                       <div class="label">Password</div>
-                      <input type="password">
-                      </div>
-                     <div class="field btn">
-                        <button class="prev-3 prev">Previous</button>
-                        <button class="Submit">Submit</button>
-                      </div>
-                    </div>
-
-                 </form>   
-                </div>
-            </div>
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    <div id="login">
-        <h3 class="text-center text-white pt-5">Login form</h3>
-        <div class="container">
-            <div id="login-row" class="row justify-content-center align-items-center">
-                <div id="login-column" class="col-md-6">
-                    <div id="login-box" class="col-md-12">
-                        <form id="login-form" class="form" action="active" method="post"onsubmit="return sendMail(this);" method="POST">
-                            <h3 class="text-center text-info">Login</h3>
-                            <div class="form-group">
-                                <label for="username" class="text-info">Username:</label><br>
-                                <input type="text" name="username" id="username" class="form-control">
-                            </div>
-                            <div class="form-group">
-                                <label for="password" class="text-info">Password:</label><br>
-                                <input type="text" name="password" id="password" class="form-control">
-                            </div>
-                            <div class="form-group">
-                                <label for="remember-me" class="text-info"><span>Remember me</span> <span><input id="remember-me" name="remember-me" type="checkbox"></span></label><br>
-                                <input type="submit" name="submit" class="btn btn-info btn-md" value="submit">
-                            </div>
-                            <div id="register-link" class="text-right">
-                                <a href="#" class="text-info">Register here</a>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-    
-    
-    
-    
-    
-      <div class="col-lg-8 col-md-10 mx-auto">
-     <div class="col">
-           <form class="col">
-             
-             <div class="step step-1 index active">
-               <div class="form-group">
-                 <label for="firstName">First Name</lable>
-                   <input  type="text" id="firstName" name="firstName"> 
-                  </div>
-                  <div class="form-group">
-                 <label for="firstLame">Last Name</lable>
-                   <input  type="text" id="lastName" name="lastName"> 
-                  </div>
-                </div>
-                <div class="form-group">
-                 <label for="nickName">Nick Name</lable>
-                   <input  type="text" id="nickName" name="nickName"> 
-                  </div>
-                  <button type="button" class="next-btn">Next</button>
-               </div>
- 
-            <div class="step step-2 ">
-              <div class="form-group">
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email">
-            </div>
-            <div class="form-group">
-                <label for="phone">Phone Number</label>
-                <input type="number" id="phone" name="phone-number">
-            </div>
-            <button type="button" class="previous-btn">Prev</button>
-            <button type="button" class="next-btn">Next</button>
-        </div>
-         <div class="step step-3">
-              <div class="form-group">
-                <label for="country">Country</label>
-                <input type="text" id="country" name="country">
-            </div>
-            <div class="form-group">
-                <label for="phone">City</label>
-                <input type="text" id="city" name="city">
-            </div>
-              <div class="form-group">
-                <label for="postCode">Post-Code</label>
-                <input type="text" id="postCode" name="postCode">
-            </div>
-            <button type="button" class="previous-btn">Prev</button>
-             <button type="submit" class="submit-btn">Submit</button>
-            </div>
-         </form>
-
-           </div>
-
-     </div>
 <div class="card-body" class="col-sm-6 no_left_padding no_right_padding" class="form" onsubmit="return sendMail(this);" method="POST">
                 <input type="text" id="fromName" class="form-control" placeholder="Name">
                   <input type="text" id="toName" class="form-control" placeholder="Email address">
@@ -307,17 +134,7 @@ window.onclick = function(event) {
     </div>
   <div>
 
-
-
-
-
-
-
-
-
-
-
-  <div class="container onsubmit="return sendMail(this);" method="POST"">
+  <div class="container" onsubmit="return sendMail(this)";method="POST">
 
         <p>Want to get in touch? Fill out the form below to send me a message and I will get back to you as soon as possible!</p>
         <!-- Contact Form - Enter your email address on line 19 of the mail/contact_me.php file to make this form work. -->
@@ -328,6 +145,12 @@ window.onclick = function(event) {
             <div class="form-group floating-label-form-group controls">
               <label>Name</label>
               <input type="text" class="form-control" placeholder="Name" id="name" required data-validation-required-message="Please enter your name.">
+              <form name="inputform" action="somewhere" method="post">
+             <input type="hidden" value="person" name="user">
+            <input type="hidden" value="password" name="pwd">
+            <input type="hidden" value="place" name="organization">
+           <input type="hidden" value="key" name="requiredkey">
+            </form>
               <p class="help-block text-danger"></p>
             </div>
           </div>
@@ -348,14 +171,14 @@ window.onclick = function(event) {
           <div class="control-group">
             <div class="form-group id="fieldTitle" floating-label-form-group controls">
               <label>Location</label>
-              <br><b> Location: </b><br>  
-           <select name="location">
- <option>Nairobi
- <option>Mombasa
- <option>Kisumu
- <option>Lamu
- <option>Nakuru
-</select>
+              <br><b> Slect Location: </b><br>  
+           <select  id="fieldTitle" name="location">
+               <option id="p" value="key" name="requiredkey">Nairobi
+               <option id="p" value="key" name="requiredkey">Mombasa
+              <option id="p" value="key" name="requiredkey">Kisumu
+              <option id="p" value="key" name="requiredkey">Lamu
+              <option id="p" value="key" name="requiredkey>Nakuru
+               </select>
               <textarea rows="5" class="form-control" placeholder="Message" id="message" required data-validation-required-message="Please enter a message."></textarea>
               <p class="help-block text-danger"></p>
             </div>
@@ -440,6 +263,7 @@ window.onclick = function(event) {
     </script>
 <script src="assets/js/sendEmail.js"></script>
 <script src="assets/js/contact.js"></script>
+<script src="assets/js/node.js"></script>
 
     </body>
 </html>

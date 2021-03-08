@@ -3,6 +3,7 @@ function sendEmail(tempParams) {
         from_name: document.getElementById("fromName").value,
         to_name: document.getElementById("toName").value,
         message: document.getElementById("message").value,
+        customer_notes: document.getElementById("customer_notes").value
     };
     emailjs.send("service_aw4lcie", "template_p9qe11h", tempParams)
         .then(function(res) {

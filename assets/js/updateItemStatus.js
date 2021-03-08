@@ -32,7 +32,7 @@ function addNewItem(list, itemText) {
 var inItemText = document.getElementById("e");
 
 var btnNew = document.getElementById("btnAdd");
-btnNew.onclick = function () {
+btnNew.onclick = function() {
     var inItemText = document.getElementById("inItemText");
     var itemText = inItemText.value;
     if (!itemText || itemText === "" || itemText === " ") {
@@ -42,7 +42,7 @@ btnNew.onclick = function () {
     addNewItem(document.getElementById("todolist"), itemText);
 };
 
-inItemText.onkeyup = function (event) {
+inItemText.onkeyup = function(event) {
     if (event.which == 13) {
         var itemText = inItemText.value;
 

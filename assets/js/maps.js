@@ -47,12 +47,8 @@ function initMap() {
     });
     // Continue creating markers like above...
     var markers = [nairobi, mombasa]; // add additional markers to the array if you have them
-    var markerCluster = new MarkerClusterer(map, markers);
 
     var markerCluster = new MarkerClusterer(map, markers, {
         imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'
     });
 }
-var markerCluster = new MarkerClusterer(map, markers, {
-    imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'
-});

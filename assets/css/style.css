@@ -484,10 +484,6 @@ div.input-box label.error {
 }
 
 
-.skip-navigation {
-    @include sr-only;
-    @include sr-only-focusable;
-}
 
 
 /* Optional: Makes the sample page fill the window. */
