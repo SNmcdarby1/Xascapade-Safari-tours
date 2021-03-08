@@ -177,9 +177,11 @@ The site was deployed in github and i shared the link to family and other users 
 
 * In the developers tool i accessed the the inspect the DOM by right clicking the mouse right button and select the inspect property. and i could edit different properties such as Appearance, Sources,Elements, Network,performance, Console and the lighthouse settings. 
 as shown in the image below.
-*   
+![Inspect](https://user-images.githubusercontent.com/69846208/110378143-21a17a80-804d-11eb-9594-1e1c29a331da.PNG)
+* Validated the website pages in using the 3wc HTML CSS JS vaidator. Some of the errors we npt resolve. My plan is to revisit the pages and fix the errors. Most of the errors read that the <!DOCTYPE html is a parse, needs to be fixed.
 * 
 ### 11. Media credits
+
 I) Media \* Google search free comercialised images*\ 
 II) (unsplashed)[https://unsplash.com/] 
 III) Pixabay
