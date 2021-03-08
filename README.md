@@ -2,7 +2,6 @@
 
 # Xascapade Safari Tours- MS2 project
 
-# Xascapade Safari tours- MS2 project
 
 Descripition
 
