@@ -1,5 +1,4 @@
 ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
-<<<<<<< SNmcdarby1/gitpod-setup
 
 # Xascapade Travel- MS2 project
 
