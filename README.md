@@ -47,7 +47,9 @@ Descripition
 ### 1. Approach
 
 a) Properties 
+
 b) Linear properties
+
 c) The ease in and ease out of the pages to be visible and easy to  navigate through the pages and to have a smoth transition in and   ou of the pages.
 
  ### 2. Objectives
@@ -77,14 +79,16 @@ c) The ease in and ease out of the pages to be visible and easy to  navigate thr
 ### 4. Features for the website design.
 
   * Images 
-  * Contents
-  * Social pages
-  * Social links
-  * Mapping 
+  * Contents- Wikipedia and other research pages
+  * Social links 
+  * Google APIs - Google API keys
+  * Emailjs API - Gmail template
   * Emailing process
-  * Booking forms
-
-      - Code used CSS HTML Javascript and Jquery
+  * Google fonts 
+       
+       List of features used.
+       
+      - Coding language used CSS HTML Javascript and Jquery
       - Landing page with a page drop image container.
       - cards
       - Images
@@ -93,34 +97,43 @@ c) The ease in and ease out of the pages to be visible and easy to  navigate thr
       - Controlgroup
       - Social links
       - Font awesome icons
-      - Materialised link - I was inspired by the look and feel of the Link that made the site look better feel about it.
-      - Bootstrap snippets that enabled meto have different designs
-      - CDNJS site enabled me to get the tags and JS scripts that are used to create the website.
-      - Jquery CDN  uncompressed min script 
+      
+   * Links used to create the website
+   * 
+      - //** Materialised link - I was inspired by the look and feel of the Link that made the site look better feel about it.I                deleted the  link **//
+      - Bootstrap snippets that enabled me to have different designs
+      - CDNJS site used for tags and JS scripts to create the website.
+      - Jquery CDN - uncompressed min script 
       - Leaflet link and tags for js google mapping
       - Emailjs used for the interactive email
-      - One of the users suggested that the images covered a lot of space on the computer and it meant that the user has to scroll p and down to view one image. I deciced to change that layout to that will allow the user to view ll the images without scrolling upand down.
-      - The navigation bar was not user friendly. I managed to simplify the color and typography to font-family: Verdana, Geneva, Tahoma, sans-serif;
+      - API
 
 
 
 ### 5. User Stories.
 
   * The Navigation bar was not easily accessible . I have to try diffent designs that will anablethe client to press the home button to access other pages.
-  * The packages had no value , soi added up the value and uploaded images to show the product.
+  * The packages had no value , i added up the value and uploaded images to show the product.
   * The carousel in the gallery page was not working so i decided to have static images all in one page.
   * The client asked to have different options of products . I added in the safari packages and different locations of the Safaris, and activities that can be done during the    holidays.
-  * The reservation page had a lot of information icons that made the page look messy . I ended up reducing the content and be short ad precise of the contents.  
+  * The reservation page had a lot of information . I ended up reducing the content and be short and precise contents.
+  *   
 - Web Design.
+- 
+  - A overall layout, size, colors that increases the  overall experience of the users when they interact with the application            in order to achieve its objective to provide the maximum customer satisfaction
+  - 
   I did a lot of reserch in youtube and i was inspired by three main developres 
      * Sayar flight booking example
-     - One of the users suggested that the images covered a lot of space on the computer and it meant that the user has to scroll p and down to view one image. I deciced to change that layout to that will allow the user to view ll the images without scrolling upand down.
+     - One of the users suggested that the images covered a lot of space on the computer and it meant that the user has to scroll p        and down to view one image. Changed that layout to that will allow the user to view ll the images without scrolling upand down.
 
 ### 6. Wireframes
-   The xascapade wireframe is  create using balsamic and downloaded it in the ide platform under documents as a pdf. 
-   See attached below a copy of the wireframe. 
+
+    The xascapade wireframe is  create using balsamic and downloaded it in the ide platform under documents as a pdf. 
+    See attached below a copy of the wireframe.
+   
    [xascapade.pdf](https://github.com/SNmcdarby1/Xascapade-Travel/files/6061243/xascapade.pdf).
-   after receiving my feedback from my accessors i realised that the layout does not work with my design and i ended up changing the wireframe to suit the user.
+   
+   after receiving my feedback from my accessors i realised that the layout does not work with my design and i ended up changing the      wireframe to suit the user.
    Below is the new wireframe. What i tried to do is to simlify the styke and design that will suite the user and easy accessible. XASCAPADE .pdf](https://github.com/SNmcdarby1/Xascapade-Travel/files/6087100/XASCAPADE.pdf)
 
    Below is a Multiple devices Mockup generator image that shows you how the landing page looks in different devices.
@@ -133,17 +146,29 @@ c) The ease in and ease out of the pages to be visible and easy to  navigate thr
 
  - Github[github](https://github.com/) used for storying and accessing data.
  - Gitpod[gitpod]() IDE platform for creating website.
- - While doing my reasearch i came across materializes platform.This site inspired me by the endlook and feel of the website, It resonates with a suitable ux friendly look and feel that embodies a lot of the features.
+ - 
+ - While doing my reasearch i came across materializes platform.This site inspired me by the endlook and feel of the website, It resonates with a suitable ux friendly    look and feel that embodies a lot of the features.
+ - 
  - Used w3school for snippets. I am inspire withthe look and feel of the navigation bar, and inputs examples in the w3school page.
  - Youtube tutorial
- - Multiple device mockup genarator. I sed this site to create a mockup image of the websites landing page. Thissight can be accessed in google webpage. once you access the page you will need to copy your deployed link to the in the multiple device generator that is on the top left top nav. Then click the genarator button to genarate the image of the website. 
- - Google Mapping -  used (Map Quest)[https://developer.mapquest.com/documentation/tools/latitude-longitude-finder/]. To find accurate locations. But unfortunatly it was not  responding . I trie the Leaflet mapping.
- - Emailjs - I created an accout with Google emailjs that will enable the emails to be interactive.
+ - Multiple device mockup genarator. I sed this site to create a mockup image of the websites landing page. Thissight can be accessed    in google webpage. once you access the page you will need to copy your deployed link to the in the multiple device generator that      is on the top left top nav. Then click the genarator button to   genarate the image of the website. 
+ 
+ - Google Mapping 
+ 
+ - used (Map Quest)[https://developer.mapquest.com/documentation/tools/latitude-longitude-finder/]. To find accurate locations. But      unfortunatly it was not  responding .  tried the Leaflet mapping.
+ - I had trouble creating thr leaflet mapping so i decided to try thr pollyfil design that worked well with the design. 
+ - Added the markers clusted. One of the features i used is the dropdown button. Once you click the buttons the markerclusters drop to   the marked locations.
+ 
+ - Emailjs
+ 
+ - I created an accout with Google emailjs that will enable the emails to be interactive.
  - I created the 404v folder to direct error responses.that will collect data from error messages.
  - There were different tuturial that i watched in youtube. Below are a few that reall inspired byhthe style and design of the page.
  - ECMA scripts reasearch page
 
-* During my reasearch i came across a youtube tutorial that was talking about Materialize platform (Materialise)[https://materializecss.com/media.html]for creating websites and snippets by (Traversy Media)[https://www.youtube.com/watch?v=MaP3vO-vEsg]. I used the tutorial to create the index page . I aslo used snippets from -[W3school](https://www.w3schools.com/), [Bootstrap](https://getbootstrap.com/docs/4.0/getting-started/introduction/), and [Materialisecss](https://materializecss.com/), that helped me to come up with different designs of the webpage. 
+* During my reasearch i came across a youtube tutorial that was talking about Materialize platform (Materialise)[https://materializecss.com/media.html]for creating       websites and snippets by (Traversy Media)[https://www.youtube.com/watch?v=MaP3vO-vEsg]. I used the tutorial to create the index page . I aslo used snippets from -  [W3school](https://www.w3schools.com/), [Bootstrap](https://getbootstrap.com/docs/4.0/getting-started/introduction/), and [Materialisecss] (https://materializecss.com/), that helped me to come up with different designs of the webpage. 
+
+* After doing a few test i change the design and the wireframe as well. To a design that enables the interaction and experience of users to be able to maneuver withing the products and services offered.
 
 [https://www.youtube.com/watch?v=Zxf1mnP5zcw]
 
