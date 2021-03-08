@@ -1,9 +1,12 @@
 ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
-# Xascapade Travel- MS2 project
+# Xascapade Safari Tours- MS2 project
 
-Is a leisure travel platform for holiday safari bookings in Kenya.
+# Xascapade Safari tours- MS2 project
 
+Descripition
+
+## Is a Safari Tour Guide platform for safari bookings in Kenya.
 
 ### Table of Content
  1.Who we are
