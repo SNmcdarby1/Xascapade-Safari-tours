@@ -35,7 +35,7 @@
 
       function initMap() {
         map = new google.maps.Map(document.getElementById("map"), {
-          zoom: 12,
+          zoom: 7,
           center: { lat: -1.37, lng: 36.85 },
         });
       }
@@ -70,7 +70,13 @@
  
     <div id="floating-panel">
       <button id="drop" onclick="drop()">Drop Markers</button>
-      <button id="text" onclick=("index.html")><a href="index.html">home</a></button>
+      <button id="text" onclick=("index.html")><a href="index.html">Home</a></button>
+       <button id="text" onclick=("about.html")><a href="about.html">About</a></button>
+        <button id="text" onclick=("gallery.html")><a href="gallery.html">Gallery</a></button>
+         <button id="text" onclick=("places.html")><a href="places.html">Places</a></button>
+          <button id="text" onclick=("map.html")><a href="map.html">Map</a></button>
+          <button id="text" onclick=("contact.html")><a href="contact.html">Contact</a></button>
+
     </div>
     <div id="map"></div>
    <script src="assets/js/marker.js"></script>

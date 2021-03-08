@@ -20,7 +20,7 @@ let map;
 
 function initMap() {
     map = new google.maps.Map(document.getElementById("map"), {
-        zoom: 12,
+        zoom: 7,
         center: {
             lat: -1.37,
             lng: 35.14
@@ -54,6 +54,8 @@ function clearMarkers() {
     }
     markers = [];
 }
+
+
 var mmm = null;
 var markerCluster = null;
 
@@ -100,3 +102,24 @@ function SetMap(s) {
                     markers.push(marker);
                 }
                 markerCluster = new MarkerClusterer(map, markers, {
+
+
+                        function initMap() {
+                            const map = new google.maps.Map(document.getElementById("map"), {
+                                zoom: 4,
+                                center: {
+                                    lat: -1.373333,
+                                    lng: 36.858889
+                                },
+                            });
+                            const image =
+                                "https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png";
+                            const beachMarker = new google.maps.Marker({
+                                position: {
+                                    lat: -4.050000,
+                                    lng: 39.666667
+                                },
+                                map,
+                                icon: image,
+                            });
+                        }
