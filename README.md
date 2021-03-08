@@ -119,9 +119,17 @@ c) The ease in and ease out of the pages to be visible and easy to  navigate thr
    Below is a Multiple devices Mockup generator image that shows you how the landing page looks in different devices.
    The Mockup generator page of Xascapade Travel.
    ![Xascapade Travel Device mockup page](https://user-images.githubusercontent.com/69846208/104040441-8ec09d00-51cf-11eb-8f15-660fdd3ba10a.PNG)
-
-
-
+   
+   After a few trials i changed the images and design. Below is the new design 
+   
+   ![Xascapade safari tours](https://user-images.githubusercontent.com/69846208/110374911-295f2000-8049-11eb-8f38-d9528ba45b8a.PNG)
+   
+   - For clarity that all content and typography  are clear for users.
+   
+   - Familiarity that allows users to experience while navigating from page to page.
+   
+   - Consistency to users to recognize the usage pattern of the website.
+  
 ### 7. Technology
 
  - Github[github](https://github.com/) used for storying and accessing data.
