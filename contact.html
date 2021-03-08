@@ -70,7 +70,17 @@
     progressBar.value = pe.loaded
   }
   client.send()
+
+  var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
 </script>
+
 <header class="" style="z-index:0;">
     <div class="overlay"></div>
     <div class="container">
@@ -87,6 +97,150 @@
 <!-- Navigation-->
 <body class="container-fluid">
     <div class="container">
+    <header Login Details></header>
+     <div class="form-outer">
+            <form id="" action="#">
+                <div id="" class="page">
+                    <div id="" class="title">Basic Info:</div>
+                    <div class="field">
+                       <div class="label">First Name</div>
+                       <input type="text">
+                      </div>
+                    </div>
+                     <div class="field">
+                       <div class="label">Last Name</div>
+                       <input type="text" id="lname" name="firstname">
+                      </div>
+                    </div>
+                     <div class="field">
+                       <button>Next</button>
+                      </div>
+                    </div>
+                    <div id="" class="page">
+                    <div id="" class="title">Contact Info:</div>
+                    <div class="field">
+                       <div class="label">Email Address</div>
+                       <input type="text">
+                      </div>
+                    </div>
+                     <div class="field">
+                       <div class="label">Phone Number</div>
+                      <input type="number"  id="phone-number" >
+                      </div>       
+                    </div>
+                     <div class="field btn">
+                        <button class="prev-1 prev">Previous</button>
+                        <button class="prev-1 prev">Next</button>
+                      </div>
+                    </div>
+
+                     <div id="" class="page">
+                    <div id="" class="title">Date of Birth:</div>
+                    <div class="field">
+                       <div class="label">Date</div>
+                       <input type="text">
+                      </div>
+                    </div>
+                     <div class="field">
+                       <div class="label">Gender</div>
+                       <select>
+                         <option>Male</option>
+                          <option>Female</option>
+                           <option>Other</option>
+                       </select>
+                      </div>
+                     <div class="field btn">
+                        <button class="prev-2 prev">Previous</button>
+                        <button class="prev-2 prev">Next</button>
+                      </div>
+                    </div>
+
+                     <div id="" class="page">
+                    <div id="" class="title">Login Details:</div>
+                    <div class="field">
+                       <div class="label">Username</div>
+                       <input tyxt="text">
+                      </div>
+                    </div>
+                     <div class="field">
+                       <div class="label">Password</div>
+                      <input type="password">
+                      </div>
+                     <div class="field btn">
+                        <button class="prev-3 prev">Previous</button>
+                        <button class="Submit">Submit</button>
+                      </div>
+                    </div>
+
+                 </form>   
+                </div>
+            </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <div id="login">
+        <h3 class="text-center text-white pt-5">Login form</h3>
+        <div class="container">
+            <div id="login-row" class="row justify-content-center align-items-center">
+                <div id="login-column" class="col-md-6">
+                    <div id="login-box" class="col-md-12">
+                        <form id="login-form" class="form" action="active" method="post"onsubmit="return sendMail(this);" method="POST">
+                            <h3 class="text-center text-info">Login</h3>
+                            <div class="form-group">
+                                <label for="username" class="text-info">Username:</label><br>
+                                <input type="text" name="username" id="username" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="password" class="text-info">Password:</label><br>
+                                <input type="text" name="password" id="password" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="remember-me" class="text-info"><span>Remember me</span> <span><input id="remember-me" name="remember-me" type="checkbox"></span></label><br>
+                                <input type="submit" name="submit" class="btn btn-info btn-md" value="submit">
+                            </div>
+                            <div id="register-link" class="text-right">
+                                <a href="#" class="text-info">Register here</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    
+    
+    
+    
       <div class="col-lg-8 col-md-10 mx-auto">
      <div class="col">
            <form class="col">
