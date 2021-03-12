@@ -1,203 +1,153 @@
-<!doctype html>
+<!--Bootstrap4 starter template-->
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <title>Xascapade Travel</title>
-     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Xascapade Guides</title>
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
-    <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.2.4/email.min.js"></script>
+</head>
+
+</script>
+<script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.2.4/email.min.js"></script>
 <script type="text/javascript">
     (function() {
         emailjs.init("user_cbk0RT9vpd78BlYyPC67x");
-    })();
+    }
+    )();
 </script>
-</head>
-<div id="data"></div>
-
-<body class="container-fluid no-gutter">
-      <div class="card-body">
-                     <h1 class="card">XASCAPADE TOUR GUIDE</h1>
-                    <p class="card-text">SAFARI TOURS</p>
-                    
-                </div>
-  <div id="navbar">
-  <a href="index.html">Home</a>
-  <a href="about.html">About</a>
-   <a href="gallery.html">Gallery</a>
-  <a href="places.html">Places</a>
-  <a href="contact.html">Contact</a>
-</div>
-<body class="container-fluid">
-        <div class="col-12">
-            <div class="col">
-                <picture class="d-inline-block text-truncate" style="max-width: 600px;">
-                    <source srcset="assets/images/elephant.jpg" type="image/svg+xml">
-                    <img src="assets/images/elephant.jpg" class="img-fluid img-thumbnail" alt="Rooms">
-                </picture>
-            </div>
-        </div>
-    </div>
-   <h4>Book safari tours plus accommodation </h4>
-                <h5>Best rates and promotions.</h5>
-                <h5>We know hotels - we know comfort.</h5>
-        <fieldset class="form-group" id="get_post">
-            <label id="fieldTitle">Equipment Length</label>
-            <select id="selectOption" class="form-control" required data="text">
-       <div class="form-group">
-           <label for=""></label>
-           <select class="custom-select" name="" id="get_post">
-               <option selected>Select one</option>
-               <option value="cg">1</option>
-               <option value="nj">2</option>
-               <option value="ft">3</option>
-               <option value="cg">1</option>
-               <option value="nj">2</option>
-               <option value="ft">3</option>
-               <option value="cg">1</option>
-               <option value="nj">2</option>
-               <option value="ft">3</option>
-           </select>
-       </div>
-            </select>
-            <div class="help-block with-errors"></div>
-             <section class="container">
-                            <form class="card" class="form" onsubmit="return sendMail(this);" method="POST">
-                                <div class="card-body" class="col-sm-6 ">
-                                    <div class="form-group " id="get_post">
-                                        <label for="srch_frm_hotel_single">Hotels</label>
-                                        <select name="hotel" id="hotel" class="form-control">
-                                            <option value="" selected>No Preference
-                                            </option>
-                                            <option value="*O">*Sarova Hotels
-                                            </option>
-                                            <option value="*A">*Serena hotels
-                                            </option>
-                                            <option value="*S">*Intercontinental Hotels
-                                            </option>
-                                            <option value="*C">*Camping
-                                            </option>
-                                            <option value="*K">*AirBnB
-                                            </option>
-                                            <option value="JP">Safari Park Hotel Nairobi
-                                            </option>
-                                            <option value="EI">Diani Hotel </option>
-                                            <option value="JR">White Sands Holtel
-                                            </option>
-                                            <option value="ML">Nakuru Lodge Hotel
-                                            </option>
-                                            <option value="PL">Intercontinental Hotel
-                                                Nairobi
-                                            </option>
-                                            <option value="SX">Stanlley Hotel Nairobi
-                                            </option>
-                                            <option value="SU">Red Elephant Hotel Tsavo
-                                            </option>
-                                            <option value="AR">Reef Hotel Mombasa
-                                            </option>
-                                            <option value="VW">Nyali Hotel Mombasa
-                                            </option>
-                                            <option value="AM">Voyager Hotel Mombasa
-                                            </option>
-                                            <option value="5L">African Safari Club
-                                                Mombasa
-                                            </option>
-                                            <option value="DP">La Pelgola Malindi
-                                            </option>
-                                            <option value="DP">Mada Hotel Kilifi
-                                            </option>
-                                            <option value="RK">Bamburi Beach Resort
-                                                Mombasa
-                                            </option>
-                                            <option value="AH">Kilifi Bay Resort Kilifi
-                                            </option>
-                                            <option value="FQ">Sun and Sand Club Mombasa
-                                            </option>
-                                            <option value="UU">Turtle Bay Watamu
-                                            </option>
-                                            <option value="7L">Windsor Hotel Nairobi
-                                            </option>
-                                            <option value="AC">FairMount Hotel and
-                                                Resort
-                                                Nairobi
-                                            </option>
-                                            </select>
-                                    </div>
-
-                                </div>
-                            </form>
-                    </section>
-        </fieldset>
-  <div class="custom-control custom-checkbox form">
-    <input type="checkbox" class="custom-control-input" id="customControlValidation1" required>
-    <label class="custom-control-label" for="customControlValidation1">Check this custom checkbox</label>
-    <div class="invalid-feedback">Example invalid feedback text</div>
-  </div>
-
-  <div class="custom-control custom-radio">
-    <input type="radio" class="custom-control-input" id="customControlValidation2" name="radio-stacked" required>
-    <label class="custom-control-label" for="customControlValidation2">Toggle this custom radio
-    </label>
-  </div>
-  <div class="custom-control custom-radio mb-3">
-    <input type="radio" class="custom-control-input" id="customControlValidation3" name="radio-stacked" required>
-    <label class="custom-control-label" for="customControlValidation3">Or toggle this other custom radio</label>
-    <div class="invalid-feedback">More example invalid feedback text</div>
-  </div>
-
-  <div class="form-group">
-    <select class="custom-select" required="recompile" id="get_post">
-      <option value="">Open this select menu</option>
-       <option selected>Choose...</option>
-      <option value="1">One</option>
-      <option value="2">Two</option>
-      <option value="3">Three</option>
-       <option value="1">One</option>
-      <option value="2">Two</option>
-      <option value="3">Three</option>
-       <option value="1">One</option>
-      <option value="2">Two</option>
-      <option value="3">Three</option>
-    </select>
-    <div class="invalid-feedback">Example invalid custom select feedback</div>
-  </div>
-
-  <div class="custom-file">
-    <input type="file" class="custom-file-input" id="validatedCustomFile" required>
-    <label class="custom-file-label" for="validatedCustomFile">Choose file...</label>
-    <div class="invalid-feedback">Enter your details</div>
-  </div>
-</form>
-<div class="card-body" class="col-sm-6 no_left_padding no_right_padding" class="form" onsubmit="return sendMail(this);" method="POST">
-                <input type="text" id="fromName" class="form-control" placeholder="Name">
-                  <input type="text" id="toName" class="form-control" placeholder="Email address">
-                  <input textarea rows="30" type="text" class="form-control" id="message" placeholder="Enter your  message" >
-                  <fieldset class="form-group">
-            <label id="fieldTitle">Customer Notes</label>
-            <textarea class="form-control" placeholder="Notes"model="myTextarea" required data="Please enter customer notes"></textarea>
-            <div class="textarea"></div>
-        </fieldset>
-    </div>
-  <div>
-    <label for="validationTextarea">Requests</label>
-    <textarea class="form-control is-invalid" id="validationTextarea" placeholder="Required information" required></textarea>
-    <div class="invalid-feedback">
-      Please enter any required information.
-    </div>
-  </div>
+<body class="container-fluid" id="">
+       <!--body-->                       
     
-  <button onclick='sendEmail()'>Send Email</button>
+       <!--body-->    <body class="container-fluid" id="page-top">
+       <!--body-->                       
+    
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="assets/images/lion.jpg" alt="" /></a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Home
+                    <i class="fas fa-bars ml-1"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav text-uppercase ml-auto">
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="places.html">Places</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="about.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="gallery.html">Gallery</a></li>
+                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="map.html">Map</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="contact.html">Contact</a></li>
+                    </ul>
+                    <a href="index.html"><i class="fa fa-home"></i>Home</a>
+  
+                </div>
+            </div>
+        </nav>                   
+     <header class="masthead">
+     <div class="container">
+                <div class="masthead-subheading">Hello!</div>
+                <div class="masthead-heading text-uppercase">Looking forward to hearing from you!</div>
+                <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="about.html">More Information </a>
+            </div>
+        </header>
 
-    <!--Footer section  bootstrap snippet-->
- <blockquote class="blockquote text-center container-fluid">
-  <p class="mb-0"> Start your unforgetable, customised,  exceptional luxurious Kenya safari holidays with us today!</p>
-  <footer class="container-fluid blockquote-footer">
+
+<!------ Include the above in your HEAD tag ---------->
+
+<blockqoute class="formcontrol " id="contact">
+<div class="card text-left">
+  <div class="card-body">
+    <h4 class="card-title">Title</h4>
+  <formcontrol class="container contact">
+	<div class="row">
+		<div class="col-md-9">
+			<div class="contact-info">
+				<h2>Contact Us</h2>
+				<h4>We would love to hear from you !</h4>
+			</div>
+		</div>
+      </div>
+  <div class="col-md-12" class="card" id="get_post" class="form" onsubmit="return sendMail(this);" method="POST">
+                <div class="contact-form">
+				<div class="form-group">
+				  <label class="control-label col-sm" for="fname">First Name:</label>
+				  <div class="col-sm-10">          
+					<input type="text" class="form-control" id="fname" placeholder="Enter First Name" name="fname">
+				  </div>
+				</div>
+                
+
+                <div class="form-group">
+				  <label class="control-label col-sm" for="lname">Last Name:</label>
+				  <div class="col-sm-10">          
+					<input type="text" class="form-control" id="lname" placeholder="Enter Last Name" name="lname">
+				  </div>
+				</div>
+				
+                
+                <div class="form-group">
+				  <label class="control-label col-sm" for="email">Email:</label>
+				  <div class="col-sm-10">
+					<input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+				  </div>
+				</div>
+               
+               
+               
+                 <div class="form-group">
+				  <label class="control-label col-sm" for="tours">Tours:</label>
+				  <div class="col-sm-10">
+                 <select class="form-control" id="tour" placeholder="types of tours" name="safaris" class="custom-control-input" id="customControlValidation1" required class="custom-select" required="recompile" id="get_post">
+                <option value="" disabled selected>4WD self guided tour</option>
+                 <option value="private">Masai guided tour</option>
+                  <option value="group">Tailored tours</option>
+                 <option value="local">Experienced tour guides</option>
+               </select>
+               </div>
+                 </div>
+	        
+			<div class="contact-form">
+				<div class="form-group">
+				  <label class="control-label col-sm" for="location">Location:</label>
+				  <div class="col-sm-10">          
+					<select class="form-control" id="location" placeholder="location" name="location" class="custom-select" required="recompile" id="get_post">
+                    <option value="" disabled selected>Location</option>  
+                <option value="nairobi" >Nairobi</option>
+                 <option value="mombasa">Mombasa</option>
+                  <option value="nakuru">Nakuru</option>
+                 <option value="lamu">Lamu</option>
+               </select>
+              </div> 
+            </div>
+    </div>
+               <div class="form-group">
+				  <label class="control-label col-sm" for="comment">Comment:</label>
+				  <div class="col-sm-10">
+					<textarea class="form-control" rows="5" id="comment"></textarea>
+				  </div>
+				</div>
+				
+                
+                <div class="form-group">        
+				  <div class="col-sm-offset-2 col-sm-10">
+					<button type="submit" class="btn btn-default"  onsubmit="return sendMail(this);" method="POST" onclick='sendEmail()'>Submit</button>
+				  </div>
+				</div>
+                </div>
+			</formcontrol>
+	                               
+  </div>
+</div>
+</blockqoute >
+<!--Footer section  bootstrap snippet-->
+ <blockquote class="blockquote text-center">
+  
+  <footer class="blockquote-footer">
   <ul class="list-inline social-links">
    <li class="list-inline-item">
                       <a target="_blank" href="ttps://www.facebook.com/simbapawtrail/">
@@ -243,46 +193,94 @@
 </blockquote>
               
                
-        </section>
-
-         <script src="assets/js/sendEmail.js"></script>
+ </section>
+<script src="assets/js/index.js"></script>
+ <script src="assets/js/sendEmail.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+ <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+ 
 
+
+   function ready(callbackFunc) {
+  if (document.readyState !== 'loading') {
+    // Document is already ready, call the callback directly
+    callbackFunc();
+  } else if (document.addEventListener) {
+    // All modern browsers to register DOMContentLoaded
+    document.addEventListener('DOMContentLoaded', callbackFunc);
+  } else {
+    // Old IE browsers
+    document.attachEvent('onreadystatechange', function() {
+        if( document.readyState !== 'loading' ) {
+    console.log( 'document is already ready, just execute code here' );
+    myInitCode();
+} else {
+    document.addEventListener('DOMContentLoaded', function () {
+        console.log( 'document was not ready, place code here' );
+        myInitCode();
+    });
+}
+
+function tours() {
+   alert("Submit button clicked!");
+   return true;
+}
+<input type="submit" value="submit" onclick="return tours();" />
+
+function myInitCode() {}
+      if (document.readyState === 'complete') {
+        callbackFunc();
+      }
+    });
+  }
+
+
+ready(function() {
+ 
+});
+
+
+  $(document).ready(function(){
+    $('input.autocomplete').autocomplete({
+      data: {
+        "Apple": null,
+        "Microsoft": null,
+        "Google": 'https://placehold.it/250x250'
+      },
+    });
+  });
+var document.getElementsByClassName();
+                    function openLink(evt, linkName) {
+                    var i, x, tablinks;
+                    x = document.getElementsByClassName("myLink");
+                    for (i = 0; i < x.length; i++) {
+                        x[i].style.display = "none";
+                    }
+                    tablinks = document.getElementsByClassName("tablink");
+                    for (i = 0; i < x.length; i++) {
+                        tablinks[i].className = tablinks[i].className.replace(" teal", "");
+                    }
+                    document.getElementById(linkName).style.display = "block";
+                    evt.currentTarget.className += " teal";
+                }
+
+                // Click on the first tablink on load
+                document.addEventListener("DOMContentLoaded", function(event) {
+  // - Code to execute when all DOM content is loaded.
+   
+ function myFunction() {
+  var x = document.documentElement.nodeName;
+  document.getElementById("id").innerHTML = x;
+};
+                );
+</script>
+                       
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
     </script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
-    // Override this and recompile your Sass to generate different states
-$form-validation-states: map-merge(
-  (
-    "valid": (
-      "color": $form-feedback-valid-color,
-      "icon": $form-feedback-icon-valid
-    ),
-    "invalid": (
-      "color": $form-feedback-invalid-color,
-      "icon": $form-feedback-icon-invalid
-    )
-  ),
-  $form-validation-states
-);
-// onclick function
-function myFunction() {
-    var x = document.createElement("POST")
-    document.body.appendChild(x);
-}
-
-// Loop from `_forms.scss`
-// Any modifications to the above Sass map will be reflected in your compiled
-// CSS via this loop.
-@each $state, $data in $form-validation-states {
-  @include form-validation-state($state, map-get($data, color), map-get($data, icon));
-}
     </script>
-
-    </body>
-
+ 
 </html>
-
-   
