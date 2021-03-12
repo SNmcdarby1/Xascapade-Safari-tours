@@ -3,177 +3,122 @@
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <title>Xascapade Travel</title>
-     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
-    <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.2.4/email.min.js"></script>
+</head>
+<div id="data"></div>
+<script type="text/javascript "></script>
+<script type="text/javascript" id="index">
+</script>
+<script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.2.4/email.min.js"></script>
 <script type="text/javascript">
     (function() {
         emailjs.init("user_cbk0RT9vpd78BlYyPC67x");
-    })();
+    }
+    )();
 </script>
-</head>
-<div id="data"></div>
-
-<body class="container-fluid no-gutter">
-      <div class="card-body">
-                     <h1 class="card">XASCAPADE TOUR GUIDE</h1>
-                    <p class="card-text">SAFARI TOURS</p>
-                    
-                </div>
-  <div id="navbar">
-  <a href="index.html">Home</a>
-  <a href="about.html">About</a>
-   <a href="gallery.html">Gallery</a>
-  <a href="places.html">Places</a>
-  <a href="contact.html">Contact</a>
-</div>
-<body class="container-fluid">
-        <div class="col-12">
-            <div class="col">
-                <picture class="d-inline-block text-truncate" style="max-width: 600px;">
-                    <source srcset="assets/images/elephant.jpg" type="image/svg+xml">
-                    <img src="assets/images/elephant.jpg" class="img-fluid img-thumbnail" alt="Rooms">
-                </picture>
+<body class="container-fluid" id="page-top">
+       <!--body-->                       
+     <header class="masthead">
+            <div class="container">
+                <div class="masthead-subheading">Hello!</div>
+                <div class="masthead-heading text-uppercase">Looking forward to hearing from you!</div>
+                <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="about.html">More Information </a>
             </div>
+        </header>
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="assets/images/xascapade.jpg" alt="" /></a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Home
+                    <i class="fas fa-bars ml-1"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav text-uppercase ml-auto">
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="places.html">Places</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="about.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="gallery.html">Gallery</a></li>
+                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="map.html">Map</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="contact.html">Contact</a></li>
+                    </ul>
+                    <a href="index.html"><i class="fa fa-home"></i>Home</a>
+  
+                </div>
+            </div>
+        </nav>
+        <!-- Masthead-->
+     <!-- Services-->
+     <script>
+  
+
+  var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+var xhr = new XMLHttpRequest();
+xhr.open('POST', 'somewhere', true);
+xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+xhr.onload = function () {
+    // do something to response
+    console.log(this.responseText);
+};
+xhr.send('user=person&pwd=password&organization=place&requiredkey=key');
+or 
+ if you can count on browser support you could use FormData:
+
+var data = new FormData();
+data.append('user', 'person');
+data.append('pwd', 'password');
+data.append('organization', 'place');
+data.append('requiredkey', 'key');
+
+var xhr = new XMLHttpRequest();
+xhr.open('POST', 'somewhere', true);
+xhr.onload = function () {
+    // do something to response
+    console.log(this.responseText);
+};
+xhr.send(data);
+
+const url = "http://example.com";
+fetch(url, {
+    method : "POST",
+    body: new FormData(document.getElementById("inputform")),
+  
+}).then(
+    response => response.text() // .json(), etc.
+    // same as function(response) {return response.text();}
+).then(
+    html => console.log(html)
+);
+</script>
+
+<header class="" style="z-index:0;">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="page-heading">
+            <h1>Contact</h1>
+           
+          </div>
         </div>
+      </div>
     </div>
-   <h4>Book safari tours plus accommodation </h4>
-                <h5>Best rates and promotions.</h5>
-                <h5>We know hotels - we know comfort.</h5>
-        <fieldset class="form-group" id="get_post">
-            <label id="fieldTitle">Equipment Length</label>
-            <select id="selectOption" class="form-control" required data="text">
-       <div class="form-group">
-           <label for=""></label>
-           <select class="custom-select" name="" id="get_post">
-               <option selected>Select one</option>
-               <option value="cg">1</option>
-               <option value="nj">2</option>
-               <option value="ft">3</option>
-               <option value="cg">1</option>
-               <option value="nj">2</option>
-               <option value="ft">3</option>
-               <option value="cg">1</option>
-               <option value="nj">2</option>
-               <option value="ft">3</option>
-           </select>
-       </div>
-            </select>
-            <div class="help-block with-errors"></div>
-             <section class="container">
-                            <form class="card" class="form" onsubmit="return sendMail(this);" method="POST">
-                                <div class="card-body" class="col-sm-6 ">
-                                    <div class="form-group " id="get_post">
-                                        <label for="srch_frm_hotel_single">Hotels</label>
-                                        <select name="hotel" id="hotel" class="form-control">
-                                            <option value="" selected>No Preference
-                                            </option>
-                                            <option value="*O">*Sarova Hotels
-                                            </option>
-                                            <option value="*A">*Serena hotels
-                                            </option>
-                                            <option value="*S">*Intercontinental Hotels
-                                            </option>
-                                            <option value="*C">*Camping
-                                            </option>
-                                            <option value="*K">*AirBnB
-                                            </option>
-                                            <option value="JP">Safari Park Hotel Nairobi
-                                            </option>
-                                            <option value="EI">Diani Hotel </option>
-                                            <option value="JR">White Sands Holtel
-                                            </option>
-                                            <option value="ML">Nakuru Lodge Hotel
-                                            </option>
-                                            <option value="PL">Intercontinental Hotel
-                                                Nairobi
-                                            </option>
-                                            <option value="SX">Stanlley Hotel Nairobi
-                                            </option>
-                                            <option value="SU">Red Elephant Hotel Tsavo
-                                            </option>
-                                            <option value="AR">Reef Hotel Mombasa
-                                            </option>
-                                            <option value="VW">Nyali Hotel Mombasa
-                                            </option>
-                                            <option value="AM">Voyager Hotel Mombasa
-                                            </option>
-                                            <option value="5L">African Safari Club
-                                                Mombasa
-                                            </option>
-                                            <option value="DP">La Pelgola Malindi
-                                            </option>
-                                            <option value="DP">Mada Hotel Kilifi
-                                            </option>
-                                            <option value="RK">Bamburi Beach Resort
-                                                Mombasa
-                                            </option>
-                                            <option value="AH">Kilifi Bay Resort Kilifi
-                                            </option>
-                                            <option value="FQ">Sun and Sand Club Mombasa
-                                            </option>
-                                            <option value="UU">Turtle Bay Watamu
-                                            </option>
-                                            <option value="7L">Windsor Hotel Nairobi
-                                            </option>
-                                            <option value="AC">FairMount Hotel and
-                                                Resort
-                                                Nairobi
-                                            </option>
-                                            </select>
-                                    </div>
-
-                                </div>
-                            </form>
-                    </section>
-        </fieldset>
-  <div class="custom-control custom-checkbox form">
-    <input type="checkbox" class="custom-control-input" id="customControlValidation1" required>
-    <label class="custom-control-label" for="customControlValidation1">Check this custom checkbox</label>
-    <div class="invalid-feedback">Example invalid feedback text</div>
-  </div>
-
-  <div class="custom-control custom-radio">
-    <input type="radio" class="custom-control-input" id="customControlValidation2" name="radio-stacked" required>
-    <label class="custom-control-label" for="customControlValidation2">Toggle this custom radio
-    </label>
-  </div>
-  <div class="custom-control custom-radio mb-3">
-    <input type="radio" class="custom-control-input" id="customControlValidation3" name="radio-stacked" required>
-    <label class="custom-control-label" for="customControlValidation3">Or toggle this other custom radio</label>
-    <div class="invalid-feedback">More example invalid feedback text</div>
-  </div>
-
-  <div class="form-group">
-    <select class="custom-select" required="recompile" id="get_post">
-      <option value="">Open this select menu</option>
-       <option selected>Choose...</option>
-      <option value="1">One</option>
-      <option value="2">Two</option>
-      <option value="3">Three</option>
-       <option value="1">One</option>
-      <option value="2">Two</option>
-      <option value="3">Three</option>
-       <option value="1">One</option>
-      <option value="2">Two</option>
-      <option value="3">Three</option>
-    </select>
-    <div class="invalid-feedback">Example invalid custom select feedback</div>
-  </div>
-
-  <div class="custom-file">
-    <input type="file" class="custom-file-input" id="validatedCustomFile" required>
-    <label class="custom-file-label" for="validatedCustomFile">Choose file...</label>
-    <div class="invalid-feedback">Enter your details</div>
-  </div>
-</form>
+  </header>
+<!-- Navigation-->
+<body class="container-fluid">
+    <div class="container">
+    <header Login Details></header>
 <div class="card-body" class="col-sm-6 no_left_padding no_right_padding" class="form" onsubmit="return sendMail(this);" method="POST">
                 <input type="text" id="fromName" class="form-control" placeholder="Name">
                   <input type="text" id="toName" class="form-control" placeholder="Email address">
@@ -185,18 +130,68 @@
         </fieldset>
     </div>
   <div>
-    <label for="validationTextarea">Requests</label>
-    <textarea class="form-control is-invalid" id="validationTextarea" placeholder="Required information" required></textarea>
-    <div class="invalid-feedback">
-      Please enter any required information.
+
+  <div class="container" onsubmit="return sendMail(this)";method="POST">
+
+        <p>Want to get in touch? Fill out the form below to send me a message and I will get back to you as soon as possible!</p>
+        <!-- Contact Form - Enter your email address on line 19 of the mail/contact_me.php file to make this form work. -->
+        <!-- WARNING: Some web hosts do not allow emails to be sent through forms to common mail hosts like Gmail or Yahoo. It's recommended that you use a private domain email address! -->
+        <!-- To use the contact form, your site must be on a live web host with PHP! The form will not work locally! -->
+        <form name="sentMessage"  id="fromName" novalidate>
+          <div class="control-group">
+            <div class="form-group floating-label-form-group controls">
+              <label>Name</label>
+              <input type="text" class="form-control" placeholder="Name" id="name" required data-validation-required-message="Please enter your name.">
+              <form name="inputform" action="somewhere" method="post">
+             <input type="hidden" value="person" name="user">
+            <input type="hidden" value="password" name="pwd">
+            <input type="hidden" value="place" name="organization">
+           <input type="hidden" value="key" name="requiredkey">
+            </form>
+              <p class="help-block text-danger"></p>
+            </div>
+          </div>
+          <div class="control-group">
+            <div class="form-group id="toName" floating-label-form-group controls">
+              <label>Email Address</label>
+              <input type="email" class="form-control" placeholder="Email Address" id="email" required data-validation-required-message="Please enter your email address.">
+              <p class="help-block text-danger"></p>
+            </div>
+          </div>
+          <div class="control-group">
+            <div class="form-group col-xs-12 floating-label-form-group controls">
+              <label>Phone Number</label>
+              <input type="tel" class="form-control" placeholder="Phone Number" id="phone" required data-validation-required-message="Please enter your phone number.">
+              <p class="help-block text-danger"></p>
+            </div>
+          </div>
+          <div class="control-group">
+            <div class="form-group id="fieldTitle" floating-label-form-group controls">
+              <label>Location</label>
+              <br><b> Slect Location: </b><br>  
+           <select  id="fieldTitle" name="location">
+               <option id="p" value="key" name="requiredkey">Nairobi
+               <option id="p" value="key" name="requiredkey">Mombasa
+              <option id="p" value="key" name="requiredkey">Kisumu
+              <option id="p" value="key" name="requiredkey">Lamu
+              <option id="p" value="key" name="requiredkey">Nakuru
+               </select>
+              <textarea rows="5" class="form-control" placeholder="Message" id="message" required data-validation-required-message="Please enter a message."></textarea>
+              <p class="help-block text-danger"></p>
+            </div>
+          </div>
+          <br>
+          <div id="success"></div>
+          <button onclick='sendEmail()'>Send Email</button>
+        </form>
+      </div>
     </div>
   </div>
-    
-  <button onclick='sendEmail()'>Send Email</button>
 
+ 
     <!--Footer section  bootstrap snippet-->
  <blockquote class="blockquote text-center container-fluid">
-  <p class="mb-0"> Start your unforgetable, customised,  exceptional luxurious Kenya safari holidays with us today!</p>
+ 
   <footer class="container-fluid blockquote-footer">
   <ul class="list-inline social-links">
    <li class="list-inline-item">
@@ -252,37 +247,31 @@
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
     </script>
+
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
     // Override this and recompile your Sass to generate different states
-$form-validation-states: map-merge(
-  (
-    "valid": (
-      "color": $form-feedback-valid-color,
-      "icon": $form-feedback-icon-valid
-    ),
-    "invalid": (
-      "color": $form-feedback-invalid-color,
-      "icon": $form-feedback-icon-invalid
-    )
-  ),
-  $form-validation-states
-);
-// onclick function
-function myFunction() {
-    var x = document.createElement("POST")
-    document.body.appendChild(x);
-}
+
 
 // Loop from `_forms.scss`
 // Any modifications to the above Sass map will be reflected in your compiled
 // CSS via this loop.
-@each $state, $data in $form-validation-states {
-  @include form-validation-state($state, map-get($data, color), map-get($data, icon));
-}
+
     </script>
+<script src="assets/js/sendEmail.js"></script>
+<script src="assets/js/contact.js"></script>
+<script src="assets/js/node.js"></script>
 
     </body>
-
 </html>
+<!--Validated in w3.org
+Erro found Error: Parse Error. Style sheets should not include HTML syntax..
+Revit to validate the error-->
+
 
    
+   
+
+
+
+
+

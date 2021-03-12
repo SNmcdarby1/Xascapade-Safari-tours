@@ -1,0 +1,10 @@
+{
+    "xml.validation.disallowDocTypeDecl": false,
+    "xml.format.preserveEmptyContent": true,
+    "workbench.silentNotifications": true,
+    "workbench.editor.highlightModifiedTabs": true,
+    "typescript.format.insertSpaceBeforeFunctionParenthesis": true,
+    "typescript.format.placeOpenBraceOnNewLineForControlBlocks": true,
+    "typescript.format.placeOpenBraceOnNewLineForFunctions": true,
+    "xml.format.preservedNewlines": "3"
+}

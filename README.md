@@ -1,17 +1,9 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
-
-# Xascapade Safari Tours
--------------------------
-
-## MS2 Project
------------------
-
-Description
--------------
-
-A Leisure travel website platform that offers safari tour guides services to its users.
-
-### Table of Content
+ # XASCAPADE TOUR GUIDE 
+ 
+ ### DESCRIPTION
+ A Leisure platform that enables the user to access information about safari holidays.
+ 
+ #### Table of Content
 
  1.Who we are
 
@@ -292,3 +284,4 @@ I would like to thank
 - The Code Institute lectures, developers and the team behind the code institute platform .
 - [gitpod]() ide platform.
 - [stackoverflow](https://stackoverflow.com/) platform. I used to access coding problem solving when i got stack. 
+
