@@ -3,13 +3,11 @@
 # Xascapade Safari Tours
 -------------------------
 
-## MS2 Project
------------------
 
 Description
 -------------
 
-A Leisure travel website platform that offers safari tour guides services to its users.
+A Leisure travel website platform that offers safari tour guides services for safari holidays in Kenya.
 
 ### Table of Content
 
